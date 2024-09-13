@@ -1,0 +1,172 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+.Container {
+  /* display: flex; */
+  padding: 20px 20px 20px;
+  width: 80vw;
+  margin: auto;
+}
+.noticesBackground {
+  background-image: url("../../assets/bg_1.jpg.webp");
+  height: 100dvh;
+  width: 100%;
+  position: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.noticesOverlay {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.noticesContent {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.noticesBreadCrumbsWrapper {
+  position: absolute;
+  z-index: 99;
+  bottom: 2rem;
+  padding-inline: 6rem;
+}
+
+.noticesContent h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.noticesContent p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+}
+.noticesBreadCrumbsWrapper h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+.noticesBreadCrumbs {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.5);
+}
+.noticesBreadCrumbs span {
+  display: inline-flex;
+  align-items: center;
+}
+.noticesBreadCrumbs span a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .noticesBreadCrumbsWrapper {
+    padding-inline: 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .noticesBreadCrumbsWrapper {
+    padding-inline: 1rem;
+  }
+}
+.noticeContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* border: 1px solid black; */
+  padding: 20px;
+  background-color: aliceblue;
+}
+.singleNotice {
+  height: 200px;
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+  gap: 10px;
+  /* border-radius: 10px; */
+}
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden; /* Hides the back when flipping */
+  transition: transform 0.6s ease-in-out;
+  display: flex;
+  border: solid gray 1px;
+  flex-direction: column;
+  background-color: white;
+  padding: 40px;
+  border-radius: 4px;
+}
+.card-back {
+  /* background-color: lightgreen; */
+  transform: rotateY(180deg); /* Initially hidden (flipped) */
+}
+
+.flipped .card-front {
+  transform: rotateY(180deg); /* Flip front side */
+}
+
+.flipped .card-back {
+  transform: rotateY(0deg); /* Show back side */
+}
+.singleNoticeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.flipButton {
+  /* background-color: beige; */
+  border: 1px solid goldenrod;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  /* width: 80%; */
+}
+.flipButton:hover {
+  background-color: rgb(235, 220, 183);
+}
+.flipButtonBack {
+  /* background-color: beige; */
+  border: 1px solid goldenrod;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  /* width: 80%; */
+}
+.flipButtonBack:hover {
+  background-color: rgb(235, 220, 183);
+}
+.singleNotice h2::after {
+  content: "";
+  display: block;
+  width: 15%; /* Full width of the h2 element */
+  height: 2px; /* Thickness of the line */
+  background-color: black; /* Color of the line */
+  margin-top: 2px; /* Space between the h2 and the line */
+}
+.singleNotice:hover {
+  transform: scale(1.03);
+}
