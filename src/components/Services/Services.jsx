@@ -4,7 +4,7 @@ import fridayService from "../../assets/fridayService.jpg";
 import youthService from "../../assets/youthService.jpg";
 import englishService from "../../assets/englishService.jpg";
 import kiswahiliService from "../../assets/swahiliService.jpg";
-import { useEffect, useState, useMemo } from "react";
+import { useMemo } from "react";
 
 export default function Services() {
   const services = useMemo(
@@ -44,14 +44,6 @@ export default function Services() {
     ],
     []
   );
-  const [visibleServices, setVisibleServices] = useState([]);
-  useEffect(() => {
-    services.forEach((service, index) => {
-      setTimeout(() => {
-        setVisibleServices((prev) => [...prev, service.id]);
-      }, index * 500);
-    });
-  }, [services]);
   return (
     <div className="container">
       <div className="servicesTop">
@@ -62,17 +54,12 @@ export default function Services() {
           </span>
           <span className="greyLine"></span>
         </p>
-        <h1 style={{ fontSize: "40px" }}>Church Services</h1>
+        <h1>Church Services</h1>
         <p style={{ color: "grey" }}></p>
       </div>
       <div className="servicesWrapper">
         {services.map((service) => (
-          <div
-            className={`card ${
-              visibleServices.includes(service.id) ? "show" : ""
-            }`}
-            key={service.id}
-          >
+          <div className="card" key={service.id}>
             <img src={service.imgSrc} alt="service" className="servicePic" />
             <div className="serviceContent">
               <p className="time">
@@ -81,7 +68,7 @@ export default function Services() {
                 <small>{service.time}</small>
               </p>
               <p className="title">{service.title}</p>
-              <p>
+              <p className="desc">
                 <medium>{service.desc}</medium>
               </p>
             </div>

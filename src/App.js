@@ -1,17 +1,24 @@
+import React, { Suspense } from "react";
 import "./App.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import Home from "./pages/home/Home";
-import Events from "./pages/events/Events";
-import Youth from "./pages/Ministries/Youth/Youth";
-import Children from "./pages/Ministries/Children/Children ";
-import Kama from "./pages/Ministries/Kama/Kama";
-import MothersUnion from "./pages/Ministries/MU/MothersUnion";
-import PraiseTeam from "./pages/Ministries/PraiseTeam/PraiseTeam";
-import Choir from "./pages/Ministries/Choir/Choir";
-import AboutUs from "./pages/AboutUs/AboutUs";
-import Notices from "./pages/Notices/Notices";
+const Home = React.lazy(() => import("./pages/home/Home"));
+const Events = React.lazy(() => import("./pages/events/Events"));
+const Youth = React.lazy(() => import("./pages/Ministries/Youth/Youth"));
+// const Children = React.lazy(() =>
+//   import("./pages/Ministries/Children/Children")
+// );
+const Kama = React.lazy(() => import("./pages/Ministries/Kama/Kama"));
+const MothersUnion = React.lazy(() =>
+  import("./pages/Ministries/MU/MothersUnion")
+);
+const PraiseTeam = React.lazy(() =>
+  import("./pages/Ministries/PraiseTeam/PraiseTeam")
+);
+const Choir = React.lazy(() => import("./pages/Ministries/Choir/Choir"));
+const AboutUs = React.lazy(() => import("./pages/AboutUs/AboutUs"));
+const Notices = React.lazy(() => import("./pages/Notices/Notices"));
 
 function App() {
   const Layout = () => {
@@ -19,13 +26,13 @@ function App() {
       <div>
         <Navbar />
         <div>
-          {/* style={{marginBlockStart:'70px'}} */}
           <Outlet />
         </div>
         <Footer />
       </div>
     );
   };
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -33,58 +40,94 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Home />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <Home />
+            </Suspense>
+          ),
         },
         {
           path: "/about-us",
-          element: <AboutUs />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <AboutUs />
+            </Suspense>
+          ),
         },
         {
           path: "/events",
-          element: <Events />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <Events />
+            </Suspense>
+          ),
         },
         {
           path: "/ministries",
           children: [
             {
               path: "/ministries/youth-ministry",
-              element: <Youth />,
+              element: (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Youth />
+                </Suspense>
+              ),
             },
             {
               path: "/ministries/children-ministry",
-              element: <Children />,
+              element: (
+                <Suspense fallback={<div>Loading...</div>}>
+                  {/* <Children /> */}
+                </Suspense>
+              ),
             },
             {
               path: "/ministries/Kama",
-              element: <Kama />,
+              element: (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Kama />
+                </Suspense>
+              ),
             },
             {
               path: "/ministries/MothersUnion",
-              element: <MothersUnion />,
+              element: (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <MothersUnion />
+                </Suspense>
+              ),
             },
             {
               path: "/ministries/PraiseTeam",
-              element: <PraiseTeam />,
+              element: (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <PraiseTeam />
+                </Suspense>
+              ),
             },
             {
               path: "/ministries/Choir",
-              element: <Choir />,
+              element: (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Choir />
+                </Suspense>
+              ),
             },
           ],
         },
         {
           path: "/notices",
-          element: <Notices />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <Notices />
+            </Suspense>
+          ),
         },
       ],
     },
   ]);
 
-  return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

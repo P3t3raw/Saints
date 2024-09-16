@@ -1,21 +1,13 @@
 import "./Home.css";
-// import BgImage from "../../assets/church1.jpg";
-// import Bg2 from "../../assets/altar.jpg";
-// import Bg3 from "../../assets/church3.jpg";
 import Reveal from "../../utils/Reveal";
-// import vicarImage from "../../assets/Ven.jpg";
 import Services from "../../components/Services/Services";
 import Sermons from "../../components/Sermons/Sermons";
 import Events from "../../components/Events/Events";
-// import Announcements from "../../components/Announcements/Announcements";
 function Home() {
   return (
     <main>
       <div className="background">
         <div className="overlay"></div>
-        {/* <img src={BgImage} alt="background" className="bgImage" />
-        <img src={Bg2} alt="background" className="bgImage" />
-        <img src={Bg3} alt="background" className="bgImage" /> */}
         <video
           className="video"
           src="https://videos.pexels.com/video-files/6860452/6860452-hd_1280_720_25fps.mp4"
@@ -50,23 +42,18 @@ function Home() {
       </div>
       <Reveal>
         <div className="midSection">
-          <div className="midSectionContainer">
-            {/* <div>
-              {<img src={vicarImage} alt="Vicar" className="vicarImage" />}
-            </div> */}
-            <div className="quoteText">
-              <p className="text">
-                <span className="darkLine"></span>
-                <span className="heading">Quote of the week</span>
-                <span className="darkLine"></span>
-              </p>
-              <p className="Quote">
-                ❝ Doing the right thing, at the right place, and at the right
-                time ensures a future free from regrets. It's about more than
-                just making ethical choices; it's understanding how context and
-                timing shape outcomes.❞
-              </p>
-            </div>
+          <div className="quoteText">
+            <p className="text">
+              <span className="darkLine"></span>
+              <span className="heading">Quote of the week</span>
+              <span className="darkLine"></span>
+            </p>
+            <p className="Quote">
+              ❝ Doing the right thing, at the right place, and at the right time
+              ensures a future free from regrets. It's about more than just
+              making ethical choices; it's understanding how context and timing
+              shape outcomes.❞
+            </p>
           </div>
         </div>
       </Reveal>
