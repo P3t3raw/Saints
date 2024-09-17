@@ -4,7 +4,7 @@ main {
 }
 .Container {
   /* display: flex; */
-  padding: 20px 20px 20px;
+  padding: 1.25rem;
   width: 80vw;
   margin: auto;
 }
@@ -46,26 +46,26 @@ main {
 }
 
 .noticesContent h1 {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   text-align: center;
 }
 .noticesContent p {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.75rem;
   text-align: center;
 }
 .noticesBreadCrumbsWrapper h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: white;
 }
 .noticesBreadCrumbs {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -77,29 +77,20 @@ main {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
-@media screen and (max-width: 768px) {
-  .noticesBreadCrumbsWrapper {
-    padding-inline: 4rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .noticesBreadCrumbsWrapper {
-    padding-inline: 1rem;
-  }
-}
+
 .noticeContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
   /* border: 1px solid black; */
-  padding: 20px;
+  padding: 1.25rem;
   background-color: aliceblue;
 }
 .singleNotice {
-  height: 200px;
-  perspective: 1000px;
+  height: 12.5rem;
+  perspective: 62.5rem;
   transition: transform 0.3s ease;
-  gap: 10px;
+  gap: 0.625rem;
   /* border-radius: 10px; */
 }
 .card-front,
@@ -113,8 +104,8 @@ main {
   border: solid gray 1px;
   flex-direction: column;
   background-color: white;
-  padding: 40px;
-  border-radius: 4px;
+  padding: 2.5rem;
+  border-radius: 0.25rem;
 }
 .card-back {
   /* background-color: lightgreen; */
@@ -131,42 +122,101 @@ main {
 .singleNoticeContent {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
-.flipButton {
-  /* background-color: beige; */
-  border: 1px solid goldenrod;
-  cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-  text-align: center;
-  /* width: 80%; */
-}
-.flipButton:hover {
-  background-color: rgb(235, 220, 183);
-}
+.flipButton,
 .flipButtonBack {
   /* background-color: beige; */
   border: 1px solid goldenrod;
   cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-top: 10px;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.3125rem;
+  margin-top: 0.625rem;
   text-align: center;
   /* width: 80%; */
 }
+.flipButton:hover,
 .flipButtonBack:hover {
   background-color: rgb(235, 220, 183);
 }
+
 .singleNotice h2::after {
   content: "";
   display: block;
   width: 15%; /* Full width of the h2 element */
-  height: 2px; /* Thickness of the line */
+  height: 0.125rem; /* Thickness of the line */
   background-color: black; /* Color of the line */
-  margin-top: 2px; /* Space between the h2 and the line */
+  margin-top: 0.125rem; /* Space between the h2 and the line */
 }
 .singleNotice:hover {
   transform: scale(1.03);
+}
+/* Responsive design for max-width: 768px */
+@media screen and (max-width: 1024px) {
+  .noticesBreadCrumbsWrapper {
+    padding-inline: 2.5rem; /* Reduce padding for tablets and medium devices */
+  }
+
+  .noticesContent h1 {
+    font-size: 2.5rem; /* Reduce h1 font size for better fit */
+  }
+
+  .noticesContent p {
+    font-size: 1rem; /* Reduce paragraph text size */
+    line-height: 1.5rem;
+  }
+
+  .noticeContainer {
+    grid-template-columns: 1fr; /* Make it a single column layout */
+    gap: 1rem; /* Adjust spacing */
+  }
+
+  .singleNotice {
+    height: 12rem; /* Adjust height to fit better */
+  }
+
+  .card-front,
+  .card-back {
+    padding: 1.25rem; /* Reduce padding */
+  }
+
+  .flipButton,
+  .flipButtonBack {
+    padding: 0.3125rem 0.625rem;
+  }
+}
+
+/* Responsive design for max-width: 576px */
+@media screen and (max-width: 768px) {
+  .noticesBreadCrumbsWrapper {
+    padding-inline: 1rem; /* Further reduce padding for small screens */
+  }
+
+  .noticesContent h1 {
+    font-size: 2rem; /* Further reduce h1 size */
+  }
+
+  .noticesContent p {
+    font-size: 0.875rem; /* Further reduce paragraph text */
+    line-height: 1.25rem;
+  }
+
+  .noticeContainer {
+    grid-template-columns: 1fr; /* Keep single column layout */
+    gap: 0.75rem; /* Adjust spacing for smaller devices */
+  }
+
+  .singleNotice {
+    height: 12rem; /* Let height adjust naturally */
+  }
+
+  .card-front,
+  .card-back {
+    padding: 1rem; /* Further reduce padding */
+  }
+
+  .flipButton,
+  .flipButtonBack {
+    padding: 0.3125rem 0.625rem; /* Keep button padding minimal */
+  }
 }
