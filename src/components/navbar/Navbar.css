@@ -11,7 +11,8 @@
   padding-block: 1.25rem;
 }
 .active {
-  padding-block: 12px;
+  padding-block: 1rem;
+  align-items: center;
   height: 5.625rem;
   background-color: white;
   transition: all 800ms ease;
@@ -71,7 +72,6 @@ nav h3 {
   align-items: center;
   gap: 0.625rem;
   padding: 3px;
-  /* border: solid 1px black; */
 }
 .logoName h3 {
   white-space: nowrap;
@@ -210,7 +210,7 @@ li a {
 }
 .aside {
   position: fixed;
-  top: -31.25rem;
+  top: -33rem;
   background-color: white;
   color: black;
   transition: all 500ms ease-in-out;
@@ -245,6 +245,9 @@ li a {
   .logo {
     width: 2.5rem;
     height: 2.5rem;
+  }
+  .activ {
+    height: 4rem;
   }
   nav {
     width: 100%;
