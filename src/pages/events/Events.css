@@ -10,6 +10,7 @@
   background-attachment: fixed;
   overflow: hidden;
 }
+
 .eventsOverlay {
   position: absolute;
   overflow: hidden;
@@ -21,74 +22,164 @@
   opacity: 0.4;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.eventContent {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .eventsBreadCrumbsWrapper {
   position: absolute;
   z-index: 99;
   bottom: 2rem;
-  padding-inline: 6rem;
+  padding-inline: 6rem; /* This remains rem */
 }
+
 .eventsBreadCrumbsWrapper h1 {
-  font-size: 40px;
+  font-size: 2.5rem; /* 40px to rem */
   font-weight: 700;
   color: white;
 }
+
 .eventsBreadCrumbs {
-  font-size: 16px;
+  font-size: 1rem; /* 16px to rem */
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px to rem */
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
 }
+
 .eventsBreadCrumbs span {
   display: inline-flex;
   align-items: center;
 }
+
 .eventsBreadCrumbs span a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
+
 .actualEvents {
   background-color: white;
-  padding: 100px 50px;
+  padding: 1rem;
   width: 80vw;
   margin: auto;
+  /* border: 1px solid black; */
 }
+
 .singleEvent {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem; /* 50px to rem */
   width: 100%;
-  height: 400px;
+  height: 25rem; /* 400px to rem */
   overflow: hidden;
+  border-radius: 0.625rem; /* 10px to rem */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px and 8px to rem */
+  /* border: 1px solid black; */
 }
+
 .singleEvent:nth-child(even) {
   flex-direction: row-reverse;
 }
+
 .singleEvent img {
-  width: 600px;
+  width: 40rem; /* 600px to rem */
   object-fit: cover;
   object-position: center;
-  flex: 1.5;
+  flex: 1;
 }
+
 .singleEvent .singleEventContent {
-  flex: 2;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-inline: 30px;
+  padding-inline: 1.875rem; /* 30px to rem */
 }
+
 .singleEvent .singleEventContent h2 {
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px to rem */
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px to rem */
   color: #ffc107;
 }
+
 .singleEvent .singleEventContent span {
   font-weight: 600;
-  font-size: 17px;
-  margin-bottom: 10px;
+  font-size: 1.0625rem; /* 17px to rem */
+  margin-bottom: 0.625rem; /* 10px to rem */
   line-height: 1.8;
   color: #3f4056;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.3125rem; /* 5px to rem */
+}
+@media screen and (max-width: 1024px) {
+  /* Adjustments for screens up to 1024px */
+
+  .eventsBreadCrumbsWrapper {
+    padding-inline: 4rem; /* Reduce padding */
+  }
+
+  .singleEvent {
+    flex-direction: column; /* Stack the image and content vertically */
+    height: auto; /* Let height adjust naturally */
+  }
+
+  .singleEvent img {
+    width: 100%; /* Make the image full width */
+    max-width: none; /* Remove max-width to allow scaling */
+  }
+
+  .singleEvent .singleEventContent {
+    padding-inline: 2rem; /* Reduce padding */
+  }
+
+  .singleEvent .singleEventContent h2 {
+    font-size: 2rem; /* Scale down font size */
+  }
+
+  .singleEvent .singleEventContent span {
+    font-size: 1rem; /* Adjust text size */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for screens up to 768px */
+
+  .eventsBreadCrumbsWrapper {
+    padding-inline: 2rem; /* Further reduce padding */
+  }
+
+  .eventsBreadCrumbsWrapper h1 {
+    font-size: 2rem; /* Decrease font size */
+  }
+
+  .eventsBreadCrumbs {
+    font-size: 0.875rem; /* Scale down text size */
+    margin-bottom: 1rem; /* Reduce margin */
+  }
+
+  .actualEvents {
+    width: 90vw; /* Reduce content width */
+    padding: 0.5rem; /* Decrease padding */
+  }
+
+  .singleEvent {
+    margin-bottom: 2rem; /* Reduce gap between events */
+  }
+
+  .singleEvent .singleEventContent {
+    padding-inline: 1rem; /* Further reduce padding */
+  }
+
+  .singleEvent .singleEventContent h2 {
+    font-size: 1.5rem; /* Scale down heading */
+  }
+
+  .singleEvent .singleEventContent span {
+    font-size: 0.875rem; /* Further reduce text size */
+  }
 }

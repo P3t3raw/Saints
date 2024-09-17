@@ -1,7 +1,7 @@
 import "./Events.css";
 import Reveal from "../../utils/Reveal";
 import { FaChevronRight } from "react-icons/fa";
-import Worship from "../../assets/motivate.jpg";
+// import Worship from "../../assets/motivate.jpg";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineAccessTime } from "react-icons/md";
@@ -41,7 +41,7 @@ function AllEvents() {
     },
     {
       id: 3,
-      imgSrc: Worship,
+      imgSrc: Motivate,
       title: "Worship Night",
       desc: "Come worship together as we lift our voices in praise. An evening of music, prayer, and reflection.",
       date: "Friday, June 18, 2024",
@@ -63,6 +63,9 @@ function AllEvents() {
     <div>
       <div className="eventsBackground">
         <div className="eventsOverlay"></div>
+        <div className="eventContent">
+          <h1>Discover our Exciting Events</h1>
+        </div>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
             <span>
