@@ -54,7 +54,7 @@ export default function Sermons() {
           </span>
           <span className="greyLine"></span>
         </p>
-        <h1 style={{ fontSize: "40px" }}>Recent Sermons</h1>
+        <h1>Recent Sermons</h1>
         <p style={{ color: "grey" }}></p>
       </div>
       <div className="sermonsWrapper">
@@ -63,7 +63,7 @@ export default function Sermons() {
           style={{
             position: "relative",
             width: "100%",
-            maxWidth: "800px",
+            maxWidth: "50rem",
             margin: "auto",
             height: "30vh",
           }}
@@ -100,7 +100,7 @@ export default function Sermons() {
           style={{
             position: "relative",
             width: "100%",
-            maxWidth: "800px",
+            maxWidth: "50rem",
             margin: "auto",
             height: "30vh",
           }}
@@ -137,7 +137,7 @@ export default function Sermons() {
           style={{
             position: "relative",
             width: "100%",
-            maxWidth: "800px",
+            maxWidth: "50rem",
             margin: "auto",
             height: "30vh",
           }}

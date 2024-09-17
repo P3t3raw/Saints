@@ -4,11 +4,11 @@
 .navContainer {
   background-color: transparent;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   position: fixed;
   width: 100%;
   z-index: 99;
-  padding-block: 20px;
+  padding-block: 1.25rem;
 }
 .active {
   padding-block: 12px;
