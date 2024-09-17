@@ -13,7 +13,7 @@ function aboutUs() {
       id: 1,
       imgSrc: vicarImage,
       title: "Vicar",
-      name: "Venerable Canon Gilbert Odhiambo",
+      name: "Ven. Canon Gilbert Odhiambo",
     },
     {
       id: 2,
