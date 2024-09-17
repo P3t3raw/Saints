@@ -76,35 +76,39 @@ main {
 
 .churchHistory {
   display: block;
-  padding: 0.625rem;
+  /* padding: 0.625rem; */
   place-items: center;
-  height: 100vh;
+  height: auto;
 }
 
 .historyContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 90vh;
+  height: 100vh;
   width: 80vw;
   box-sizing: border-box;
-  gap: 0.625rem;
+  gap: 2.5rem;
   margin: auto;
   justify-content: center;
   align-items: center;
+  padding-block: 2rem;
 }
 
 .Content {
   text-align: justify;
-  padding: 1.25rem; /* 20px -> 1.25rem */
+  /* padding: 1.25rem; 20px -> 1.25rem */
   line-height: 2;
   flex: 1;
-  font-size: 1rem; /* 16px -> 1rem */
+  font-size: 1rem;
 }
 
 .contentImage {
-  padding-top: 6.25rem; /* 100px -> 6.25rem */
+  padding-top: 2rem; /* 100px -> 6.25rem */
   overflow-x: hidden;
   flex: 1;
+}
+.Content p {
+  font-size: 1.2rem;
 }
 
 .contentImage img {
@@ -206,13 +210,11 @@ main {
   /* Stack grid layout to a single column for history content */
   .historyContent {
     display: flex;
-    flex-direction: column-reverse;
-    gap: 1rem;
-    height: 100vh;
+    flex-direction: column;
+    height: auto;
     width: 90vw;
     /* border: 1px black solid; */
     margin: 0 auto;
-    overflow: hidden;
   }
 
   /* Adjust font sizes for readability */
@@ -230,29 +232,38 @@ main {
 
   .contentImage img {
     width: 80vw; /* Make image width flexible */
-    max-width: 30rem; /* Maximum width of 480px */
+    max-width: 45rem; /* Maximum width of 480px */
   }
-
+  .contentImage {
+    padding-top: 0;
+  }
   /* Adjust padding for sections */
   .churchHistory,
   .ministryTeam,
   .churchAdministration {
-    padding: 2rem;
+    /* padding: 2rem; */
     height: auto; /* Let content define height */
   }
 
   /* Stack members in a single column */
   .ministryMembers,
   .administrationMembers {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem; /* Adjust gap */
     margin-inline: 0;
+    height: auto;
   }
 
   .singleClergy img,
   .singleAdmin img {
     width: 10rem; /* Reduce image size */
     height: 10rem;
+  }
+  .singleAdmin,
+  .singleClergy {
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
   }
 }
 
@@ -299,16 +310,18 @@ main {
 
   .contentImage img {
     width: 90vw; /* Further reduce image width */
-    max-width: 25rem; /* Maximum width of 400px */
+    max-width: 36rem; /* Maximum width of 400px */
   }
 
   /* Stack members in a single column with tighter spacing */
   .ministryMembers,
   .administrationMembers {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem; /* Smaller gap between items */
+    gap: 1.5rem;
     margin-inline: 0;
     font-size: 0.8rem;
+    /* justify-items: center; */
   }
   .singleAdmin,
   .singleClergy {
@@ -330,7 +343,8 @@ main {
   .churchHistory,
   .ministryTeam,
   .churchAdministration {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    height: auto;
     /* border: 1px black solid; */
   }
 }
