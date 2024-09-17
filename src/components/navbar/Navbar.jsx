@@ -28,10 +28,7 @@ function Navbar() {
           <Link to="/" className="link">
             <div className="logoName">
               <img src={Logo} className="logo" alt="church logo" />
-              <h3 style={{ fontSize: "28px" }}>
-                {" "}
-                ACK St.Peter&apos;s Embakasi
-              </h3>
+              <h3> ACK St. Peter&apos;s Embakasi</h3>
             </div>
           </Link>
           <div className="menu" onClick={() => setMenuActive((prev) => !prev)}>
@@ -119,6 +116,9 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li onClick={() => setMenuActive(false)}>
+            <Link to="/about-us">About</Link>
+          </li>
+          <li onClick={() => setMenuActive(false)}>
             <Link to="/ministries/Kama">K.A.M.A.</Link>
           </li>
           <li onClick={() => setMenuActive(false)}>
@@ -131,10 +131,13 @@ function Navbar() {
             <Link to="/ministries/children-ministry">Sunday School</Link>
           </li>
           <li onClick={() => setMenuActive(false)}>
-            <Link to="/ministries/PraiseTeam">Praise & Worship team</Link>
+            <Link to="/ministries/PraiseTeam">Music Ministry</Link>
           </li>{" "}
           <li onClick={() => setMenuActive(false)}>
             <Link to="/events">Events</Link>
+          </li>
+          <li onClick={() => setMenuActive(false)}>
+            <Link to="/notices">News and Notices</Link>
           </li>
           <li onClick={() => setMenuActive(false)}>
             {" "}

@@ -5,8 +5,12 @@
   background-size: cover;
   padding: 5rem;
   color: white;
+  width: 100%;
 }
-
+.wrapperContainer {
+  width: 80vw;
+  margin: auto;
+}
 .sermonsWrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -47,10 +51,16 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     place-content: center;
-    width: 80vw;
+    width: 60vw;
     margin: auto;
   }
   .servicesTop h1 {
     font-size: 1.8rem;
+  }
+  .sermons {
+    padding: 2rem;
+  }
+  .wrapperContainer {
+    width: 80vw;
   }
 }

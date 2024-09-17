@@ -57,117 +57,119 @@ export default function Sermons() {
         <h1>Recent Sermons</h1>
         <p style={{ color: "grey" }}></p>
       </div>
-      <div className="sermonsWrapper">
-        <div
-          className="recentVideo1"
-          style={{
-            position: "relative",
-            width: "100%",
-            maxWidth: "50rem",
-            margin: "auto",
-            height: "30vh",
-          }}
-        >
-          <iframe
-            ref={iframeRef}
-            style={{ width: "100%", height: "100%", border: "0" }}
-            src="https://www.youtube.com/embed/Fqxl48C920U?si=8T3cyES4FlZil59l"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            // referrerPolicy="strict-origin-when-cross-origin"
-            // allowFullscreen
-          ></iframe>
-          <button
+      <div className="wrapperContainer">
+        <div className="sermonsWrapper">
+          <div
+            className="recentVideo1"
             style={{
-              position: "absolute",
-              bottom: "16px",
-              right: "24px",
-              width: "20px",
-              height: "20px",
-              cursor: "pointer",
-              zIndex: "10",
-              background: "transparent",
-              border: "none",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
+              position: "relative",
+              width: "100%",
+              maxWidth: "50rem",
+              margin: "auto",
+              height: "30vh",
             }}
-            onClick={handleFullscreen}
-          ></button>
-        </div>
-        <div
-          className="recentVideo1"
-          style={{
-            position: "relative",
-            width: "100%",
-            maxWidth: "50rem",
-            margin: "auto",
-            height: "30vh",
-          }}
-        >
-          <iframe
-            ref={iframeRef}
-            style={{ width: "100%", height: "100%", border: "0" }}
-            src="https://www.youtube.com/embed/5h06r98XKPE?si=Rz866WIneW9hbHgq"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            // referrerPolicy="strict-origin-when-cross-origin"
-            // allowFullscreen
-          ></iframe>
-          <button
+          >
+            <iframe
+              ref={iframeRef}
+              style={{ width: "100%", height: "100%", border: "0" }}
+              src="https://www.youtube.com/embed/Fqxl48C920U?si=8T3cyES4FlZil59l"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              // referrerPolicy="strict-origin-when-cross-origin"
+              // allowFullscreen
+            ></iframe>
+            <button
+              style={{
+                position: "absolute",
+                bottom: "16px",
+                right: "24px",
+                width: "20px",
+                height: "20px",
+                cursor: "pointer",
+                zIndex: "10",
+                background: "transparent",
+                border: "none",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              onClick={handleFullscreen}
+            ></button>
+          </div>
+          <div
+            className="recentVideo1"
             style={{
-              position: "absolute",
-              bottom: "16px",
-              right: "24px",
-              width: "20px",
-              height: "20px",
-              cursor: "pointer",
-              zIndex: "10",
-              background: "transparent",
-              border: "none",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
+              position: "relative",
+              width: "100%",
+              maxWidth: "50rem",
+              margin: "auto",
+              height: "30vh",
             }}
-            onClick={handleFullscreen}
-          ></button>
-        </div>
-        <div
-          className="recentVideo1"
-          style={{
-            position: "relative",
-            width: "100%",
-            maxWidth: "50rem",
-            margin: "auto",
-            height: "30vh",
-          }}
-        >
-          <iframe
-            ref={iframeRef}
-            style={{ width: "100%", height: "100%", border: "0" }}
-            src="https://www.youtube.com/embed/nC1Iimsbepw?si=dzURXZ1XOMP25uZj"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            // referrerPolicy="strict-origin-when-cross-origin"
-            // allowFullscreen
-          ></iframe>
-          <button
+          >
+            <iframe
+              ref={iframeRef}
+              style={{ width: "100%", height: "100%", border: "0" }}
+              src="https://www.youtube.com/embed/5h06r98XKPE?si=Rz866WIneW9hbHgq"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              // referrerPolicy="strict-origin-when-cross-origin"
+              // allowFullscreen
+            ></iframe>
+            <button
+              style={{
+                position: "absolute",
+                bottom: "16px",
+                right: "24px",
+                width: "20px",
+                height: "20px",
+                cursor: "pointer",
+                zIndex: "10",
+                background: "transparent",
+                border: "none",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              onClick={handleFullscreen}
+            ></button>
+          </div>
+          <div
+            className="recentVideo1"
             style={{
-              position: "absolute",
-              bottom: "16px",
-              right: "24px",
-              width: "20px",
-              height: "20px",
-              cursor: "pointer",
-              zIndex: "10",
-              background: "transparent",
-              border: "none",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
+              position: "relative",
+              width: "100%",
+              maxWidth: "50rem",
+              margin: "auto",
+              height: "30vh",
             }}
-            onClick={handleFullscreen}
-          ></button>
+          >
+            <iframe
+              ref={iframeRef}
+              style={{ width: "100%", height: "100%", border: "0" }}
+              src="https://www.youtube.com/embed/nC1Iimsbepw?si=dzURXZ1XOMP25uZj"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              // referrerPolicy="strict-origin-when-cross-origin"
+              // allowFullscreen
+            ></iframe>
+            <button
+              style={{
+                position: "absolute",
+                bottom: "16px",
+                right: "24px",
+                width: "20px",
+                height: "20px",
+                cursor: "pointer",
+                zIndex: "10",
+                background: "transparent",
+                border: "none",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              onClick={handleFullscreen}
+            ></button>
+          </div>
         </div>
       </div>
       <div style={{ marginTop: "30px" }}>

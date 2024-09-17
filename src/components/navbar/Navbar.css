@@ -12,7 +12,7 @@
 }
 .active {
   padding-block: 12px;
-  height: 90px;
+  height: 5.625rem;
   background-color: white;
   transition: all 800ms ease;
   color: black;
@@ -35,7 +35,7 @@ nav {
   font: bold;
   width: 80vw;
   margin: auto;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 .links {
   display: flex;
@@ -45,12 +45,12 @@ nav {
 .navLinks {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .navLinks li {
   text-decoration: none;
   list-style: none;
-  padding: 4px 10px;
+  padding: 0.25rem 0.625rem;
   border-radius: 4px;
 }
 .navLinks li:hover {
@@ -61,19 +61,21 @@ nav h3 {
   padding: 0;
 }
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   object-fit: fill;
   object-position: center;
 }
 .logoName {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   padding: 3px;
+  /* border: solid 1px black; */
 }
 .logoName h3 {
   white-space: nowrap;
+  font-size: 2rem;
 }
 .ministries {
   position: relative;
@@ -88,7 +90,7 @@ nav h3 {
   left: 0;
   width: max-content;
   background-color: white;
-  padding: 10px 16px;
+  padding: 0.625rem 1rem;
   border-radius: 6px;
   z-index: 99;
   color: black;
@@ -100,7 +102,7 @@ nav h3 {
   left: 0;
   width: max-content;
   background-color: white;
-  padding: 10px 16px;
+  padding: 0.625rem 1rem;
   border-radius: 6px;
   z-index: 99;
   color: black;
@@ -123,7 +125,7 @@ nav h3 {
   left: 0;
   width: max-content;
   background-color: white;
-  padding: 10px 16px;
+  padding: 0.625rem 1rem;
   border-radius: 6px;
   z-index: 99;
   color: black;
@@ -135,7 +137,7 @@ nav h3 {
   left: 0;
   width: max-content;
   background-color: white;
-  padding: 10px 16px;
+  padding: 0.625rem 1rem;
   border-radius: 6px;
   z-index: 99;
   color: black;
@@ -154,7 +156,7 @@ li a {
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 2px;
+  height: 0.125rem;
   background-color: #ffd615;
   transition: all 300ms ease-in-out;
 }
@@ -167,13 +169,13 @@ li a {
 .ministries .ministriesWrapper::before {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -0.625rem;
   left: 50%;
   width: 0;
   height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid white;
+  border-top: 0.625rem solid transparent;
+  border-bottom: 0.625rem solid transparent;
+  border-left: 0.625rem solid white;
 }
 
 .about .aboutWrapper li::before {
@@ -182,7 +184,7 @@ li a {
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 2px;
+  height: 0.125rem;
   background-color: #ffd615;
   transition: all 300ms ease-in-out;
 }
@@ -199,16 +201,16 @@ li a {
   left: 50%;
   width: 0;
   height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid white;
+  border-top: 0.625rem solid transparent;
+  border-bottom: 0.625rem solid transparent;
+  border-left: 0.625rem solid white;
 }
 .menu {
   display: none;
 }
 .aside {
   position: fixed;
-  top: -500px;
+  top: -31.25rem;
   background-color: white;
   color: black;
   transition: all 500ms ease-in-out;
@@ -218,10 +220,10 @@ li a {
 }
 .aside ul {
   margin: 0;
-  padding: 10px;
+  padding: 0.625rem;
 }
 .aside ul li {
-  padding: 10px 5px;
+  padding: 0.625rem 0.3125rem;
 }
 .aside ul li:hover {
   color: goldenrod;
@@ -230,16 +232,30 @@ li a {
   top: 0;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
   .links {
     display: none;
   }
+  .logoName h3 {
+    font-size: 1.5rem;
+  }
   .menu {
     display: block;
+  }
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 576px) {
   .logoName h3 {
     display: none;
+  }
+  nav {
+    width: 100%;
   }
 }

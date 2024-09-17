@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer>
       <section>
-        <div>
+        <div className="findSection">
           <h2>Find Us</h2>
           <ul className="list contactInfo">
             <li>
@@ -42,7 +42,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div>
+        <div className="giveSection">
           <h2>Give</h2>
           <ul className="list serviceHours">
             <li>
