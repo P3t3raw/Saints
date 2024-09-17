@@ -113,4 +113,7 @@ footer .copyright {
   .findSection {
     display: grid;
   }
+  .giveSection {
+    display: grid;
+  }
 }
