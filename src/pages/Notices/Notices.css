@@ -200,8 +200,12 @@ main {
     font-size: 0.875rem; /* Further reduce paragraph text */
     line-height: 1.25rem;
   }
+  .Container {
+    width: 100vw;
+  }
 
   .noticeContainer {
+    width: 100%;
     grid-template-columns: 1fr; /* Keep single column layout */
     gap: 0.75rem; /* Adjust spacing for smaller devices */
   }
@@ -212,7 +216,9 @@ main {
 
   .card-front,
   .card-back {
+    width: 80vw;
     padding: 1rem;
+    margin: auto;
     font-size: 0.8rem; /* Further reduce padding */
   }
 
