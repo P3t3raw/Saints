@@ -207,12 +207,13 @@ main {
   }
 
   .singleNotice {
-    height: 12rem; /* Let height adjust naturally */
+    height: 11rem; /* Let height adjust naturally */
   }
 
   .card-front,
   .card-back {
-    padding: 1rem; /* Further reduce padding */
+    padding: 1rem;
+    font-size: 0.8rem; /* Further reduce padding */
   }
 
   .flipButton,
