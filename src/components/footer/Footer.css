@@ -113,7 +113,8 @@ footer .copyright {
   .findSection {
     display: grid;
   }
-  .giveSection {
+  .serviceHours {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
