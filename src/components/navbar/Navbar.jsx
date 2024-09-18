@@ -78,7 +78,7 @@ function Navbar() {
                 <Link to="/events">Events</Link>
               </li>
               <li>
-                <Link to="/notices">News and Notices</Link>
+                <Link to="/notices">News & Notices</Link>
               </li>
               {/* <li>
                 <Link to="/">Contact Us</Link>

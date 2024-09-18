@@ -6,9 +6,9 @@ import Footer from "./components/footer/Footer";
 const Home = React.lazy(() => import("./pages/home/Home"));
 const Events = React.lazy(() => import("./pages/events/Events"));
 const Youth = React.lazy(() => import("./pages/Ministries/Youth/Youth"));
-// const Children = React.lazy(() =>
-//   import("./pages/Ministries/Children/Children")
-// );
+const Children = React.lazy(() =>
+  import("./pages/Ministries/Children/Children ")
+);
 const Kama = React.lazy(() => import("./pages/Ministries/Kama/Kama"));
 const MothersUnion = React.lazy(() =>
   import("./pages/Ministries/MU/MothersUnion")
@@ -77,7 +77,7 @@ function App() {
               path: "/ministries/children-ministry",
               element: (
                 <Suspense fallback={<div>Loading...</div>}>
-                  {/* <Children /> */}
+                  <Children />
                 </Suspense>
               ),
             },
