@@ -1,0 +1,254 @@
+.aboutBackground {
+  background-image: url("../../assets/bg_1.jpg.webp");
+  height: 100vh;
+  width: 100%;
+  position: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.aboutOverlay {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.aboutContent {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutBreadCrumbsWrapper {
+  position: absolute;
+  z-index: 99;
+  bottom: 2rem; /* stays the same */
+  padding-inline: 6rem; /* stays the same */
+}
+
+.aboutContent h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.aboutBreadCrumbsWrapper h1 {
+  font-size: 2.5rem; /* 40px -> 2.5rem */
+  font-weight: 700;
+  color: white;
+}
+
+.aboutBreadCrumbs {
+  font-size: 1rem; /* 16px -> 1rem */
+  font-weight: 400;
+  margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.aboutBreadCrumbs span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.aboutBreadCrumbs span a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.contact-container {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  font-size: 1.1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.contact-details,
+.contact-map {
+  font-size: 1.1rem;
+  width: 45%;
+  /* border: solid 1px black; */
+}
+
+.contact-details p,
+.contact-details h2 {
+  margin: 0.5rem 0;
+}
+.pin {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* 2 * 0.25rem */
+  padding: 0.25rem;
+  align-items: center;
+}
+
+.img-style {
+  width: 2rem; /* 16 * 0.25rem */
+  height: 2rem; /* 12 * 0.25rem */
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.map-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+.contact-form-container {
+  text-align: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  margin-bottom: 1.5rem; /* Spacing below the dropdown */
+}
+
+.contact-form button {
+  padding: 0.75rem 2rem;
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-form button:hover {
+  background-color: #e6b800;
+}
+@media screen and (max-width: 1024px) {
+  /* Reduce padding for better fit on smaller screens */
+  .aboutBreadCrumbsWrapper {
+    padding-inline: 4rem;
+  }
+
+  .aboutBreadCrumbsWrapper h1 {
+    font-size: 2rem; /* Adjust breadcrumb heading size */
+  }
+
+  .aboutBreadCrumbs {
+    font-size: 0.875rem; /* 14px for breadcrumb text */
+  }
+  .contact-info {
+    flex-direction: column; /* Stack contact info */
+    align-items: center;
+  }
+
+  .contact-details,
+  .contact-map {
+    width: 100%;
+    margin-bottom: 2rem; /* Add space between stacked items */
+  }
+
+  .map-placeholder {
+    height: 250px; /* Reduce height for the map */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Further reduce padding for even smaller screens */
+  .aboutBreadCrumbsWrapper {
+    padding-inline: 1rem;
+  }
+
+  .aboutBreadCrumbsWrapper h1 {
+    font-size: 1.5rem; /* Adjust breadcrumb heading */
+  }
+
+  .aboutBreadCrumbs {
+    font-size: 0.75rem; /* Make breadcrumb text smaller */
+  }
+  .contact-container {
+    width: 90%; /* Make contact form container take more width */
+  }
+
+  .map-placeholder {
+    height: 200px; /* Further reduce map height */
+  }
+
+  .contact-form {
+    padding: 1rem; /* Add some padding for better spacing */
+  }
+}
+@media screen and (max-width: 576px) {
+  /* Make sure everything fits on small mobile screens */
+  .aboutBreadCrumbsWrapper h1 {
+    font-size: 1.25rem; /* Adjust heading size further */
+  }
+
+  .aboutBreadCrumbs {
+    font-size: 0.625rem; /* Breadcrumb text even smaller */
+  }
+
+  /* Contact section adjustments */
+  .contact-info {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-details,
+  .contact-map {
+    width: 100%;
+  }
+
+  .map-placeholder {
+    height: 150px; /* Even smaller map for mobile */
+  }
+
+  .contact-form button {
+    width: 100%; /* Make submit button take full width */
+  }
+}

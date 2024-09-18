@@ -19,6 +19,7 @@ const PraiseTeam = React.lazy(() =>
 const Choir = React.lazy(() => import("./pages/Ministries/Choir/Choir"));
 const AboutUs = React.lazy(() => import("./pages/AboutUs/AboutUs"));
 const Notices = React.lazy(() => import("./pages/Notices/Notices"));
+const Contact = React.lazy(() => import("./pages/Contact/Contact"));
 
 function App() {
   const Layout = () => {
@@ -120,6 +121,14 @@ function App() {
           element: (
             <Suspense fallback={<div>Loading...</div>}>
               <Notices />
+            </Suspense>
+          ),
+        },
+        {
+          path: "/contact-us",
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <Contact />
             </Suspense>
           ),
         },

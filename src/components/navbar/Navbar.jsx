@@ -69,9 +69,6 @@ function Navbar() {
                   <li>
                     <Link to="/ministries/PraiseTeam">Music Ministry</Link>
                   </li>
-                  {/* <li>
-                  <Link to="/ministries/Choir">Choir Ministry</Link>
-                </li> */}
                 </ul>
               </li>
               <li>
@@ -80,16 +77,17 @@ function Navbar() {
               <li>
                 <Link to="/notices">News & Notices</Link>
               </li>
-              {/* <li>
-                <Link to="/">Contact Us</Link>
-              </li> */}
+              <li>
+                <Link to="/contact-us">Contact Us</Link>
+              </li>
               {/* <li>
                 {" "}
+                <Link> Appointments</Link>
                 <a
                   href="mailto:info@ackstpetersembakasi.org"
                   title="Schedule appointment"
                 >
-                  Appointments
+                 
                 </a>{" "}
               </li> */}
             </ul>
