@@ -27,6 +27,20 @@
   object-position: center;
   animation: fade 30s infinite;
 }
+.youthInfo {
+  padding: 40px;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: medium;
+}
+.youthPic {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../../../assets/YouthMinistry6.jpg") fixed center top -80px;
+  background-size: cover;
+  padding-block: 100px;
+  color: white;
+  height: 70vh;
+}
 @keyframes fade {
   0%,
   20% {
