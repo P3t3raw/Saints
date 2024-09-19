@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
@@ -18,17 +19,78 @@ L.Icon.Default.mergeOptions({
 });
 
 export default function Contact() {
-  const [selectedOption, setSelectedOption] = useState("");
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [selectedTime, setSelectedTime] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+    title: "",
+    date: "",
+    time: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+  const formRef = useRef(null);
+
+  const titleLabels = {
+    prayer: "Prayer Request",
+    inquiry: "General Inquiry",
+    booking: "Booking Appointment",
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true); // Start loading state
+
+    // Prepare data to send with translated title
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+      title: titleLabels[formData.title], // Use titleLabels for the title
+      date: formData.date,
+      time: formData.time,
+    };
+
+    emailjs
+      .send(
+        "service_syd4i5e", // Your service ID
+        "template_j3b1d5s", // Your template ID
+        templateParams, // Pass templateParams here
+        "AHSm2-xqmc7ja_ikU" // Your public API key
+      )
+      .then(
+        (result) => {
+          setLoading(false);
+          setMessage("Email sent successfully!");
+          // Optionally clear the form here
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+            title: "",
+            date: "",
+            time: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          setMessage("Failed to send email. Please try again.");
+        }
+      );
+  };
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleOptionChange = (e) => {
-    setSelectedOption(e.target.value);
+    setFormData({ ...formData, title: e.target.value });
   };
 
   const handleTimeChange = (e) => {
-    setSelectedTime(e.target.value);
+    setFormData({ ...formData, time: e.target.value });
   };
+
   const churchLocation = [-1.3076028456483761, 36.91171768994212];
   return (
     <div>
@@ -53,45 +115,63 @@ export default function Contact() {
       <div className="contact-container">
         <div className="contact-form-container">
           <h2>Send Us a Message</h2>
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={sendEmail} ref={formRef}>
             <select
+              name="title"
+              value={formData.title}
               className="contact-select"
               required
               onChange={handleOptionChange}
             >
-              <option value="" disabled selected>
+              <option value="" disabled>
                 Select message title
               </option>
               <option value="prayer">Prayer Request</option>
               <option value="inquiry">General Inquiry</option>
               <option value="booking">Booking Appointment</option>
             </select>
+
             <label>
               Name:
-              <input type="text" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
             </label>
 
             <label>
               Email:
-              <input type="email" placeholder="Your Email" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
             </label>
 
-            {selectedOption === "booking" ? (
+            {formData.title === "booking" && (
               <>
                 <label>Select Date:</label>
                 <DatePicker
-                  selected={selectedDate}
-                  onChange={(date) => setSelectedDate(date)}
+                  selected={formData.date ? new Date(formData.date) : null}
+                  onChange={(date) => setFormData({ ...formData, date })}
                   placeholderText="Pick a date"
                   required
                 />
                 <label>Select Time:</label>
                 <select
-                  value={selectedTime}
+                  name="time"
+                  value={formData.time}
                   onChange={handleTimeChange}
                   required
                 >
-                  <option value="" disabled selected>
+                  <option value="" disabled>
                     Select a time
                   </option>
                   <option value="09:00 AM">09:00 AM</option>
@@ -102,15 +182,26 @@ export default function Contact() {
                   <option value="03:00 PM">03:00 PM</option>
                 </select>
               </>
-            ) : (
+            )}
+
+            {formData.title !== "booking" && (
               <label>
                 Message:
-                <textarea placeholder="Your Message" required></textarea>
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
+                ></textarea>
               </label>
             )}
 
-            <button type="submit">Submit</button>
+            <button type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Submit"}
+            </button>
           </form>
+          {message && <p className="feedback-message">{message}</p>}
         </div>
         <div className="contact-info">
           {/* <p>

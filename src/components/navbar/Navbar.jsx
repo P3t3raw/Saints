@@ -138,6 +138,9 @@ function Navbar() {
             <Link to="/notices">News and Notices</Link>
           </li>
           <li onClick={() => setMenuActive(false)}>
+            <Link to="/contact-us">Contact Us</Link>
+          </li>
+          {/* <li onClick={() => setMenuActive(false)}>
             {" "}
             <a
               href="mailto:info@ackstpetersembakasi.org"
@@ -145,7 +148,7 @@ function Navbar() {
             >
               Appointments
             </a>{" "}
-          </li>
+          </li> */}
         </ul>
       </aside>
     </div>
