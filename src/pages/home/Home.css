@@ -1,10 +1,10 @@
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Bodoni";
 }
 body {
-  font-family: "Georgia", sans-serif;
+  font-family: "Century Schoolbook";
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -109,7 +109,7 @@ body {
 }
 .heading {
   letter-spacing: 0.1rem;
-  color: #ffd615;
+  color: goldenrod;
   text-wrap: nowrap;
   font-family: "Great Vibes", cursive;
 }

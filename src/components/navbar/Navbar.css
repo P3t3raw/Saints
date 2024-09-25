@@ -7,7 +7,7 @@
   font-size: 1rem;
   position: fixed;
   width: 100%;
-  z-index: 99;
+  z-index: 999;
   padding-block: 1.25rem;
 }
 .active {
@@ -34,7 +34,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   font: bold;
-  width: 80vw;
+  /* width: 80vw; */
   margin: auto;
   font-size: 1.2rem;
 }
@@ -46,7 +46,7 @@ nav {
 .navLinks {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.2rem;
 }
 .navLinks li {
   text-decoration: none;
@@ -54,16 +54,35 @@ nav {
   padding: 0.25rem 0.625rem;
   border-radius: 4px;
 }
-.navLinks li:hover {
-  background-color: rgba(238, 242, 246, 0.3);
+/* .navLinks li:hover {
+  /* background-color: rgba(238, 242, 246, 0.3); 
+} */
+.navLinks li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.13rem;
+  left: 0;
+  margin-top: 0.125rem;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+.navContainer.active .navLinks li::after {
+  background-color: black; /* Color when navContainer is active */
+}
+.navLinks li:hover::after {
+  width: 100%;
+}
+.navContainer .navLinks li::after {
+  background-color: white;
 }
 nav h3 {
   margin: 0;
   padding: 0;
 }
 .logo {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   object-fit: fill;
   object-position: center;
 }
@@ -75,7 +94,8 @@ nav h3 {
 }
 .logoName h3 {
   white-space: nowrap;
-  font-size: 2rem;
+  font-size: 1.9rem;
+  font-family: "Cambria";
 }
 .ministries {
   position: relative;
@@ -108,8 +128,30 @@ nav h3 {
   color: black;
 }
 .ministries .ministriesWrapper li {
-  line-height: 1.8;
+  line-height: 1.2;
   position: relative;
+}
+.ministries .arrow,
+.programs .arrow {
+  display: inline-block;
+  margin-left: 0.5rem;
+  border: solid white; /* Default color */
+  border-width: 0 2px 2px 0;
+  vertical-align: middle;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  bottom: 1rem;
+}
+
+.navContainer.active .ministries .arrow,
+.navContainer.active .programs .arrow {
+  border-color: black; /* Color when navContainer is active */
+}
+
+.ministries:hover .arrow,
+.programs:hover .arrow {
+  transform: rotate(-135deg); /* Rotate arrow upwards on hover */
 }
 
 .about {

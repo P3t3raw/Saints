@@ -8,6 +8,7 @@ function Navbar() {
   const [active, setActive] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
   const [ministries, setMinistries] = useState(false);
+  const [programs, setPrograms] = useState(false);
   const [about, setAbout] = useState(false);
 
   const isActive = () => {
@@ -28,7 +29,7 @@ function Navbar() {
           <Link to="/" className="link">
             <div className="logoName">
               <img src={Logo} className="logo" alt="church logo" />
-              <h3> ACK St. Peter&apos;s Embakasi</h3>
+              <h3> ACK ST. PETER&apos;S EMBAKASI</h3>
             </div>
           </Link>
           <div className="menu" onClick={() => setMenuActive((prev) => !prev)}>
@@ -50,7 +51,8 @@ function Navbar() {
                 className={`ministries ${ministries ? "selected" : ""}`}
                 onClick={() => setMinistries((prev) => !prev)}
               >
-                Get-Involved
+                Ministries
+                <span className="arrow"></span>
                 <ul className="ministriesWrapper">
                   <li>
                     <Link to="/ministries/Kama">K.A.M.A.</Link>
@@ -69,17 +71,42 @@ function Navbar() {
                   <li>
                     <Link to="/ministries/PraiseTeam">Music Ministry</Link>
                   </li>
+                  <li>
+                    <Link to="/ministries/TEE">T.E.E</Link>
+                  </li>
                 </ul>
+              </li>
+              <li>
+                <Link to="/sermons">Sermons</Link>
               </li>
               <li>
                 <Link to="/events">Events</Link>
               </li>
               <li>
-                <Link to="/notices">News & Notices</Link>
+                <Link to="/notices">Notices</Link>
+              </li>
+              <li
+                className={`ministries ${programs ? "selected" : ""}`}
+                onClick={() => setPrograms((prev) => !prev)}
+              >
+                Programs
+                <span className="arrow"></span>
+                <ul className="ministriesWrapper">
+                  <li>
+                    <Link to="/programs/">Welfare</Link>
+                  </li>
+                  <li>
+                    <Link to="/programs/">Projects</Link>
+                  </li>
+                  <li>
+                    <Link to="/programs/">Fellowships</Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link to="/contact-us">Contact Us</Link>
               </li>
+
               {/* <li>
                 {" "}
                 <Link> Appointments</Link>

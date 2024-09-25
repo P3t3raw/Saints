@@ -73,7 +73,7 @@ export default function Notices() {
       <div className="noticesBackground">
         <div className="noticesOverlay"></div>
         <div className="noticesContent">
-          <h1>News and Notices</h1>
+          <h1>Notices</h1>
         </div>
         <div className="noticesBreadCrumbsWrapper">
           <p className="noticesBreadCrumbs">

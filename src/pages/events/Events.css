@@ -1,3 +1,7 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
 .eventsBackground {
   background-image: url("../../assets/bg_1.jpg.webp");
   height: 100dvh;
@@ -22,12 +26,19 @@
   opacity: 0.4;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.eventContent {
+.eventsContent {
   position: absolute;
   color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* border: white 1px solid; */
+}
+.eventsContent h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+  text-align: center;
 }
 
 .eventsBreadCrumbsWrapper {

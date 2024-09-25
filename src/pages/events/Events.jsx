@@ -63,8 +63,8 @@ function AllEvents() {
     <div>
       <div className="eventsBackground">
         <div className="eventsOverlay"></div>
-        <div className="eventContent">
-          <h1>Discover our Exciting Events</h1>
+        <div className="eventsContent">
+          <h1>Discover Our Upcoming Events</h1>
         </div>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">

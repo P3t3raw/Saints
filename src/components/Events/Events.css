@@ -3,10 +3,10 @@
 }
 
 .eventPic {
-  height: 25rem;
+  height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
   border-radius: 10px;
 }
 
@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  height: 60vh;
+  height: 70vh;
   flex-direction: column-reverse;
 }
 
@@ -54,6 +54,7 @@
   margin: auto;
 }
 .events-list {
+  height: 60vh;
   width: 60vw;
   display: flex;
   gap: 2.5rem;

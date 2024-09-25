@@ -119,7 +119,8 @@ main {
 }
 
 .churchHistory h2 {
-  color: #ffd615;
+  color: goldenrod;
+  font-size: 2rem;
 }
 
 .ministryTeam {
@@ -130,8 +131,10 @@ main {
   height: 100vh;
 }
 
-.ministryTeam h2 {
-  color: #ffd615;
+.ministryTeam h2,
+.churchAdministration h2 {
+  color: goldenrod;
+  font-size: 1.8rem;
 }
 
 .churchAdministration {
@@ -140,10 +143,6 @@ main {
   display: block;
   padding: 1.25rem; /* 20px -> 1.25rem */
   height: 100vh;
-}
-
-.churchAdministration h2 {
-  color: #ffd615;
 }
 
 .ministryMembers {

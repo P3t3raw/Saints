@@ -44,32 +44,32 @@ function aboutUs() {
     {
       id: 1,
       imgSrc: profileImage,
-      title: "Vicar",
-      name: "Canon Gilbert Odhiambo",
+      title: "Vicar's Warden",
+      name: "Full name",
     },
     {
       id: 2,
       imgSrc: profileImage,
-      title: "Vicar",
-      name: "Canon Gilbert Odhiambo",
+      title: "People's Warden",
+      name: "Name",
     },
     {
       id: 3,
       imgSrc: profileImage,
       title: "Vicar",
-      name: "Canon Gilbert Odhiambo",
+      name: "",
     },
     {
       id: 4,
       imgSrc: profileImage,
-      title: "Vicar",
-      name: "Canon Gilbert Odhiambo",
+      title: "Parish Secretary",
+      name: "",
     },
     {
       id: 5,
       imgSrc: profileImage,
-      title: "Vicar",
-      name: "Canon Gilbert Odhiambo",
+      title: "",
+      name: "",
     },
   ];
 
@@ -97,7 +97,6 @@ function aboutUs() {
           <div className="historyContent">
             <div className="Content">
               {/* <div className="aboutOverlay"></div> */}
-              <h3>A spiritual Voyage</h3>
               <h2>Our Church History</h2>
               <p>
                 Founded in 1972, ACK St. Peter’s Embakasi began as a small
@@ -126,7 +125,7 @@ function aboutUs() {
       </Reveal>
       <Reveal>
         <div className="ministryTeam">
-          <h2>Ministry Team</h2>
+          <h2>The Clergy</h2>
           <div className="ministryMembers">
             {clergies.map((clergy) => (
               <div className="singleClergy" key={clergy.id}>

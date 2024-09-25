@@ -23,6 +23,36 @@
   object-position: center;
   animation: fade 30s infinite;
 }
+.eventsBreadCrumbsWrapper {
+  position: absolute;
+  z-index: 99;
+  bottom: 2rem;
+  padding-inline: 6rem; /* This remains rem */
+}
+
+.eventsBreadCrumbsWrapper h1 {
+  font-size: 2.5rem; /* 40px to rem */
+  font-weight: 700;
+  color: white;
+}
+
+.eventsBreadCrumbs {
+  font-size: 1rem; /* 16px to rem */
+  font-weight: 400;
+  margin-bottom: 1.25rem; /* 20px to rem */
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.eventsBreadCrumbs span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.eventsBreadCrumbs span a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
 @keyframes fade {
   0%,
   20% {
@@ -66,9 +96,8 @@
 }
 .row1 img {
   flex: 1;
-  width: auto;
-  height: auto;
-  max-height: 31.25rem;
+  width: 35rem;
+  height: 35rem;
   object-fit: cover;
   object-position: top center;
   border-radius: 15rem 0 15rem 15rem;
@@ -131,7 +160,10 @@
   grid-row: 2/3;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
+  .eventsBreadCrumbsWrapper {
+    padding-inline: 4rem; /* Reduce padding */
+  }
   .row1 {
     flex-direction: column;
     padding-inline: 1rem;
@@ -144,6 +176,18 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .eventsBreadCrumbsWrapper {
+    padding-inline: 2rem; /* Further reduce padding */
+  }
+
+  .eventsBreadCrumbsWrapper h1 {
+    font-size: 2rem; /* Decrease font size */
+  }
+
+  .eventsBreadCrumbs {
+    font-size: 0.875rem; /* Scale down text size */
+    margin-bottom: 1rem; /* Reduce margin */
+  }
   .row1 div > * {
     margin-bottom: 1.25rem;
   }
@@ -167,6 +211,10 @@
   }
   .row2 div {
     width: 100%;
+  }
+  .row1 img {
+    width: 18rem;
+    height: 18rem;
   }
 }
 
