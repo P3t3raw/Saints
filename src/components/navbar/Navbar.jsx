@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import Logo from "../../assets/LogoP.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { IoClose, IoMenu } from "react-icons/io5";
+import { IoChevronDown, IoClose, IoMenu } from "react-icons/io5";
 
 function Navbar() {
+  const [programsActive, setProgramsActive] = useState(false);
+  const [ministriesActive, setMinistriesActive] = useState(false);
   const [active, setActive] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
   const [ministries, setMinistries] = useState(false);
@@ -76,9 +78,9 @@ function Navbar() {
                   </li>
                 </ul>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/sermons">Sermons</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/events">Events</Link>
               </li>
@@ -93,30 +95,19 @@ function Navbar() {
                 <span className="arrow"></span>
                 <ul className="ministriesWrapper">
                   <li>
-                    <Link to="/programs/">Welfare</Link>
+                    <Link to="/programs/welfare">Welfare</Link>
                   </li>
                   <li>
-                    <Link to="/programs/">Projects</Link>
+                    <Link to="/programs/projects">Projects</Link>
                   </li>
                   <li>
-                    <Link to="/programs/">Fellowships</Link>
+                    <Link to="/programs/fellowships">Fellowships</Link>
                   </li>
                 </ul>
               </li>
               <li>
                 <Link to="/contact-us">Contact Us</Link>
               </li>
-
-              {/* <li>
-                {" "}
-                <Link> Appointments</Link>
-                <a
-                  href="mailto:info@ackstpetersembakasi.org"
-                  title="Schedule appointment"
-                >
-                 
-                </a>{" "}
-              </li> */}
             </ul>
           </div>
         </nav>
@@ -143,39 +134,81 @@ function Navbar() {
           <li onClick={() => setMenuActive(false)}>
             <Link to="/about-us">About</Link>
           </li>
-          <li onClick={() => setMenuActive(false)}>
-            <Link to="/ministries/Kama">K.A.M.A.</Link>
+          <li>
+            <div
+              onClick={() => setMinistriesActive(!ministriesActive)}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                cursor: "pointer",
+              }}
+            >
+              <span>Ministries</span>
+              <IoChevronDown
+                style={{ marginLeft: "0.4rem", fontSize: "0.7rem" }}
+              />
+            </div>
+            {ministriesActive && (
+              <ul style={{ paddingLeft: "1rem", marginTop: "0.5rem" }}>
+                <li onClick={() => setMenuActive(false)}>
+                  <Link to="/ministries/Kama">K.A.M.A.</Link>
+                </li>
+                <li onClick={() => setMenuActive(false)}>
+                  <Link to="/ministries/MothersUnion">Mother's Union</Link>
+                </li>
+                <li onClick={() => setMenuActive(false)}>
+                  <Link to="/ministries/youth-ministry">Youth Ministry</Link>
+                </li>
+                <li onClick={() => setMenuActive(false)}>
+                  <Link to="/ministries/children-ministry">Sunday School</Link>
+                </li>
+                <li onClick={() => setMenuActive(false)}>
+                  <Link to="/ministries/PraiseTeam">Music Ministry</Link>
+                </li>{" "}
+                <li onClick={() => setMenuActive(false)}>
+                  <Link to="/ministries/TEE">T.E.E</Link>
+                </li>{" "}
+              </ul>
+            )}
           </li>
-          <li onClick={() => setMenuActive(false)}>
-            <Link to="/ministries/MothersUnion">Mother's Union</Link>
-          </li>
-          <li onClick={() => setMenuActive(false)}>
-            <Link to="/ministries/youth-ministry">Youth Ministry</Link>
-          </li>
-          <li onClick={() => setMenuActive(false)}>
-            <Link to="/ministries/children-ministry">Sunday School</Link>
-          </li>
-          <li onClick={() => setMenuActive(false)}>
-            <Link to="/ministries/PraiseTeam">Music Ministry</Link>
-          </li>{" "}
+
           <li onClick={() => setMenuActive(false)}>
             <Link to="/events">Events</Link>
           </li>
           <li onClick={() => setMenuActive(false)}>
-            <Link to="/notices">News and Notices</Link>
+            <Link to="/notices">Notices</Link>
+          </li>
+          <li>
+            <div
+              onClick={() => setProgramsActive(!programsActive)}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                cursor: "pointer",
+              }}
+            >
+              <span>Programs</span>
+              <IoChevronDown
+                style={{ marginLeft: "0.4rem", fontSize: "0.7rem" }}
+              />
+            </div>
+            {programsActive && (
+              <ul style={{ paddingLeft: "1rem", marginTop: "0.5rem" }}>
+                <li onClick={() => setMenuActive(false)}>
+                  <Link to="/programs/welfare">Welfare</Link>
+                </li>
+                <li onClick={() => setMenuActive(false)}>
+                  <Link to="/programs/projects">Projects</Link>
+                </li>
+                <li onClick={() => setMenuActive(false)}>
+                  <Link to="/programs/fellowships">Fellowships</Link>
+                </li>
+              </ul>
+            )}
           </li>
           <li onClick={() => setMenuActive(false)}>
             <Link to="/contact-us">Contact Us</Link>
           </li>
-          {/* <li onClick={() => setMenuActive(false)}>
-            {" "}
-            <a
-              href="mailto:info@ackstpetersembakasi.org"
-              title="Schedule appointment"
-            >
-              Appointments
-            </a>{" "}
-          </li> */}
         </ul>
       </aside>
     </div>
