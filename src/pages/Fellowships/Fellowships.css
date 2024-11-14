@@ -1,0 +1,317 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+.Container {
+  margin-block: 2.5rem;
+}
+.noticesBackground {
+  background-image: url("../../assets/bg_1.jpg.webp");
+  min-height: 100vh;
+  width: 100%;
+  position: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.noticesOverlay {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.noticesContent {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.noticesBreadCrumbsWrapper {
+  position: absolute;
+  z-index: 99;
+  bottom: 2rem;
+  padding-inline: 6rem;
+}
+
+.noticesContent h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+  text-align: center;
+}
+.noticesContent p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  text-align: center;
+}
+.noticesBreadCrumbsWrapper h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+.noticesBreadCrumbs {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.5);
+}
+.noticesBreadCrumbs span {
+  display: inline-flex;
+  align-items: center;
+}
+.noticesBreadCrumbs span a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.fellowshipPic {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+.fellowshipWrapper {
+  margin-inline: 1rem;
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.fellowshipWrapper .fellowshipCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  width: 80vw;
+  margin: 1rem auto;
+
+  /* max-width: 60rem; */
+  /* margin: 1rem auto; */
+}
+.fellowshipCard {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.fellowshipCard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.fellowshipContent {
+  display: flex;
+  flex-direction: row;
+}
+.leftCardPart {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex: 2;
+  max-width: 60%;
+  /* border: solid blue 1px; */
+}
+.rightCardPart {
+  flex: 1;
+  padding: 1rem;
+  /* border: solid red 1px; */
+}
+.leftCardPart .title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-block: 0.5rem;
+}
+/* .nextMeeting::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background-color: #000;
+  margin: 0.5rem 0;
+} */
+.title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-block: 0.5rem;
+  color: #333;
+}
+
+.tagline {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.625rem;
+}
+
+.meetingInfo {
+  margin: 0.625rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.nextMeeting {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: bold;
+  border-bottom: 0.1rem solid #000;
+  padding-bottom: 0.5rem;
+}
+
+.fellowshipDesc {
+  margin: 0.9375rem 0;
+  color: #333;
+}
+
+.missionVision,
+.history,
+.membershipInfo,
+.contactInfo,
+.leadershipTeam {
+  margin-top: 0.9375rem;
+}
+
+.missionVision h3,
+.history h3,
+.membershipInfo h3,
+.contactInfo h3,
+.leadershipTeam h3 {
+  color: #333;
+  margin-bottom: 0.3125rem;
+  font-size: 1.2rem;
+}
+
+.contactInfo p,
+.membershipInfo p,
+.leadershipTeam p {
+  color: #555;
+}
+.fellowshipSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.fellowshipSearch select {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.fellowshipSearch select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.fellowshipSearch select option {
+  padding: 0.5rem;
+}
+/* Base styling for small screens */
+@media (max-width: 767px) {
+  .noticesContent h1 {
+    font-size: 2rem;
+  }
+
+  .noticesBreadCrumbsWrapper {
+    padding-inline: 1rem;
+  }
+
+  .noticesBreadCrumbsWrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .fellowshipWrapper {
+    margin-inline: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .fellowshipWrapper .fellowshipCard {
+    width: 90vw;
+    margin: 0.5rem auto;
+  }
+
+  .fellowshipContent {
+    flex-direction: column;
+  }
+
+  .leftCardPart,
+  .rightCardPart {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  .nextMeeting {
+    font-size: 0.8rem;
+  }
+
+  .fellowshipSearch select {
+    font-size: 1rem;
+  }
+
+  .noticesBackground {
+    height: auto;
+    background-attachment: scroll;
+  }
+}
+
+/* Medium screens (tablets, 768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .noticesContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .fellowshipWrapper {
+    margin-inline: 1rem;
+  }
+
+  .fellowshipWrapper .fellowshipCard {
+    width: 85vw;
+  }
+
+  .fellowshipContent {
+    flex-direction: row;
+  }
+
+  .leftCardPart,
+  .rightCardPart {
+    padding: 1rem;
+  }
+
+  .fellowshipSearch select {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large screens (desktops, above 1024px) */
+@media (min-width: 1025px) {
+  .fellowshipWrapper .fellowshipCard {
+    width: 80vw;
+  }
+
+  .leftCardPart {
+    max-width: 60%;
+  }
+
+  .rightCardPart {
+    max-width: 40%;
+  }
+}

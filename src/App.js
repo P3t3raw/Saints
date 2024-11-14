@@ -1,8 +1,10 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState, useEffect } from "react";
 import "./App.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import Loading from "./components/Loading/Loading";
+
 const Home = React.lazy(() => import("./pages/home/Home"));
 const Events = React.lazy(() => import("./pages/events/Events"));
 const Youth = React.lazy(() => import("./pages/Ministries/Youth/Youth"));
@@ -21,6 +23,23 @@ const AboutUs = React.lazy(() => import("./pages/AboutUs/AboutUs"));
 const Notices = React.lazy(() => import("./pages/Notices/Notices"));
 const Sermons = React.lazy(() => import("./pages/Sermons/Sermons"));
 const Contact = React.lazy(() => import("./pages/Contact/Contact"));
+const Fellowships = React.lazy(() => import("./pages/Fellowships/Fellowships"));
+const Projects = React.lazy(() => import("./pages/Projects/Projects"));
+const Welfare = React.lazy(() => import("./pages/Welfare/Welfare"));
+
+const LoadingWithDelay = ({ delay = 10000 }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [delay]);
+
+  return isLoading ? <Loading /> : null;
+};
 
 function App() {
   const Layout = () => {
@@ -43,7 +62,7 @@ function App() {
         {
           path: "/",
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingWithDelay delay={3000} />}>
               <Home />
             </Suspense>
           ),
@@ -51,7 +70,7 @@ function App() {
         {
           path: "/about-us",
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingWithDelay delay={3000} />}>
               <AboutUs />
             </Suspense>
           ),
@@ -59,7 +78,7 @@ function App() {
         {
           path: "/events",
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingWithDelay delay={3000} />}>
               <Events />
             </Suspense>
           ),
@@ -70,7 +89,7 @@ function App() {
             {
               path: "/ministries/youth-ministry",
               element: (
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <Youth />
                 </Suspense>
               ),
@@ -78,7 +97,7 @@ function App() {
             {
               path: "/ministries/children-ministry",
               element: (
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <Children />
                 </Suspense>
               ),
@@ -86,7 +105,7 @@ function App() {
             {
               path: "/ministries/Kama",
               element: (
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <Kama />
                 </Suspense>
               ),
@@ -94,7 +113,7 @@ function App() {
             {
               path: "/ministries/MothersUnion",
               element: (
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <MothersUnion />
                 </Suspense>
               ),
@@ -102,7 +121,7 @@ function App() {
             {
               path: "/ministries/PraiseTeam",
               element: (
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <PraiseTeam />
                 </Suspense>
               ),
@@ -110,7 +129,7 @@ function App() {
             {
               path: "/ministries/Choir",
               element: (
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <Choir />
                 </Suspense>
               ),
@@ -120,7 +139,7 @@ function App() {
         {
           path: "/notices",
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingWithDelay delay={3000} />}>
               <Notices />
             </Suspense>
           ),
@@ -128,7 +147,7 @@ function App() {
         {
           path: "/sermons",
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingWithDelay delay={3000} />}>
               <Sermons />
             </Suspense>
           ),
@@ -136,8 +155,33 @@ function App() {
         {
           path: "/contact-us",
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingWithDelay delay={3000} />}>
               <Contact />
+            </Suspense>
+          ),
+        },
+        {
+          path: "programs/welfare",
+          element: (
+            <Suspense fallback={<LoadingWithDelay delay={3000} />}>
+              <Welfare />
+            </Suspense>
+          ),
+        },
+        {
+          path: "programs/projects",
+          element: (
+            <Suspense fallback={<LoadingWithDelay delay={3000} />}>
+              <Projects />
+            </Suspense>
+          ),
+        },
+
+        {
+          path: "programs/fellowships",
+          element: (
+            <Suspense fallback={<LoadingWithDelay delay={3000} />}>
+              <Fellowships />
             </Suspense>
           ),
         },
