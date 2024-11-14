@@ -7,7 +7,6 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import churchImage from "../../assets/church1.jpg";
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 delete L.Icon.Default.prototype._getIconUrl;
@@ -87,10 +86,6 @@ export default function Contact() {
     setFormData({ ...formData, title: e.target.value });
   };
 
-  const handleTimeChange = (e) => {
-    setFormData({ ...formData, time: e.target.value });
-  };
-
   const churchLocation = [-1.3076028456483761, 36.91171768994212];
   return (
     <div>
@@ -131,75 +126,56 @@ export default function Contact() {
               <option value="booking">Booking Appointment</option>
             </select>
 
-            <label>
-              Name:
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-              />
-            </label>
-
-            <label>
-              Email:
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-              />
-            </label>
-
             {formData.title === "booking" && (
               <>
-                <label>Select Date:</label>
-                <DatePicker
-                  selected={formData.date ? new Date(formData.date) : null}
-                  onChange={(date) => setFormData({ ...formData, date })}
-                  placeholderText="Pick a date"
-                  required
-                />
-                <label>Select Time:</label>
-                <select
-                  name="time"
-                  value={formData.time}
-                  onChange={handleTimeChange}
-                  required
-                >
-                  <option value="" disabled>
-                    Select a time
-                  </option>
-                  <option value="09:00 AM">09:00 AM</option>
-                  <option value="10:00 AM">10:00 AM</option>
-                  <option value="11:00 AM">11:00 AM</option>
-                  <option value="01:00 PM">01:00 PM</option>
-                  <option value="02:00 PM">02:00 PM</option>
-                  <option value="03:00 PM">03:00 PM</option>
-                </select>
+                <label>
+                  Call us on <b>+254110008603</b> to make an appointment with
+                  the Vicar at your convenient time.
+                </label>
               </>
             )}
 
             {formData.title !== "booking" && (
-              <label>
-                Message:
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                ></textarea>
-              </label>
-            )}
+              <>
+                <label>
+                  Name:
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
 
-            <button type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Submit"}
-            </button>
+                <label>
+                  Email:
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
+
+                <label>
+                  Message:
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    required
+                  ></textarea>
+                </label>
+                <button type="submit" disabled={loading}>
+                  {loading ? "Sending..." : "Submit"}
+                </button>
+              </>
+            )}
           </form>
           {message && <p className="feedback-message">{message}</p>}
         </div>

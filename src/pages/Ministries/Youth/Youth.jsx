@@ -1,4 +1,5 @@
-import "./Youth.css";
+import "../Children/Children.css";
+import Reveal from "../../../utils/Reveal";
 import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 // import { FaChevronRight } from "react-icons/fa";
@@ -42,104 +43,113 @@ export default function Youth() {
           <h1>Youth Ministry</h1>
         </div>
       </div>
-      <div className="row1Container">
-        <div className="row1">
-          <div>
-            <p className="textQuote">
-              ❝ Don&apos;t let anyone look down on you because you are young,
-              but set an example for the believers in speech, in conduct, in
-              love, in faith, and in purity.❞
-              <br />
-              <span style={{ color: "#a7a7a7" }}>~ 1 Timothy 4:12 ~</span>
-            </p>
+      <Reveal>
+        <div className="row1Container">
+          <div className="row1">
+            <div>
+              <p className="textQuote">
+                ❝ Don&apos;t let anyone look down on you because you are young,
+                but set an example for the believers in speech, in conduct, in
+                love, in faith, and in purity.❞
+                <br />
+                <span style={{ color: "#a7a7a7" }}>~ 1 Timothy 4:12 ~</span>
+              </p>
+            </div>
+            <img src={youth2} alt="Youth" />
           </div>
-          <img src={youth2} alt="Youth" />
         </div>
-      </div>
-      <div className="row2">
-        <div>
-          <h2>Empowering the Next Generation of Believers</h2>
-          <p className="row2Text">
-            The Youth Ministry at A.C.K St. Peters Embakasi Church is a dynamic
-            and inclusive community for teenagers and young adults. Our mission
-            is to empower young people to grow in their faith, build lasting
-            friendships, and make a positive impact in their world. Through
-            weekly youth meetings, Bible studies, social events, and service
-            projects, we provide opportunities for spiritual growth, leadership
-            development, and fun.
-          </p>
-          {/* <p className="row2Text">
+      </Reveal>
+      <Reveal>
+        <div className="row2">
+          <div>
+            <h2>Empowering the Next Generation of Believers</h2>
+            <p className="row2Text">
+              The Youth Ministry at A.C.K St. Peters Embakasi Church is a
+              dynamic and inclusive community for teenagers and young adults.
+              Our mission is to empower young people to grow in their faith,
+              build lasting friendships, and make a positive impact in their
+              world. Through weekly youth meetings, Bible studies, social
+              events, and service projects, we provide opportunities for
+              spiritual growth, leadership development, and fun.
+            </p>
+            {/* <p className="row2Text">
             Our youth leaders are dedicated to mentoring and supporting each
             individual as they navigate the challenges of adolescence and young
             adulthood.
             <br /> Join us and be part of a movement that is passionate about
             Jesus and making a difference.
           </p> */}
+          </div>
+          <div>
+            <h2>What we do in Youth&apos;s Ministry?</h2>
+            <ul style={{ padding: "0" }}>
+              <li
+                style={{
+                  display: "flex",
+                  marginBlockEnd: "10px",
+                  gap: "8px",
+                  alignItems: "flex-start",
+                }}
+              >
+                <BiBible style={{ fontSize: "40px", color: "#1f2837" }} />
+                <span>
+                  We provide engaging and age-appropriate Bible lessons that
+                  help children understand God&apos;s Word in a fun and
+                  interactive way.
+                </span>
+              </li>
+              <li
+                style={{
+                  display: "flex",
+                  marginBlockEnd: "10px",
+                  gap: "8px",
+                  alignItems: "flex-start",
+                }}
+              >
+                <BiHomeHeart style={{ fontSize: "40px", color: "#1f2837" }} />
+                <span>
+                  We offer a safe and welcoming environment where children can
+                  build friendships and enjoy fellowship with their peers.
+                </span>
+              </li>
+              <li
+                style={{
+                  display: "flex",
+                  gap: "8px",
+                  alignItems: "flex-start",
+                }}
+              >
+                <FaRegHeart style={{ fontSize: "40px", color: "#1f2837" }} />
+                <span>
+                  We teach children the importance of serving others, sharing
+                  God&apos;s love in the process, and making a positive impact
+                  in the world around them.
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h2>What we do in Youth&apos;s Ministry?</h2>
-          <ul style={{ padding: "0" }}>
-            <li
-              style={{
-                display: "flex",
-                marginBlockEnd: "10px",
-                gap: "8px",
-                alignItems: "flex-start",
-              }}
-            >
-              <BiBible style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We provide engaging and age-appropriate Bible lessons that help
-                children understand God&apos;s Word in a fun and interactive
-                way.
-              </span>
-            </li>
-            <li
-              style={{
-                display: "flex",
-                marginBlockEnd: "10px",
-                gap: "8px",
-                alignItems: "flex-start",
-              }}
-            >
-              <BiHomeHeart style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We offer a safe and welcoming environment where children can
-                build friendships and enjoy fellowship with their peers.
-              </span>
-            </li>
-            <li
-              style={{ display: "flex", gap: "8px", alignItems: "flex-start" }}
-            >
-              <FaRegHeart style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We teach children the importance of serving others, sharing
-                God&apos;s love in the process, and making a positive impact in
-                the world around them.
-              </span>
-            </li>
-          </ul>
+      </Reveal>
+      <Reveal>
+        <div className="row3">
+          {/* styles are from children ministry page */}
+          <div>
+            <img src={fridayService} alt="worship" />
+          </div>
+          <div>
+            <img src={youth1} alt="worship" />
+          </div>
+          <div>
+            <img src={youth2} alt="worship" />
+          </div>
+          <div>
+            <img src={youth3} alt="worship" />
+          </div>
+          <div>
+            <img src={youth5} alt="worship" />
+          </div>
         </div>
-      </div>
-
-      <div className="row3">
-        {/* styles are from children ministry page */}
-        <div>
-          <img src={fridayService} alt="worship" />
-        </div>
-        <div>
-          <img src={youth1} alt="worship" />
-        </div>
-        <div>
-          <img src={youth2} alt="worship" />
-        </div>
-        <div>
-          <img src={youth3} alt="worship" />
-        </div>
-        <div>
-          <img src={youth5} alt="worship" />
-        </div>
-      </div>
+      </Reveal>
     </div>
   );
 }

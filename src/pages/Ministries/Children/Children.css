@@ -96,7 +96,7 @@
 }
 .row1 img {
   flex: 1;
-  width: 35rem;
+  width: 45rem;
   height: 35rem;
   object-fit: cover;
   object-position: top center;
@@ -139,6 +139,14 @@
   object-fit: cover;
   object-position: center center;
   border-radius: 0.625rem;
+}
+
+.row3 div:hover {
+  transform: scale(1.02);
+}
+
+.row3 div {
+  transition: transform 0.3s ease-in-out; /* duration and easing for a smooth effect */
 }
 .row3 div:nth-of-type(1) {
   grid-column: 1/2;

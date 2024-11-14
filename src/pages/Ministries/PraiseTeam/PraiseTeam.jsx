@@ -29,6 +29,13 @@ export default function PraiseTeam() {
           muted
           loop
         ></video>
+        <video
+          className="video"
+          src="https://videos.pexels.com/video-files/8775627/8775627-sd_640_360_25fps.mp4"
+          autoPlay
+          muted
+          loop
+        ></video>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
             <span>

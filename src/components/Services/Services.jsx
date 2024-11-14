@@ -1,7 +1,7 @@
 import "./Services.css";
 import { LuDot } from "react-icons/lu";
-import fridayService from "../../assets/fridayService.jpg";
-import youthService from "../../assets/youthService.jpg";
+import fridayService from "../../assets/fridayService1.jpg";
+import youthService from "../../assets/YouthMinistry5.jpg";
 import englishService from "../../assets/englishService.jpg";
 import kiswahiliService from "../../assets/swahiliService.jpg";
 import { useMemo } from "react";
