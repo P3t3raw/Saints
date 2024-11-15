@@ -129,7 +129,7 @@ export default function Fellowships() {
 
   const [selectedFellowship, setSelectedFellowship] = useState(fellowships[0]);
   return (
-    <div className="container">
+    <div>
       <div className="noticesBackground">
         <div className="noticesOverlay"></div>
         <div className="noticesContent">

@@ -2,12 +2,10 @@ main {
   display: flex;
   flex-direction: column;
 }
-.Container {
-  margin-block: 2.5rem;
-}
+
 .noticesBackground {
   background-image: url("../../assets/bg_1.jpg.webp");
-  min-height: 100vh;
+  height: 100dvh;
   width: 100%;
   position: inherit;
   background-size: cover;
