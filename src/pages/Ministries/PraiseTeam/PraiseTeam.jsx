@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
-import "./PraiseTeam.css";
-import { FaRegHeart } from "react-icons/fa";
+import "../Children/Children.css";
+import { FaMicrophone } from "react-icons/fa";
 // import { FaChevronRight } from "react-icons/fa";
-import { BiBible, BiHomeHeart } from "react-icons/bi";
+import { BiMusic } from "react-icons/bi";
 import { FaChevronRight } from "react-icons/fa";
 import worshipImg from "../../../assets/worshipTeam.jpg";
 import worshipImg2 from "../../../assets/swahiliService.jpg";
 import worshipImg3 from "../../../assets/YouthMinistry5.jpg";
 import worshipImg4 from "../../../assets/youthService.jpg";
 import worshipImg5 from "../../../assets/englishService.jpg";
+import Reveal from "../../../utils/Reveal";
+import { GiGuitar } from "react-icons/gi";
 export default function PraiseTeam() {
   return (
     <div>
@@ -103,65 +105,151 @@ export default function PraiseTeam() {
           />
         </div>
       </div>
-      <div className="row2">
-        <div>
-          <h2>About Music Ministry</h2>
-          <p className="row2Text">
-            At St.Peters, our Children&apos;s Ministry is dedicated to nurturing
-            the spiritual growth of children from infancy through elementary
-            school.{" "}
-          </p>
-          <p className="row2Text">
-            We believe that every child is a precious gift from God, and we
-            strive to create a loving and supportive environment where they can
-            learn about Jesus and develop a personal relationship with Him.
-          </p>
+      <Reveal>
+        <div className="row2">
+          <div>
+            <div>
+              <h2>About the Music Ministry</h2>
+              <p className="row2Text">
+                The Music Ministry at St. Peters plays a vital role in creating
+                an atmosphere of worship and adoration. Composed of the Praise
+                and Worship Team and the Church Choir, we seek to glorify God
+                through music, leading the congregation into His presence during
+                services and special events.
+              </p>
+              <p className="row2Text">
+                Our mission is to use our musical gifts to uplift, inspire, and
+                bring the message of hope and salvation through Christ. Whether
+                it’s a powerful hymn, a heartfelt worship song, or a joyful
+                chorus, we aim to touch lives and draw hearts closer to God.
+              </p>
+              <h2>What we do in the Music Ministry?</h2>
+              <ul style={{ padding: "0" }}>
+                <li
+                  style={{
+                    display: "flex",
+                    marginBlockEnd: "10px",
+                    gap: "8px",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <BiMusic style={{ fontSize: "40px", color: "#1f2837" }} />
+                  <span>
+                    Lead the congregation in worship during Sunday services,
+                    ensuring a meaningful and spirit-filled experience.
+                  </span>
+                </li>
+                <li
+                  style={{
+                    display: "flex",
+                    marginBlockEnd: "10px",
+                    gap: "8px",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <FaMicrophone
+                    style={{ fontSize: "40px", color: "#1f2837" }}
+                  />
+                  <span>
+                    Prepare and perform special music for events such as
+                    weddings, funerals, and church celebrations.
+                  </span>
+                </li>
+                <li
+                  style={{
+                    display: "flex",
+                    gap: "8px",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <GiGuitar style={{ fontSize: "40px", color: "#1f2837" }} />
+                  <span>
+                    Organize rehearsals to develop musical skills and harmonies,
+                    fostering unity among team members.
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <h2>Get Involved</h2>
+            <p>
+              If you have a passion for music and worship, the Music Ministry
+              welcomes you to join us! Whether you sing, play an instrument, or
+              assist with sound and tech, there’s a place for you to serve.
+            </p>
+            <ul>
+              <li>
+                <strong>Join the Praise and Worship Team</strong>
+                <p>
+                  Lead contemporary worship through singing and playing
+                  instruments. Commitment to rehearsals and a heart for worship
+                  are essential.
+                </p>
+              </li>
+              <li>
+                <strong>Be Part of the Church Choir</strong>
+                <p>
+                  Sing in harmony with others, performing traditional hymns and
+                  anthems during services and special occasions.
+                </p>
+              </li>
+              <li>
+                <strong>Support with Sound and Tech</strong>
+                <p>
+                  Help manage audio-visual equipment, ensuring the quality of
+                  sound during services and rehearsals.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Upcoming Events</h2>
+            <ul>
+              <li>
+                <strong>Worship Night</strong> - Dec 20, 2024
+                <p>
+                  Join us for an evening of worship and praise featuring our
+                  Praise and Worship Team and Choir. Let’s come together to
+                  glorify God in song.
+                </p>
+              </li>
+              <li>
+                <strong>Christmas Cantata</strong> - Dec 25, 2024
+                <p>
+                  Celebrate the birth of Christ with a special musical
+                  presentation by the Church Choir. A night of hymns, carols,
+                  and joy awaits.
+                </p>
+              </li>
+              <li>
+                <strong>Choir Retreat</strong> - Jan 15-17, 2025
+                <p>
+                  A weekend of bonding, vocal training, and spiritual growth for
+                  choir members. Don’t miss this enriching experience!
+                </p>
+              </li>
+              <li>
+                <strong>Music Workshop</strong> - Feb 10, 2025
+                <p>
+                  A hands-on workshop for all Music Ministry members to enhance
+                  their musical skills and worship leadership.
+                </p>
+              </li>
+            </ul>
+
+            <h2>Contact Us</h2>
+            <p>
+              For more information about the Music Ministry or to join, feel
+              free to reach out. We look forward to serving with you!
+            </p>
+            <p>
+              <strong>Email:</strong> musicministry@churchwebsite.com
+              <br />
+              <strong>Phone:</strong> (123) 456-7890
+            </p>
+          </div>
         </div>
-        <div>
-          <h2>What we do in Music Ministry?</h2>
-          <ul style={{ padding: "0" }}>
-            <li
-              style={{
-                display: "flex",
-                marginBlockEnd: "10px",
-                gap: "8px",
-                alignItems: "flex-start",
-              }}
-            >
-              <BiBible style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We provide engaging and age-appropriate Bible lessons that help
-                children understand God&apos;s Word in a fun and interactive
-                way.
-              </span>
-            </li>
-            <li
-              style={{
-                display: "flex",
-                marginBlockEnd: "10px",
-                gap: "8px",
-                alignItems: "flex-start",
-              }}
-            >
-              <BiHomeHeart style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We offer a safe and welcoming environment where children can
-                build friendships and enjoy fellowship with their peers.
-              </span>
-            </li>
-            <li
-              style={{ display: "flex", gap: "8px", alignItems: "flex-start" }}
-            >
-              <FaRegHeart style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We teach children the importance of serving others, sharing
-                God&apos;s love in the process, and making a positive impact in
-                the world around them.
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
+      </Reveal>
+
       <div className="row3">
         {/* styles are from children ministry page */}
         <div>

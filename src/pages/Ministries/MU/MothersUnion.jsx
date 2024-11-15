@@ -9,6 +9,7 @@ import mothersUnion4 from "../../../assets/MU.jpg";
 import mothersUnion5 from "../../../assets/englishService.jpg";
 import { FaRegHeart } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
+import Reveal from "../../../utils/Reveal";
 
 function Children() {
   return (
@@ -57,65 +58,141 @@ function Children() {
           <img src={mothersUnion} alt="mothers union" />
         </div>
       </div>
-      <div className="row2">
-        <div>
-          <h2>About Mothers&apos; Ministry</h2>
-          <p className="row2Text">
-            At St.Peters, our Children&apos;s Ministry is dedicated to nurturing
-            the spiritual growth of children from infancy through elementary
-            school.{" "}
-          </p>
-          <p className="row2Text">
-            We believe that every child is a precious gift from God, and we
-            strive to create a loving and supportive environment where they can
-            learn about Jesus and develop a personal relationship with Him.
-          </p>
+      <Reveal>
+        <div className="row2">
+          <div>
+            <div>
+              <h2>About the Mother's Union Ministry</h2>
+              <p className="row2Text">
+                At St. Peters, our Mother's Union Ministry is dedicated to
+                supporting women in their spiritual growth, fostering meaningful
+                relationships, and empowering them to serve as pillars of
+                strength in their families, church, and community.
+              </p>
+              <p className="row2Text">
+                We believe that every woman has a divine purpose, and through
+                our ministry, we provide a nurturing environment where women can
+                deepen their faith, grow in love, and make a lasting impact
+                through their roles as mothers, wives, and leaders.
+              </p>
+              <h2>What we do in the Mother's Union Ministry?</h2>
+              <ul style={{ padding: "0" }}>
+                <li
+                  style={{
+                    display: "flex",
+                    marginBlockEnd: "10px",
+                    gap: "8px",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <BiBible style={{ fontSize: "40px", color: "#1f2837" }} />
+                  <span>
+                    We host Bible study sessions and prayer meetings to
+                    strengthen our spiritual walk and encourage one another in
+                    faith.
+                  </span>
+                </li>
+                <li
+                  style={{
+                    display: "flex",
+                    marginBlockEnd: "10px",
+                    gap: "8px",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <BiHomeHeart style={{ fontSize: "40px", color: "#1f2837" }} />
+                  <span>
+                    We organize events and workshops to promote healthy family
+                    values and nurture the next generation.
+                  </span>
+                </li>
+                <li
+                  style={{
+                    display: "flex",
+                    gap: "8px",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <FaRegHeart style={{ fontSize: "40px", color: "#1f2837" }} />
+                  <span>
+                    We engage in community outreach programs, showing love and
+                    support to those in need through acts of service and
+                    kindness.
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <h2>Get Involved</h2>
+            <p>
+              The Mother's Union Ministry offers numerous ways for women to
+              connect, grow, and contribute. Whether you're seeking spiritual
+              growth, fellowship, or opportunities to give back, you'll find a
+              welcoming space here.
+            </p>
+            <ul>
+              <li>
+                <strong>Volunteer for Events</strong>
+                <p>
+                  Help plan and organize events like retreats, workshops, and
+                  outreach programs to make a difference in our community.
+                </p>
+              </li>
+              <li>
+                <strong>Support Outreach Projects</strong>
+                <p>
+                  Join hands in initiatives aimed at uplifting families and
+                  individuals through acts of love and service.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Upcoming Events</h2>
+            <ul>
+              <li>
+                <strong>Women's Prayer Breakfast</strong> - Dec 25, 2024
+                <p>
+                  Gather for an uplifting morning of prayer, fellowship, and an
+                  inspiring message tailored for women of faith.
+                </p>
+              </li>
+              <li>
+                <strong>Community Support Day</strong> - Jan 15, 2025
+                <p>
+                  Join us as we reach out to local families in need, providing
+                  support and encouragement.
+                </p>
+              </li>
+              <li>
+                <strong>Women's Retreat</strong> - Feb 10-12, 2025
+                <p>
+                  A serene weekend retreat to focus on spiritual renewal,
+                  personal growth, and building meaningful relationships.
+                </p>
+              </li>
+              <li>
+                <strong>Family Enrichment Workshop</strong> - Mar 5, 2025
+                <p>
+                  Learn practical ways to strengthen your family bond and create
+                  a nurturing environment for everyone in your home.
+                </p>
+              </li>
+            </ul>
+
+            <h2>Contact Us</h2>
+            <p>
+              If you have any questions or want to learn more about the Mother's
+              Union Ministry, feel free to reach out to us.
+            </p>
+            <p>
+              <strong>Email:</strong> mothersunion@churchwebsite.com
+              <br />
+              <strong>Phone:</strong> (123) 456-7890
+            </p>
+          </div>
         </div>
-        <div>
-          <h2>What we do in Mothers&apos; Union?</h2>
-          <ul style={{ padding: "0" }}>
-            <li
-              style={{
-                display: "flex",
-                marginBlockEnd: "10px",
-                gap: "8px",
-                alignItems: "flex-start",
-              }}
-            >
-              <BiBible style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We provide engaging and age-appropriate Bible lessons that help
-                children understand God&apos;s Word in a fun and interactive
-                way.
-              </span>
-            </li>
-            <li
-              style={{
-                display: "flex",
-                marginBlockEnd: "10px",
-                gap: "8px",
-                alignItems: "flex-start",
-              }}
-            >
-              <BiHomeHeart style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We offer a safe and welcoming environment where children can
-                build friendships and enjoy fellowship with their peers.
-              </span>
-            </li>
-            <li
-              style={{ display: "flex", gap: "8px", alignItems: "flex-start" }}
-            >
-              <FaRegHeart style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We teach children the importance of serving others, sharing
-                God&apos;s love in the process, and making a positive impact in
-                the world around them.
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
+      </Reveal>
+
       <div className="row3">
         <div>
           <img src={mothersUnion} alt="" />

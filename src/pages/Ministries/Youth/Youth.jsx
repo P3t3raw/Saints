@@ -59,74 +59,157 @@ export default function Youth() {
           </div>
         </div>
       </Reveal>
+      {/*<Reveal>
+        <div className="row2">
+          <div>
+           
+      {/*
+          </div>
+          <div>
+           
+          </div>
+        </div>
+      </Reveal> */}
       <Reveal>
         <div className="row2">
           <div>
-            <h2>Empowering the Next Generation of Believers</h2>
-            <p className="row2Text">
-              The Youth Ministry at A.C.K St. Peters Embakasi Church is a
-              dynamic and inclusive community for teenagers and young adults.
-              Our mission is to empower young people to grow in their faith,
-              build lasting friendships, and make a positive impact in their
-              world. Through weekly youth meetings, Bible studies, social
-              events, and service projects, we provide opportunities for
-              spiritual growth, leadership development, and fun.
+            <div>
+              <h2>Empowering the Next Generation of Believers</h2>
+              <p className="row2Text">
+                The Youth Ministry at A.C.K St. Peters Embakasi Church is a
+                dynamic and inclusive community for teenagers and young adults.
+                Our mission is to empower young people to grow in their faith,
+                build lasting friendships, and make a positive impact in their
+                world. Through weekly youth meetings, Bible studies, social
+                events, and service projects, we provide opportunities for
+                spiritual growth, leadership development, and fun.
+              </p>
+              {
+                <p className="row2Text">
+                  Our youth leaders are dedicated to mentoring and supporting
+                  each individual as they navigate the challenges of adolescence
+                  and young adulthood.
+                  <br /> Join us and be part of a movement that is passionate
+                  about Jesus and making a difference.
+                </p>
+              }
+              <h2>What we do in Youth&apos;s Ministry?</h2>
+              <ul style={{ padding: "0" }}>
+                <li
+                  style={{
+                    display: "flex",
+                    marginBlockEnd: "10px",
+                    gap: "8px",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <BiBible style={{ fontSize: "40px", color: "#1f2837" }} />
+                  <span>
+                    We provide engaging and age-appropriate Bible lessons that
+                    help children understand God&apos;s Word in a fun and
+                    interactive way.
+                  </span>
+                </li>
+                <li
+                  style={{
+                    display: "flex",
+                    marginBlockEnd: "10px",
+                    gap: "8px",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <BiHomeHeart style={{ fontSize: "40px", color: "#1f2837" }} />
+                  <span>
+                    We offer a safe and welcoming environment where children can
+                    build friendships and enjoy fellowship with their peers.
+                  </span>
+                </li>
+                <li
+                  style={{
+                    display: "flex",
+                    gap: "8px",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <FaRegHeart style={{ fontSize: "40px", color: "#1f2837" }} />
+                  <span>
+                    We teach children the importance of serving others, sharing
+                    God&apos;s love in the process, and making a positive impact
+                    in the world around them.
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <h2>Get Involved</h2>
+            <p>
+              Our Men's Ministry offers a variety of ways to connect, grow, and
+              serve. Whether you're looking for fellowship, mentorship, or
+              opportunities to give back, there’s a place for you here.
             </p>
-            {/* <p className="row2Text">
-            Our youth leaders are dedicated to mentoring and supporting each
-            individual as they navigate the challenges of adolescence and young
-            adulthood.
-            <br /> Join us and be part of a movement that is passionate about
-            Jesus and making a difference.
-          </p> */}
-          </div>
-          <div>
-            <h2>What we do in Youth&apos;s Ministry?</h2>
-            <ul style={{ padding: "0" }}>
-              <li
-                style={{
-                  display: "flex",
-                  marginBlockEnd: "10px",
-                  gap: "8px",
-                  alignItems: "flex-start",
-                }}
-              >
-                <BiBible style={{ fontSize: "40px", color: "#1f2837" }} />
-                <span>
-                  We provide engaging and age-appropriate Bible lessons that
-                  help children understand God&apos;s Word in a fun and
-                  interactive way.
-                </span>
+            <ul>
+              <li>
+                <strong>Volunteer for Events</strong>
+                <p>
+                  Help plan and execute events like retreats, breakfasts, and
+                  service projects.
+                </p>
               </li>
-              <li
-                style={{
-                  display: "flex",
-                  marginBlockEnd: "10px",
-                  gap: "8px",
-                  alignItems: "flex-start",
-                }}
-              >
-                <BiHomeHeart style={{ fontSize: "40px", color: "#1f2837" }} />
-                <span>
-                  We offer a safe and welcoming environment where children can
-                  build friendships and enjoy fellowship with their peers.
-                </span>
-              </li>
-              <li
-                style={{
-                  display: "flex",
-                  gap: "8px",
-                  alignItems: "flex-start",
-                }}
-              >
-                <FaRegHeart style={{ fontSize: "40px", color: "#1f2837" }} />
-                <span>
-                  We teach children the importance of serving others, sharing
-                  God&apos;s love in the process, and making a positive impact
-                  in the world around them.
-                </span>
+
+              <li>
+                <strong>Support Outreach Projects</strong>
+                <p>
+                  Join initiatives to support our community through charity work
+                  and service.
+                </p>
               </li>
             </ul>
+          </div>
+          <div>
+            <h2>Upcoming Events</h2>
+            <ul>
+              <li>
+                <strong>Men's Breakfast</strong> - Dec 25, 2024
+                <p>
+                  Join us for a hearty breakfast and fellowship. A guest speaker
+                  will share an inspiring message about living a life of faith
+                  and purpose.
+                </p>
+              </li>
+              <li>
+                <strong>Community Service Day</strong> - Jan 15, 2025
+                <p>
+                  Let’s give back to the community! We’ll be volunteering at the
+                  local shelter to serve meals and provide support to those in
+                  need.
+                </p>
+              </li>
+              <li>
+                <strong>Men’s Retreat</strong> - Feb 10-12, 2025
+                <p>
+                  A weekend retreat in the mountains focused on spiritual
+                  growth, bonding, and relaxation. Don’t miss this opportunity
+                  to recharge.
+                </p>
+              </li>
+              <li>
+                <strong>Leadership Workshop</strong> - Mar 5, 2025
+                <p>
+                  Enhance your leadership skills and learn how to lead
+                  effectively in your family, church, and community.
+                </p>
+              </li>
+            </ul>
+
+            <h2>Contact Us</h2>
+            <p>
+              If you have any questions or want to learn more about the Men's
+              Ministry, feel free to reach out to us.
+            </p>
+            <p>
+              <strong>Email:</strong> mensministry@churchwebsite.com
+              <br />
+              <strong>Phone:</strong> (123) 456-7890
+            </p>
           </div>
         </div>
       </Reveal>
