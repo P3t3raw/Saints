@@ -77,3 +77,142 @@ main {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
+.projectsContainer {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.projectCard {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projectCard h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.projectOverview,
+.projectDescription,
+.projectPeriod {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials blockquote {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #007bff;
+  font-style: italic;
+  color: #666;
+}
+
+.learnMoreButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.learnMoreButton:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 767px) {
+  .noticesContent h1 {
+    font-size: 2rem;
+  }
+
+  .projectList {
+    max-width: 90vw;
+    padding: 0.5rem;
+  }
+
+  .projectCard {
+    padding: 1rem;
+  }
+
+  .projectCard h2 {
+    font-size: 1.25rem;
+  }
+
+  .projectCard p {
+    font-size: 0.9rem;
+  }
+
+  .projectCard span {
+    font-size: 0.8rem;
+  }
+}
+
+/* Medium Screens (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .noticesContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .projectList {
+    max-width: 85vw;
+  }
+
+  .projectCard {
+    padding: 1.25rem;
+  }
+
+  .projectCard h2 {
+    font-size: 1.4rem;
+  }
+
+  .projectCard p {
+    font-size: 1rem;
+  }
+
+  .projectCard span {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large Screens (1025px and above) */
+@media (min-width: 1025px) {
+  .noticesContent h1 {
+    font-size: 3rem;
+  }
+
+  .projectList {
+    max-width: 70vw;
+  }
+
+  .projectCard {
+    padding: 1.5rem;
+  }
+
+  .projectCard h2 {
+    font-size: 1.6rem;
+  }
+
+  .projectCard p {
+    font-size: 1rem;
+  }
+
+  .projectCard span {
+    font-size: 0.9rem;
+  }
+}
