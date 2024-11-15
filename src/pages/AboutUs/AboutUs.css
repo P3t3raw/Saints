@@ -1,3 +1,71 @@
+/* General Section Styling */
+Reveal h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Church Mission, Vision, Core Values, Community Involvement, What We Believe, Testimonies, Membership, FAQs */
+.churchMission,
+.churchVision,
+.churchValues,
+.churchCommunityInvolvement,
+.churchBeliefs,
+.churchTestimonies,
+.churchMembership,
+.churchFAQs {
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid green; */
+  padding: 1rem 0;
+  /* margin-bottom: 1rem; */
+  width: 80vw;
+  margin: auto;
+}
+
+.churchMission p,
+.churchVision p,
+.churchCommunityInvolvement p,
+.churchBeliefs p,
+.churchTestimonies p,
+.churchMembership p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.churchValues ul,
+.churchFAQs ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.churchValues li,
+.churchFAQs li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.churchFAQs li strong {
+  font-weight: bold;
+}
+
+/* Testimonies Section */
+.churchTestimonies ul {
+  padding-left: 20px;
+}
+
+.churchTestimonies li {
+  font-style: italic;
+}
+
+/* Membership Section */
+.churchMembership p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -39,8 +107,8 @@ main {
 .aboutBreadCrumbsWrapper {
   position: absolute;
   z-index: 99;
-  bottom: 2rem; /* stays the same */
-  padding-inline: 6rem; /* stays the same */
+  bottom: 2rem;
+  padding-inline: 6rem;
 }
 
 .aboutContent h1 {
@@ -51,15 +119,15 @@ main {
 }
 
 .aboutBreadCrumbsWrapper h1 {
-  font-size: 2.5rem; /* 40px -> 2.5rem */
+  font-size: 2.5rem;
   font-weight: 700;
   color: white;
 }
 
 .aboutBreadCrumbs {
-  font-size: 1rem; /* 16px -> 1rem */
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+  margin-bottom: 1.25rem;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -74,9 +142,9 @@ main {
   text-decoration: none;
 }
 
+/* History Section */
 .churchHistory {
   display: block;
-  /* padding: 0.625rem; */
   place-items: center;
   height: auto;
 }
@@ -84,51 +152,47 @@ main {
 .historyContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  /* height: 100vh; */
   width: 80vw;
   box-sizing: border-box;
   gap: 2.5rem;
   margin: auto;
   justify-content: center;
   align-items: center;
-  padding-block: 2rem;
+  padding-block: 1rem;
 }
 
 .Content {
   text-align: justify;
-  /* padding: 1.25rem; 20px -> 1.25rem */
   line-height: 2;
   flex: 1;
   font-size: 1rem;
 }
 
 .contentImage {
-  padding-top: 2rem; /* 100px -> 6.25rem */
+  padding-top: 2rem;
   overflow-x: hidden;
   flex: 1;
 }
+
 .Content p {
   font-size: 1.2rem;
 }
 
 .contentImage img {
-  max-width: 37.5rem; /* 600px -> 37.5rem */
+  max-width: 37.5rem;
   height: auto;
   width: 50vw;
-  border-radius: 0.625rem; /* 10px -> 0.625rem */
+  border-radius: 0.625rem;
 }
 
-.churchHistory h2 {
-  color: goldenrod;
-  font-size: 2rem;
-}
-
+/* Ministry & Administration Section */
 .ministryTeam {
   width: 80vw;
   margin: auto;
   display: block;
-  padding: 1.25rem; /* 20px -> 1.25rem */
-  height: 100vh;
+  padding: 1.25rem;
+  height: auto;
 }
 
 .ministryTeam h2,
@@ -141,123 +205,97 @@ main {
   width: 80vw;
   margin: auto;
   display: block;
-  padding: 1.25rem; /* 20px -> 1.25rem */
-  height: 100vh;
+  padding: 1.25rem;
+  height: auto;
 }
 
-.ministryMembers {
-  margin-inline: 2rem; /* stays the same */
+/* .ministryMembers,
+.administrationMembers {
+  margin-inline: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem; /* 20px -> 1.25rem */
-  padding: 1.25rem; /* 20px -> 1.25rem */
+  gap: 1.25rem;
+  padding: 1.25rem;
+} */
+
+.ministryMembers,
+.administrationMembers {
+  margin-inline: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 1.25rem;
   justify-content: center;
   align-items: center;
   height: 80vh;
 }
 
-.administrationMembers {
-  margin-inline: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem; /* 20px -> 1.25rem */
-  padding: 1.25rem; /* 20px -> 1.25rem */
-}
-
-.singleClergy {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
+.singleClergy,
 .singleAdmin {
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
-.singleClergyContent {
+.singleClergyContent,
+.singleAdminContent {
   display: grid;
   text-align: center;
 }
 
-.singleAdminContent {
-  display: grid;
-}
-
+.singleClergy img,
 .singleAdmin img {
-  height: 12.5rem; /* 200px -> 12.5rem */
-  width: 12.5rem; /* 200px -> 12.5rem */
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
 }
 
-.singleClergy img {
-  height: 12.5rem; /* 200px -> 12.5rem */
-  width: 12.5rem; /* 200px -> 12.5rem */
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: top;
-}
 @media screen and (max-width: 1024px) {
-  /* Reduce padding for better fit on smaller screens */
   .aboutBreadCrumbsWrapper {
     padding-inline: 4rem;
   }
 
-  /* Stack grid layout to a single column for history content */
   .historyContent {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 90vw;
-    /* border: 1px black solid; */
     margin: 0 auto;
   }
 
-  /* Adjust font sizes for readability */
   .aboutContent h1 {
-    font-size: 2.5rem; /* Reduce h1 font size */
+    font-size: 2.5rem;
   }
 
   .aboutBreadCrumbsWrapper h1 {
-    font-size: 2rem; /* Adjust breadcrumb heading size */
+    font-size: 2rem;
   }
 
   .aboutBreadCrumbs {
-    font-size: 0.875rem; /* 14px for breadcrumb text */
+    font-size: 0.875rem;
   }
 
   .contentImage img {
-    width: 80vw; /* Make image width flexible */
-    max-width: 45rem; /* Maximum width of 480px */
-  }
-  .contentImage {
-    padding-top: 0;
-  }
-  /* Adjust padding for sections */
-  .churchHistory,
-  .ministryTeam,
-  .churchAdministration {
-    /* padding: 2rem; */
-    height: auto; /* Let content define height */
+    width: 80vw;
+    max-width: 45rem;
   }
 
-  /* Stack members in a single column */
   .ministryMembers,
   .administrationMembers {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem; /* Adjust gap */
+    gap: 1rem;
     margin-inline: 0;
     height: auto;
   }
 
   .singleClergy img,
   .singleAdmin img {
-    width: 10rem; /* Reduce image size */
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
   }
+
   .singleAdmin,
   .singleClergy {
     display: flex;
@@ -267,83 +305,59 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  /* Further reduce padding for even smaller screens */
   .aboutBreadCrumbsWrapper {
     padding-inline: 1rem;
   }
+
   .churchHistory {
     width: 100%;
   }
-  .contentImage {
-    padding-top: 0;
-  }
-  /* Adjust grid to stack vertically on small screens */
+
   .historyContent {
     height: auto;
-    /* border: red solid 1px; */
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
   }
-  .Content p {
+
+  .Content p,
+  .churchMission p,
+  .churchVision p,
+  .churchValues li,
+  .churchFAQs li,
+  .churchCommunityInvolvement p,
+  .churchBeliefs p,
+  .churchTestimonies p,
+  .churchMembership p,
+  .ministryMembers,
+  .administrationMembers {
     font-size: 0.9rem;
   }
-  .Content h2 {
+
+  .Content h2,
+  .churchMission h2,
+  .churchVision h2,
+  .churchValues h2,
+  .churchFAQs h2,
+  .churchCommunityInvolvement h2,
+  .churchBeliefs h2,
+  .churchTestimonies h2,
+  .churchMembership h2,
+  .ministryMembers h2,
+  .administrationMembers h2 {
     font-size: 1.1rem;
   }
+
   .Content h3 {
-    font-size: 1rem;
-  }
-  /* Adjust font sizes even smaller */
-  .aboutContent h1 {
-    font-size: 2rem; /* Smaller h1 size */
-  }
-
-  .aboutBreadCrumbsWrapper h1 {
-    font-size: 1.5rem; /* Adjust breadcrumb heading */
-  }
-
-  .aboutBreadCrumbs {
-    font-size: 0.75rem; /* Make breadcrumb text smaller */
+    font-size: 1.1rem;
   }
 
   .contentImage img {
-    width: 90vw; /* Further reduce image width */
-    max-width: 36rem; /* Maximum width of 400px */
+    max-width: 80vw;
   }
-
-  /* Stack members in a single column with tighter spacing */
-  .ministryMembers,
-  .administrationMembers {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-inline: 0;
-    font-size: 0.8rem;
-    /* justify-items: center; */
-  }
-  .singleAdmin,
-  .singleClergy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 11rem;
-    /* border: 1px black solid; */
-    padding-block: 1rem;
-  }
-
   .singleClergy img,
   .singleAdmin img {
-    width: 5rem; /* Reduce image size */
-    height: 5rem;
-  }
-
-  /* Adjust section padding */
-  .churchHistory,
-  .ministryTeam,
-  .churchAdministration {
-    /* padding: 0.5rem; */
-    height: auto;
-    /* border: 1px black solid; */
+    width: 6rem;
+    height: 6rem;
   }
 }
