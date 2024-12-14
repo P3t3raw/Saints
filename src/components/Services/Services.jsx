@@ -69,7 +69,7 @@ export default function Services() {
               </p>
               <p className="title">{service.title}</p>
               <p className="desc">
-                <medium>{service.desc}</medium>
+                <>{service.desc}</>
               </p>
             </div>
           </div>

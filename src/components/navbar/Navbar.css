@@ -57,7 +57,7 @@ nav {
 /* .navLinks li:hover {
   /* background-color: rgba(238, 242, 246, 0.3); 
 } */
-.navLinks li::after {
+/* .navLinks li::after {
   content: "";
   display: block;
   width: 0;
@@ -68,14 +68,14 @@ nav {
   transition: width 0.3s ease;
 }
 .navContainer.active .navLinks li::after {
-  background-color: black; /* Color when navContainer is active */
+  background-color: black;
 }
 .navLinks li:hover::after {
   width: 100%;
 }
 .navContainer .navLinks li::after {
   background-color: white;
-}
+} */
 nav h3 {
   margin: 0;
   padding: 0;

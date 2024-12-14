@@ -180,7 +180,7 @@ body {
 
 @media screen and (max-width: 980px) {
   .background .content .themeText {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: 0.1rem;
   }
@@ -225,7 +225,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .background .content .themeText {
-    font-size: 1.75rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     letter-spacing: 0.1rem;
   }
