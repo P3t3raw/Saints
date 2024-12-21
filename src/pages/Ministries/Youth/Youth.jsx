@@ -5,9 +5,10 @@ import { FaRegHeart } from "react-icons/fa";
 // import { FaChevronRight } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import { FaChevronRight } from "react-icons/fa";
-import fridayService from "../../../assets/YouthMinistry3.jpg";
+import fridayService from "../../../assets/YouthMinistry2.jpg";
 import youth1 from "../../../assets/YouthMinistry6.jpg";
-import youth2 from "../../../assets/youthMin.jpg";
+import youth2 from "../../../assets/YouthMinistry3.jpg";
+import youth4 from "../../../assets/youthMin.jpg";
 import youth3 from "../../../assets/YouthMinistry1.jpg";
 import youth5 from "../../../assets/youthMinistry.jpg";
 export default function Youth() {
@@ -55,7 +56,7 @@ export default function Youth() {
                 <span style={{ color: "#a7a7a7" }}>~ 1 Timothy 4:12 ~</span>
               </p>
             </div>
-            <img src={youth2} alt="Youth" />
+            <img src={youth4} alt="Youth" />
           </div>
         </div>
       </Reveal>
@@ -140,33 +141,11 @@ export default function Youth() {
                 </li>
               </ul>
             </div>
-            <h2>Get Involved</h2>
-            <p>
-              Our Men's Ministry offers a variety of ways to connect, grow, and
-              serve. Whether you're looking for fellowship, mentorship, or
-              opportunities to give back, there’s a place for you here.
-            </p>
-            <ul>
-              <li>
-                <strong>Volunteer for Events</strong>
-                <p>
-                  Help plan and execute events like retreats, breakfasts, and
-                  service projects.
-                </p>
-              </li>
-
-              <li>
-                <strong>Support Outreach Projects</strong>
-                <p>
-                  Join initiatives to support our community through charity work
-                  and service.
-                </p>
-              </li>
-            </ul>
+           
           </div>
           <div>
             <h2>Upcoming Events</h2>
-            <ul>
+            <ul className="events">
               <li>
                 <strong>Men's Breakfast</strong> - Dec 25, 2024
                 <p>

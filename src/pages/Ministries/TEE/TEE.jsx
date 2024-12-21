@@ -153,32 +153,9 @@ function Children() {
                 </li>
               </ul>
             </div>
-
-            <h2>Get Involved in TEE Ministry</h2>
-            <p>
-              If you're passionate about growing in your faith and preparing for
-              ministry, the TEE Ministry offers numerous opportunities to
-              engage:
-            </p>
-            <ul>
-              <li>
-                <strong>Enroll in a Course</strong> - Join the next cohort and
-                begin your journey of theological education through TEE.
-              </li>
-              <li>
-                <strong>Become a Facilitator</strong> - Lead and guide study
-                groups, helping others grow in their understanding of the
-                Scriptures and ministry.
-              </li>
-              <li>
-                <strong>Support the Program</strong> - Assist in the logistical
-                or financial support of the TEE Ministry, ensuring that more
-                people have access to theological education.
-              </li>
-            </ul>
-
+            
             <h2>Upcoming TEE Events</h2>
-            <ul>
+            <ul className="events">
               <li>
                 <strong>Theology in Practice Workshop</strong> - Mar 12, 2025
                 <p>

@@ -1,11 +1,11 @@
-import "../Children/Children.css";
+import "./Kama.css";
 import Reveal from "../../../utils/Reveal";
 import { FaChevronRight } from "react-icons/fa";
 import kama from "../../../assets/364161928_619471003607961_5698538392905565876_n.jpg";
-import kama2 from "../../../assets/KAMA.jpg";
-import kama3 from "../../../assets/KAMA.jpg";
+import kama2 from "../../../assets/IMG_6799.JPG";
+import kama3 from "../../../assets/IMG_6742.JPG";
 import kama4 from "../../../assets/KAMA.jpg";
-import kama5 from "../../../assets/KAMA.jpg";
+import kama5 from "../../../assets/IMG_6840.JPG";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import { FaRegHeart } from "react-icons/fa";
 
@@ -122,34 +122,11 @@ function Children() {
                   </span>
                 </li>
               </ul>
-            </div>
-            <h2>Get Involved</h2>
-            <p>
-              Our Men's Ministry offers a variety of ways to connect, grow, and
-              serve. Whether you're looking for fellowship, mentorship, or
-              opportunities to give back, there’s a place for you here.
-            </p>
-            <ul>
-              <li>
-                <strong>Volunteer for Events</strong>
-                <p>
-                  Help plan and execute events like retreats, breakfasts, and
-                  service projects.
-                </p>
-              </li>
-
-              <li>
-                <strong>Support Outreach Projects</strong>
-                <p>
-                  Join initiatives to support our community through charity work
-                  and service.
-                </p>
-              </li>
-            </ul>
+            </div>           
           </div>
           <div>
             <h2>Upcoming Events</h2>
-            <ul>
+            <ul className="events">
               <li>
                 <strong>Men's Breakfast</strong> - Dec 25, 2024
                 <p>
@@ -158,14 +135,7 @@ function Children() {
                   and purpose.
                 </p>
               </li>
-              <li>
-                <strong>Community Service Day</strong> - Jan 15, 2025
-                <p>
-                  Let’s give back to the community! We’ll be volunteering at the
-                  local shelter to serve meals and provide support to those in
-                  need.
-                </p>
-              </li>
+             
               <li>
                 <strong>Men’s Retreat</strong> - Feb 10-12, 2025
                 <p>
@@ -174,13 +144,7 @@ function Children() {
                   to recharge.
                 </p>
               </li>
-              <li>
-                <strong>Leadership Workshop</strong> - Mar 5, 2025
-                <p>
-                  Enhance your leadership skills and learn how to lead
-                  effectively in your family, church, and community.
-                </p>
-              </li>
+              
             </ul>
 
             <h2>Contact Us</h2>

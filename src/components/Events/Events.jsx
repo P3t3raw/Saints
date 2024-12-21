@@ -2,17 +2,40 @@ import "./Events.css";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 import { MdLocationCity } from "react-icons/md";
-import image1 from "../../assets/pexels-jibarofoto-2014775.jpg";
+import image1 from "../../assets/bg2.jpg";
+import image2 from "../../assets/IMG-20241213-WA0010.jpg";
+import image3 from "../../assets/altar.jpg";
 
 const Events = () => {
   const events = [
     {
       id: 1,
-      imgSrc: image1,
-      title: "The Crossover night worhip and prayer",
-      date: "31st, December 2024 ",
+      imgSrc: image2,
+      title: "Christmas Service",
+      date: "25th, Dec 2024 ",
       location: "ACK St.Peter's Embakasi",
     },
+    {
+      id: 2,
+      imgSrc: image1,
+      title: "The Crossover night worhip and prayer",
+      date: "31st, Dec 2024 ",
+      location: "ACK St.Peter's Embakasi",
+    },
+    {
+      id: 3,
+      imgSrc: image3,
+      title: "New Year Service",
+      date: "1st, Jan 2025 ",
+      location: "ACK St.Peter's Embakasi",
+    },
+    // {
+    //   id: 1,
+    //   imgSrc: image1,
+    //   title: "The Crossover night worhip and prayer",
+    //   date: "31st, December 2024 ",
+    //   location: "ACK St.Peter's Embakasi",
+    // },
   ];
   // const displayedEvents = events.slice(0, 2);
   return (

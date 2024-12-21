@@ -4,6 +4,12 @@ import Reveal from "../../utils/Reveal";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 import vicarImage from "../../assets/Ven.jpg";
+import layCanonImage from "../../assets/IMG_6818.JPG"
+import layreaderImage from "../../assets/IMG_6816.JPG"
+import layreaderImageT from "../../assets/IMG_6802.JPG"
+import captainImage from "../../assets/IMG_6779.JPG"
+import parishSecretaryImage from "../../assets/IMG_6740.JPG"
+import mediaDirectorImage from "../../assets/IMG_6840.JPG"
 import profileImage from "../../assets/profileIcon.png";
 import churchImage from "../../assets/church1.jpg";
 
@@ -23,21 +29,33 @@ function AboutUs() {
     },
     {
       id: 3,
-      imgSrc: profileImage,
+      imgSrc: captainImage,
       title: "Evangelist",
-      name: "Capt. Peter Owuor",
+      name: "Rev. Capt. Peter Owuor",
     },
     {
       id: 4,
-      imgSrc: profileImage,
-      title: "LayCanon",
-      name: "Elizabeth",
+      imgSrc: layCanonImage,
+      title: "Lay Canon",
+      name: "Elizabeth Onyango",
     },
     {
       id: 5,
+      imgSrc: layreaderImage,
+      title: "Layreader",
+      name: "Tabitha Kinyanjui",
+    },
+    {
+      id: 6,
+      imgSrc: layreaderImageT,
+      title: "Layreader",
+      name: "Titus Muruthi",
+    },
+    {
+      id: 7,
       imgSrc: profileImage,
-      title: "LayReader",
-      name: "Tabitha",
+      title: "Layreader",
+      name: "Jane Oyieko",
     },
   ];
 
@@ -46,32 +64,32 @@ function AboutUs() {
       id: 1,
       imgSrc: profileImage,
       title: "Vicar's Warden",
-      name: "Full name",
+      name: "Mr. Zablon Omungo",
     },
     {
       id: 2,
       imgSrc: profileImage,
       title: "People's Warden",
-      name: "Name",
+      name: "Mr. Geoffrey Kung'u",
     },
     {
       id: 3,
-      imgSrc: profileImage,
-      title: "Vicar",
-      name: "",
+      imgSrc: parishSecretaryImage,
+      title: "Parish Secretary",
+      name: "Mr. Fred Opondo",
     },
     {
       id: 4,
-      imgSrc: profileImage,
-      title: "Parish Secretary",
-      name: "",
+      imgSrc: mediaDirectorImage,
+      title: "Media Director",
+      name: "Mr. Brian Were",
     },
-    {
-      id: 5,
-      imgSrc: profileImage,
-      title: "",
-      name: "",
-    },
+    // {
+    //   id: 5,
+    //   imgSrc: profileImage,
+    //   title: "",
+    //   name: "",
+    // },
   ];
 
   return (
@@ -101,26 +119,22 @@ function AboutUs() {
               <h2>Our Church History</h2>
               <p>
                 Founded in 1968, ACK St. Peter’s Embakasi began as a small
-                gathering of believers with a desire to worship and serve God
-                within the growing Embakasi community. Initially under the
-                guidance of St. Stephen's Church, Jogoo Road, the congregation
+                gathering of believers initially under the
+                guidance of St. Stephen's Church, Jogoo Road. The congregation
                 settled in the Mabatini area in the early 1970s, sharing a
                 temporary structure with the Friends Church and Salvation Army.
                 During this time, the church was nurtured under the leadership
-                of Archdeacon Kenneth Stovold and Rev. Oduma. <br />
+                of Archdeacon Kenneth Stovold and Rev. Oduma.
                 In April 1983, during Easter Sunday, the parish was officially
                 inaugurated by the late Archbishop, the Most Rev. Manasses
                 Kuria, with Rev. Moses Ndungu as its first vicar. The following
-                year, the church was blessed with its current land. A temporary
-                structure was set up between June and August 1984, serving the
+                year, the church was blessed with its current land in which a temporary
+                structure was set up serving the
                 congregation for 16 years. As the Embakasi area grew, so did the
                 church, becoming a cornerstone of spiritual life in the
-                community throughout the 1980s and 1990s. <br />
+                community throughout the 1980s and 1990s.
                 Today, ACK St. Peter’s Embakasi continues to thrive as a beacon
-                of hope, community, and transformation. In addition to its
-                larger worship hall, the church has expanded to include
-                classrooms for Sunday school and other facilities to support the
-                growing needs of the parish. From humble beginnings, it has
+                of hope, community, and transformation. From humble beginnings, it has
                 grown into a vibrant and dynamic congregation, offering
                 spiritual guidance, worship, and support to the Embakasi
                 community and beyond.
@@ -169,7 +183,7 @@ function AboutUs() {
         </div>
       </Reveal>
 
-      {/* Community Involvement Section */}
+      {/* Community Involvement Section
       <Reveal>
         <div className="churchCommunityInvolvement">
           <h2>Community Involvement</h2>
@@ -183,20 +197,20 @@ function AboutUs() {
       </Reveal>
 
       {/* What We Believe Section */}
-      <Reveal>
-        <div className="churchBeliefs">
-          <h2>What We Believe</h2>
-          <p>
-            We believe in the one true God, who exists in three persons: God the
-            Father, God the Son, and God the Holy Spirit. We believe that
-            salvation is through faith in Jesus Christ alone, and that the Bible
-            is the inspired Word of God, the ultimate authority in our lives.
-          </p>
-        </div>
-      </Reveal>
+      {/* <Reveal>
+      //   <div className="churchBeliefs">
+      //     <h2>What We Believe</h2>
+      //     <p>
+      //       We believe in the one true God, who exists in three persons: God the
+      //       Father, God the Son, and God the Holy Spirit. We believe that
+      //       salvation is through faith in Jesus Christ alone, and that the Bible
+      //       is the inspired Word of God, the ultimate authority in our lives.
+      //     </p>
+      //   </div>
+      </Reveal> */}
 
       {/* Testimonies Section */}
-      <Reveal>
+      {/* <Reveal>
         <div className="churchTestimonies">
           <h2>Testimonies</h2>
           <p>
@@ -219,10 +233,10 @@ function AboutUs() {
             </li>
           </ul>
         </div>
-      </Reveal>
+      </Reveal> */}
 
       {/* Membership & Joining the Church Section */}
-      <Reveal>
+      {/* <Reveal>
         <div className="churchMembership">
           <h2>Membership & Joining the Church</h2>
           <p>
@@ -232,10 +246,10 @@ function AboutUs() {
             membership. Contact us for more details!
           </p>
         </div>
-      </Reveal>
+      </Reveal> */}
 
       {/* FAQs Section */}
-      <Reveal>
+      {/* <Reveal>
         <div className="churchFAQs">
           <h2>FAQs</h2>
           <ul>
@@ -260,7 +274,7 @@ function AboutUs() {
             </li>
           </ul>
         </div>
-      </Reveal>
+      </Reveal> */}
 
       {/* Clergy Team Section */}
       <Reveal>

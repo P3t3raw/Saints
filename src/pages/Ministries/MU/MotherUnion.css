@@ -53,6 +53,12 @@
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
+.events {
+  background-color: #e9ecef;
+  padding: 0.625rem; /* 10px converted to rem */
+  margin: 0.625rem 0; /* 10px converted to rem */
+  border-left: 0.3125rem solid #007bff; /* 5px converted to rem */
+}
 @keyframes fade {
   0%,
   20% {

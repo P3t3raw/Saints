@@ -2,7 +2,7 @@ import "./Services.css";
 import { LuDot } from "react-icons/lu";
 import fridayService from "../../assets/fridayService1.jpg";
 import youthService from "../../assets/YouthMinistry5.jpg";
-import englishService from "../../assets/englishService.jpg";
+import englishService from "../../assets/IMG_6809.JPG";
 import kiswahiliService from "../../assets/swahiliService.jpg";
 import { useMemo } from "react";
 
@@ -29,7 +29,7 @@ export default function Services() {
         id: 3,
         imgSrc: englishService,
         title: "English Service",
-        desc: "Worship with us in unity during our uplifting and insightful English Service, where the sermons and music create a spiritually enriching experience for all attendees.",
+        desc: "Worship with us during our uplifting and insightful English Service, where the sermons and music create a spiritually enriching experience for all attendees.",
         time: "9.30 am - 11.30 am",
         day: "Sunday",
       },

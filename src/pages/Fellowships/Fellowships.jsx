@@ -12,7 +12,7 @@ export default function Fellowships() {
       {
         id: 1,
         imgSrc: mradiImage,
-        title: "Mradi Fellowship",
+        title: "Baraka Fellowship",
         meetingDate: "Fri Oct 25, 2024",
         meetingTime: "5:00PM - 10:00PM",
         hostName: "Miss. Hellen",
@@ -40,7 +40,7 @@ export default function Fellowships() {
       {
         id: 2,
         imgSrc: juakaliImage,
-        title: "Jua Kali Fellowship",
+        title: "Juakali Fellowship",
         meetingDate: "Fri Oct 25, 2024",
         meetingTime: "5:00PM - 10:00PM",
         hostName: "Miss. Hellen",
@@ -67,7 +67,7 @@ export default function Fellowships() {
       {
         id: 3,
         imgSrc: mradiImage,
-        title: "Outer Fellowship",
+        title: "Mradi Fellowship",
         meetingDate: "Fri Oct 25, 2024",
         meetingTime: "5:00PM - 10:00PM",
         hostName: "Miss. Hellen",
@@ -93,6 +93,87 @@ export default function Fellowships() {
       },
       {
         id: 4,
+        imgSrc: mradiImage,
+        title: "Outer Fellowship",
+        meetingDate: "Fri Oct 25, 2024",
+        meetingTime: "5:00PM - 10:00PM",
+        hostName: "Miss. Hellen",
+        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        tagline: "Empowering Faith, Building Community",
+        location: "St. John's Community Center, Nairobi, Kenya",
+        mission:
+          "To inspire spiritual growth and develop leaders who will impact their communities through faith and service.",
+        vision:
+          "To create a vibrant community of individuals who are grounded in faith and committed to transforming society through compassionate service and leadership.",
+        history:
+          "Mradi Fellowship was founded in 2018 as a gathering of young adults seeking a space for spiritual growth, leadership development, and community service. Since then, it has grown to become a supportive network that encourages faith-based personal and professional development.",
+        membershipEligibility:
+          "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
+        howToJoin:
+          "Contact us through our website or visit one of our regular Friday meetings to learn more and get involved.",
+        contact: "Email: info@mradi.org | Phone: +254 700 000 000",
+        leadershipTeam: [
+          { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
+          { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
+          { name: "Ms. Jane Smith", role: "Bible Study Leader" },
+        ],
+      },
+      {
+        id: 5,
+        imgSrc: mradiImage,
+        title: "Nyayo 1 Fellowship",
+        meetingDate: "Fri Oct 25, 2024",
+        meetingTime: "5:00PM - 10:00PM",
+        hostName: "Miss. Hellen",
+        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        tagline: "Empowering Faith, Building Community",
+        location: "St. John's Community Center, Nairobi, Kenya",
+        mission:
+          "To inspire spiritual growth and develop leaders who will impact their communities through faith and service.",
+        vision:
+          "To create a vibrant community of individuals who are grounded in faith and committed to transforming society through compassionate service and leadership.",
+        history:
+          "Mradi Fellowship was founded in 2018 as a gathering of young adults seeking a space for spiritual growth, leadership development, and community service. Since then, it has grown to become a supportive network that encourages faith-based personal and professional development.",
+        membershipEligibility:
+          "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
+        howToJoin:
+          "Contact us through our website or visit one of our regular Friday meetings to learn more and get involved.",
+        contact: "Email: info@mradi.org | Phone: +254 700 000 000",
+        leadershipTeam: [
+          { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
+          { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
+          { name: "Ms. Jane Smith", role: "Bible Study Leader" },
+        ],
+      },
+      {
+        id: 6,
+        imgSrc: mradiImage,
+        title: "Nyayo 2 Fellowship",
+        meetingDate: "Fri Oct 25, 2024",
+        meetingTime: "5:00PM - 10:00PM",
+        hostName: "Miss. Hellen",
+        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        tagline: "Empowering Faith, Building Community",
+        location: "St. John's Community Center, Nairobi, Kenya",
+        mission:
+          "To inspire spiritual growth and develop leaders who will impact their communities through faith and service.",
+        vision:
+          "To create a vibrant community of individuals who are grounded in faith and committed to transforming society through compassionate service and leadership.",
+        history:
+          "Mradi Fellowship was founded in 2018 as a gathering of young adults seeking a space for spiritual growth, leadership development, and community service. Since then, it has grown to become a supportive network that encourages faith-based personal and professional development.",
+        membershipEligibility:
+          "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
+        howToJoin:
+          "Contact us through our website or visit one of our regular Friday meetings to learn more and get involved.",
+        contact: "Email: info@mradi.org | Phone: +254 700 000 000",
+        leadershipTeam: [
+          { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
+          { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
+          { name: "Ms. Jane Smith", role: "Bible Study Leader" },
+        ],
+      },
+      {
+        id: 7,
         imgSrc: mradiImage,
         title: "Police Line Fellowship",
         meetingDate: "Fri Oct 25, 2024",
@@ -192,12 +273,12 @@ export default function Fellowships() {
                 <h3>History</h3>
                 <p>{selectedFellowship.history}</p>
               </div>
-              <div className="missionVision">
+              {/* <div className="missionVision">
                 <h3>Mission</h3>
                 <p>{selectedFellowship.mission}</p>
                 <h3>Vision</h3>
                 <p>{selectedFellowship.vision}</p>
-              </div>
+              </div> */}
             </div>
             <div className="rightCardPart">
               <div className="membershipInfo">

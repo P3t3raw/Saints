@@ -6,9 +6,9 @@ import { BiMusic } from "react-icons/bi";
 import { FaChevronRight } from "react-icons/fa";
 import worshipImg from "../../../assets/worshipTeam.jpg";
 import worshipImg2 from "../../../assets/swahiliService.jpg";
-import worshipImg3 from "../../../assets/YouthMinistry5.jpg";
-import worshipImg4 from "../../../assets/youthService.jpg";
-import worshipImg5 from "../../../assets/englishService.jpg";
+import worshipImg3 from "../../../assets/choir.JPG";
+import worshipImg4 from "../../../assets/IMG_6807.JPG";
+import worshipImg5 from "../../../assets/IMG_6804.JPG";
 import Reveal from "../../../utils/Reveal";
 import { GiGuitar } from "react-icons/gi";
 export default function PraiseTeam() {
@@ -170,40 +170,11 @@ export default function PraiseTeam() {
                 </li>
               </ul>
             </div>
-            <h2>Get Involved</h2>
-            <p>
-              If you have a passion for music and worship, the Music Ministry
-              welcomes you to join us! Whether you sing, play an instrument, or
-              assist with sound and tech, there’s a place for you to serve.
-            </p>
-            <ul>
-              <li>
-                <strong>Join the Praise and Worship Team</strong>
-                <p>
-                  Lead contemporary worship through singing and playing
-                  instruments. Commitment to rehearsals and a heart for worship
-                  are essential.
-                </p>
-              </li>
-              <li>
-                <strong>Be Part of the Church Choir</strong>
-                <p>
-                  Sing in harmony with others, performing traditional hymns and
-                  anthems during services and special occasions.
-                </p>
-              </li>
-              <li>
-                <strong>Support with Sound and Tech</strong>
-                <p>
-                  Help manage audio-visual equipment, ensuring the quality of
-                  sound during services and rehearsals.
-                </p>
-              </li>
-            </ul>
+            
           </div>
           <div>
             <h2>Upcoming Events</h2>
-            <ul>
+            <ul className="events">
               <li>
                 <strong>Worship Night</strong> - Dec 20, 2024
                 <p>

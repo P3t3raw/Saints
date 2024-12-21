@@ -5,34 +5,29 @@ import "./Welfare.css";
 
 export default function Welfare() {
   const programDetails = {
-    title: "Welfare",
-    overview: "Providing immediate financial relief for families in crisis",
+    title: "ACK St. Peter's Church Embakasi Welfare Association",
+    overview: "A non-political, non-sectarian, voluntary self-Help group of members",
     objectives: [
-      "Assist families in financial crisis",
-      "Provide rent and utility support",
-      "Offer help with medical expenses",
-      "Ensure well-being of community members in urgent need",
+      "To mobilize members of ACK St Peters Embakasi church and individuals to share and participate in aspects of weddings and bereavement.",
+      "To be a forum where members support each other financially, socially, emotionally, mentally and spiritually when necessary.",
+      "To promote church development",
+      "To do all such other things as are incidental or conducive to the attainment of all or any of the foregoing objectives.",
     ],
-    targetAudience:
-      "Church members and local residents experiencing unexpected financial hardship",
+    qualifications: [
+      "Be aged 18 years and above.",
+      "Contributor must be a registered member of ACK St. Peter's Church Embakasi and active member of the relevant estate fellowship.",
+      "New members of the church shall be admitted to the welfare after 60 days since the date of registration as members of the Church.",
+      "A grace period of three months from the date of registration to be able to qualify for any benefits.",
+      "Be a person of a sound mind",
+      "Be willing to abide by all the rules and regulations of the Associtation.",
+
+    ],
     description:
-      "Our Emergency Financial Aid Program aims to offer quick financial assistance to individuals and families in need of support during times of crisis. Whether it’s help with rent, medical bills, or utilities, we are here to provide temporary relief and guidance.",
-    aidTypes: [
-      "Rent payment assistance",
-      "Utility bill support",
-      "Medical expenses",
-      "Transportation costs",
-      "Food vouchers",
-    ],
+      "ACK St. Peter's Church Embakasi Welfare Association aims to offer quick financial assistance to individuals and families in need of support during times of crisis.",
+   
     applicationProcess:
-      "Contact our office at (555) 123-4567 or email welfare@church.org to apply. Submit required documentation and explain your crisis situation.",
-    timeline:
-      "Available year-round with funds disbursed within 48 hours of approval.",
-    volunteerOpportunities: [
-      "Help with application processing",
-      "Donate to the fund",
-      "Volunteer during fundraising events",
-    ],
+      "Visit the church office or contact us at 0110008603 to apply.",
+   
     testimonials: [
       {
         quote:
@@ -45,15 +40,16 @@ export default function Welfare() {
         name: "James, Recipient",
       },
     ],
-    partners: ["Local businesses", "Community outreach programs"],
+   
     gallery: [
       "https://bacc.cc/wp-content/uploads/2023/11/gallery-tgs-tall.jpg",
       "https://bacc.cc/wp-content/uploads/2023/11/gallery-tgs-tall.jpg",
     ],
-    cta: "Donate to our Emergency Financial Aid Program today!",
     contact: { email: "welfare@church.org", phone: "(555) 123-4567" },
-    updates: ["Fundraising drive for the upcoming quarter: Goal - $10,000"],
-    budget: { goal: "10,000 USD", raised: "5,000 USD" },
+    updates: ["All members are urged to settle their arrears.",
+      "The committee wishes you merry christmas and a happy new year 2025!"
+    ],
+    
   };
 
   return (
@@ -85,26 +81,29 @@ export default function Welfare() {
           </div>
           <div>
             <h2>Program Objectives</h2>
-            <ul>
+            <ol>
               {programDetails.objectives.map((objective, index) => (
                 <li key={index}>{objective}</li>
               ))}
-            </ul>
+            </ol>
+          </div>         
+          <div>
+            <h2>Membership Qualifications</h2>
+            <ol>
+              {programDetails.qualifications.map((qualification, index)=>(
+                <li key={index}>{qualification}</li>
+              ))}
+            </ol>
           </div>
           <div>
             <h2>Recent Updates</h2>
-            <ul>
+            <ol>
               {programDetails.updates.map((update, index) => (
                 <li key={index}>{update}</li>
               ))}
-            </ul>
+            </ol>
           </div>
-          {/* <div>
-            <h2>Program Budget</h2>
-            <p>Goal: {programDetails.budget.goal}</p>
-            <p>Raised: {programDetails.budget.raised}</p>
-          </div>
-          <div>
+          {/*<div>
             <h2>Gallery</h2>
             <div className="gallery">
               {programDetails.gallery.map((image, index) => (
@@ -119,7 +118,7 @@ export default function Welfare() {
         </div>
         <div className="rightWelfarePart">
           <div>
-            <h2>How to Apply</h2>
+            <h2>How to Become A Member</h2>
             <p>{programDetails.applicationProcess}</p>
           </div>
 
@@ -139,7 +138,7 @@ export default function Welfare() {
                 (window.location.href = `mailto:${programDetails.contact.email}`)
               }
             >
-              Donate or Get Involved
+              Become a Member
             </button>
           </div>
         </div>

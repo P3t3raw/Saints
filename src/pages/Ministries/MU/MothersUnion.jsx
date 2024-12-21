@@ -2,11 +2,11 @@
 // import "./MotherUnion.css";
 import "../Children/Children.css";
 import { FaChevronRight } from "react-icons/fa";
-import mothersUnion from "../../../assets/357746491_619471053607956_411327406936014473_n.jpg";
-import mothersUnion2 from "../../../assets/englishService.jpg";
-import mothersUnion3 from "../../../assets/MU.jpg";
+import mothersUnion from "../../../assets/MU.jpg";
+import mothersUnion2 from "../../../assets/357746491_619471053607956_411327406936014473_n.jpg";
+import mothersUnion3 from "../../../assets/IMG_6818.JPG";
 import mothersUnion4 from "../../../assets/MU.jpg";
-import mothersUnion5 from "../../../assets/englishService.jpg";
+import mothersUnion5 from "../../../assets/IMG_6816.JPG";
 import { FaRegHeart } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import Reveal from "../../../utils/Reveal";
@@ -121,34 +121,11 @@ function Children() {
                   </span>
                 </li>
               </ul>
-            </div>
-            <h2>Get Involved</h2>
-            <p>
-              The Mother's Union Ministry offers numerous ways for women to
-              connect, grow, and contribute. Whether you're seeking spiritual
-              growth, fellowship, or opportunities to give back, you'll find a
-              welcoming space here.
-            </p>
-            <ul>
-              <li>
-                <strong>Volunteer for Events</strong>
-                <p>
-                  Help plan and organize events like retreats, workshops, and
-                  outreach programs to make a difference in our community.
-                </p>
-              </li>
-              <li>
-                <strong>Support Outreach Projects</strong>
-                <p>
-                  Join hands in initiatives aimed at uplifting families and
-                  individuals through acts of love and service.
-                </p>
-              </li>
-            </ul>
+            </div>           
           </div>
           <div>
             <h2>Upcoming Events</h2>
-            <ul>
+            <ul className="events"> 
               <li>
                 <strong>Women's Prayer Breakfast</strong> - Dec 25, 2024
                 <p>

@@ -9,59 +9,40 @@ export default function Notices() {
   const notices = [
     {
       id: 1,
-      title: "Community Outreach Day",
-      department: "Outreach Ministry",
+      title: "Annual Subscription",
+      department: "KAMA",
       description:
-        "Join us this Saturday as we reach out to the local community with acts of kindness and service. Volunteers needed!",
+        "All men are requested to honor their pledges for annual subscription through PAYBILL: 247247 ACCOUNT NUMBER: 808800#YOURNAME",
     },
     {
       id: 2,
-      title: "Women's Fellowship",
-      department: "Mother's Union",
+      title: "QUOTAS",
+      department: "Administration",
       description:
-        "All women are invited to a time of fellowship and spiritual growth. This week's theme: 'The Power of Prayer'.",
+        "Every year, the church allocates Quotas to church departments towards supporting the church operations. Most of these department are yet to offset their allocation for this. We encourage department leaders to work towards offsetting the Quotas.",
     },
     {
       id: 3,
-      title: "Men's Prayer Breakfast",
-      department: "KAMA Desk",
+      title: "New Members",
+      department: "Choir",
       description:
-        "A special prayer breakfast for all men. Come and enjoy a morning of inspiration, fellowship, and food!",
+        "-	The Choir is humbly requesting members of the congregation who would like to join the choir to see the Choir trainer or any choir member.",
     },
     {
       id: 4,
-      title: "Children's Bible Camp",
-      department: "Sunday School",
+      title: "Welfare Membership",
+      department: "Welfare",
       description:
-        "Parents, don't miss the opportunity to enroll your children in this year's Bible camp! Activities, games, and spiritual lessons.",
+        "We continue to urge church members who have not yet joined the welfare to consider doing so. Benefits are as outlined in the Welfare Constitution and Strategic Plan.",
     },
     {
       id: 5,
-      title: "Youth Leadership Training",
-      department: "Youth Ministry",
+      title: "Welfare Arrears",
+      department: "Welfare",
       description:
-        "All youths interested in leadership roles are invited to a special training session this Friday at 6 PM in the main hall.",
+        "We also continue urging welfare members to continue off setting their arrears.",
     },
-    {
-      id: 6,
-      title: "Marriage Seminar",
-      department: "Family Ministry",
-      description:
-        "Couples are encouraged to attend the upcoming marriage seminar with guest speaker Pastor David. Registration is open.",
-    },
-    {
-      id: 7,
-      title: "Choir Rehearsal",
-      department: "Worship Team",
-      description:
-        "Choir members, please note that there will be a special rehearsal on Wednesday at 5:30 PM in preparation for the Easter service.",
-    },
-    {
-      id: 8,
-      title: "Elders' Meeting",
-      department: "Church Elders",
-      description: "A reminder for all",
-    },
+   
   ];
 
   const handleFlip = (id) => {

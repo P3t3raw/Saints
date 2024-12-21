@@ -179,33 +179,11 @@ function Children() {
                 </li>
               </ul>
             </div>
-            <h2>Get Involved</h2>
-            <p>
-              The Sunday School Ministry welcomes volunteers, parents, and
-              anyone passionate about guiding children in their spiritual
-              journey. Join us to make a difference in the lives of the next
-              generation.
-            </p>
-            <ul>
-              <li>
-                <strong>Volunteer as a Teacher</strong>
-                <p>
-                  Lead or assist in teaching classes, sharing God’s Word with
-                  children, and helping them grow spiritually.
-                </p>
-              </li>
-              <li>
-                <strong>Support Ministry Events</strong>
-                <p>
-                  Help organize and execute special events such as Vacation
-                  Bible School, Christmas plays, and outreach programs.
-                </p>
-              </li>
-            </ul>
+            
           </div>
           <div>
             <h2>Upcoming Events</h2>
-            <ul>
+            <ul className="events">
               <li>
                 <strong>Christmas Play Rehearsal</strong> - Dec 15, 2024
                 <p>
