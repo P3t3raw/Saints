@@ -100,22 +100,30 @@ function AboutUs() {
             <div className="Content">
               <h2>Our Church History</h2>
               <p>
-                Founded in 1972, ACK St. Peter’s Embakasi began as a small
-                gathering of believers who came together with a desire to
-                worship and serve God in the growing Embakasi community. Under
-                the guidance of the Anglican Church of Kenya (ACK), the church
-                started as a modest building where a few families would meet for
-                Sunday services and fellowship. As the Embakasi area expanded,
-                so did the church. Throughout the 1980s and 1990s, St. Peter’s
-                became a cornerstone of spiritual life in the community,
-                offering a place of worship, guidance, and support.In the 2000s,
-                with a growing congregation, ACK St. Peter’s embarked on a major
-                expansion project to accommodate its increasing membership. This
-                included the construction of a larger worship hall, classrooms
-                for Sunday school, and various church facilities to support the
-                growing needs of the parish. Today, ACK St. Peter’s Embakasi
-                continues to thrive, serving not only as a place of worship but
-                also as a beacon of hope, community, and transformation.
+                Founded in 1968, ACK St. Peter’s Embakasi began as a small
+                gathering of believers with a desire to worship and serve God
+                within the growing Embakasi community. Initially under the
+                guidance of St. Stephen's Church, Jogoo Road, the congregation
+                settled in the Mabatini area in the early 1970s, sharing a
+                temporary structure with the Friends Church and Salvation Army.
+                During this time, the church was nurtured under the leadership
+                of Archdeacon Kenneth Stovold and Rev. Oduma. <br />
+                In April 1983, during Easter Sunday, the parish was officially
+                inaugurated by the late Archbishop, the Most Rev. Manasses
+                Kuria, with Rev. Moses Ndungu as its first vicar. The following
+                year, the church was blessed with its current land. A temporary
+                structure was set up between June and August 1984, serving the
+                congregation for 16 years. As the Embakasi area grew, so did the
+                church, becoming a cornerstone of spiritual life in the
+                community throughout the 1980s and 1990s. <br />
+                Today, ACK St. Peter’s Embakasi continues to thrive as a beacon
+                of hope, community, and transformation. In addition to its
+                larger worship hall, the church has expanded to include
+                classrooms for Sunday school and other facilities to support the
+                growing needs of the parish. From humble beginnings, it has
+                grown into a vibrant and dynamic congregation, offering
+                spiritual guidance, worship, and support to the Embakasi
+                community and beyond.
               </p>
             </div>
             <div className="contentImage">
@@ -153,10 +161,10 @@ function AboutUs() {
         <div className="churchValues">
           <h2>Our Core Values</h2>
           <ul>
-            <li>Faith: Trusting in God’s plan for us</li>
-            <li>Community: Building relationships that reflect God's love</li>
-            <li>Service: Serving others in our church and community</li>
-            <li>Compassion: Caring for the needs of the vulnerable</li>
+            <li>Ministry</li>
+            <li>Community</li>
+            <li>Integrity</li>
+            <li>Transformation and Accountability</li>
           </ul>
         </div>
       </Reveal>

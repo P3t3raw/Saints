@@ -1,42 +1,16 @@
 import "./Events.css";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
-import image3 from "../../assets/youthMin.jpg";
 import { MdLocationCity } from "react-icons/md";
-import image1 from "../../assets/PrayerWatch.jpg";
-// import { Link } from "react-router-dom";
-import image2 from "../../assets/worshipTeam.jpg";
+import image1 from "../../assets/pexels-jibarofoto-2014775.jpg";
 
 const Events = () => {
   const events = [
     {
       id: 1,
       imgSrc: image1,
-      title: "Prayer Watch Embakasi Edition",
-      date: "7th July, 2024 ",
-      location: "ACK St.Peter's Embakasi",
-    },
-    {
-      id: 2,
-      imgSrc: image2,
-      title: "Join Us For Celebration Sunday",
-      date: "28th July, 2024 ",
-      time: "8:00 am - 9:30 am",
-      location: "ACK St.Peter's Embakasi",
-    },
-
-    {
-      id: 3,
-      imgSrc: image3,
-      title: "Know Jesus Christ Better Through Bible Study",
-      date: "Friday, 6:00 pm",
-      location: "ACK St.Peter's Embakasi",
-    },
-    {
-      id: 4,
-      imgSrc: image1,
-      title: "Prayer Watch Embakasi Edition",
-      date: "7th July, 2024 ",
+      title: "The Crossover night worhip and prayer",
+      date: "31st, December 2024 ",
       location: "ACK St.Peter's Embakasi",
     },
   ];
