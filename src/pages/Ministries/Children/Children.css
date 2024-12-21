@@ -106,7 +106,7 @@
   height: 35rem;
   object-fit: cover;
   object-position: top center;
-  border-radius: 15rem 0 15rem 15rem;
+  border-radius: 0.6rem ;
 }
 .row2 {
   display: flex;
