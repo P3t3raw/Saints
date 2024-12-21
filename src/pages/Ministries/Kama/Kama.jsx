@@ -1,4 +1,4 @@
-import "./Kama.css";
+import "../Children/Children.css";
 import Reveal from "../../../utils/Reveal";
 import { FaChevronRight } from "react-icons/fa";
 import kama from "../../../assets/364161928_619471003607961_5698538392905565876_n.jpg";
