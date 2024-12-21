@@ -14,7 +14,7 @@
 }
 .servicesWrapper {
   margin-inline: 1rem;
-  width: 80vw;
+  width: 90vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;

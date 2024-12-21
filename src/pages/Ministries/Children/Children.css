@@ -90,7 +90,7 @@
   padding-block: 2.5rem;
   padding-inline: 2rem;
   color: white;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
 }
 .row1Container {
@@ -111,7 +111,7 @@
 .row2 {
   display: flex;
   /* align-items: center; */
-  width: 80vw;
+  width: 90vw;
   gap: 2rem;
   margin: auto;
   padding: 1.5rem 0;
@@ -136,7 +136,7 @@
   margin-block-end: 0.625rem;
 }
 .row3 {
-  width: 80vw;
+  width: 90vw;
   display: grid;
   height: calc(100dvh - 6.25rem);
   grid-template-columns: repeat(4, 1fr);

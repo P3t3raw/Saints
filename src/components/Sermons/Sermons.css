@@ -8,7 +8,7 @@
   width: 100%;
 }
 .wrapperContainer {
-  width: 80vw;
+  width: 90vw;
   margin: auto;
 }
 .sermonsWrapper {
@@ -16,7 +16,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   place-content: center;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
 }
 .sermonsBtn {

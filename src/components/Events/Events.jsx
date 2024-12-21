@@ -40,7 +40,7 @@ const Events = () => {
   // const displayedEvents = events.slice(0, 2);
   return (
     <div className="container">
-      <div className="events">
+      <div >
         <div className="servicesTop">
           <p className="text">
             <span className="greyLine"></span>

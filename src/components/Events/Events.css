@@ -147,7 +147,7 @@
 @media screen and (max-width: 1024px) {
   .events-list {
     height: 60vh;
-    width: 80vw;
+    width: 90vw;
     margin: auto;
   }
   .events-Container {
