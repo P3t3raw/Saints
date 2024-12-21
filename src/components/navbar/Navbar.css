@@ -54,28 +54,7 @@ nav {
   padding: 0.25rem 0.625rem;
   border-radius: 4px;
 }
-/* .navLinks li:hover {
-  /* background-color: rgba(238, 242, 246, 0.3); 
-} */
-/* .navLinks li::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0.13rem;
-  left: 0;
-  margin-top: 0.125rem;
-  background-color: black;
-  transition: width 0.3s ease;
-}
-.navContainer.active .navLinks li::after {
-  background-color: black;
-}
-.navLinks li:hover::after {
-  width: 100%;
-}
-.navContainer .navLinks li::after {
-  background-color: white;
-} */
+
 nav h3 {
   margin: 0;
   padding: 0;
@@ -256,7 +235,7 @@ li a {
   background-color: white;
   color: black;
   transition: all 500ms ease-in-out;
-  z-index: 100;
+  z-index: 999;
   width: 100vw;
   height: fit-content;
 }

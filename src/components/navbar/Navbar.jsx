@@ -77,10 +77,7 @@ function Navbar() {
                     <Link to="/ministries/TEE">T.E.E</Link>
                   </li>
                 </ul>
-              </li>
-              {/* <li>
-                <Link to="/sermons">Sermons</Link>
-              </li> */}
+              </li>              
               <li>
                 <Link to="/events">Events</Link>
               </li>
@@ -123,7 +120,7 @@ function Navbar() {
         >
           <img src={Logo} className="logo" alt="church logo" />
           <IoClose
-            style={{ fontSize: "26px" }}
+            style={{ fontSize: "1.5rem" }}
             onClick={() => setMenuActive(false)}
           />
         </div>
