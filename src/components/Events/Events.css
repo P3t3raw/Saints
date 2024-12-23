@@ -157,10 +157,10 @@
     font-size: 2rem;
   }
   .eventContent h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .eventDetails {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .eventPic {
     height: 100%;
@@ -168,12 +168,12 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .container {
     margin-block: 0.1rem;
   }
   .events-list {
-    height: 50vh;
+    height: 40vh;
     width: 80vw;
   }
   .events-Container {
@@ -181,12 +181,15 @@
   }
   .eventsCard {
     padding: 0.3rem 0.6rem;
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
   }
   .eventContent h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .eventDetails {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+  .eventsWrapper{
+    height: 50vh;
   }
 }

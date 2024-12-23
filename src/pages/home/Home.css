@@ -177,8 +177,17 @@ body {
   opacity: 0;
   animation: slideIn 2.5s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
-@media screen and (max-width: 980px) {
+@media screen and (max-width:1368px){
+  /* .background .content .themeText{
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.1rem;
+  }
+  .text .textPrimary {
+    font-size: 1.5rem;
+  } */
+}
+@media screen and (max-width: 992px) {
   .background .content .themeText {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -188,15 +197,15 @@ body {
     font-size: 1.1rem;
   }
   .midSection {
-    height: 50vh;
-    width: 80vw;
+    height: 40vh;
+    width: 90vw;
     margin: auto;
     background-color: white;
   }
   .quoteText {
     display: flex;
     position: relative;
-    width: 80vw;
+    width: 90vw;
     height: 100%;
     flex-direction: column;
     align-items: center;
@@ -210,38 +219,39 @@ body {
     text-align: center;
   }
   .heading {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .contact {
     margin-inline: 3rem;
     padding: 2rem 3rem;
   }
   .contact h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .contact p {
-    font-size: 15px;
+    font-size: 1rem;
   }
 }
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 600px) {
   .background .content .themeText {
-    font-size: 1.1rem;
-    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
     letter-spacing: 0.1rem;
   }
   .text .textPrimary {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .midSection {
-    height: 50vh;
-    width: 80vw;
+    height: 40vh;
+    width: 90vw;
     margin: auto;
     background-color: white;
   }
   .quoteText {
     display: flex;
     position: relative;
-    width: 80vw;
+    width: 90vw;
     height: 100%;
     flex-direction: column;
     align-items: center;
@@ -255,14 +265,14 @@ body {
     text-align: center;
   }
   .heading {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .contact {
     margin-inline: 1rem;
     padding: 0.4rem 1rem;
   }
   .contact h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .contact p {
     font-size: 1rem;

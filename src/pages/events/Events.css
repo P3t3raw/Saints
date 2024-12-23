@@ -32,7 +32,6 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: white 1px solid; */
 }
 .eventsContent h1 {
   font-size: 3.125rem;
@@ -45,19 +44,19 @@ main {
   position: absolute;
   z-index: 99;
   bottom: 2rem;
-  padding-inline: 6rem; /* This remains rem */
+  padding-inline: 6rem; 
 }
 
 .eventsBreadCrumbsWrapper h1 {
-  font-size: 2.5rem; /* 40px to rem */
+  font-size: 2.5rem; 
   font-weight: 700;
   color: white;
 }
 
 .eventsBreadCrumbs {
-  font-size: 1rem; /* 16px to rem */
+  font-size: 1rem; 
   font-weight: 400;
-  margin-bottom: 1.25rem; /* 20px to rem */
+  margin-bottom: 1.25rem; 
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -77,18 +76,16 @@ main {
   padding: 1rem;
   width: 80vw;
   margin: auto;
-  /* border: 1px solid black; */
 }
 
 .singleEvent {
   display: flex;
-  margin-bottom: 3.125rem; /* 50px to rem */
+  margin-bottom: 3.125rem; 
   width: 100%;
-  height: 25rem; /* 400px to rem */
+  height: 25rem; 
   overflow: hidden;
-  border-radius: 0.625rem; /* 10px to rem */
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px and 8px to rem */
-  /* border: 1px solid black; */
+  border-radius: 0.625rem; 
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
 }
 
 .singleEvent:nth-child(even) {
@@ -96,7 +93,7 @@ main {
 }
 
 .singleEvent img {
-  width: 40rem; /* 600px to rem */
+  width: 40rem; 
   object-fit: cover;
   object-position: center;
   flex: 1;
@@ -107,90 +104,86 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-inline: 1.875rem; /* 30px to rem */
+  padding-inline: 1.875rem; 
 }
 
 .singleEvent .singleEventContent h2 {
-  font-size: 1.875rem; /* 30px to rem */
+  font-size: 1.875rem; 
   font-weight: 600;
-  margin-bottom: 1.25rem; /* 20px to rem */
+  margin-bottom: 1.25rem; 
   color: #ffc107;
 }
 
 .singleEvent .singleEventContent span {
   font-weight: 600;
-  font-size: 1.0625rem; /* 17px to rem */
-  margin-bottom: 0.625rem; /* 10px to rem */
-  line-height: 1.8;
+  font-size: 1.0625rem; 
+  margin-bottom: 0.625rem; 
   color: #3f4056;
   display: flex;
   align-items: center;
-  gap: 0.3125rem; /* 5px to rem */
+  gap: 0.3125rem; 
 }
 @media screen and (max-width: 1024px) {
-  /* Adjustments for screens up to 1024px */
 
   .eventsBreadCrumbsWrapper {
-    padding-inline: 4rem; /* Reduce padding */
+    padding-inline: 4rem; 
   }
 
   .singleEvent {
-    flex-direction: column; /* Stack the image and content vertically */
-    height: auto; /* Let height adjust naturally */
+    flex-direction: column; 
+    height: auto; 
   }
 
   .singleEvent img {
-    width: 100%; /* Make the image full width */
-    max-width: none; /* Remove max-width to allow scaling */
+    width: 100%; 
+    max-width: none;
   }
 
   .singleEvent .singleEventContent {
-    padding-inline: 2rem; /* Reduce padding */
+    padding-inline: 2rem; 
   }
 
   .singleEvent .singleEventContent h2 {
-    font-size: 2rem; /* Scale down font size */
+    font-size: 2rem; 
   }
 
   .singleEvent .singleEventContent span {
-    font-size: 1rem; /* Adjust text size */
+    font-size: 1rem; 
   }
 }
 
 @media screen and (max-width: 768px) {
-  /* Adjustments for screens up to 768px */
-
   .eventsBreadCrumbsWrapper {
-    padding-inline: 2rem; /* Further reduce padding */
+    padding-inline: 2rem; 
   }
 
-  .eventsBreadCrumbsWrapper h1 {
-    font-size: 2rem; /* Decrease font size */
+  .eventsBreadCrumbsWrapper h1, .eventsContent h1 {
+    font-size: 1.5rem; 
   }
 
   .eventsBreadCrumbs {
-    font-size: 0.875rem; /* Scale down text size */
-    margin-bottom: 1rem; /* Reduce margin */
+    font-size: 0.875rem; 
+    margin-bottom: 1rem; 
   }
 
   .actualEvents {
-    width: 90vw; /* Reduce content width */
-    padding: 0.5rem; /* Decrease padding */
+    width: 90vw; 
+    padding: 0.5rem; 
   }
 
   .singleEvent {
-    margin-bottom: 2rem; /* Reduce gap between events */
+    margin-bottom: 2rem; 
   }
 
   .singleEvent .singleEventContent {
-    padding-inline: 1rem; /* Further reduce padding */
+    padding-inline: 1rem; 
   }
 
   .singleEvent .singleEventContent h2 {
-    font-size: 1.5rem; /* Scale down heading */
+    font-size: 1.5rem; 
   }
 
   .singleEvent .singleEventContent span {
-    font-size: 0.8rem; /* Further reduce text size */
+    font-size: 0.8rem; 
   }
 }

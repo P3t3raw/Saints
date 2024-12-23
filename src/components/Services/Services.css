@@ -34,23 +34,28 @@
 .serviceContent {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .serviceContent .title {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-block: 0.5rem;
 }
 .serviceContent .time {
   display: flex;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .serviceContent .time small {
   color: grey;
 }
 .serviceContent p {
   text-align: justify;
+}
+@media screen and (max-width:1368px){
+  /* .servicesWrapper{
+    gap: ;
+  } */
 }
 @media screen and (max-width: 1024px) {
   .serviceContent .title {
@@ -61,21 +66,28 @@
     font-size: 1rem;
   }
   .serviceContent .desc {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .servicesWrapper {
     grid-template-columns: repeat(2, 1fr);
-  }
+     }
   .servicePic {
-    height: 10rem;
+    height: 12rem;
     object-fit: cover;
     object-position: top;
   }
   .servicesTop h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width:992px){
+  .servicesWrapper{
+    width: 90vw;
+    margin:auto;
+  }
+  
+}
+@media screen and (max-width: 600px) {
   .servicesWrapper {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -85,7 +97,7 @@
     object-position: top;
   }
   .card {
-    width: 80vw;
+    width: 60vw;
     margin: auto;
   }
 }

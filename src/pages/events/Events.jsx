@@ -7,18 +7,11 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineAccessTime } from "react-icons/md";
 import image2 from "../../assets/worshipNight.jpg";
 import image1 from "../../assets/IMG-20241213-WA0010.jpg";
+import image3 from "../../assets/worshipTeam.jpg"
 
 function AllEvents() {
   const events = [
-    // {
-    //   id: 1,
-    //   imgSrc: image1,
-    //   title: "Join Us For Celebration Sunday",
-    //   desc: " Join our youth retreat for a weekend of spiritual growth, fellowship, and fun. We'll have inspiring sessions, worship, and outdoor activities.",
-    //   date: "30th June, 2024 ",
-    //   time: "8:00 am - 9:30 am",
-    //   location: "ACK St.Peter's Embakasi",
-    // },
+   
     {
       id: 1,
       imgSrc: image1,
@@ -36,6 +29,15 @@ function AllEvents() {
       desc: "Come worship together as we lift our voices in praise. An evening of music, prayer, and reflection.",
       date: "31st December, 2024",
       time: "10:00 PM",
+      location: "ACK St.Peter's Embakasi",
+    },
+    {
+      id: 3,
+      imgSrc: image3,
+      title: "Join Us For Celebration Sunday",
+      desc: " Join our youth retreat for a weekend of spiritual growth, fellowship, and fun. We'll have inspiring sessions, worship, and outdoor activities.",
+      date: "26th January, 2025 ",
+      time: "8:00 am - 9:30 am",
       location: "ACK St.Peter's Embakasi",
     },
     

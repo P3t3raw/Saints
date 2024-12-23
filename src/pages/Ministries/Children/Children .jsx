@@ -54,68 +54,9 @@ function Children() {
           />
         </div>
       </div>
-      {/* <div className="row2">
-        <div>
-          <h2>About Children&apos;s Ministry</h2>
-          <p className="row2Text">
-            At St.Peters, our Children&apos;s Ministry is dedicated to nurturing
-            the spiritual growth of children from infancy through elementary
-            school.{" "}
-          </p>
-          <p className="row2Text">
-            We believe that every child is a precious gift from God, and we
-            strive to create a loving and supportive environment where they can
-            learn about Jesus and develop a personal relationship with Him.
-          </p>
-        </div>
-        <div>
-          <h2>What we do in Children&apos;s Ministry?</h2>
-          <ul style={{ padding: "0" }}>
-            <li
-              style={{
-                display: "flex",
-                marginBlockEnd: "10px",
-                gap: "8px",
-                alignItems: "flex-start",
-              }}
-            >
-              <BiBible style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We provide engaging and age-appropriate Bible lessons that help
-                children understand God&apos;s Word in a fun and interactive
-                way.
-              </span>
-            </li>
-            <li
-              style={{
-                display: "flex",
-                marginBlockEnd: "10px",
-                gap: "8px",
-                alignItems: "flex-start",
-              }}
-            >
-              <BiHomeHeart style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We offer a safe and welcoming environment where children can
-                build friendships and enjoy fellowship with their peers.
-              </span>
-            </li>
-            <li
-              style={{ display: "flex", gap: "8px", alignItems: "flex-start" }}
-            >
-              <FaRegHeart style={{ fontSize: "40px", color: "#1f2837" }} />
-              <span>
-                We teach children the importance of serving others, sharing
-                God&apos;s love in the process, and making a positive impact in
-                the world around them.
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div> */}
+     
       <Reveal>
-        <div className="row2">
-          <div>
+        <div className="row2">          
             <div>
               <h2>About the Sunday School Ministry</h2>
               <p className="row2Text">
@@ -180,7 +121,7 @@ function Children() {
               </ul>
             </div>
             
-          </div>
+          
           <div>
             <h2>Upcoming Events</h2>
             <ul className="events">
@@ -216,7 +157,7 @@ function Children() {
             </ul>
 
             <h2>Contact Us</h2>
-            <p>
+            <p className="contactUsText">
               For more information about the Sunday School Ministry, feel free
               to reach out to us. We’d love to hear from you!
             </p>

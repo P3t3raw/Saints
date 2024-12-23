@@ -266,8 +266,8 @@ main {
   }
 
   .noticesBackground {
-    height: auto;
-    background-attachment: scroll;
+    height: 100vh;
+    /* background-attachment: scroll; */
   }
 }
 
@@ -282,7 +282,8 @@ main {
   }
 
   .fellowshipWrapper .fellowshipCard {
-    width: 85vw;
+    width: 90vw;
+    margin: auto;
   }
 
   .fellowshipContent {

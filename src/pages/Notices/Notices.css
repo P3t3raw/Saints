@@ -188,6 +188,9 @@ main {
 
 /* Responsive design for max-width: 576px */
 @media screen and (max-width: 768px) {
+  .noticesBreadCrumbsWrapper h1{
+    font-size: 1.5rem;
+  }
   .noticesBreadCrumbsWrapper {
     padding-inline: 1rem; /* Further reduce padding for small screens */
   }
@@ -219,7 +222,7 @@ main {
     width: 80vw;
     padding: 1rem;
     margin: auto;
-    font-size: 0.8rem; /* Further reduce padding */
+    font-size: 0.8rem; 
   }
 
   .flipButton,
