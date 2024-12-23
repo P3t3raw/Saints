@@ -5,12 +5,13 @@ import { FaMicrophone } from "react-icons/fa";
 import { BiMusic } from "react-icons/bi";
 import { FaChevronRight } from "react-icons/fa";
 import worshipImg from "../../../assets/worshipTeam.jpg";
-import worshipImg2 from "../../../assets/swahiliService.jpg";
+import worshipImg2 from "../../../assets/IMG_6804.JPG";
 import worshipImg3 from "../../../assets/choir.JPG";
 import worshipImg4 from "../../../assets/IMG_6807.JPG";
-import worshipImg5 from "../../../assets/IMG_6804.JPG";
+import worshipImg5 from "../../../assets/swahiliService.jpg";
 import Reveal from "../../../utils/Reveal";
 import { GiGuitar } from "react-icons/gi";
+import image from "../../../assets/swahiliService.jpg"
 export default function PraiseTeam() {
   return (
     <div>
@@ -93,15 +94,14 @@ export default function PraiseTeam() {
         <div className="row1">
           <div>
             <p className="textQuote">
-              ❝ I have no greater joy than to hear that my children are walking
-              in the truth.❞
+              ❝ Let everything that has breath praise the Lord. Praise the Lord.❞
               <br />
-              <span style={{ color: "#a7a7a7" }}>3 John 1:4</span>
+              <span style={{ color: "#a7a7a7" }}>Psalm 150:6</span>
             </p>
           </div>
           <img
-            src="https://i.pinimg.com/originals/00/82/1e/00821e92f02ac1b3a7527601a6ff9dab.jpg"
-            alt="sunday school"
+            src={image}
+            alt="music ministry"
           />
         </div>
       </div>
@@ -175,34 +175,10 @@ export default function PraiseTeam() {
           <div>
             <h2>Upcoming Events</h2>
             <ul className="events">
-              <li>
-                <strong>Worship Night</strong> - Dec 20, 2024
+            <li>
+                <strong>No Upcoming Events</strong> 
                 <p>
-                  Join us for an evening of worship and praise featuring our
-                  Praise and Worship Team and Choir. Let’s come together to
-                  glorify God in song.
-                </p>
-              </li>
-              <li>
-                <strong>Christmas Cantata</strong> - Dec 25, 2024
-                <p>
-                  Celebrate the birth of Christ with a special musical
-                  presentation by the Church Choir. A night of hymns, carols,
-                  and joy awaits.
-                </p>
-              </li>
-              <li>
-                <strong>Choir Retreat</strong> - Jan 15-17, 2025
-                <p>
-                  A weekend of bonding, vocal training, and spiritual growth for
-                  choir members. Don’t miss this enriching experience!
-                </p>
-              </li>
-              <li>
-                <strong>Music Workshop</strong> - Feb 10, 2025
-                <p>
-                  A hands-on workshop for all Music Ministry members to enhance
-                  their musical skills and worship leadership.
+                We're currently planning exciting new activities! Stay tuned for updates and check back soon.
                 </p>
               </li>
             </ul>
@@ -213,9 +189,9 @@ export default function PraiseTeam() {
               free to reach out. We look forward to serving with you!
             </p>
             <p>
-              <strong>Email:</strong> musicministry@churchwebsite.com
+              <strong>Email:</strong> musicministry@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong> (123) 456-7890
+              <strong>Phone:</strong> 
             </p>
           </div>
         </div>

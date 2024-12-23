@@ -3,6 +3,11 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import Reveal from "../../../utils/Reveal";
+import image1 from "../../../assets/WhatsApp Image 2024-12-22 at 12.53.56_4ac63e6a.jpg";
+// import image2 from "../../../assets/WhatsApp Image 2024-12-22 at 12.53.56_8549e219.jpg";
+// import image3 from "../../../assets/WhatsApp Image 2024-12-22 at 12.54.41_3e9bbbd2.jpg";
+// import image4 from "../../../assets/WhatsApp Image 2024-12-22 at 12.54.42_7c626b81.jpg";
+// import image5 from "../../../assets/WhatsApp Image 2024-12-22 at 12.54.42_573c252c.jpg"
 
 function Children() {
   return (
@@ -42,10 +47,9 @@ function Children() {
         <div className="row1">
           <div>
             <p className="textQuote">
-              ❝ I have no greater joy than to hear that my children are walking
-              in the truth.❞
+              ❝ Jesus said, 'Let the little children come to me, and do not hinder them, for the Kingdom of heaven belongs to such as these.'❞
               <br />
-              <span style={{ color: "#a7a7a7" }}>3 John 1:4</span>
+              <span style={{ color: "#a7a7a7" }}>Matthew 19:14</span>
             </p>
           </div>
           <img
@@ -60,18 +64,9 @@ function Children() {
             <div>
               <h2>About the Sunday School Ministry</h2>
               <p className="row2Text">
-                At St. Peters, our Sunday School Ministry is dedicated to
-                nurturing the spiritual growth of children and equipping them
-                with a solid foundation in faith. We strive to provide a safe,
-                fun, and engaging environment where children can learn about
-                God's love and His purpose for their lives.
+              At St. Peters, our ministry is committed to nurturing the spiritual growth of all age groups, with a special focus on children, teens, and youth in the Brigade. Our Sunday School provides a safe, fun, and engaging environment where children can discover God’s love and His purpose for their lives. Teens are guided to navigate life’s challenges through Biblical teachings and practical lessons that inspire them to build a strong personal faith. The Brigade focuses on character-building, discipline, and service, helping young people develop leadership skills grounded in Christian values.
               </p>
-              <p className="row2Text">
-                Our ministry focuses on teaching Biblical truths in a way that
-                is relatable and exciting for children, helping them to build
-                strong spiritual habits and develop a personal relationship with
-                Jesus.
-              </p>
+              <p className="row2Text"></p>
               <h2>What we do in the Sunday School Ministry?</h2>
               <ul style={{ padding: "0" }}>
                 <li
@@ -125,33 +120,10 @@ function Children() {
           <div>
             <h2>Upcoming Events</h2>
             <ul className="events">
-              <li>
-                <strong>Christmas Play Rehearsal</strong> - Dec 15, 2024
+            <li>
+                <strong>No Upcoming Events</strong> 
                 <p>
-                  Join us as we prepare for the annual Christmas play. Children
-                  of all ages are welcome to participate and showcase their
-                  talents.
-                </p>
-              </li>
-              <li>
-                <strong>Sunday School Picnic</strong> - Jan 20, 2025
-                <p>
-                  A day of fun, games, and fellowship for children and their
-                  families at the local park.
-                </p>
-              </li>
-              <li>
-                <strong>Bible Memory Challenge</strong> - Feb 5, 2025
-                <p>
-                  An exciting competition to encourage children to memorize and
-                  understand key Bible verses.
-                </p>
-              </li>
-              <li>
-                <strong>Vacation Bible School</strong> - Mar 25-29, 2025
-                <p>
-                  A week-long program filled with Bible stories, songs, crafts,
-                  and activities designed to deepen children’s love for Christ.
+                We're currently planning exciting new activities! Stay tuned for updates and check back soon.
                 </p>
               </li>
             </ul>
@@ -162,9 +134,9 @@ function Children() {
               to reach out to us. We’d love to hear from you!
             </p>
             <p>
-              <strong>Email:</strong> sundayschool@churchwebsite.com
+              <strong>Email:</strong> sundayschool@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong> (123) 456-7890
+              <strong>Phone:</strong> 
             </p>
           </div>
         </div>
@@ -173,31 +145,31 @@ function Children() {
       <div className="row3">
         <div>
           <img
-            src="https://bacc.cc/wp-content/uploads/2023/08/ltn-gallery-square-01.jpg"
+            src={image1}
             alt=""
           />
         </div>
         <div>
           <img
-            src="https://bacc.cc/wp-content/uploads/2023/08/ltn-gallery-wide-01.jpg"
+            src={image1}
             alt=""
           />
         </div>
         <div>
           <img
-            src="https://bacc.cc/wp-content/uploads/2023/11/gallery-tgs-tall.jpg"
+            src={image1}
             alt=""
           />
         </div>
         <div>
           <img
-            src="https://bacc.cc/wp-content/uploads/2023/11/gallery-friends-outside-02.jpg"
+            src={image1}
             alt=""
           />
         </div>
         <div>
           <img
-            src="https://bacc.cc/wp-content/uploads/2023/08/ltn-gallery-square-02.jpg"
+            src={image1}
             alt=""
           />
         </div>

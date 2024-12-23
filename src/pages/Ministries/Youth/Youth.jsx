@@ -60,38 +60,26 @@ export default function Youth() {
           </div>
         </div>
       </Reveal>
-      {/*<Reveal>
-        <div className="row2">
-          <div>
-           
-      {/*
-          </div>
-          <div>
-           
-          </div>
-        </div>
-      </Reveal> */}
+      
       <Reveal>
         <div className="row2">
           <div>
             <div>
               <h2>Empowering the Next Generation of Believers</h2>
               <p className="row2Text">
-                The Youth Ministry at A.C.K St. Peters Embakasi Church is a
+                The Youth Ministry  is a
                 dynamic and inclusive community for teenagers and young adults.
                 Our mission is to empower young people to grow in their faith,
                 build lasting friendships, and make a positive impact in their
-                world. Through weekly youth meetings, Bible studies, social
-                events, and service projects, we provide opportunities for
-                spiritual growth, leadership development, and fun.
+                world. 
               </p>
               {
-                <p className="row2Text">
+                <p className="row2Text">Through weekly youth meetings, Bible studies, social
+                events, and service projects, we provide opportunities for
+                spiritual growth, leadership development, and fun.<br/>
                   Our youth leaders are dedicated to mentoring and supporting
                   each individual as they navigate the challenges of adolescence
                   and young adulthood.
-                  <br /> Join us and be part of a movement that is passionate
-                  about Jesus and making a difference.
                 </p>
               }
               <h2>What we do in Youth&apos;s Ministry?</h2>
@@ -146,35 +134,10 @@ export default function Youth() {
           <div>
             <h2>Upcoming Events</h2>
             <ul className="events">
-              <li>
-                <strong>Men's Breakfast</strong> - Dec 25, 2024
+            <li>
+                <strong>No Upcoming Events</strong> 
                 <p>
-                  Join us for a hearty breakfast and fellowship. A guest speaker
-                  will share an inspiring message about living a life of faith
-                  and purpose.
-                </p>
-              </li>
-              <li>
-                <strong>Community Service Day</strong> - Jan 15, 2025
-                <p>
-                  Let’s give back to the community! We’ll be volunteering at the
-                  local shelter to serve meals and provide support to those in
-                  need.
-                </p>
-              </li>
-              <li>
-                <strong>Men’s Retreat</strong> - Feb 10-12, 2025
-                <p>
-                  A weekend retreat in the mountains focused on spiritual
-                  growth, bonding, and relaxation. Don’t miss this opportunity
-                  to recharge.
-                </p>
-              </li>
-              <li>
-                <strong>Leadership Workshop</strong> - Mar 5, 2025
-                <p>
-                  Enhance your leadership skills and learn how to lead
-                  effectively in your family, church, and community.
+                We're currently planning exciting new activities! Stay tuned for updates and check back soon.
                 </p>
               </li>
             </ul>
@@ -185,9 +148,9 @@ export default function Youth() {
               Ministry, feel free to reach out to us.
             </p>
             <p>
-              <strong>Email:</strong> mensministry@churchwebsite.com
+              <strong>Email:</strong> youth@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong> (123) 456-7890
+              <strong>Phone:</strong>
             </p>
           </div>
         </div>

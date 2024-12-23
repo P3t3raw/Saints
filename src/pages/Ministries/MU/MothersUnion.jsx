@@ -10,6 +10,7 @@ import mothersUnion5 from "../../../assets/IMG_6816.JPG";
 import { FaRegHeart } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import Reveal from "../../../utils/Reveal";
+import video1 from "../../../assets/3987756-hd_1280_720_24fps.mp4"
 
 function Children() {
   return (
@@ -18,14 +19,14 @@ function Children() {
         <div className="childrenMinistryOverlay"></div>
         <video
           className="video"
-          src="https://videos.pexels.com/video-files/3191109/3191109-hd_1366_720_25fps.mp4"
+          src={video1}
           autoPlay
           muted
           loop
         ></video>
         <video
           className="video"
-          src="https://videos.pexels.com/video-files/7568735/7568735-hd_1366_720_25fps.mp4"
+          src={video1}
           autoPlay
           muted
           loop
@@ -49,10 +50,9 @@ function Children() {
         <div className="row1">
           <div>
             <p className="textQuote">
-              ❝ I have no greater joy than to hear that my children are walking
-              in the truth.❞
+              ❝ I can do all things through Christ who stregthens me.❞
               <br />
-              <span style={{ color: "#a7a7a7" }}>3 John 1:4</span>
+              <span style={{ color: "#a7a7a7" }}>Philippians 4:13</span>
             </p>
           </div>
           <img src={mothersUnion} alt="mothers union" />
@@ -126,32 +126,10 @@ function Children() {
           <div>
             <h2>Upcoming Events</h2>
             <ul className="events"> 
-              <li>
-                <strong>Women's Prayer Breakfast</strong> - Dec 25, 2024
+            <li>
+                <strong>No Upcoming Events</strong> 
                 <p>
-                  Gather for an uplifting morning of prayer, fellowship, and an
-                  inspiring message tailored for women of faith.
-                </p>
-              </li>
-              <li>
-                <strong>Community Support Day</strong> - Jan 15, 2025
-                <p>
-                  Join us as we reach out to local families in need, providing
-                  support and encouragement.
-                </p>
-              </li>
-              <li>
-                <strong>Women's Retreat</strong> - Feb 10-12, 2025
-                <p>
-                  A serene weekend retreat to focus on spiritual renewal,
-                  personal growth, and building meaningful relationships.
-                </p>
-              </li>
-              <li>
-                <strong>Family Enrichment Workshop</strong> - Mar 5, 2025
-                <p>
-                  Learn practical ways to strengthen your family bond and create
-                  a nurturing environment for everyone in your home.
+                We're currently planning exciting new activities! Stay tuned for updates and check back soon.
                 </p>
               </li>
             </ul>
@@ -162,9 +140,9 @@ function Children() {
               Union Ministry, feel free to reach out to us.
             </p>
             <p>
-              <strong>Email:</strong> mothersunion@churchwebsite.com
+              <strong>Email:</strong> mothersunion@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong> (123) 456-7890
+              <strong>Phone:</strong> 
             </p>
           </div>
         </div>
