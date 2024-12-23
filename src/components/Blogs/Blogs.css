@@ -1,0 +1,103 @@
+.container {
+  margin-block: 2.5rem;
+}
+.servicePic {
+  height: 13.75rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+.servicesTop h1 {
+  font-size: 2.5rem;
+}
+.servicesWrapper {
+  margin-inline: 1rem;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin: auto;
+  gap: 1rem;
+}
+.servicesWrapper .card {
+  border-radius: 10px;
+  padding: 0;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.serviceContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+}
+.serviceContent .title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-block: 0.5rem;
+}
+.serviceContent .time {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.serviceContent .time small {
+  color: grey;
+}
+.serviceContent p {
+  text-align: justify;
+}
+@media screen and (max-width: 1368px) {
+  /* .servicesWrapper{
+      gap: ;
+    } */
+}
+@media screen and (max-width: 1024px) {
+  .serviceContent .title {
+    font-size: 1rem;
+    margin-block: 0.25rem;
+  }
+  .serviceContent .time {
+    font-size: 1rem;
+  }
+  .serviceContent .desc {
+    font-size: 1rem;
+  }
+  .servicesWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .servicePic {
+    height: 12rem;
+    object-fit: cover;
+    object-position: top;
+  }
+  .servicesTop h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .servicesWrapper {
+    width: 90vw;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .servicesWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
+  .servicePic {
+    height: 12rem;
+    object-fit: cover;
+    object-position: top;
+  }
+  .card {
+    width: 60vw;
+    margin: auto;
+  }
+}

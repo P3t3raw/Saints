@@ -1,5 +1,8 @@
-import "../Children/Children.css";
+import "./Kama.css";
 import Reveal from "../../../utils/Reveal";
+// import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css"; // Import styles for the calendar
+import Blogs from "../../../components/Blogs/Blogs";
 import { FaChevronRight } from "react-icons/fa";
 import kama from "../../../assets/364161928_619471003607961_5698538392905565876_n.jpg";
 import kama2 from "../../../assets/IMG_6799.JPG";
@@ -8,26 +11,17 @@ import kama4 from "../../../assets/KAMA.jpg";
 import kama5 from "../../../assets/IMG_6840.JPG";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import { FaRegHeart } from "react-icons/fa";
+import video1 from "../../../assets/3987756-hd_1280_720_24fps.mp4";
+// import { useState } from "react";
 
 function Children() {
+  // const [date, setDate] = useState(new Date());
   return (
     <div>
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
-        <video
-          className="video"
-          src="https://videos.pexels.com/video-files/7218955/7218955-uhd_2560_1440_25fps.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          className="video"
-          src="https://videos.pexels.com/video-files/7568735/7568735-hd_1366_720_25fps.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
+        <video className="video" src={video1} autoPlay muted loop></video>
+        <video className="video" src={video1} autoPlay muted loop></video>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
             <span>
@@ -48,10 +42,9 @@ function Children() {
           <div className="row1">
             <div>
               <p className="textQuote">
-                ❝ I have no greater joy than to hear that my children are
-                walking in the truth.❞
+                ❝ As for me and my household, we will serve the Lord.❞
                 <br />
-                <span style={{ color: "#a7a7a7" }}>3 John 1:4</span>
+                <span style={{ color: "#a7a7a7" }}>Joshua 24:15</span>
               </p>
             </div>
             <img src={kama} alt="kama" />
@@ -64,10 +57,9 @@ function Children() {
             <div>
               <h2>About KAMA&apos;s Ministry</h2>
               <p className="row2Text">
-                At St. Peters, our KAMA Men's Ministry is committed to
-                empowering men to grow in their faith, build strong
-                relationships, and serve as leaders within their families,
-                church, and community.{" "}
+                At St. Peters, the KAMA Ministry is committed to empowering men
+                to grow in their faith, build strong relationships, and serve as
+                leaders within their families, church, and community.{" "}
               </p>
               <p className="row2Text">
                 We believe that each man has a unique purpose in God’s plan, and
@@ -122,41 +114,38 @@ function Children() {
                   </span>
                 </li>
               </ul>
-            </div>           
+            </div>
           </div>
           <div>
             <h2>Upcoming Events</h2>
             <ul className="events">
               <li>
-                <strong>Men's Breakfast</strong> - Dec 25, 2024
+                <strong>No Upcoming Events</strong>
                 <p>
-                  Join us for a hearty breakfast and fellowship. A guest speaker
-                  will share an inspiring message about living a life of faith
-                  and purpose.
+                  We're currently planning exciting new activities! Stay tuned
+                  for updates and check back soon.
                 </p>
               </li>
-             
-              <li>
-                <strong>Men’s Retreat</strong> - Feb 10-12, 2025
-                <p>
-                  A weekend retreat in the mountains focused on spiritual
-                  growth, bonding, and relaxation. Don’t miss this opportunity
-                  to recharge.
-                </p>
-              </li>
-              
             </ul>
-
-            <h2>Contact Us</h2>
-            <p>
-              If you have any questions or want to learn more about the Men's
-              Ministry, feel free to reach out to us.
-            </p>
-            <p>
-              <strong>Email:</strong> mensministry@churchwebsite.com
-              <br />
-              <strong>Phone:</strong> (123) 456-7890
-            </p>
+            <h2>Devotional Resources Library</h2>
+            <p>This week's thought-provoking piece:</p>
+            <div className="devotional-list">
+              <ul>
+                <li>
+                  <h4>Upcoming Devotional Piece</h4>
+                  <p>Stay tuned for weekly devotional pieces.</p>
+                  <button>Read Devotional</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </Reveal>
+      <Reveal>
+        <div className="row4Container">
+          <div className="row4">
+            <h2>Blogs</h2>
+            <Blogs />
           </div>
         </div>
       </Reveal>
