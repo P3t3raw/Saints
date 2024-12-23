@@ -127,14 +127,14 @@ function Children() {
                 </p>
               </li>
             </ul>
-            <h2>Devotional Resources Library</h2>
+            <h2>Discussion Forum</h2>
             <p>This week's thought-provoking piece:</p>
             <div className="devotional-list">
               <ul>
                 <li>
                   <h4>Upcoming Devotional Piece</h4>
                   <p>Stay tuned for weekly devotional pieces.</p>
-                  <button>Read Devotional</button>
+                  <button>Submit</button>
                 </li>
               </ul>
             </div>
