@@ -177,7 +177,7 @@ body {
   opacity: 0;
   animation: slideIn 2.5s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-@media screen and (max-width:1368px){
+@media screen and (max-width: 1368px) {
   /* .background .content .themeText{
     font-size: 2rem;
     line-height: 2.3rem;
@@ -235,8 +235,8 @@ body {
 
 @media screen and (max-width: 600px) {
   .background .content .themeText {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
     letter-spacing: 0.1rem;
   }
   .text .textPrimary {
