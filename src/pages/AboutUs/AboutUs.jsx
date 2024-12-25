@@ -4,12 +4,12 @@ import Reveal from "../../utils/Reveal";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 import vicarImage from "../../assets/Ven.jpg";
-import layCanonImage from "../../assets/IMG_6818.JPG"
-import layreaderImage from "../../assets/IMG_6816.JPG"
-import layreaderImageT from "../../assets/IMG_6802.JPG"
-import captainImage from "../../assets/IMG_6779.JPG"
-import parishSecretaryImage from "../../assets/IMG_6740.JPG"
-import mediaDirectorImage from "../../assets/IMG_6840.JPG"
+import layCanonImage from "../../assets/IMG_6818.JPG";
+import layreaderImage from "../../assets/IMG_6816.JPG";
+import layreaderImageT from "../../assets/IMG_6802.JPG";
+import captainImage from "../../assets/IMG_6779.JPG";
+import parishSecretaryImage from "../../assets/IMG_6740.JPG";
+import mediaDirectorImage from "../../assets/IMG_6840.JPG";
 import profileImage from "../../assets/profileIcon.png";
 import churchImage from "../../assets/church1.jpg";
 
@@ -119,22 +119,21 @@ function AboutUs() {
               <h2>Our Church History</h2>
               <p>
                 Founded in 1968, ACK St. Peter’s Embakasi began as a small
-                gathering of believers initially under the
-                guidance of St. Stephen's Church, Jogoo Road. The congregation
-                settled in the Mabatini area in the early 1970s, sharing a
-                temporary structure with the Friends Church and Salvation Army.
-                During this time, the church was nurtured under the leadership
-                of Archdeacon Kenneth Stovold and Rev. Oduma.
-                In April 1983, during Easter Sunday, the parish was officially
-                inaugurated by the late Archbishop, the Most Rev. Manasses
-                Kuria, with Rev. Moses Ndungu as its first vicar. The following
-                year, the church was blessed with its current land in which a temporary
-                structure was set up serving the
-                congregation for 16 years. As the Embakasi area grew, so did the
-                church, becoming a cornerstone of spiritual life in the
-                community throughout the 1980s and 1990s.
-                Today, ACK St. Peter’s Embakasi continues to thrive as a beacon
-                of hope, community, and transformation. From humble beginnings, it has
+                gathering of believers initially under the guidance of St.
+                Stephen's Church, Jogoo Road. The congregation settled in the
+                Mabatini area in the early 1970s, sharing a temporary structure
+                with the Friends Church and Salvation Army. During this time,
+                the church was nurtured under the leadership of Archdeacon
+                Kenneth Stovold and Rev. Oduma. In April 1983, during Easter
+                Sunday, the parish was officially inaugurated by the late
+                Archbishop, the Most Rev. Manasses Kuria, with Rev. Moses Ndungu
+                as its first vicar. The following year, the church was blessed
+                with its current land in which a temporary structure was set up
+                serving the congregation for 16 years. As the Embakasi area
+                grew, so did the church, becoming a cornerstone of spiritual
+                life in the community throughout the 1980s and 1990s. Today, ACK
+                St. Peter’s Embakasi continues to thrive as a beacon of hope,
+                community, and transformation. From humble beginnings, it has
                 grown into a vibrant and dynamic congregation, offering
                 spiritual guidance, worship, and support to the Embakasi
                 community and beyond.
@@ -286,7 +285,7 @@ function AboutUs() {
                 <img src={clergy.imgSrc} alt="clergy" />
                 <div className="singleClergyContent">
                   <span>
-                    <b>{clergy.name}</b>
+                    <strong>{clergy.name}</strong>
                   </span>
                   <span>{clergy.title}</span>
                 </div>

@@ -1,7 +1,7 @@
 /* Basic styling for the Welfare page */
 .welfareBackground {
   background-image: url("../../assets/bg_1.jpg.webp");
-  height: 100dvh;
+  height: 50dvh;
   width: 100%;
   position: inherit;
   background-size: cover;
@@ -53,7 +53,7 @@
 }
 
 .breadCrumbs a {
-  color: #007bff;
+  color: white;
   text-decoration: none;
 }
 
@@ -167,6 +167,7 @@
   .rightWelfarePart {
     max-width: 100%; /* Allow full width for both parts */
     padding: 0.5rem; /* Reduce padding */
+    border: 1px black solid;
   }
 
   .gallery img {
@@ -205,13 +206,16 @@
 }
 
 /* Large Phones and Small Tablets (max-width: 576px) */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   .welfareContent h1 {
-    font-size: 1.5rem; /* Further reduce font size */
+    font-size: 1.3rem; /* Further reduce font size */
   }
-
+  .welfareMainContent {
+    flex-direction: column;
+  }
   .breadCrumbsWrapper {
     padding-inline: 0.5rem; /* Reduce padding for smaller screens */
+    display: none;
   }
 
   .breadCrumbs {

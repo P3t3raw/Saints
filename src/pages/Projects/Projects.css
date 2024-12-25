@@ -10,7 +10,7 @@ main {
 }
 .noticesBackground {
   background-image: url("../../assets/bg_1.jpg.webp");
-  height: 100dvh;
+  height: 50dvh;
   width: 100%;
   position: inherit;
   background-size: cover;
@@ -95,7 +95,11 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.projectCard ul {
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
+}
 .projectCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -144,7 +148,10 @@ main {
 }
 @media (max-width: 767px) {
   .noticesContent h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  .noticesBreadCrumbsWrapper {
+    display: none;
   }
 
   .projectList {
@@ -160,8 +167,10 @@ main {
     font-size: 1.25rem;
   }
 
-  .projectCard p {
-    font-size: 0.9rem;
+  .projectOverview,
+  .projectCard ul {
+    font-size: 1rem;
+    /* text-align: center; */
   }
 
   .projectCard span {

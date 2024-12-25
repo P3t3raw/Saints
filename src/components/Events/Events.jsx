@@ -29,18 +29,18 @@ const Events = () => {
       date: "1st, Jan 2025 ",
       location: "ACK St.Peter's Embakasi",
     },
-    // {
-    //   id: 1,
-    //   imgSrc: image1,
-    //   title: "The Crossover night worhip and prayer",
-    //   date: "31st, December 2024 ",
-    //   location: "ACK St.Peter's Embakasi",
-    // },
+    {
+      id: 4,
+      imgSrc: image1,
+      title: "The Crossover night worhip and prayer",
+      date: "31st, December 2024 ",
+      location: "ACK St.Peter's Embakasi",
+    },
   ];
   // const displayedEvents = events.slice(0, 2);
   return (
     <div className="container">
-      <div >
+      <div>
         <div className="servicesTop">
           <p className="text">
             <span className="greyLine"></span>

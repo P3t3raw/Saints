@@ -4,7 +4,7 @@ main {
 }
 .eventsBackground {
   background-image: url("../../assets/bg_1.jpg.webp");
-  height: 100dvh;
+  height: 50vh;
   width: 100%;
   position: inherit;
   background-size: cover;
@@ -44,19 +44,19 @@ main {
   position: absolute;
   z-index: 99;
   bottom: 2rem;
-  padding-inline: 6rem; 
+  padding-inline: 6rem;
 }
 
 .eventsBreadCrumbsWrapper h1 {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-weight: 700;
   color: white;
 }
 
 .eventsBreadCrumbs {
-  font-size: 1rem; 
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1.25rem; 
+  margin-bottom: 1.25rem;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -80,12 +80,12 @@ main {
 
 .singleEvent {
   display: flex;
-  margin-bottom: 3.125rem; 
+  margin-bottom: 3.125rem;
   width: 100%;
-  height: 25rem; 
+  height: 25rem;
   overflow: hidden;
-  border-radius: 0.625rem; 
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .singleEvent:nth-child(even) {
@@ -93,7 +93,7 @@ main {
 }
 
 .singleEvent img {
-  width: 40rem; 
+  width: 40rem;
   object-fit: cover;
   object-position: center;
   flex: 1;
@@ -104,86 +104,87 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-inline: 1.875rem; 
+  padding-inline: 1.875rem;
 }
 
 .singleEvent .singleEventContent h2 {
-  font-size: 1.875rem; 
+  font-size: 1.875rem;
   font-weight: 600;
-  margin-bottom: 1.25rem; 
+  margin-bottom: 1.25rem;
   color: #ffc107;
 }
 
 .singleEvent .singleEventContent span {
   font-weight: 600;
-  font-size: 1.0625rem; 
-  margin-bottom: 0.625rem; 
+  font-size: 1.0625rem;
+  margin-bottom: 0.625rem;
   color: #3f4056;
   display: flex;
   align-items: center;
-  gap: 0.3125rem; 
+  gap: 0.3125rem;
 }
 @media screen and (max-width: 1024px) {
-
   .eventsBreadCrumbsWrapper {
-    padding-inline: 4rem; 
+    padding-inline: 4rem;
   }
 
   .singleEvent {
-    flex-direction: column; 
-    height: auto; 
+    flex-direction: column;
+    height: auto;
   }
 
   .singleEvent img {
-    width: 100%; 
+    width: 100%;
     max-width: none;
   }
 
   .singleEvent .singleEventContent {
-    padding-inline: 2rem; 
+    padding-inline: 2rem;
   }
 
   .singleEvent .singleEventContent h2 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .singleEvent .singleEventContent span {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .eventsBreadCrumbsWrapper {
-    padding-inline: 2rem; 
+    padding-inline: 2rem;
+    display: none;
   }
 
-  .eventsBreadCrumbsWrapper h1, .eventsContent h1 {
-    font-size: 1.5rem; 
+  .eventsBreadCrumbsWrapper h1,
+  .eventsContent h1 {
+    font-size: 1.5rem;
   }
 
   .eventsBreadCrumbs {
-    font-size: 0.875rem; 
-    margin-bottom: 1rem; 
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
   }
 
   .actualEvents {
-    width: 90vw; 
-    padding: 0.5rem; 
+    width: 90vw;
+    padding: 0.5rem;
   }
 
   .singleEvent {
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
   }
 
   .singleEvent .singleEventContent {
-    padding-inline: 1rem; 
+    padding-inline: 1rem;
   }
 
   .singleEvent .singleEventContent h2 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .singleEvent .singleEventContent span {
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
   }
 }

@@ -58,7 +58,7 @@ export default function Welfare() {
         <div className="welfareOverlay"></div>
         <div className="welfareContent">
           <h1>{programDetails.title}</h1>
-          <p>{programDetails.overview}</p>
+          {/* <p>{programDetails.overview}</p> */}
         </div>
         <div className="breadCrumbsWrapper">
           <p className="breadCrumbs">

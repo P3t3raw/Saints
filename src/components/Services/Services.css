@@ -52,6 +52,7 @@
 .serviceContent p {
   text-align: justify;
 }
+
 @media screen and (max-width: 1368px) {
   /* .servicesWrapper{
     gap: ;
@@ -91,12 +92,13 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .servicePic {
-    height: 12rem;
+    height: 10rem;
     object-fit: cover;
     object-position: top;
   }
   .card {
     width: 80vw;
     margin: auto;
+    /* height: 60vh; */
   }
 }

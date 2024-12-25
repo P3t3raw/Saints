@@ -10,7 +10,7 @@ main {
 }
 .noticesBackground {
   background-image: url("../../assets/bg_1.jpg.webp");
-  height: 100dvh;
+  height: 50dvh;
   width: 100%;
   position: inherit;
   background-size: cover;
@@ -188,15 +188,16 @@ main {
 
 /* Responsive design for max-width: 576px */
 @media screen and (max-width: 768px) {
-  .noticesBreadCrumbsWrapper h1{
+  .noticesBreadCrumbsWrapper h1 {
     font-size: 1.5rem;
   }
   .noticesBreadCrumbsWrapper {
     padding-inline: 1rem; /* Further reduce padding for small screens */
+    display: none;
   }
 
   .noticesContent h1 {
-    font-size: 2rem; /* Further reduce h1 size */
+    font-size: 1.5rem; /* Further reduce h1 size */
   }
 
   .noticesContent p {
@@ -222,7 +223,7 @@ main {
     width: 80vw;
     padding: 1rem;
     margin: auto;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
   }
 
   .flipButton,
