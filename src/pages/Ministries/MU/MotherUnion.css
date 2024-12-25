@@ -1,12 +1,4 @@
-.childrenMinistryOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
+/* Foundational Styles */
 .background {
   position: relative;
   overflow: hidden;
@@ -23,65 +15,59 @@
   object-position: center;
   animation: fade 30s infinite;
 }
-.eventsBreadCrumbsWrapper {
-  position: absolute;
-  z-index: 99;
-  bottom: 2rem;
-  padding-inline: 6rem; /* This remains rem */
-}
-
-.eventsBreadCrumbsWrapper h1 {
-  font-size: 2.5rem; /* 40px to rem */
-  font-weight: 700;
-  color: white;
-}
-
-.eventsBreadCrumbs {
-  font-size: 1rem; /* 16px to rem */
-  font-weight: 400;
-  margin-bottom: 1.25rem; /* 20px to rem */
-  text-transform: capitalize;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.eventsBreadCrumbs span {
-  display: inline-flex;
-  align-items: center;
-}
-
-.eventsBreadCrumbs span a {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-}
-.events {
-  background-color: #e9ecef;
-  padding: 0.625rem; /* 10px converted to rem */
-  margin: 0.625rem 0; /* 10px converted to rem */
-  border-left: 0.3125rem solid #007bff; /* 5px converted to rem */
-}
-@keyframes fade {
-  0%,
-  20% {
-    opacity: 1;
-  }
-  20%,
-  22% {
-    opacity: 0;
-  }
-  22%,
-  100% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .video:nth-of-type(1) {
   animation-delay: 0s;
 }
 .video:nth-of-type(2) {
   animation-delay: 15s;
 }
+.childrenMinistryOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* Breadcrumb Styles */
+.eventsBreadCrumbsWrapper {
+  position: absolute;
+  z-index: 99;
+  bottom: 2rem;
+  padding-inline: 6rem;
+}
+.eventsBreadCrumbsWrapper h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+.eventsBreadCrumbs {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.5);
+}
+.eventsBreadCrumbs span {
+  display: inline-flex;
+  align-items: center;
+}
+.eventsBreadCrumbs span a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+/* Event Section */
+.events {
+  background-color: #e9ecef;
+  padding: 0.625rem;
+  margin: 0.625rem 0;
+  border-left: 0.3125rem solid #007bff;
+}
+
+/* Row Styles */
 .row1 {
   display: flex;
   align-items: center;
@@ -90,7 +76,7 @@
   padding-block: 2.5rem;
   padding-inline: 2rem;
   color: white;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
 }
 .row1Container {
@@ -102,21 +88,44 @@
 }
 .row1 img {
   flex: 1;
-  width: auto;
-  height: auto;
-  max-height: 31.25rem;
+  width: 45rem;
+  height: 35rem;
   object-fit: cover;
   object-position: top center;
-  border-radius: 15rem 0 15rem 15rem;
+  border-radius: 0.6rem;
+}
+.row1 .textQuote {
+  font-size: 1.875rem;
+  margin-block-end: 0.625rem;
 }
 .row2 {
   display: flex;
-  align-items: center;
-  width: 80vw;
+  width: 90vw;
   gap: 2rem;
   margin: auto;
   padding: 1.5rem 0;
-  /* border: 1px solid black; */
+}
+
+.row4Container {
+  background-color: #f9f9f9;
+}
+.row4 {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  gap: 3rem;
+  padding-block: 2.5rem;
+  padding-inline: 2rem;
+  /* border: 1px black solid; */
+  width: 90vw;
+  height: 80vh;
+  margin: auto;
+}
+.row4 div {
+  flex: 1;
 }
 .row2 .row2Text {
   flex: 1;
@@ -125,14 +134,16 @@
 }
 .row2 div {
   flex: 1;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
 }
-.row1 .textQuote {
-  font-size: 1.875rem;
-  margin-block-end: 0.625rem;
-}
+
 .row3 {
-  width: 80vw;
+  width: 90vw;
   display: grid;
   height: calc(100dvh - 6.25rem);
   grid-template-columns: repeat(4, 1fr);
@@ -146,6 +157,12 @@
   object-fit: cover;
   object-position: center center;
   border-radius: 0.625rem;
+}
+.row3 div {
+  transition: transform 0.3s ease-in-out;
+}
+.row3 div:hover {
+  transform: scale(1.02);
 }
 .row3 div:nth-of-type(1) {
   grid-column: 1/2;
@@ -167,9 +184,53 @@
   grid-row: 2/3;
 }
 
+/* Utility Styles */
+button:hover {
+  background-color: #005f73;
+}
+.devotional-list ul {
+  list-style-type: none;
+  padding-left: 0;
+  border: 1px solid black;
+  border-radius: 3rem 0 3rem 3rem;
+  background-color: white;
+  height: 30vh;
+}
+.devotional-list li {
+  margin: 15px 0;
+  width: 40vw;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.devotional-list button {
+  margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fade {
+  0%,
+  20% {
+    opacity: 1;
+  }
+  20%,
+  22% {
+    opacity: 0;
+  }
+  22%,
+  100% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
 @media screen and (max-width: 1024px) {
   .eventsBreadCrumbsWrapper {
-    padding-inline: 4rem; /* Reduce padding */
+    padding-inline: 4rem;
   }
   .row1 {
     flex-direction: column;
@@ -184,16 +245,14 @@
 }
 @media screen and (max-width: 768px) {
   .eventsBreadCrumbsWrapper {
-    padding-inline: 2rem; /* Further reduce padding */
+    padding-inline: 2rem;
   }
-
   .eventsBreadCrumbsWrapper h1 {
-    font-size: 2rem; /* Decrease font size */
+    font-size: 2rem;
   }
-
   .eventsBreadCrumbs {
-    font-size: 0.875rem; /* Scale down text size */
-    margin-bottom: 1rem; /* Reduce margin */
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
   }
   .row1 div > * {
     margin-bottom: 1.25rem;
@@ -208,7 +267,6 @@
     flex-direction: column;
     width: 80vw;
     margin: auto;
-    /* border: 1px solid black; */
   }
   .row2 h2 {
     font-size: 1.3rem;
@@ -219,11 +277,23 @@
   .row2 div {
     width: 100%;
   }
+  .row1 img {
+    width: 18rem;
+    height: 18rem;
+  }
 }
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
+  .eventsBreadCrumbsWrapper h1 {
+    font-size: 1.5rem;
+  }
+  .row1 .textQuote {
+    font-size: 1rem;
+  }
   .row2 {
     align-items: flex-start;
+  }
+  .row4 {
+    height: auto;
   }
   .row3 {
     grid-template-columns: repeat(3, 1fr);

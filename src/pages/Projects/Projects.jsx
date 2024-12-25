@@ -5,39 +5,6 @@ import "./Projects.css";
 
 export default function Projects() {
   const projects = [
-    // {
-    //   id: 1,
-    //   title: "Mission Trip to Honduras",
-    //   overview:
-    //     "Join us as we support communities in Honduras through building, teaching, and ministry.",
-    //   objectives: [
-    //     "Build essential infrastructure",
-    //     "Provide educational resources",
-    //     "Spread the message of hope and faith",
-    //   ],
-    //   targetAudience:
-    //     "Church members and volunteers with a heart for mission work",
-    //   description:
-    //     "Our mission trip will focus on constructing homes, providing school supplies, and leading spiritual workshops in rural areas. Volunteers will work closely with local community leaders to make a lasting impact.",
-    //   timeline: "September 1 - September 14, 2024",
-    //   location: "Tegucigalpa, Honduras",
-    //   team: [
-    //     "Pastor Luke Harrison - Mission Director",
-    //     "Maria Santos - Outreach Coordinator",
-    //   ],
-    //   involvementOptions: [
-    //     "Volunteer for the trip",
-    //     "Sponsor a volunteer",
-    //     "Donate supplies",
-    //   ],
-
-    //   partners: ["Honduras Mission Network", "Global Outreach Organization"],
-    //   gallery: ["mission_trip1.jpg", "mission_trip2.jpg"],
-    //   cta: "Support the Mission Trip to Honduras",
-    //   contact: { email: "missions@church.org", phone: "(555) 111-2222" },
-    //   updates: ["Fundraising event: Spaghetti dinner on August 10"],
-    //   budget: { goal: "20,000 USD", raised: "12,500 USD" },
-    // },
     {
       id: 2,
       title: "Building a Sunday School Block",
@@ -48,16 +15,14 @@ export default function Projects() {
         "Provide classrooms, restrooms, and a small play area",
         "Foster spiritual growth and community involvement",
       ],
-      targetAudience:
-        "Church members, local families, and volunteers who value children's education and spiritual development",
       description:
         "This project aims to build a new block specifically for Sunday school classes, equipped with classrooms, restrooms, and a play area. This space will create a dedicated environment for children to learn biblical lessons and participate in community-building activities.",
       timeline: "January 1 - June 30, 2024",
-      location: "Church Grounds, Springfield Community",
+      location: "Church Grounds, ACK St Peters Embakasi",
       team: [
-        "Pastor Mark Adams - Project Leader",
-        "Sarah Lee - Sunday School Coordinator",
-        "John Doe - Construction Supervisor",
+        " Project Leader",
+        "Sunday School Coordinator",
+        "Construction Supervisor",
       ],
       involvementOptions: [
         "Volunteer for construction work",
@@ -65,11 +30,9 @@ export default function Projects() {
         "Donate educational supplies",
       ],
 
-      partners: ["Springfield Builders", "Faith in Action Foundation"],
-      gallery: ["sunday_school_block1.jpg", "sunday_school_block2.jpg"],
       cta: "Support the Sunday School Block Project",
       contact: {
-        email: "projects@church.org",
+        email: "projects@ackstpetersembakasi.org",
         phone: "(555) 333-4444",
       },
       updates: [
@@ -97,10 +60,10 @@ export default function Projects() {
       timeline: "March 1 - August 31, 2024",
       location: "Church Music Room and Community Hall",
       team: [
-        "Laura Jenkins - Music Program Coordinator",
-        "David Kim - Guitar Instructor",
-        "Emma Lopez - Piano Instructor",
-        "Michael Brown - Drum Instructor",
+        "Music Program Coordinator",
+        "Guitar Instructor",
+        "Piano Instructor",
+        "Drum Instructor",
       ],
       involvementOptions: [
         "Volunteer as an instructor or assistant",
@@ -111,7 +74,7 @@ export default function Projects() {
       gallery: ["music_class1.jpg", "music_class2.jpg"],
       cta: "Support the Music for the Soul Program",
       contact: {
-        email: "music@church.org",
+        email: "projects@ackstpetersembakasi.org",
         phone: "(555) 444-5555",
       },
       updates: [
@@ -130,7 +93,7 @@ export default function Projects() {
       <div className="noticesBackground">
         <div className="noticesOverlay"></div>
         <div className="noticesContent">
-          <h1>Projects</h1>
+          <h1>Church Projects</h1>
         </div>
         <div className="noticesBreadCrumbsWrapper">
           <p className="noticesBreadCrumbs">
@@ -138,10 +101,10 @@ export default function Projects() {
               <Link to="/">Home</Link> <FaChevronRight />
             </span>
             <span>
-              Projects <FaChevronRight />
+              Church Projects <FaChevronRight />
             </span>
           </p>
-          <h1>Projects</h1>
+          <h1>Church Projects</h1>
         </div>
       </div>
 
@@ -165,9 +128,6 @@ export default function Projects() {
             <p>
               <strong>Location:</strong> {project.location}
             </p>
-            <p>
-              <strong>Target Audience:</strong> {project.targetAudience}
-            </p>
             <h3>Team:</h3>
             <ul>
               {project.team.map((member, index) => (
@@ -180,12 +140,7 @@ export default function Projects() {
                 <li key={index}>{option}</li>
               ))}
             </ul>
-            <h3>Partners:</h3>
-            <ul>
-              {project.partners.map((partner, index) => (
-                <li key={index}>{partner}</li>
-              ))}
-            </ul>
+
             <h3>Contact:</h3>
             <p>
               Email:{" "}
@@ -193,19 +148,19 @@ export default function Projects() {
                 {project.contact.email}
               </a>
             </p>
-            <p>Phone: {project.contact.phone}</p>
-            <h3>Budget:</h3>
+            {/* <p>Phone: {project.contact.phone}</p> */}
+            {/* <h3>Budget:</h3>
             <p>Goal: {project.budget.goal}</p>
-            <p>Raised: {project.budget.raised}</p>
+            <p>Raised: {project.budget.raised}</p> */}
             <h3>Updates:</h3>
-            <ul>
+            <ul className="projectUpdates">
               {project.updates.map((update, index) => (
                 <li key={index}>{update}</li>
               ))}
             </ul>
-            <Link to={`/projects/${project.id}`} className="learnMoreButton">
+            {/* <Link to={`/projects/${project.id}`} className="learnMoreButton">
               {project.cta}
-            </Link>
+            </Link> */}
           </div>
         ))}
       </div>

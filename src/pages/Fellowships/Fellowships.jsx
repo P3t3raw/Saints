@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import "./Fellowships.css";
-import mradiImage from "../../assets/YouthMinistry4.jpg";
+import mradiImage from "../../assets/YouthMinistry3.jpg";
 import juakaliImage from "../../assets/KAMA.jpg";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
@@ -29,7 +29,7 @@ export default function Fellowships() {
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
           "Contact us through our website or visit one of our regular Friday meetings to learn more and get involved.",
-        contact: "Email: info@mradi.org | Phone: +254 700 000 000",
+        contact: " Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
           { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
@@ -57,7 +57,7 @@ export default function Fellowships() {
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
           "Contact us through our website or visit one of our regular Friday meetings to learn more and get involved.",
-        contact: "Email: info@mradi.org | Phone: +254 700 000 000",
+        contact: " Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
           { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
@@ -84,7 +84,7 @@ export default function Fellowships() {
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
           "Contact us through our website or visit one of our regular Friday meetings to learn more and get involved.",
-        contact: "Email: info@mradi.org | Phone: +254 700 000 000",
+        contact: "Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
           { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
@@ -111,7 +111,7 @@ export default function Fellowships() {
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
           "Contact us through our website or visit one of our regular Friday meetings to learn more and get involved.",
-        contact: "Email: info@mradi.org | Phone: +254 700 000 000",
+        contact: " Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
           { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
@@ -138,7 +138,7 @@ export default function Fellowships() {
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
           "Contact us through our website or visit one of our regular Friday meetings to learn more and get involved.",
-        contact: "Email: info@mradi.org | Phone: +254 700 000 000",
+        contact: "Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
           { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
@@ -165,7 +165,7 @@ export default function Fellowships() {
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
           "Contact us through our website or visit one of our regular Friday meetings to learn more and get involved.",
-        contact: "Email: info@mradi.org | Phone: +254 700 000 000",
+        contact: "Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
           { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
@@ -192,7 +192,7 @@ export default function Fellowships() {
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
           "Contact us through our website or visit one of our regular Friday meetings to learn more and get involved.",
-        contact: "Email: info@mradi.org | Phone: +254 700 000 000",
+        contact: "Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
           { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
@@ -214,7 +214,7 @@ export default function Fellowships() {
       <div className="noticesBackground">
         <div className="noticesOverlay"></div>
         <div className="noticesContent">
-          <h1>Fellowships</h1>
+          <h1>Estate Fellowships</h1>
         </div>
         <div className="noticesBreadCrumbsWrapper">
           <p className="noticesBreadCrumbs">
@@ -222,10 +222,10 @@ export default function Fellowships() {
               <Link to="/">Home</Link> <FaChevronRight />
             </span>
             <span>
-              Fellowships <FaChevronRight />
+              Estate Fellowships <FaChevronRight />
             </span>
           </p>
-          <h1>Fellowships</h1>
+          <h1>Estate Fellowships</h1>
         </div>
       </div>
       {

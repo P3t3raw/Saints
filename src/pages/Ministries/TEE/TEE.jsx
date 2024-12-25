@@ -4,30 +4,17 @@ import { FaChevronRight } from "react-icons/fa";
 import { BiBible } from "react-icons/bi";
 import Reveal from "../../../utils/Reveal";
 import { GiChurch } from "react-icons/gi";
-import image1 from "../../../assets/IMG_6816.JPG"
-import image2 from "../../../assets/YouthMinistry3.jpg"
-import video1 from "../../../assets/3987756-hd_1280_720_24fps.mp4"
-
+import image1 from "../../../assets/IMG_6816.JPG";
+import image2 from "../../../assets/YouthMinistry3.jpg";
+import video1 from "../../../assets/3987756-hd_1280_720_24fps.mp4";
 
 function Children() {
   return (
     <div>
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
-        <video
-          className="video"
-          src={video1}
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          className="video"
-          src={video1}
-          autoPlay
-          muted
-          loop
-        ></video>
+        <video className="video" src={video1} autoPlay muted loop></video>
+        <video className="video" src={video1} autoPlay muted loop></video>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
             <span>
@@ -47,7 +34,9 @@ function Children() {
         <div className="row1">
           <div>
             <p className="textQuote">
-              ❝ And the things you have heard me say in the presence of many witnesses entrust to reliable people who will also be qualified to teach others.❞
+              ❝ And the things you have heard me say in the presence of many
+              witnesses entrust to reliable people who will also be qualified to
+              teach others.❞
               <br />
               <span style={{ color: "#a7a7a7" }}>2 Timothy 2:2</span>
             </p>
@@ -58,81 +47,91 @@ function Children() {
           />
         </div>
       </div>
-     
+
       <Reveal>
-        <div className="row2">          
-            <div>
-              <h2>About the T.E.E Ministry</h2>
-              <p className="row2Text">
-              The Theological Education by Extension (TEE) Ministry at St.
-                Peters provides an opportunity for individuals to deepen their
-                knowledge of the Word of God while staying engaged in their
-                everyday lives. This program is designed for those who want to
-                grow in their faith but require flexible learning opportunities.
-              </p>
-              <p className="row2Text">
-              Our mission is to offer accessible and practical theological
-                education, empowering individuals to serve in various
-                ministries, grow spiritually, and apply biblical principles in
-                their daily lives.
-              </p>
-              <h2>What We Do in TEE Ministry</h2>
-              <ul style={{ padding: "0" }}>
-                <li
-                  style={{
-                    display: "flex",
-                    marginBlockEnd: "10px",
-                    gap: "8px",
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <BiBible style={{ fontSize: "40px", color: "#1f2837" }} />
-                  <span>
-                  Provide flexible, self-paced theological education through
-                    various modules that focus on practical ministry and
-                    spiritual growth.
-                  </span>
-                </li>
-                <li
-                  style={{
-                    display: "flex",
-                    marginBlockEnd: "10px",
-                    gap: "8px",
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <FaBookOpen style={{ fontSize: "40px", color: "#1f2837" }} />
-                  <span>
-                    Facilitate group study sessions that encourage participants
-                    to discuss and apply biblical principles to their personal
-                    and ministry contexts.
-                  </span>
-                </li>
-                <li
-                  style={{
-                    display: "flex",
-                    gap: "8px",
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <GiChurch style={{ fontSize: "40px", color: "#1f2837" }} />
-                  <span>
-                    Equip participants for church leadership roles, enhancing
-                    their ability to serve effectively in ministry and community
-                    outreach.
-                  </span>
-                </li>
-              </ul>
-            </div>
-            
-          
+        <div className="row2">
           <div>
-            <h2>Upcoming TEE Events</h2>
+            <h2>About the T.E.E Ministry</h2>
+            <p className="row2Text">
+              The Theological Education by Extension (TEE) Ministry at St.
+              Peters provides an opportunity for individuals to deepen their
+              knowledge of the Word of God while staying engaged in their
+              everyday lives. This program is designed for those who want to
+              grow in their faith but require flexible learning opportunities.
+            </p>
+            <p className="row2Text">
+              Our mission is to offer accessible and practical theological
+              education, empowering individuals to serve in various ministries,
+              grow spiritually, and apply biblical principles in their daily
+              lives.
+            </p>
+            <h2>What We Do in TEE Ministry</h2>
+            <ul style={{ padding: "0" }}>
+              <li
+                style={{
+                  display: "flex",
+                  marginBlockEnd: "10px",
+                  gap: "8px",
+                  alignItems: "flex-start",
+                }}
+              >
+                <BiBible style={{ fontSize: "40px", color: "#1f2837" }} />
+                <span>
+                  Provide flexible, self-paced theological education through
+                  various modules that focus on practical ministry and spiritual
+                  growth.
+                </span>
+              </li>
+              <li
+                style={{
+                  display: "flex",
+                  marginBlockEnd: "10px",
+                  gap: "8px",
+                  alignItems: "flex-start",
+                }}
+              >
+                <FaBookOpen style={{ fontSize: "40px", color: "#1f2837" }} />
+                <span>
+                  Facilitate group study sessions that encourage participants to
+                  discuss and apply biblical principles to their personal and
+                  ministry contexts.
+                </span>
+              </li>
+              <li
+                style={{
+                  display: "flex",
+                  gap: "8px",
+                  alignItems: "flex-start",
+                }}
+              >
+                <GiChurch style={{ fontSize: "40px", color: "#1f2837" }} />
+                <span>
+                  Equip participants for church leadership roles, enhancing
+                  their ability to serve effectively in ministry and community
+                  outreach.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Contact Us</h2>
+            <p className="contactUsText">
+              For more information about the TEE Ministry, feel free to reach
+              out to us. We’d love to hear from you!
+            </p>
+            <p>
+              <strong>Email:</strong> tee@ackstpetersembakasi.org
+              <br />
+              <strong>Phone:</strong>
+            </p>
+            <h2 style={{ marginTop: "1.5rem" }}>Upcoming TEE Events</h2>
             <ul className="events">
               <li>
-                <strong>No Upcoming Events</strong> 
+                <strong>No Upcoming Events</strong>
                 <p>
-                We're currently planning exciting new activities! Stay tuned for updates and check back soon.
+                  We're currently planning exciting new activities! Stay tuned
+                  for updates and check back soon.
                 </p>
               </li>
               {/* <li>
@@ -142,19 +141,7 @@ function Children() {
                   deepening your faith and understanding of Scripture.
                 </p>
               </li> */}
-              
             </ul>
-
-            <h2>Contact Us</h2>
-            <p className="contactUsText">
-              For more information about the TEE Ministry, feel free
-              to reach out to us. We’d love to hear from you!
-            </p>
-            <p>
-              <strong>Email:</strong> tee@ackstpetersembakasi.org
-              <br />
-              <strong>Phone:</strong> 
-            </p>
           </div>
         </div>
       </Reveal>
@@ -167,10 +154,7 @@ function Children() {
           />
         </div>
         <div>
-          <img
-            src={image2}
-            alt=""
-          />
+          <img src={image2} alt="" />
         </div>
         <div>
           <img
@@ -185,10 +169,7 @@ function Children() {
           />
         </div>
         <div>
-          <img
-            src={image1}
-            alt=""
-          />
+          <img src={image1} alt="" />
         </div>
       </div>
     </div>

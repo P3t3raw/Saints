@@ -117,7 +117,17 @@ function Children() {
             </div>
           </div>
           <div>
-            <h2>Upcoming Events</h2>
+            <h2>Contact Us</h2>
+            <p>
+              If you have any questions or want to learn more about the Mother's
+              Union Ministry, feel free to reach out to us.
+            </p>
+            <p>
+              <strong>Email:</strong> kama@ackstpetersembakasi.org
+              <br />
+              <strong>Phone:</strong> 0110008603
+            </p>
+            <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
             <ul className="events">
               <li>
                 <strong>No Upcoming Events</strong>
@@ -127,25 +137,42 @@ function Children() {
                 </p>
               </li>
             </ul>
-            <h2>Discussion Forum</h2>
-            <p>This week's thought-provoking piece:</p>
-            <div className="devotional-list">
-              <ul>
-                <li>
-                  <h4>Upcoming Devotional Piece</h4>
-                  <p>Stay tuned for weekly devotional pieces.</p>
-                  <button>Submit</button>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </Reveal>
       <Reveal>
         <div className="row4Container">
           <div className="row4">
-            <h2>Blogs</h2>
-            <Blogs />
+            <div>
+              <h2>Blogs</h2>
+              <Blogs />
+            </div>
+            <div>
+              <h2>Member Stories</h2>
+              <p>
+                Explore inspiring stories from our KAMA members about their
+                journeys in faith, growth, and transformation. Each story
+                highlights the power of faith in everyday life, offering
+                encouragement and hope. Join us in celebrating the diverse paths
+                within our church family.
+              </p>
+              <div className="devotional-list">
+                <ul>
+                  <li>
+                    <h4>Upcoming Devotional Piece</h4>
+                    <p>
+                      Dive into an inspiring and thought-provoking discussion
+                      that challenges your perspectives and stimulates deep
+                      thinking. This week's piece encourages reflection and
+                      invites you to explore new ideas, share your insights, and
+                      join a meaningful conversation with others. Don’t miss out
+                      on the chance to engage with content that truly matters.
+                    </p>
+                  </li>
+                </ul>
+                <button>Share Your Story</button>
+              </div>
+            </div>
           </div>
         </div>
       </Reveal>

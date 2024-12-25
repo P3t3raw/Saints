@@ -111,18 +111,21 @@
 }
 .row4 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 1.2rem;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin: 0;
-  gap: 2rem;
+  gap: 3rem;
   padding-block: 2.5rem;
   padding-inline: 2rem;
   /* border: 1px black solid; */
   width: 90vw;
-  height: 90vh;
+  height: 80vh;
   margin: auto;
+}
+.row4 div {
+  flex: 1;
 }
 .row2 .row2Text {
   flex: 1;
@@ -185,23 +188,23 @@
 button:hover {
   background-color: #005f73;
 }
-.devotional-list ul,
-.event-calendar ul,
-.forum-list ul,
-.volunteer-opportunities ul {
+.devotional-list ul {
   list-style-type: none;
   padding-left: 0;
+  border: 1px solid black;
+  border-radius: 3rem 0 3rem 3rem;
+  background-color: white;
+  height: 30vh;
 }
-.devotional-list li,
-.event-calendar li,
-.forum-list li,
-.volunteer-opportunities li {
+.devotional-list li {
   margin: 15px 0;
+  width: 40vw;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
-.devotional-list button,
-.event-calendar button,
-.forum-list button,
-.volunteer-opportunities button {
+.devotional-list button {
   margin-top: 10px;
 }
 

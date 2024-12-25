@@ -18,13 +18,7 @@ export default function Blogs() {
         title: "Upcoming Blog",
         desc: "Stay tuned for inspiring blogs filled with fresh ideas and uplifting content. Check back often for updates!",
       },
-      {
-        id: 3,
-        imgSrc:
-          "https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=600",
-        title: "Upcoming Blog",
-        desc: "Stay tuned for inspiring blogs filled with fresh ideas and uplifting content. Check back often for updates!",
-      },
+
       //   {
       //     id: 4,
       //     imgSrc:

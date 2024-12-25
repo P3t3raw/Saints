@@ -1,6 +1,7 @@
-import "../Children/Children.css";
+import "./Youth.css";
 import Reveal from "../../../utils/Reveal";
 import { Link } from "react-router-dom";
+import Blogs from "../../../components/Blogs/Blogs";
 import { FaRegHeart } from "react-icons/fa";
 // import { FaChevronRight } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
@@ -11,7 +12,9 @@ import youth2 from "../../../assets/YouthMinistry3.jpg";
 import youth4 from "../../../assets/youthMin.jpg";
 import youth3 from "../../../assets/YouthMinistry1.jpg";
 import youth5 from "../../../assets/youthMinistry.jpg";
+import { useRef } from "react";
 export default function Youth() {
+  const iframeRef = useRef(null);
   return (
     <div>
       <div className="background">
@@ -60,23 +63,24 @@ export default function Youth() {
           </div>
         </div>
       </Reveal>
-      
+
       <Reveal>
         <div className="row2">
           <div>
             <div>
               <h2>Empowering the Next Generation of Believers</h2>
               <p className="row2Text">
-                The Youth Ministry  is a
-                dynamic and inclusive community for teenagers and young adults.
-                Our mission is to empower young people to grow in their faith,
-                build lasting friendships, and make a positive impact in their
-                world. 
+                The Youth Ministry is a dynamic and inclusive community for
+                teenagers and young adults. Our mission is to empower young
+                people to grow in their faith, build lasting friendships, and
+                make a positive impact in their world.
               </p>
               {
-                <p className="row2Text">Through weekly youth meetings, Bible studies, social
-                events, and service projects, we provide opportunities for
-                spiritual growth, leadership development, and fun.<br/>
+                <p className="row2Text">
+                  Through weekly youth meetings, Bible studies, social events,
+                  and service projects, we provide opportunities for spiritual
+                  growth, leadership development, and fun.
+                  <br />
                   Our youth leaders are dedicated to mentoring and supporting
                   each individual as they navigate the challenges of adolescence
                   and young adulthood.
@@ -129,19 +133,8 @@ export default function Youth() {
                 </li>
               </ul>
             </div>
-           
           </div>
           <div>
-            <h2>Upcoming Events</h2>
-            <ul className="events">
-            <li>
-                <strong>No Upcoming Events</strong> 
-                <p>
-                We're currently planning exciting new activities! Stay tuned for updates and check back soon.
-                </p>
-              </li>
-            </ul>
-
             <h2>Contact Us</h2>
             <p>
               If you have any questions or want to learn more about the Men's
@@ -152,6 +145,76 @@ export default function Youth() {
               <br />
               <strong>Phone:</strong>
             </p>
+            <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
+            <ul className="events">
+              <li>
+                <strong>No Upcoming Events</strong>
+                <p>
+                  We're currently planning exciting new activities! Stay tuned
+                  for updates and check back soon.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Reveal>
+      <Reveal>
+        <div className="row4Container">
+          <div className="row4">
+            <div>
+              <h2>Blogs</h2>
+              <Blogs />
+            </div>
+            <div>
+              <h2>Youths Corner</h2>
+              <p>
+                Stay tuned for inspiring videos and podcasts filled with fresh
+                ideas and uplifting content. Check back often for updates!
+              </p>
+              <div className="wrapperContainer">
+                <div className="sermonsWrapper">
+                  <div
+                    className="recentVideo1"
+                    // key={video.id}
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      maxWidth: "50rem",
+                      margin: "1.5rem auto",
+                      height: "40vh",
+                      borderRadius: "1rem",
+                    }}
+                  >
+                    <iframe
+                      ref={iframeRef}
+                      style={{ width: "100%", height: "100%", border: "0" }}
+                      src="https://www.youtube.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      // allowFullscreen
+                    ></iframe>
+                    <button
+                      style={{
+                        position: "absolute",
+                        bottom: "16px",
+                        right: "24px",
+                        width: "20px",
+                        height: "20px",
+                        cursor: "pointer",
+                        zIndex: "10",
+                        background: "transparent",
+                        border: "none",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      // onClick={handleFullscreen}
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Reveal>

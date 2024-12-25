@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
-// import "./MotherUnion.css";
-import "../Children/Children.css";
+import "./MotherUnion.css";
+import Blogs from "../../../components/Blogs/Blogs";
+// import "../Children/Children.css";
 import { FaChevronRight } from "react-icons/fa";
 import mothersUnion from "../../../assets/MU.jpg";
 import mothersUnion2 from "../../../assets/357746491_619471053607956_411327406936014473_n.jpg";
@@ -10,27 +11,15 @@ import mothersUnion5 from "../../../assets/IMG_6816.JPG";
 import { FaRegHeart } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import Reveal from "../../../utils/Reveal";
-import video1 from "../../../assets/3987756-hd_1280_720_24fps.mp4"
+import video1 from "../../../assets/3987756-hd_1280_720_24fps.mp4";
 
 function Children() {
   return (
     <div>
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
-        <video
-          className="video"
-          src={video1}
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          className="video"
-          src={video1}
-          autoPlay
-          muted
-          loop
-        ></video>
+        <video className="video" src={video1} autoPlay muted loop></video>
+        <video className="video" src={video1} autoPlay muted loop></video>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
             <span>
@@ -75,7 +64,7 @@ function Children() {
                 deepen their faith, grow in love, and make a lasting impact
                 through their roles as mothers, wives, and leaders.
               </p>
-              <h2>What we do in the Mother's Union Ministry?</h2>
+              <h2>What We do in Mother's Union</h2>
               <ul style={{ padding: "0" }}>
                 <li
                   style={{
@@ -121,19 +110,9 @@ function Children() {
                   </span>
                 </li>
               </ul>
-            </div>           
+            </div>
           </div>
           <div>
-            <h2>Upcoming Events</h2>
-            <ul className="events"> 
-            <li>
-                <strong>No Upcoming Events</strong> 
-                <p>
-                We're currently planning exciting new activities! Stay tuned for updates and check back soon.
-                </p>
-              </li>
-            </ul>
-
             <h2>Contact Us</h2>
             <p>
               If you have any questions or want to learn more about the Mother's
@@ -142,8 +121,54 @@ function Children() {
             <p>
               <strong>Email:</strong> mothersunion@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong> 
+              <strong>Phone:</strong>
             </p>
+            <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
+            <ul className="events">
+              <li>
+                <strong>No Upcoming Events</strong>
+                <p>
+                  We're currently planning exciting new activities! Stay tuned
+                  for updates and check back soon.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Reveal>
+      <Reveal>
+        <div className="row4Container">
+          <div className="row4">
+            <div>
+              <h2>Blogs</h2>
+              <Blogs />
+            </div>
+            <div>
+              <h2>Member Stories</h2>
+              <p>
+                Explore inspiring stories from our M.U members about their
+                journeys in faith, growth, and transformation. Each story
+                highlights the power of faith in everyday life, offering
+                encouragement and hope. Join us in celebrating the diverse paths
+                within our church family.
+              </p>
+              <div className="devotional-list">
+                <ul>
+                  <li>
+                    <h4>Upcoming Devotional Piece</h4>
+                    <p>
+                      Dive into an inspiring and thought-provoking discussion
+                      that challenges your perspectives and stimulates deep
+                      thinking. This week's piece encourages reflection and
+                      invites you to explore new ideas, share your insights, and
+                      join a meaningful conversation with others. Don’t miss out
+                      on the chance to engage with content that truly matters.
+                    </p>
+                  </li>
+                </ul>
+                <button>Share Your Story</button>
+              </div>
+            </div>
           </div>
         </div>
       </Reveal>

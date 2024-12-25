@@ -11,8 +11,10 @@ import worshipImg4 from "../../../assets/IMG_6807.JPG";
 import worshipImg5 from "../../../assets/swahiliService.jpg";
 import Reveal from "../../../utils/Reveal";
 import { GiGuitar } from "react-icons/gi";
-import image from "../../../assets/swahiliService.jpg"
+import image from "../../../assets/swahiliService.jpg";
+import { useRef } from "react";
 export default function PraiseTeam() {
+  const iframeRef = useRef(null);
   return (
     <div>
       <div className="background">
@@ -51,58 +53,17 @@ export default function PraiseTeam() {
           <h1>Choir & Praise team</h1>
         </div>
       </div>
-      {/* <div className="row1">
-        <div>
-          <p className="textQuote">
-            ❝ I will praise you as long as I live, and in your name I will lift
-            up my hands.❞{" "}
-            <span style={{ color: "#a7a7a7" }}>~ Psalms 63:4 ~</span>
-          </p>
-        </div>
-        <img src={worshipImg} alt="KAMA" />
-      </div>
-      <div className="worshipRow2">
-        <h2>Who we are</h2>
-        <p>
-          We are a family of worshipers, seeking to know God and make Him known
-          through new, authentic songs of worship and praise. We believe that
-          the greatest calling of every individual is to worship. The Bible also
-          describes musical and artistic expression as a powerful form of
-          worship. As we glorify God in worship, we enter His presence and our
-          lives are changed.
-        </p>
-      </div>
-      <div className="worshipRow3">
-        <h2>Want to join the worship team?</h2>
-        <ul>
-          <li>
-            Fill out the application form with your details and musical
-            experience.
-          </li>
-          <li>
-            Join us for a meeting to learn more about the team and ask
-            questions.
-          </li>
-          <li>Showcase your skills in a brief audition.</li>
-          <li>
-            Attend rehearsals regularly to grow with the team and contribute to
-            worship.
-          </li>
-        </ul>
-      </div> */}
       <div className="row1Container">
         <div className="row1">
           <div>
             <p className="textQuote">
-              ❝ Let everything that has breath praise the Lord. Praise the Lord.❞
+              ❝ Let everything that has breath praise the Lord. Praise the
+              Lord.❞
               <br />
               <span style={{ color: "#a7a7a7" }}>Psalm 150:6</span>
             </p>
           </div>
-          <img
-            src={image}
-            alt="music ministry"
-          />
+          <img src={image} alt="music ministry" />
         </div>
       </div>
       <Reveal>
@@ -170,19 +131,8 @@ export default function PraiseTeam() {
                 </li>
               </ul>
             </div>
-            
           </div>
           <div>
-            <h2>Upcoming Events</h2>
-            <ul className="events">
-            <li>
-                <strong>No Upcoming Events</strong> 
-                <p>
-                We're currently planning exciting new activities! Stay tuned for updates and check back soon.
-                </p>
-              </li>
-            </ul>
-
             <h2>Contact Us</h2>
             <p>
               For more information about the Music Ministry or to join, feel
@@ -191,8 +141,124 @@ export default function PraiseTeam() {
             <p>
               <strong>Email:</strong> musicministry@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong> 
+              <strong>Phone:</strong>
             </p>
+            <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
+            <ul className="events">
+              <li>
+                <strong>No Upcoming Events</strong>
+                <p>
+                  We're currently planning exciting new activities! Stay tuned
+                  for updates and check back soon.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Reveal>
+      <Reveal>
+        <div className="row4Container">
+          <div className="row4">
+            <div>
+              <h2>Featured Song</h2>
+              <p>
+                Stay tuned for inspiring videos and podcasts filled with fresh
+                ideas and uplifting content. Check back often for updates!
+              </p>
+              <div className="wrapperContainer">
+                <div className="sermonsWrapper">
+                  <div
+                    className="recentVideo1"
+                    // key={video.id}
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      maxWidth: "50rem",
+                      margin: "1.5rem auto",
+                      height: "40vh",
+                      borderRadius: "1rem",
+                    }}
+                  >
+                    <iframe
+                      ref={iframeRef}
+                      style={{ width: "100%", height: "100%", border: "0" }}
+                      src="https://www.youtube.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      // allowFullscreen
+                    ></iframe>
+                    <button
+                      style={{
+                        position: "absolute",
+                        bottom: "16px",
+                        right: "24px",
+                        width: "20px",
+                        height: "20px",
+                        cursor: "pointer",
+                        zIndex: "10",
+                        background: "transparent",
+                        border: "none",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      // onClick={handleFullscreen}
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2>Our Performance</h2>
+              <p>
+                Stay tuned for inspiring videos and podcasts filled with fresh
+                ideas and uplifting content. Check back often for updates!
+              </p>
+              <div className="wrapperContainer">
+                <div className="sermonsWrapper">
+                  <div
+                    className="recentVideo1"
+                    // key={video.id}
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      maxWidth: "50rem",
+                      margin: "1.5rem auto",
+                      height: "40vh",
+                      borderRadius: "1rem",
+                    }}
+                  >
+                    <iframe
+                      ref={iframeRef}
+                      style={{ width: "100%", height: "100%", border: "0" }}
+                      src="https://www.youtube.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      // allowFullscreen
+                    ></iframe>
+                    <button
+                      style={{
+                        position: "absolute",
+                        bottom: "16px",
+                        right: "24px",
+                        width: "20px",
+                        height: "20px",
+                        cursor: "pointer",
+                        zIndex: "10",
+                        background: "transparent",
+                        border: "none",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      // onClick={handleFullscreen}
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Reveal>

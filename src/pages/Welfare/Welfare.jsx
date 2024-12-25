@@ -6,7 +6,8 @@ import "./Welfare.css";
 export default function Welfare() {
   const programDetails = {
     title: "ACK St. Peter's Church Embakasi Welfare Association",
-    overview: "A non-political, non-sectarian, voluntary self-Help group of members",
+    overview:
+      "A non-political, non-sectarian, voluntary self-Help group of members",
     objectives: [
       "To mobilize members of ACK St Peters Embakasi church and individuals to share and participate in aspects of weddings and bereavement.",
       "To be a forum where members support each other financially, socially, emotionally, mentally and spiritually when necessary.",
@@ -20,14 +21,13 @@ export default function Welfare() {
       "A grace period of three months from the date of registration to be able to qualify for any benefits.",
       "Be a person of a sound mind",
       "Be willing to abide by all the rules and regulations of the Associtation.",
-
     ],
     description:
       "ACK St. Peter's Church Embakasi Welfare Association aims to offer quick financial assistance to individuals and families in need of support during times of crisis.",
-   
+
     applicationProcess:
       "Visit the church office or contact us at 0110008603 to apply.",
-   
+
     testimonials: [
       {
         quote:
@@ -40,16 +40,16 @@ export default function Welfare() {
         name: "James, Recipient",
       },
     ],
-   
+
     gallery: [
       "https://bacc.cc/wp-content/uploads/2023/11/gallery-tgs-tall.jpg",
       "https://bacc.cc/wp-content/uploads/2023/11/gallery-tgs-tall.jpg",
     ],
     contact: { email: "welfare@church.org", phone: "(555) 123-4567" },
-    updates: ["All members are urged to settle their arrears.",
-      "The committee wishes you merry christmas and a happy new year 2025!"
+    updates: [
+      "All members are urged to settle their arrears.",
+      "The committee wishes you merry christmas and a happy new year 2025!",
     ],
-    
   };
 
   return (
@@ -86,20 +86,12 @@ export default function Welfare() {
                 <li key={index}>{objective}</li>
               ))}
             </ol>
-          </div>         
+          </div>
           <div>
             <h2>Membership Qualifications</h2>
             <ol>
-              {programDetails.qualifications.map((qualification, index)=>(
+              {programDetails.qualifications.map((qualification, index) => (
                 <li key={index}>{qualification}</li>
-              ))}
-            </ol>
-          </div>
-          <div>
-            <h2>Recent Updates</h2>
-            <ol>
-              {programDetails.updates.map((update, index) => (
-                <li key={index}>{update}</li>
               ))}
             </ol>
           </div>
@@ -118,8 +110,12 @@ export default function Welfare() {
         </div>
         <div className="rightWelfarePart">
           <div>
-            <h2>How to Become A Member</h2>
-            <p>{programDetails.applicationProcess}</p>
+            <h2>Recent Updates</h2>
+            <ol className="welfareUpdates">
+              {programDetails.updates.map((update, index) => (
+                <li key={index}>{update}</li>
+              ))}
+            </ol>
           </div>
 
           <div>
@@ -130,6 +126,10 @@ export default function Welfare() {
                 <p>- {testimonial.name}</p>
               </div>
             ))}
+          </div>
+          <div>
+            <h2>How to Become A Member</h2>
+            <p>{programDetails.applicationProcess}</p>
           </div>
           <div className="ctaSection">
             <h2>{programDetails.cta}</h2>
