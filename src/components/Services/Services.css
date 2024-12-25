@@ -52,7 +52,7 @@
 .serviceContent p {
   text-align: justify;
 }
-@media screen and (max-width:1368px){
+@media screen and (max-width: 1368px) {
   /* .servicesWrapper{
     gap: ;
   } */
@@ -70,7 +70,7 @@
   }
   .servicesWrapper {
     grid-template-columns: repeat(2, 1fr);
-     }
+  }
   .servicePic {
     height: 12rem;
     object-fit: cover;
@@ -80,12 +80,11 @@
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width:992px){
-  .servicesWrapper{
+@media screen and (max-width: 992px) {
+  .servicesWrapper {
     width: 90vw;
-    margin:auto;
+    margin: auto;
   }
-  
 }
 @media screen and (max-width: 600px) {
   .servicesWrapper {
@@ -97,7 +96,7 @@
     object-position: top;
   }
   .card {
-    width: 60vw;
+    width: 80vw;
     margin: auto;
   }
 }
