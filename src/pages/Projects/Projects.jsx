@@ -104,7 +104,7 @@ export default function Projects() {
               Church Projects <FaChevronRight />
             </span>
           </p>
-          <h1>Church Projects</h1>
+          {/* <h1>Church Projects</h1> */}
         </div>
       </div>
 
