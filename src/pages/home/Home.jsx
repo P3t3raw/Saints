@@ -77,7 +77,7 @@ function Home() {
             <span>
               Call or message us at:{" "}
               <small style={{ color: "blue", fontSize: "16px" }}>
-                0746339588
+                0746 339 588
               </small>
             </span>
             <span>

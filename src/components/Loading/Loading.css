@@ -39,3 +39,11 @@
   font-size: 18px;
   color: #555;
 }
+@media screen and (max-width: 600px) {
+  .loading-text {
+    font-size: 1.2rem;
+  }
+  .loading-subtext {
+    font-size: 1rem;
+  }
+}
