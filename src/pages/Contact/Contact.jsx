@@ -103,7 +103,7 @@ export default function Contact() {
               Contact Us <FaChevronRight />
             </span>
           </p>
-          <h1>Contact Us</h1>
+          {/* <h1>Contact Us</h1> */}
         </div>
       </div>
 

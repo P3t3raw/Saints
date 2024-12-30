@@ -1,6 +1,6 @@
 .aboutBackground {
   background-image: url("../../assets/bg_1.jpg.webp");
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   position: inherit;
   background-size: cover;
@@ -213,16 +213,17 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-  .aboutContent h1{
-    font-size: 1.5rem;
+  .aboutContent h1 {
+    font-size: 1.3rem;
   }
   /* Further reduce padding for even smaller screens */
   .aboutBreadCrumbsWrapper {
     padding-inline: 1rem;
+    display: none;
   }
 
   .aboutBreadCrumbsWrapper h1 {
-    font-size: 1.5rem; /* Adjust breadcrumb heading */
+    font-size: 1.3rem; /* Adjust breadcrumb heading */
   }
 
   .aboutBreadCrumbs {
@@ -239,33 +240,13 @@ h1 {
   .contact-form {
     padding: 1rem; /* Add some padding for better spacing */
   }
-}
-@media screen and (max-width: 576px) {
-  /* Make sure everything fits on small mobile screens */
-  .aboutBreadCrumbsWrapper h1 {
-    font-size: 1.25rem; /* Adjust heading size further */
+  .contact-form-container h2,
+  .contact-details h2,
+  .contact-map h2 {
+    font-size: 1.2rem;
   }
-
-  .aboutBreadCrumbs {
-    font-size: 0.625rem; /* Breadcrumb text even smaller */
-  }
-
-  /* Contact section adjustments */
-  .contact-info {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .contact-details,
-  .contact-map {
-    width: 100%;
-  }
-
-  .map-placeholder {
-    height: 150px; /* Even smaller map for mobile */
-  }
-
-  .contact-form button {
-    width: 100%; /* Make submit button take full width */
+  .contact-form label,
+  .contact-info p {
+    font-size: 1rem;
   }
 }
