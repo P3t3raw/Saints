@@ -7,11 +7,10 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineAccessTime } from "react-icons/md";
 import image2 from "../../assets/worshipNight.jpg";
 import image1 from "../../assets/IMG-20241213-WA0010.jpg";
-import image3 from "../../assets/worshipTeam.jpg"
+import image3 from "../../assets/worshipTeam.jpg";
 
 function AllEvents() {
   const events = [
-   
     {
       id: 1,
       imgSrc: image1,
@@ -21,7 +20,7 @@ function AllEvents() {
       time: "10:00 AM ",
       location: "ACK St.Peter's Embakasi",
     },
-    
+
     {
       id: 2,
       imgSrc: image2,
@@ -40,7 +39,6 @@ function AllEvents() {
       time: "8:00 am - 9:30 am",
       location: "ACK St.Peter's Embakasi",
     },
-    
   ];
 
   return (
@@ -48,7 +46,7 @@ function AllEvents() {
       <div className="eventsBackground">
         <div className="eventsOverlay"></div>
         <div className="eventsContent">
-          <h1>Discover Our  Events</h1>
+          <h1>Discover Our Events</h1>
         </div>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
@@ -59,7 +57,7 @@ function AllEvents() {
               Events <FaChevronRight />
             </span>
           </p>
-          <h1>Events</h1>
+          {/* <h1>Events</h1> */}
         </div>
       </div>
       <div className="actualEvents">
