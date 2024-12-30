@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 import "./Welfare.css";
+import { LuDot } from "react-icons/lu";
 
 export default function Welfare() {
   const programDetails = {
@@ -81,19 +82,31 @@ export default function Welfare() {
           </div>
           <div>
             <h2>Program Objectives</h2>
-            <ol>
+            <>
               {programDetails.objectives.map((objective, index) => (
-                <li key={index}>{objective}</li>
+                <p
+                  key={index}
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <LuDot style={{ fontSize: "2rem" }} />
+                  {objective}
+                </p>
               ))}
-            </ol>
+            </>
           </div>
           <div>
             <h2>Membership Qualifications</h2>
-            <ol>
+            <>
               {programDetails.qualifications.map((qualification, index) => (
-                <li key={index}>{qualification}</li>
+                <p
+                  key={index}
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <LuDot style={{ fontSize: "2rem" }} />
+                  {qualification}
+                </p>
               ))}
-            </ol>
+            </>
           </div>
           {/*<div>
             <h2>Gallery</h2>
@@ -133,13 +146,13 @@ export default function Welfare() {
           </div>
           <div className="ctaSection">
             <h2>{programDetails.cta}</h2>
-            <button
+            {/* <button
               onClick={() =>
                 (window.location.href = `mailto:${programDetails.contact.email}`)
               }
             >
               Become a Member
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@
   text-align: center;
 }
 .welfareContent h1 {
-  font-size: 3.125rem;
+  font-size: 2.125rem;
   font-weight: 700;
   margin-bottom: 0.625rem;
   text-align: center;
@@ -38,7 +38,7 @@
 
 .breadCrumbsWrapper {
   /* background-color: #f8f9fa; */
-  padding: 0.625rem 0; /* 10px converted to rem */
+  padding: 0.625rem 0;
   position: absolute;
   z-index: 99;
   bottom: 2rem;
@@ -48,7 +48,7 @@
 .breadCrumbs {
   display: flex;
   justify-content: center;
-  font-size: 1.125rem; /* 18px converted to rem */
+  font-size: 1.125rem;
   color: white;
 }
 
@@ -58,28 +58,28 @@
 }
 
 .welfareMainContent {
-  padding: 1.25rem; /* 20px converted to rem */
+  padding: 1.25rem;
   background-color: #f9f9f9;
   display: flex;
   flex-direction: row;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
 }
 
 .welfareMainContent h2 {
-  font-size: 1.125rem; /* 18px converted to rem */
-  margin-bottom: 0.625rem; /* 10px converted to rem */
+  font-size: 1.125rem;
+  margin-bottom: 0.625rem;
   padding: 0;
 }
 
 .welfareMainContent p {
-  font-size: 1.125rem; /* 18px converted to rem */
-  margin-bottom: 1.25rem; /* 20px converted to rem */
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
 }
 
 .welfareMainContent ul {
   list-style-type: disc;
-  margin-left: 1.25rem; /* 20px converted to rem */
+  margin-left: 1.25rem;
 }
 .leftWelfarePart {
   display: flex;
@@ -87,7 +87,6 @@
   padding: 1rem;
   flex: 2;
   max-width: 60%;
-  /* border: solid blue 1px; */
 }
 .leftWelfarePart div,
 .rightWelfarePart div {
@@ -97,92 +96,40 @@
 .rightWelfarePart {
   flex: 1;
   padding: 1rem;
-  /* border: solid red 1px; */
 }
 .welfareUpdates {
   background-color: #e9ecef;
-  padding: 0.625rem; /* 10px converted to rem */
-  margin: 0.625rem 0; /* 10px converted to rem */
-  border-left: 0.3125rem solid #007bff; /* 5px converted to rem */
+  padding: 0.625rem;
+  margin: 0.625rem 0;
+  border-left: 0.3125rem solid #007bff;
   border-radius: 0.5rem;
 }
 .testimonial {
   background-color: #e9ecef;
-  padding: 0.625rem; /* 10px converted to rem */
-  margin: 0.625rem 0; /* 10px converted to rem */
+  padding: 0.625rem;
+  margin: 0.625rem 0;
   border-radius: 1rem 0 1rem 1rem;
   border: 1px solid black;
 }
 
 .gallery img {
   width: 100%;
-  max-width: 18.75rem; /* 300px converted to rem */
-  margin: 0.625rem; /* 10px converted to rem */
+  max-width: 18.75rem;
+  margin: 0.625rem;
   display: inline-block;
-}
-
-.ctaSection {
-  text-align: center;
-  margin-top: 2.5rem; /* 40px converted to rem */
 }
 
 .ctaSection button {
   background-color: #007bff;
   color: white;
-  padding: 0.625rem 1.25rem; /* 10px 20px converted to rem */
-  font-size: 1.125rem; /* 18px converted to rem */
+  padding: 0.625rem 1.25rem;
+  font-size: 1.125rem;
   border: none;
   cursor: pointer;
 }
 
 .ctaSection button:hover {
   background-color: #0056b3;
-}
-/* General Mobile Devices (max-width: 768px) */
-@media screen and (max-width: 768px) {
-  .welfareBackground {
-    background-attachment: scroll; /* Disable fixed background for smoother scrolling */
-  }
-
-  .welfareContent h1 {
-    font-size: 2rem; /* Reduce font size for smaller screens */
-  }
-
-  .breadCrumbsWrapper {
-    padding-inline: 1rem; /* Narrow padding */
-    bottom: 1rem; /* Reduce bottom spacing */
-  }
-
-  .breadCrumbs {
-    font-size: 1rem; /* Adjust breadcrumb font size */
-  }
-
-  .welfareMainContent {
-    flex-direction: column; /* Stack content vertically */
-    width: 90vw; /* Increase width to fit better */
-    padding: 1rem; /* Reduce padding */
-  }
-
-  .leftWelfarePart,
-  .rightWelfarePart {
-    max-width: 100%; /* Allow full width for both parts */
-    padding: 0.5rem; /* Reduce padding */
-    border: 1px black solid;
-  }
-
-  .gallery img {
-    max-width: 100%; /* Scale images to fit smaller screens */
-    margin: 0.5rem auto; /* Center images and reduce spacing */
-  }
-
-  .ctaSection {
-    margin-top: 1.5rem; /* Reduce margin */
-  }
-
-  .ctaSection button {
-    padding: 0.5rem 1rem; /* Adjust button size */
-    font-size: 1rem; /* Reduce font size */
-  }
 }
 
 /* Tablets and Small Laptops (max-width: 1024px) */
@@ -205,29 +152,41 @@
   }
 }
 
-/* Large Phones and Small Tablets (max-width: 576px) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .welfareBackground {
+    background-attachment: fixed;
+  }
+
   .welfareContent h1 {
-    font-size: 1.3rem; /* Further reduce font size */
+    font-size: 1.3rem;
   }
   .welfareMainContent {
+    display: flex;
     flex-direction: column;
+    width: 90vw;
+    padding: 1rem;
   }
+
+  .leftWelfarePart,
+  .rightWelfarePart {
+    min-width: 100%;
+    padding: 0.5rem;
+  }
+  .leftWelfarePart p,
+  .rightWelfarePart p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .ctaSection {
+    margin-top: 1.5rem;
+  }
+
   .breadCrumbsWrapper {
-    padding-inline: 0.5rem; /* Reduce padding for smaller screens */
     display: none;
   }
 
-  .breadCrumbs {
-    font-size: 0.875rem; /* Adjust font size */
-  }
-
   .welfareMainContent ul {
-    margin-left: 0.625rem; /* Reduce list indentation */
-  }
-
-  .ctaSection button {
-    width: 100%; /* Make button full-width */
-    padding: 0.75rem; /* Adjust padding */
+    margin-left: 0;
   }
 }
