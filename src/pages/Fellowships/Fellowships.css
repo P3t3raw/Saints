@@ -259,11 +259,15 @@ main {
   }
 
   .nextMeeting {
-    font-size: 0.8rem;
+    font-size: 0.93rem;
   }
 
   .fellowshipSearch select {
     font-size: 1rem;
+  }
+  .fellowshipDesc,
+  .history p {
+    text-align: justify;
   }
 
   .noticesBackground {

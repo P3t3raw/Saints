@@ -13,7 +13,7 @@ export default function Fellowships() {
         id: 1,
         imgSrc: mradiImage,
         title: "Baraka Fellowship",
-        meetingDate: "Oct 25, 2024",
+        meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose. Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
@@ -41,7 +41,7 @@ export default function Fellowships() {
         id: 2,
         imgSrc: juakaliImage,
         title: "Juakali Fellowship",
-        meetingDate: "Oct 25, 2024",
+        meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose. Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
@@ -68,7 +68,7 @@ export default function Fellowships() {
         id: 3,
         imgSrc: mradiImage,
         title: "Mradi Fellowship",
-        meetingDate: "Oct 25, 2024",
+        meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
@@ -95,7 +95,7 @@ export default function Fellowships() {
         id: 4,
         imgSrc: mradiImage,
         title: "Outer Fellowship",
-        meetingDate: "Oct 25, 2024",
+        meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
@@ -122,7 +122,7 @@ export default function Fellowships() {
         id: 5,
         imgSrc: mradiImage,
         title: "Nyayo 1 Fellowship",
-        meetingDate: "Oct 25, 2024",
+        meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
@@ -149,7 +149,7 @@ export default function Fellowships() {
         id: 6,
         imgSrc: mradiImage,
         title: "Nyayo 2 Fellowship",
-        meetingDate: "Oct 25, 2024",
+        meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
@@ -176,7 +176,7 @@ export default function Fellowships() {
         id: 7,
         imgSrc: mradiImage,
         title: "Police Line Fellowship",
-        meetingDate: "Oct 25, 2024",
+        meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
@@ -225,7 +225,7 @@ export default function Fellowships() {
               Estate Fellowships <FaChevronRight />
             </span>
           </p>
-          <h1>Estate Fellowships</h1>
+          {/* <h1>Estate Fellowships</h1> */}
         </div>
       </div>
       {
