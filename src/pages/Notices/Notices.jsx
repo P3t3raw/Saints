@@ -42,7 +42,6 @@ export default function Notices() {
       description:
         "We also continue urging welfare members to continue off setting their arrears.",
     },
-   
   ];
 
   const handleFlip = (id) => {
@@ -65,7 +64,7 @@ export default function Notices() {
               Notices <FaChevronRight />
             </span>
           </p>
-          <h1>Notices</h1>
+          {/* <h1>Notices</h1> */}
         </div>
       </div>
       <div className="Container">
