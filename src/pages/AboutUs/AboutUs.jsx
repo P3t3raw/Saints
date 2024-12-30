@@ -57,6 +57,12 @@ function AboutUs() {
       title: "Layreader",
       name: "Jane Oyieko",
     },
+    {
+      id: 8,
+      imgSrc: profileImage,
+      title: "Layreader",
+      name: "Njoka",
+    },
   ];
 
   const admins = [
@@ -108,7 +114,7 @@ function AboutUs() {
               About <FaChevronRight />
             </span>
           </p>
-          <h1>About</h1>
+          {/* <h1>About</h1> */}
         </div>
       </div>
 
