@@ -22,7 +22,7 @@ function Footer() {
               <span>Embakasi Near Embakasi Post Office, Embakasi, Kenya</span>
             </li>
             <li>
-              <MdOutlinePhone /> <span>0110 008 603 (Prayer Line)</span>
+              <MdOutlinePhone /> <span>0746 339 588 (Prayer Line)</span>
             </li>
             <li>
               <MdOutlineEmail /> <span>info@ackstpetersembakasi.org</span>
@@ -48,7 +48,7 @@ function Footer() {
             <li>
               <span>Main Church Paybill</span>
               <span>: 70 17 84</span>
-              <small>ACC NO: OFFERTORY/TITHE/THANKSGIVING</small>
+              <small>A/C: OFFERTORY/TITHE/THANKSGIVING</small>
             </li>
             <li>
               <span>Development Paybill: 70 17 90</span>
@@ -77,7 +77,7 @@ function Footer() {
         <p className="footer">
           <span className="greyLine"></span>
           <small className="textPrimary">
-            Copyright &copy; 2024. All rights reserved
+            Copyright &copy; 2025. All rights reserved
           </small>
           <span className="greyLine"></span>
         </p>

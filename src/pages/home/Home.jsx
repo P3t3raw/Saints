@@ -32,7 +32,7 @@ function Home() {
         <div className="content">
           <p className="text">
             <span className="whiteLine"></span>
-            <span className="textPrimary">Theme of the Year 2024</span>
+            <span className="textPrimary">Theme of the Year 2025</span>
             <span className="whiteLine"></span>
           </p>
           <p className="themeText">

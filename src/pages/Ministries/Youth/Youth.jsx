@@ -8,10 +8,10 @@ import { BiBible, BiHomeHeart } from "react-icons/bi";
 import { FaChevronRight } from "react-icons/fa";
 import fridayService from "../../../assets/YouthMinistry2.jpg";
 import youth1 from "../../../assets/YouthMinistry6.jpg";
-import youth2 from "../../../assets/YouthMinistry3.jpg";
+import youth2 from "../../../assets/stpetersfc.jpg";
 import youth4 from "../../../assets/youthMin.jpg";
 import youth3 from "../../../assets/YouthMinistry1.jpg";
-import youth5 from "../../../assets/youthMinistry.jpg";
+import youth5 from "../../../assets/stpetersfc1.jpg";
 import { useRef } from "react";
 export default function Youth() {
   const iframeRef = useRef(null);
@@ -188,7 +188,7 @@ export default function Youth() {
                     <iframe
                       ref={iframeRef}
                       style={{ width: "100%", height: "100%", border: "0" }}
-                      src="https://www.youtube.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb"
+                      src="https://www.youtube.com/embed/I-npl3MvBIk?si=4XN4XSa0O6jmqAu9"
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"

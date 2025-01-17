@@ -5,15 +5,15 @@ export default function Sermons() {
   const videos = [
     {
       id: 1,
-      src: "https://www.youtube.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb",
+      src: "https://www.youtube.com/embed/p_oHTR5o4z4?si=4XsmGeW6ft1swl6k",
     },
     {
       id: 2,
-      src: "https://www.youtube.com/embed/WqweBHlECaA?si=gHvcXjQ8cVNCMcxd",
+      src: "https://www.youtube.com/embed/Xj_AJ8oNovA?si=QGSvXt3s1k6m0-1T",
     },
     {
       id: 3,
-      src: "https://www.youtube.com/embed/ncOfKE4lPmU?si=xULeIzgcBjp2n3hT",
+      src: "https://www.youtube.com/embed/t35AiXw5gsU?si=q9p6uYM9H0ciO-dp",
     },
   ];
 

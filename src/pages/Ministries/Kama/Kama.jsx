@@ -119,8 +119,8 @@ function Children() {
           <div>
             <h2>Contact Us</h2>
             <p>
-              If you have any questions or want to learn more about the Mother's
-              Union Ministry, feel free to reach out to us.
+              If you have any questions or want to learn more about the KAMA
+              Ministry, feel free to reach out to us.
             </p>
             <p>
               <strong>Email:</strong> kama@ackstpetersembakasi.org
@@ -148,7 +148,7 @@ function Children() {
               <Blogs />
             </div>
             <div>
-              <h2>Member Stories</h2>
+              <h2>Member Testimony</h2>
               <p>
                 Explore inspiring stories from our KAMA members about their
                 journeys in faith, growth, and transformation. Each story
@@ -159,7 +159,7 @@ function Children() {
               <div className="devotional-list">
                 <ul>
                   <li>
-                    <h4>Upcoming Devotional Piece</h4>
+                    {/* <h4>Upcoming Devotional Piece</h4>
                     <p>
                       Dive into an inspiring and thought-provoking discussion
                       that challenges your perspectives and stimulates deep
@@ -167,7 +167,7 @@ function Children() {
                       invites you to explore new ideas, share your insights, and
                       join a meaningful conversation with others. Don’t miss out
                       on the chance to engage with content that truly matters.
-                    </p>
+                    </p> */}
                   </li>
                 </ul>
                 <button>Share Your Story</button>

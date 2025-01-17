@@ -5,30 +5,30 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineAccessTime } from "react-icons/md";
-import image2 from "../../assets/worshipNight.jpg";
-import image1 from "../../assets/IMG-20241213-WA0010.jpg";
+import image2 from "../../assets/Fasting.jpg";
+import image1 from "../../assets/stpetersfc1.jpg";
 import image3 from "../../assets/worshipTeam.jpg";
+import image4 from "../../assets/JehovaJireh.jpg";
 
 function AllEvents() {
   const events = [
     {
       id: 1,
-      imgSrc: image1,
-      title: "Christmas Carols",
-      desc: " Join our youth retreat for a weekend of spiritual growth, fellowship, and fun. We'll have inspiring sessions, worship, and outdoor activities.",
+      imgSrc: image2,
+      title: "21 Days of Prayer & Fasting",
+      desc: " ",
       date: "15th December, 2024",
       time: "10:00 AM ",
       location: "ACK St.Peter's Embakasi",
     },
-
     {
       id: 2,
-      imgSrc: image2,
-      title: "CrossOver Worship Night",
-      desc: "Come worship together as we lift our voices in praise. An evening of music, prayer, and reflection.",
-      date: "31st December, 2024",
-      time: "10:00 PM",
-      location: "ACK St.Peter's Embakasi",
+      imgSrc: image4,
+      title: "A Goodwill visit to Jehova Jireh children's Home",
+      desc: "",
+      date: "1st February, 2025",
+      time: "10:00 am",
+      location: "Jehova Jireh Children's Home Ruai",
     },
     {
       id: 3,
@@ -37,6 +37,15 @@ function AllEvents() {
       desc: " Join our youth retreat for a weekend of spiritual growth, fellowship, and fun. We'll have inspiring sessions, worship, and outdoor activities.",
       date: "26th January, 2025 ",
       time: "8:00 am - 9:30 am",
+      location: "ACK St.Peter's Embakasi",
+    },
+    {
+      id: 4,
+      imgSrc: image1,
+      title: "St. Peter's F.C Training",
+      desc: " ",
+      date: "T.B.D",
+      time: "T.B.D ",
       location: "ACK St.Peter's Embakasi",
     },
   ];
