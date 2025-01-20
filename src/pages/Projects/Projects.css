@@ -90,7 +90,7 @@ main {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  max-width: 600px;
+  max-width: 900px;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -146,6 +146,34 @@ main {
 .learnMoreButton:hover {
   background-color: #0056b3;
 }
+
+
+/* Medium Screens (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .noticesContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .projectList {
+    max-width: 85vw;
+  }
+
+  .projectCard {
+    padding: 1.25rem;
+  }
+
+  .projectCard h2 {
+    font-size: 1.4rem;
+  }
+
+  .projectCard p {
+    font-size: 1rem;
+  }
+
+  .projectCard span {
+    font-size: 0.9rem;
+  }
+}
 @media (max-width: 767px) {
   .noticesContent h1 {
     font-size: 1.5rem;
@@ -175,59 +203,5 @@ main {
 
   .projectCard span {
     font-size: 0.8rem;
-  }
-}
-
-/* Medium Screens (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .noticesContent h1 {
-    font-size: 2.5rem;
-  }
-
-  .projectList {
-    max-width: 85vw;
-  }
-
-  .projectCard {
-    padding: 1.25rem;
-  }
-
-  .projectCard h2 {
-    font-size: 1.4rem;
-  }
-
-  .projectCard p {
-    font-size: 1rem;
-  }
-
-  .projectCard span {
-    font-size: 0.9rem;
-  }
-}
-
-/* Large Screens (1025px and above) */
-@media (min-width: 1025px) {
-  .noticesContent h1 {
-    font-size: 3rem;
-  }
-
-  .projectList {
-    max-width: 70vw;
-  }
-
-  .projectCard {
-    padding: 1.5rem;
-  }
-
-  .projectCard h2 {
-    font-size: 1.6rem;
-  }
-
-  .projectCard p {
-    font-size: 1rem;
-  }
-
-  .projectCard span {
-    font-size: 0.9rem;
   }
 }
