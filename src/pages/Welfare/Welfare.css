@@ -3,7 +3,6 @@
   background-image: url("../../assets/bg_1.jpg.webp");
   height: 50dvh;
   width: 100%;
-  position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -37,7 +36,6 @@
 }
 
 .breadCrumbsWrapper {
-  /* background-color: #f8f9fa; */
   padding: 0.625rem 0;
   position: absolute;
   z-index: 99;
@@ -73,8 +71,8 @@
 }
 
 .welfareMainContent p {
-  font-size: 1.125rem;
-  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .welfareMainContent ul {
@@ -135,7 +133,6 @@
 /* Tablets and Small Laptops (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
   .welfareMainContent {
-    width: 85vw; /* Slightly increase content width */
     padding: 1rem; /* Adjust padding */
   }
 
@@ -163,8 +160,7 @@
   .welfareMainContent {
     display: flex;
     flex-direction: column;
-    width: 90vw;
-    padding: 1rem;
+    padding: 0rem;
   }
 
   .leftWelfarePart,
@@ -175,7 +171,7 @@
   .leftWelfarePart p,
   .rightWelfarePart p {
     font-size: 1rem;
-    text-align: justify;
+    text-align: left;
   }
 
   .ctaSection {

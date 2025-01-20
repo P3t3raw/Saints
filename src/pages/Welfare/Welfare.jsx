@@ -82,31 +82,27 @@ export default function Welfare() {
           </div>
           <div>
             <h2>Program Objectives</h2>
-            <>
               {programDetails.objectives.map((objective, index) => (
                 <p
                   key={index}
-                  style={{ display: "flex", alignItems: "center" }}
+                  style={{ display: "flex",  }}
                 >
-                  <LuDot style={{ fontSize: "2rem" }} />
+                  <LuDot style={{ fontSize: "2rem", flexShrink:'0' }} />
                   {objective}
                 </p>
               ))}
-            </>
           </div>
           <div>
             <h2>Membership Qualifications</h2>
-            <>
               {programDetails.qualifications.map((qualification, index) => (
                 <p
                   key={index}
-                  style={{ display: "flex", alignItems: "center" }}
+                  style={{ display: "flex" }}
                 >
-                  <LuDot style={{ fontSize: "2rem" }} />
+                  <LuDot style={{ fontSize: "2rem", flexShrink:'0' }} />
                   {qualification}
                 </p>
               ))}
-            </>
           </div>
           {/*<div>
             <h2>Gallery</h2>

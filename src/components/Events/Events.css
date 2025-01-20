@@ -140,7 +140,16 @@
     transform: translateX(0);
   }
 }
-
+@media screen and (max-width: 1080px){
+  .events-list{
+    height: 50vh;
+    
+  }
+  .eventsWrapper{
+    height: 50vh;
+  }
+  
+}
 
 @media screen and (max-width: 724px) {
   .eventsCard{
@@ -156,8 +165,11 @@
     width: 90vw;
   }
   .events-list{
-    height: 40vh;
+    height: 50vh;
     width: 90vw;
+  }
+  .eventsWrapper{
+    height: 60vh;
   }
   
 }
