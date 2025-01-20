@@ -21,7 +21,7 @@
   margin: auto;
   overflow-x: auto;
   padding-bottom: 10px;
-  padding-top:10px;
+  padding-top: 10px;
   scrollbar-width: none;
 }
 .servicesWrapper::-webkit-scrollbar {
