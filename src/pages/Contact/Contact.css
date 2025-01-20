@@ -2,7 +2,6 @@
   background-image: url("../../assets/bg_1.jpg.webp");
   height: 50vh;
   width: 100%;
-  position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -74,10 +73,8 @@
   margin: auto;
   padding: 2rem 0;
   font-size: 1.1rem;
-  /* align-items: center; */
   justify-content: center;
   gap: 2rem;
-  /* border: 1px solid black; */
 }
 
 h1 {
@@ -91,15 +88,12 @@ h1 {
   justify-content: center;
   gap: 1rem;
   flex: 1;
-  /* width: 100%; */
-  /* border: 1px solid black; */
 }
 
 .contact-details,
 .contact-map {
   font-size: 1.1rem;
   width: 100%;
-  /* border: solid 1px black; */
 }
 
 .contact-details p,
@@ -237,9 +231,6 @@ h1 {
     height: 200px; /* Further reduce map height */
   }
 
-  .contact-form {
-    padding: 1rem; /* Add some padding for better spacing */
-  }
   .contact-form-container h2,
   .contact-details h2,
   .contact-map h2 {

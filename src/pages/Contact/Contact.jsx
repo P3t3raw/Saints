@@ -127,50 +127,53 @@ export default function Contact() {
             </select>
 
             {formData.title === "booking" && (
-              <>
+              
                 <label>
                   Call us on <b>+254110008603</b> to make an appointment with
                   the Vicar at your convenient time.
                 </label>
-              </>
+              
             )}
 
             {formData.title !== "booking" && (
               <>
-                <label>
-                  Name:
+              <div style={{display:'flex', flexDirection:'column', gap:'16px'}}>
+                <div style={{display:'flex', flexDirection:'column', gap:'3px'}}>
+                <label htmlFor="name" style={{textAlign:'left'}}>Name</label>
                   <input
                     type="text"
                     name="name"
+                    id="name"
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={handleInputChange}
                     required
                   />
-                </label>
-
-                <label>
-                  Email:
-                  <input
+                </div>
+                <div style={{display:'flex', flexDirection:'column', gap:'3px'}}>
+                <label htmlFor="email" style={{textAlign:'left'}}>Email</label>
+                <input
                     type="email"
                     name="email"
+                    id="email"
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={handleInputChange}
                     required
                   />
-                </label>
-
-                <label>
-                  Message:
-                  <textarea
+                </div>
+                <div style={{display:'flex', flexDirection:'column', gap:'3px'}}>
+                <label htmlFor="message"  style={{textAlign:'left'}}>Message</label>
+                <textarea
                     name="message"
+                    id="message"
                     placeholder="Your Message"
                     value={formData.message}
                     onChange={handleInputChange}
                     required
                   ></textarea>
-                </label>
+                </div>
+              </div>
                 <button type="submit" disabled={loading}>
                   {loading ? "Sending..." : "Submit"}
                 </button>
