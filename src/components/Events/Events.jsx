@@ -1,6 +1,5 @@
 import "./Events.css";
 import { FaRegCalendarAlt } from "react-icons/fa";
-
 import { MdLocationCity } from "react-icons/md";
 import image2 from "../../assets/Fasting.jpg";
 import image1 from "../../assets/stpetersfc1.jpg";
@@ -46,7 +45,6 @@ const Events = () => {
       location: "ACK St.Peter's Embakasi",
     },
   ];
-  // const displayedEvents = events.slice(0, 2);
   return (
     <div className="container">
       <div>
@@ -62,7 +60,6 @@ const Events = () => {
       <div className="eventsWrapper">
         <div className="events-Container">
           <div className="events-list">
-            {" "}
             {events.map((event) => (
               <div className="eventsCard" key={event.id}>
                 <div className="eventWrapperOverlay"></div>

@@ -15,11 +15,11 @@
   transition: transform 0.3s ease;
   width: 100%;
   height: 100%;
-  background-color: #f4f4f4; /* Just for styling */
-  border-radius: 10px;
+  background-color: #fff;
   overflow: hidden;
   min-width: 100%;
   flex-shrink: 0;
+  padding-inline: 20px;
 }
 
 .eventWrapperOverlay {
@@ -29,7 +29,6 @@
   left: 0;
   right: 0;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-  border-radius: 10px;
   transition: all 300ms ease-in-out;
 }
 
@@ -38,7 +37,6 @@
   align-items: center;
   position: relative;
   height: 70vh;
-  flex-direction: column-reverse;
 }
 
 .events-Container {
@@ -49,18 +47,17 @@
   transform: translate(-50%, -50%);
   overflow: hidden;
   border-radius: 16px;
-  padding: 1.25rem;
   gap: 1.25rem;
   margin: auto;
 }
 .events-list {
-  height: 60vh;
-  width: 60vw;
+  height: 70vh;
+  width: 80vw;
   display: flex;
-  gap: 2.5rem;
   animation: slide 30s linear infinite;
   margin: auto;
 }
+
 .eventsCard:hover {
   transform: scale(1.05);
 }
@@ -144,52 +141,23 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .events-list {
-    height: 60vh;
-    width: 90vw;
-    margin: auto;
-  }
-  .events-Container {
-    width: 100vw;
-  }
-  .eventsCard {
-    font-size: 2rem;
-  }
-  .eventContent h2 {
-    font-size: 1.5rem;
-  }
-  .eventDetails {
-    font-size: 1rem;
-  }
-  .eventPic {
-    height: 100%;
-    width: 100%;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  .container {
-    margin-block: 0.1rem;
+@media screen and (max-width: 724px) {
+  .eventsCard{
+    padding-inline: 5px;
   }
-  .events-list {
-    height: 50vh;
-    width: 80vw;
+  .eventContent h2{
+    font-size: 20px;
   }
-  .events-Container {
-    width: 100vw;
+  .eventDetails span{
+    font-size: 13px;
   }
-  .eventsCard {
-    padding: 0.3rem 0.6rem;
-    /* font-size: 1.75rem; */
+  .events-Container{
+    width: 90vw;
   }
-  .eventContent h2 {
-    font-size: 1rem;
+  .events-list{
+    height: 40vh;
+    width: 90vw;
   }
-  .eventDetails {
-    font-size: 0.7rem;
-  }
-  .eventsWrapper {
-    height: 50vh;
-  }
+  
 }

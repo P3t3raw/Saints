@@ -68,9 +68,7 @@ export default function Services() {
                 <small>{service.time}</small>
               </p>
               <p className="title">{service.title}</p>
-              <p className="desc">
-                <>{service.desc}</>
-              </p>
+              <p className="desc">{service.desc}</p>
             </div>
           </div>
         ))}
