@@ -70,12 +70,11 @@ export default function Notices() {
       <div className="Container">
         <div className="noticeContainer">
           {notices.map((notice, index) => (
-            <Reveal triggerOnce delay={index * 500}>
+            <Reveal key={notice.id} triggerOnce delay={index * 500}>
               <div
                 className={`singleNotice ${
                   flippedNotice === notice.id ? "flipped" : ""
                 }`}
-                key={notice.id}
               >
                 <div className="card-front">
                   <h2>
@@ -87,7 +86,7 @@ export default function Notices() {
                       className="flipButton"
                       onClick={() => handleFlip(notice.id)}
                     >
-                      READ THIS NOTICE
+                      NOTICE
                     </div>
                   </div>
                 </div>
