@@ -3,32 +3,15 @@ import Reveal from "../../utils/Reveal";
 import Services from "../../components/Services/Services";
 import Sermons from "../../components/Sermons/Sermons";
 import Events from "../../components/Events/Events";
+import video1 from "../../assets/WhatsApp Video 2025-01-21 at 00.27.13_4757e656.mp4";
 function Home() {
   return (
     <main>
       <div className="background">
         <div className="overlay"></div>
-        <video
-          className="video"
-          src="https://videos.pexels.com/video-files/6860452/6860452-hd_1280_720_25fps.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          className="video"
-          src="https://videos.pexels.com/video-files/7520507/7520507-hd_1366_720_25fps.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          className="video"
-          src="https://videos.pexels.com/video-files/3191109/3191109-hd_1366_720_25fps.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
+        <video className="video" src={video1} autoPlay muted loop></video>
+        <video className="video" src={video1} autoPlay muted loop></video>
+        <video className="video" src={video1} autoPlay muted loop></video>
         <div className="content">
           <p className="text">
             <span className="whiteLine"></span>

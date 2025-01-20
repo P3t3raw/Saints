@@ -61,7 +61,7 @@ function AboutUs() {
       id: 8,
       imgSrc: profileImage,
       title: "Layreader",
-      name: "Njoka",
+      name: "Joseph Njoka",
     },
   ];
 
@@ -90,7 +90,18 @@ function AboutUs() {
       title: "Media Director",
       name: "Mr. Brian Were",
     },
-  
+    {
+      id: 5,
+      imgSrc: profileImage,
+      title: "Finance",
+      name: "Mr. Ted Kimang'a",
+    },
+    {
+      id: 6,
+      imgSrc: profileImage,
+      title: "Church Secretary",
+      name: "Miss. Jackline",
+    },
   ];
 
   return (
@@ -133,9 +144,9 @@ function AboutUs() {
                 serving the congregation for 16 years. As the Embakasi area
                 grew, so did the church, becoming a cornerstone of spiritual
                 life in the community throughout the 1980s and 1990s. Today, ACK
-                St. Peter&apos;s Embakasi continues to thrive as a beacon of hope,
-                community, and transformation. From humble beginnings, it has
-                grown into a vibrant and dynamic congregation, offering
+                St. Peter&apos;s Embakasi continues to thrive as a beacon of
+                hope, community, and transformation. From humble beginnings, it
+                has grown into a vibrant and dynamic congregation, offering
                 spiritual guidance, worship, and support to the Embakasi
                 community and beyond.
               </p>

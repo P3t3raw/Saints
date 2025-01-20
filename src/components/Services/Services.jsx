@@ -10,14 +10,6 @@ export default function Services() {
   const services = useMemo(
     () => [
       {
-        id: 1,
-        imgSrc: fridayService,
-        title: "Friday Service",
-        desc: "Join us every Friday evening for a refreshing and uplifting time of worship, prayer, and teaching, providing spiritual renewal and preparation for the weekend.",
-        time: "6.00 pm - 8.00 pm",
-        day: "Friday",
-      },
-      {
         id: 2,
         imgSrc: youthService,
         title: "Youth Service",
@@ -40,6 +32,14 @@ export default function Services() {
         desc: "Connect with God in our vibrant Kiswahili Service, featuring worship and teaching in Swahili that resonate deeply with our Swahili-speaking congregation.",
         time: "11.30 am - 1.30 pm",
         day: "Sunday",
+      },
+      {
+        id: 1,
+        imgSrc: fridayService,
+        title: "Friday Service",
+        desc: "Join us every Friday evening for a refreshing and uplifting time of worship, prayer, and teaching, providing spiritual renewal and preparation for the weekend.",
+        time: "6.00 pm - 8.00 pm",
+        day: "Friday",
       },
     ],
     []
