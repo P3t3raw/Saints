@@ -1,8 +1,8 @@
 /* General Section Styling */
-Reveal h2 {
-  font-size: 2rem;
+.churchHistory h2 {
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #333;
+  color: black;
   margin-bottom: 0.5rem;
 }
 
@@ -15,10 +15,7 @@ Reveal h2 {
 .churchTestimonies,
 .churchMembership,
 .churchFAQs {
-  /* background-color: #f9f9f9; */
-  /* border: 1px solid green; */
   padding: 1rem 0;
-  /* margin-bottom: 1rem; */
   width: 90vw;
   margin: auto;
 }
@@ -32,7 +29,7 @@ Reveal h2 {
 .churchMembership p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #555;
+  color: #333;
 }
 
 .churchValues ul,
@@ -76,7 +73,6 @@ main {
   background-image: url("../../assets/bg_1.jpg.webp");
   height: 50vh;
   width: 100%;
-  position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -153,7 +149,6 @@ main {
 .historyContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* height: 100vh; */
   width: 90vw;
   box-sizing: border-box;
   gap: 2.5rem;
@@ -242,6 +237,7 @@ main {
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
+  margin-inline: auto;
 }
 @media screen and (max-width: 1200px) {
   .historyContent {
@@ -302,6 +298,12 @@ main {
 @media screen and (max-width: 768px) {
   .aboutBreadCrumbs {
     margin-bottom: 0.1rem;
+  }
+  .ministryTeam{
+    width: auto;
+  }
+  .churchAdministration{
+    width: auto;
   }
   .aboutContent h1,
   .aboutBreadCrumbsWrapper h1 {
@@ -368,7 +370,6 @@ main {
   }
   .singleClergy img,
   .singleAdmin img {
-    width: 5rem;
-    height: 5rem;
+    size: 6rem;
   }
 }
