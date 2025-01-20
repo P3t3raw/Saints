@@ -1,15 +1,8 @@
-h1,
-h2,
-h3 {
-  font-family: "Bodoni", serif;
-}
 body {
-  font-family: "Century Schoolbook", "Georgia", serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
-
 .background {
   position: relative;
   overflow: hidden;
@@ -111,7 +104,6 @@ body {
   letter-spacing: 0.1rem;
   color: goldenrod;
   text-wrap: nowrap;
-  font-family: "Great Vibes", cursive;
 }
 .quoteText {
   color: black;
@@ -122,7 +114,6 @@ body {
   left: 50%;
   transform: translatex(-50%);
   position: absolute;
-  width: 60vw;
   margin: auto;
   padding: 4rem;
   z-index: 90;
@@ -177,16 +168,7 @@ body {
   opacity: 0;
   animation: slideIn 2.5s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-@media screen and (max-width: 1368px) {
-  /* .background .content .themeText{
-    font-size: 2rem;
-    line-height: 2.3rem;
-    letter-spacing: 0.1rem;
-  }
-  .text .textPrimary {
-    font-size: 1.5rem;
-  } */
-}
+
 @media screen and (max-width: 992px) {
   .background .content .themeText {
     font-size: 1.5rem;
@@ -234,8 +216,13 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .background .content{
+    left: 16px;
+    right: 16px;
+    transform: translate(0);
+  }
   .background .content .themeText {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     line-height: 1.8rem;
     letter-spacing: 0.1rem;
   }

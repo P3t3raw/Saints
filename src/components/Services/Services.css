@@ -15,30 +15,37 @@
 .servicesWrapper {
   margin-inline: 1rem;
   width: 90vw;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  margin: auto;
+  display: flex;
+  align-items: center;
   gap: 1rem;
+  margin: auto;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  padding-top:10px;
+  scrollbar-width: none;
+}
+.servicesWrapper::-webkit-scrollbar {
+  display: none;
 }
 .servicesWrapper .card {
   border-radius: 10px;
-  padding: 0;
-}
-.card {
+  flex-shrink: 0;
+  width: 350px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms ease-in-out;
 }
 .card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
 }
 .serviceContent {
   display: flex;
   flex-direction: column;
   padding: 0.8rem;
+  padding-bottom: 1.2rem;
 }
 .serviceContent .title {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-block: 0.5rem;
 }
 .serviceContent .time {
@@ -49,15 +56,10 @@
 .serviceContent .time small {
   color: grey;
 }
-.serviceContent p {
-  text-align: justify;
+.serviceContent p.desc {
+  font-size: 15px;
 }
 
-@media screen and (max-width: 1368px) {
-  /* .servicesWrapper{
-    gap: ;
-  } */
-}
 @media screen and (max-width: 1024px) {
   .serviceContent .title {
     font-size: 1rem;
@@ -66,39 +68,15 @@
   .serviceContent .time {
     font-size: 1rem;
   }
-  .serviceContent .desc {
-    font-size: 1rem;
-  }
-  .servicesWrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .servicePic {
-    height: 12rem;
-    object-fit: cover;
-    object-position: top;
+    /* height: 12rem; */
   }
   .servicesTop h1 {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 992px) {
-  .servicesWrapper {
-    width: 90vw;
-    margin: auto;
-  }
-}
 @media screen and (max-width: 600px) {
-  .servicesWrapper {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .servicePic {
-    height: 10rem;
-    object-fit: cover;
-    object-position: top;
-  }
-  .card {
-    width: 80vw;
-    margin: auto;
-    /* height: 60vh; */
+  .servicesWrapper .card {
+    width: 280px;
   }
 }
