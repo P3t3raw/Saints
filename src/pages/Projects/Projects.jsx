@@ -148,19 +148,12 @@ export default function Projects() {
                 {project.contact.email}
               </a>
             </p>
-            {/* <p>Phone: {project.contact.phone}</p> */}
-            {/* <h3>Budget:</h3>
-            <p>Goal: {project.budget.goal}</p>
-            <p>Raised: {project.budget.raised}</p> */}
             <h3>Updates:</h3>
             <ul className="projectUpdates">
               {project.updates.map((update, index) => (
                 <li key={index}>{update}</li>
               ))}
             </ul>
-            {/* <Link to={`/projects/${project.id}`} className="learnMoreButton">
-              {project.cta}
-            </Link> */}
           </div>
         ))}
       </div>
