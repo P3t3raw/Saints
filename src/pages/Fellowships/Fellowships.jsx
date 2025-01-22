@@ -19,12 +19,6 @@ export default function Fellowships() {
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose. Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
-        mission:
-          "To inspire spiritual growth and develop leaders who will impact their communities through faith and service.",
-        vision:
-          "To create a vibrant community of individuals who are grounded in faith and committed to transforming society through compassionate service and leadership.",
-        history:
-          "Mradi Fellowship was founded in 2018 as a gathering of young adults seeking a space for spiritual growth, leadership development, and community service. Since then, it has grown to become a supportive network that encourages faith-based personal and professional development.",
         membershipEligibility:
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
@@ -47,12 +41,6 @@ export default function Fellowships() {
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose. Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
-        mission:
-          "To inspire spiritual growth and develop leaders who will impact their communities through faith and service.",
-        vision:
-          "To create a vibrant community of individuals who are grounded in faith and committed to transforming society through compassionate service and leadership.",
-        history:
-          "Mradi Fellowship was founded in 2018 as a gathering of young adults seeking a space for spiritual growth, leadership development, and community service. Since then, it has grown to become a supportive network that encourages faith-based personal and professional development.",
         membershipEligibility:
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
@@ -74,12 +62,6 @@ export default function Fellowships() {
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
-        mission:
-          "To inspire spiritual growth and develop leaders who will impact their communities through faith and service.",
-        vision:
-          "To create a vibrant community of individuals who are grounded in faith and committed to transforming society through compassionate service and leadership.",
-        history:
-          "Mradi Fellowship was founded in 2018 as a gathering of young adults seeking a space for spiritual growth, leadership development, and community service. Since then, it has grown to become a supportive network that encourages faith-based personal and professional development.",
         membershipEligibility:
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
@@ -101,12 +83,6 @@ export default function Fellowships() {
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
-        mission:
-          "To inspire spiritual growth and develop leaders who will impact their communities through faith and service.",
-        vision:
-          "To create a vibrant community of individuals who are grounded in faith and committed to transforming society through compassionate service and leadership.",
-        history:
-          "Mradi Fellowship was founded in 2018 as a gathering of young adults seeking a space for spiritual growth, leadership development, and community service. Since then, it has grown to become a supportive network that encourages faith-based personal and professional development.",
         membershipEligibility:
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
@@ -128,12 +104,6 @@ export default function Fellowships() {
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
-        mission:
-          "To inspire spiritual growth and develop leaders who will impact their communities through faith and service.",
-        vision:
-          "To create a vibrant community of individuals who are grounded in faith and committed to transforming society through compassionate service and leadership.",
-        history:
-          "Mradi Fellowship was founded in 2018 as a gathering of young adults seeking a space for spiritual growth, leadership development, and community service. Since then, it has grown to become a supportive network that encourages faith-based personal and professional development.",
         membershipEligibility:
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
@@ -155,12 +125,6 @@ export default function Fellowships() {
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
-        mission:
-          "To inspire spiritual growth and develop leaders who will impact their communities through faith and service.",
-        vision:
-          "To create a vibrant community of individuals who are grounded in faith and committed to transforming society through compassionate service and leadership.",
-        history:
-          "Mradi Fellowship was founded in 2018 as a gathering of young adults seeking a space for spiritual growth, leadership development, and community service. Since then, it has grown to become a supportive network that encourages faith-based personal and professional development.",
         membershipEligibility:
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
@@ -182,12 +146,6 @@ export default function Fellowships() {
         desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
-        mission:
-          "To inspire spiritual growth and develop leaders who will impact their communities through faith and service.",
-        vision:
-          "To create a vibrant community of individuals who are grounded in faith and committed to transforming society through compassionate service and leadership.",
-        history:
-          "Mradi Fellowship was founded in 2018 as a gathering of young adults seeking a space for spiritual growth, leadership development, and community service. Since then, it has grown to become a supportive network that encourages faith-based personal and professional development.",
         membershipEligibility:
           "Open to anyone above 18 years who is interested in spiritual growth and community involvement.",
         howToJoin:
@@ -269,10 +227,10 @@ export default function Fellowships() {
 
               <p className="fellowshipDesc">{selectedFellowship.desc}</p>
 
-              <div className="history">
+              {/* <div className="history">
                 <h3>History</h3>
                 <p>{selectedFellowship.history}</p>
-              </div>
+              </div> */}
               {/* <div className="missionVision">
                 <h3>Mission</h3>
                 <p>{selectedFellowship.mission}</p>
