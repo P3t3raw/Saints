@@ -100,10 +100,9 @@
 }
 .row2 {
   display: flex;
-  width: 90vw;
   gap: 2rem;
-  margin: auto;
-  padding: 1.5rem 0;
+  padding:2.5rem;
+  padding-bottom: 0;
 }
 
 .row4Container {
@@ -112,29 +111,22 @@
 .row4 {
   display: flex;
   flex-direction: row;
-  font-size: 1.2rem;
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0;
   gap: 3rem;
   padding-block: 2.5rem;
-  padding-inline: 2rem;
-  /* border: 1px black solid; */
-  width: 90vw;
-  height: 80vh;
-  margin: auto;
+  padding-inline: 2.5rem;
 }
 .row4 div {
   flex: 1;
 }
 .row2 .row2Text {
   flex: 1;
-  line-height: 1.6;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .row2 div {
   flex: 1;
-  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -143,13 +135,12 @@
 }
 
 .row3 {
-  width: 90vw;
   display: grid;
   height: calc(100dvh - 6.25rem);
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, calc((100dvh - 6.875rem) / 2));
   gap: 0.5rem;
-  margin: auto;
+  padding-inline: 2.5rem;
 }
 .row3 img {
   width: 100%;
@@ -189,23 +180,18 @@ button:hover {
   background-color: #005f73;
 }
 .devotional-list {
-  height: auto;
-}
-.devotional-list ul {
   list-style-type: none;
-  padding-left: 0;
-  border: 1px solid black;
+  border: 1px solid #333;
   border-radius: 2rem 0 2rem 2rem;
   background-color: white;
   height: 30vh;
+  overflow: auto;
+  padding:1rem;
 }
 .devotional-list li {
-  margin: 15px 0;
-  width: 40vw;
-  margin: auto;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  margin-bottom: 16px;
 }
 .devotional-list button {
   margin-top: 10px;
@@ -268,8 +254,11 @@ button:hover {
   }
   .row2 {
     flex-direction: column;
-    width: 80vw;
-    margin: auto;
+    padding: 1rem;
+  }
+  .row3 {
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
   }
   .row2 h2,
   .row4 h2 {
@@ -282,20 +271,10 @@ button:hover {
     font-size: 1rem;
   }
 
-  .devotional-list li {
-    padding: 0;
-    /* overflow-y: hidden; */
-    overflow-y: scroll;
-    height: 30vh;
-    width: 100%;
-    padding: 1rem;
-  }
-  .devotional-list li p {
-    font-size: 0.8rem;
-  }
   .row4 {
     display: flex;
     flex-direction: column;
+    padding-inline: 1rem;
   }
   .row2 div {
     width: 100%;
@@ -325,7 +304,6 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 12.5rem);
     height: auto;
-    padding: 1rem 0;
   }
   .row3 div:nth-of-type(1) {
     grid-column: 1/2;

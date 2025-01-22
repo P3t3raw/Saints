@@ -82,7 +82,7 @@ function Children() {
             </p>
             <p className="row2Text"></p>
             <h2>What we do in the Sunday School Ministry?</h2>
-            <ul style={{ padding: "0" }}>
+            <ul style={{ padding: "0", marginBlock:'0px', marginTop:'5px' }}>
               <li
                 style={{
                   display: "flex",
@@ -158,8 +158,8 @@ function Children() {
             <div className="row4">
               <div>
                 <h2>Short Stories</h2>
-                <div className="devotional-list">
-                  <ul>
+                <div >
+                  <ul className="devotional-list">
                     <li>
                       <h4>Upcoming Devotional Piece</h4>
                       <p>
@@ -173,7 +173,6 @@ function Children() {
                       </p>
                     </li>
                   </ul>
-                  {/* <button>Share Your Story</button> */}
                 </div>
               </div>
               <div>
@@ -186,7 +185,6 @@ function Children() {
                   <div className="sermonsWrapper">
                     <div
                       className="recentVideo1"
-                      // key={video.id}
                       style={{
                         position: "relative",
                         width: "100%",
@@ -203,7 +201,6 @@ function Children() {
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
-                        // allowFullscreen
                       ></iframe>
                       <button
                         style={{
@@ -220,7 +217,6 @@ function Children() {
                           justifyContent: "center",
                           alignItems: "center",
                         }}
-                        // onClick={handleFullscreen}
                       ></button>
                     </div>
                   </div>
@@ -230,7 +226,6 @@ function Children() {
           </div>
         </Reveal>
       </Reveal>
-
       <div className="row3">
         <div>
           <img src={image1} alt="" />

@@ -152,8 +152,19 @@ function Children() {
                 encouragement and hope. Join us in celebrating the diverse paths
                 within our church family.
               </p>
-              <div className="devotional-list">
-                <ul>
+              <div>
+                <ul className="devotional-list">
+                  <li>
+                    <h4>Upcoming Devotional Piece</h4>
+                    <p>
+                      Dive into an inspiring and thought-provoking discussion
+                      that challenges your perspectives and stimulates deep
+                      thinking. This week's piece encourages reflection and
+                      invites you to explore new ideas, share your insights, and
+                      join a meaningful conversation with others. Don’t miss out
+                      on the chance to engage with content that truly matters.
+                    </p>
+                  </li>
                   <li>
                     <h4>Upcoming Devotional Piece</h4>
                     <p>
@@ -172,7 +183,6 @@ function Children() {
           </div>
         </div>
       </Reveal>
-
       <div className="row3">
         <div>
           <img src={mothersUnion} alt="" />

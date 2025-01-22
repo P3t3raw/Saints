@@ -16,7 +16,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose. Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
+        desc: "The Baraka Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose. Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -38,7 +38,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose. Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
+        desc: "The Juakali Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose. Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -80,7 +80,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        desc: "The Outer Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -101,7 +101,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        desc: "The Nyayo 1 Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -122,7 +122,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        desc: "The Nyayo 2 Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -143,7 +143,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        desc: "The Police Line Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -183,7 +183,6 @@ export default function Fellowships() {
               Estate Fellowships <FaChevronRight />
             </span>
           </p>
-          {/* <h1>Estate Fellowships</h1> */}
         </div>
       </div>
       {
@@ -218,33 +217,23 @@ export default function Fellowships() {
 
               <div className="meetingInfo">
                 <p className="nextMeeting">
-                  <strong>Next Meeting:</strong> <MdOutlineDateRange />{" "}
-                  {selectedFellowship.meetingDate}{" "}
-                  {selectedFellowship.meetingTime} <MdOutlineLocationOn />{" "}
-                  {selectedFellowship.hostName}
+                  <strong>Next Meeting:</strong> 
+                  <span style={{display:'flex', lineHeight:'0', gap:'4px', alignItems:'center'}}>
+                    <span style={{display:'flex', lineHeight:'0', gap:'4px', alignItems:'center'}}><MdOutlineDateRange />{selectedFellowship.meetingDate},{' '}{selectedFellowship.meetingTime}</span>
+                    <span style={{display:'flex', lineHeight:'0', gap:'4px', alignItems:'center'}}><MdOutlineLocationOn />{selectedFellowship.hostName}</span>
+                  </span>
                 </p>
               </div>
 
               <p className="fellowshipDesc">{selectedFellowship.desc}</p>
-
-              {/* <div className="history">
-                <h3>History</h3>
-                <p>{selectedFellowship.history}</p>
-              </div> */}
-              {/* <div className="missionVision">
-                <h3>Mission</h3>
-                <p>{selectedFellowship.mission}</p>
-                <h3>Vision</h3>
-                <p>{selectedFellowship.vision}</p>
-              </div> */}
             </div>
             <div className="rightCardPart">
-              <div className="membershipInfo">
+              {/* <div className="membershipInfo">
                 <h3>Membership Eligibility</h3>
                 <p>{selectedFellowship.membershipEligibility}</p>
                 <h3>How to Join</h3>
                 <p>{selectedFellowship.howToJoin}</p>
-              </div>
+              </div> */}
 
               <div className="contactInfo">
                 <h3>Contact</h3>

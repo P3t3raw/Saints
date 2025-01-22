@@ -52,6 +52,7 @@ function Navbar() {
               <li
                 className={`ministries ${ministries ? "selected" : ""}`}
                 onClick={() => setMinistries((prev) => !prev)}
+                onMouseLeave={()=> setMinistries(false)}
               >
                 Ministries
                 <span className="arrow"></span>
@@ -87,6 +88,7 @@ function Navbar() {
               <li
                 className={`ministries ${programs ? "selected" : ""}`}
                 onClick={() => setPrograms((prev) => !prev)}
+                onMouseLeave={()=> setPrograms(false)}
               >
                 Programs
                 <span className="arrow"></span>

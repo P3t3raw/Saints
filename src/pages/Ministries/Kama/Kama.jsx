@@ -68,8 +68,8 @@ function Children() {
                 with Christ, and encourage one another in their spiritual
                 journey.
               </p>
-              <h2>What we do in KAMA&apos;s Ministry?</h2>
-              <ul style={{ padding: "0" }}>
+              <h2 style={{marginBlock:'10px'}}>What we do in KAMA&apos;s Ministry?</h2>
+              <ul style={{ padding: "0", marginBlock:'0', }}>
                 <li
                   style={{
                     display: "flex",
@@ -117,7 +117,7 @@ function Children() {
             </div>
           </div>
           <div>
-            <h2>Contact Us</h2>
+            <h2 style={{marginBottom:'10px'}}>Contact Us</h2>
             <p>
               If you have any questions or want to learn more about the KAMA
               Ministry, feel free to reach out to us.
@@ -144,11 +144,11 @@ function Children() {
         <div className="row4Container">
           <div className="row4">
             <div>
-              <h2>Blogs</h2>
+              <h2 style={{marginBottom:'10px'}}>Blogs</h2>
               <Blogs />
             </div>
             <div>
-              <h2>Member Testimony</h2>
+              <h2 style={{marginBottom:'10px'}}>Member Testimony</h2>
               <p>
                 Explore inspiring stories from our KAMA members about their
                 journeys in faith, growth, and transformation. Each story
@@ -156,10 +156,10 @@ function Children() {
                 encouragement and hope. Join us in celebrating the diverse paths
                 within our church family.
               </p>
-              <div className="devotional-list">
-                <ul>
+              <div>
+                <ul className="devotional-list">
                   <li>
-                    {/* <h4>Upcoming Devotional Piece</h4>
+                    <h4>Upcoming Devotional Piece</h4>
                     <p>
                       Dive into an inspiring and thought-provoking discussion
                       that challenges your perspectives and stimulates deep
@@ -167,7 +167,7 @@ function Children() {
                       invites you to explore new ideas, share your insights, and
                       join a meaningful conversation with others. Don’t miss out
                       on the chance to engage with content that truly matters.
-                    </p> */}
+                    </p>
                   </li>
                 </ul>
                 <button>Share Your Story</button>

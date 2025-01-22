@@ -65,8 +65,8 @@ function Children() {
               grow spiritually, and apply biblical principles in their daily
               lives.
             </p>
-            <h2>What We Do in TEE Ministry</h2>
-            <ul style={{ padding: "0" }}>
+            <h2 style={{marginTop:'10px'}}>What We Do in TEE Ministry</h2>
+            <ul style={{ padding: "0", marginBlock:'0', marginTop:'5px' }}>
               <li
                 style={{
                   display: "flex",

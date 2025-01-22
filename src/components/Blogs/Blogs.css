@@ -1,6 +1,4 @@
-.container {
-  margin-block: 2.5rem;
-}
+
 .servicePic {
   height: 13.75rem;
   width: 100%;
@@ -14,7 +12,6 @@
 }
 .servicesWrapper {
   margin-inline: 1rem;
-  /* width: 60vw; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -52,11 +49,7 @@
 .serviceContent p {
   text-align: justify;
 }
-@media screen and (max-width: 1368px) {
-  /* .servicesWrapper{
-      gap: ;
-    } */
-}
+
 @media screen and (max-width: 1024px) {
   .serviceContent .title {
     font-size: 1rem;
@@ -95,9 +88,5 @@
     height: 12rem;
     object-fit: cover;
     object-position: top;
-  }
-  .card {
-    width: 60vw;
-    margin: auto;
   }
 }
