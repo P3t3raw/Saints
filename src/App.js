@@ -18,7 +18,6 @@ const MothersUnion = React.lazy(() =>
 const PraiseTeam = React.lazy(() =>
   import("./pages/Ministries/PraiseTeam/PraiseTeam")
 );
-const Choir = React.lazy(() => import("./pages/Ministries/Choir/Choir"));
 const TEE = React.lazy(() => import("./pages/Ministries/TEE/TEE"));
 const AboutUs = React.lazy(() => import("./pages/AboutUs/AboutUs"));
 const Notices = React.lazy(() => import("./pages/Notices/Notices"));
@@ -127,14 +126,7 @@ function App() {
                 </Suspense>
               ),
             },
-            {
-              path: "/ministries/Choir",
-              element: (
-                <Suspense fallback={<LoadingWithDelay delay={3000} />}>
-                  <Choir />
-                </Suspense>
-              ),
-            },
+
             {
               path: "/ministries/TEE",
               element: (
