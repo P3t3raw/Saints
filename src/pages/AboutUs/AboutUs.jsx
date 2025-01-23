@@ -8,6 +8,7 @@ import layCanonImage from "../../assets/IMG_6818.JPG";
 import layreaderImage from "../../assets/IMG_6816.JPG";
 import layreaderImageT from "../../assets/IMG_6802.JPG";
 import captainImage from "../../assets/IMG_6779.JPG";
+import vwImage from "../../assets/vwPhoto.jpg";
 import parishSecretaryImage from "../../assets/IMG_6740.JPG";
 import mediaDirectorImage from "../../assets/IMG_6840.JPG";
 import profileImage from "../../assets/profileIcon.png";
@@ -68,7 +69,7 @@ function AboutUs() {
   const admins = [
     {
       id: 1,
-      imgSrc: profileImage,
+      imgSrc: vwImage,
       title: "Vicar's Warden",
       name: "Mr. Zablon Omungo",
     },

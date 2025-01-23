@@ -52,16 +52,15 @@ export default function Contact() {
 
     emailjs
       .send(
-        "service_syd4i5e", // Your service ID
-        "template_j3b1d5s", // Your template ID
-        templateParams, // Pass templateParams here
-        "AHSm2-xqmc7ja_ikU" // Your public API key
+        "service_syd4i5e",
+        "template_j3b1d5s",
+        templateParams,
+        "AHSm2-xqmc7ja_ikU"
       )
       .then(
         (result) => {
           setLoading(false);
           setMessage("Email sent successfully!");
-          // Optionally clear the form here
           setFormData({
             name: "",
             email: "",
@@ -127,53 +126,81 @@ export default function Contact() {
             </select>
 
             {formData.title === "booking" && (
-              
-                <label>
-                  Call us on <b>+254110008603</b> to make an appointment with
-                  the Vicar at your convenient time.
-                </label>
-              
+              <label>
+                Call us on <b>+254110008603</b> to make an appointment with the
+                Vicar at your convenient time.
+              </label>
             )}
 
             {formData.title !== "booking" && (
               <>
-              <div style={{display:'flex', flexDirection:'column', gap:'16px'}}>
-                <div style={{display:'flex', flexDirection:'column', gap:'3px'}}>
-                <label htmlFor="name" style={{textAlign:'left'}}>Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                  />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "16px",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "3px",
+                    }}
+                  >
+                    <label htmlFor="name" style={{ textAlign: "left" }}>
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Your Name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "3px",
+                    }}
+                  >
+                    <label htmlFor="email" style={{ textAlign: "left" }}>
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "3px",
+                    }}
+                  >
+                    <label htmlFor="message" style={{ textAlign: "left" }}>
+                      Message
+                    </label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Your Message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      required
+                    ></textarea>
+                  </div>
                 </div>
-                <div style={{display:'flex', flexDirection:'column', gap:'3px'}}>
-                <label htmlFor="email" style={{textAlign:'left'}}>Email</label>
-                <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                  />
-                </div>
-                <div style={{display:'flex', flexDirection:'column', gap:'3px'}}>
-                <label htmlFor="message"  style={{textAlign:'left'}}>Message</label>
-                <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Your Message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                  ></textarea>
-                </div>
-              </div>
                 <button type="submit" disabled={loading}>
                   {loading ? "Sending..." : "Submit"}
                 </button>
@@ -193,7 +220,7 @@ export default function Contact() {
               <strong>Address:</strong> P.O Box 40539 - 13356, Nairobi
             </p>
             <p>
-              <strong>Phone:</strong> 0110008603
+              <strong>Phone:</strong> 0110 008 603
             </p>
             <p>
               <strong>Email:</strong> info@ackstpetersembakasi.org
@@ -201,7 +228,6 @@ export default function Contact() {
           </div>
 
           <div className="contact-map">
-            {/* Placeholder for Google Maps */}
             <h2>Find Us</h2>
             <MapContainer
               center={churchLocation}
@@ -216,11 +242,7 @@ export default function Contact() {
               <Marker position={churchLocation}>
                 <Popup>
                   <div className="pin">
-                    <img
-                      className="img-style"
-                      src={churchImage} // Assuming the first image is the primary one
-                      alt="church"
-                    />
+                    <img className="img-style" src={churchImage} alt="church" />
 
                     <div>
                       <strong>ACK St. Peter's Embakasi</strong>
