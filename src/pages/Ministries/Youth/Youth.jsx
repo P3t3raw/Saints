@@ -3,7 +3,6 @@ import Reveal from "../../../utils/Reveal";
 import { Link } from "react-router-dom";
 import Blogs from "../../../components/Blogs/Blogs";
 import { FaRegHeart } from "react-icons/fa";
-// import { FaChevronRight } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import { FaChevronRight } from "react-icons/fa";
 import fridayService from "../../../assets/YouthMinistry2.jpg";
@@ -150,12 +149,23 @@ export default function Youth() {
             <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
             <ul className="events">
               <li>
+                <strong>
+                  A goodwill visit to Jehova Jireh Children&apos;s Home
+                </strong>{" "}
+                - Feb 1, 2025
+                <p>
+                  The youth will be visiting Jehova Jireh Children&apos;s Home
+                  in Ruai from 10AM. All youths are kindly requested to
+                  participate.
+                </p>
+              </li>
+              {/* <li>
                 <strong>No Upcoming Events</strong>
                 <p>
                   We're currently planning exciting new activities! Stay tuned
                   for updates and check back soon.
                 </p>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
