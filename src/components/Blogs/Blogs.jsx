@@ -30,20 +30,18 @@ export default function Blogs() {
     []
   );
   return (
-    <div className="container">
-      <div className="servicesWrapper">
-        {blogs.map((blog) => (
-          <div className="card" key={blog.id}>
-            <img src={blog.imgSrc} alt="service" className="servicePic" />
-            <div className="serviceContent">
-              <p className="title">{blog.title}</p>
-              <p className="desc">
-                <>{blog.desc}</>
-              </p>
-            </div>
+    <div className="blogsWrapper">
+      {blogs.map((blog) => (
+        <div className="blogCard" key={blog.id}>
+          <img src={blog.imgSrc} alt="blog" className="blogPic" />
+          <div className="blogContent">
+            <p className="blogTitle">{blog.title}</p>
+            <p className="blogDesc">
+              <>{blog.desc}</>
+            </p>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }

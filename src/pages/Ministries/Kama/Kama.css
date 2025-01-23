@@ -101,7 +101,7 @@
 .row2 {
   display: flex;
   gap: 2rem;
-  padding:2.5rem;
+  padding: 2.5rem;
   padding-bottom: 0;
 }
 
@@ -186,7 +186,7 @@ button:hover {
   background-color: white;
   height: 30vh;
   overflow: auto;
-  padding:1rem;
+  padding: 1rem;
 }
 .devotional-list li {
   align-items: center;

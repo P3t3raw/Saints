@@ -82,7 +82,7 @@ function Children() {
             </p>
             <p className="row2Text"></p>
             <h2>What we do in the Sunday School Ministry?</h2>
-            <ul style={{ padding: "0", marginBlock:'0px', marginTop:'5px' }}>
+            <ul style={{ padding: "0", marginBlock: "0px", marginTop: "5px" }}>
               <li
                 style={{
                   display: "flex",
@@ -158,7 +158,7 @@ function Children() {
             <div className="row4">
               <div>
                 <h2>Short Stories</h2>
-                <div >
+                <div>
                   <ul className="devotional-list">
                     <li>
                       <h4>Upcoming Devotional Piece</h4>
@@ -181,8 +181,8 @@ function Children() {
                   Stay tuned for inspiring videos filled with fresh ideas and
                   uplifting content. Check back often for updates!
                 </p>
-                <div className="wrapperContainer">
-                  <div className="sermonsWrapper">
+                <div>
+                  <div>
                     <div
                       className="recentVideo1"
                       style={{

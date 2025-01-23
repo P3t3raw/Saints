@@ -86,8 +86,10 @@ export default function Youth() {
                   and young adulthood.
                 </p>
               }
-              <h2 style={{marginBlock:'10px'}}>What we do in Youth&apos;s Ministry?</h2>
-              <ul style={{ padding: "0", marginBlock:'0', }}>
+              <h2 style={{ marginBlock: "10px" }}>
+                What we do in Youth&apos;s Ministry?
+              </h2>
+              <ul style={{ padding: "0", marginBlock: "0" }}>
                 <li
                   style={{
                     display: "flex",
@@ -135,7 +137,7 @@ export default function Youth() {
             </div>
           </div>
           <div>
-            <h2 style={{marginBottom:'10px'}}>Contact Us</h2>
+            <h2 style={{ marginBottom: "10px" }}>Contact Us</h2>
             <p>
               If you have any questions or want to learn more about the Men's
               Ministry, feel free to reach out to us.
@@ -162,17 +164,17 @@ export default function Youth() {
         <div className="row4Container">
           <div className="row4">
             <div>
-              <h2 style={{marginBottom:'10px'}}>Blogs</h2>
+              <h2 style={{ marginBottom: "10px" }}>Blogs</h2>
               <Blogs />
             </div>
             <div>
-              <h2 style={{marginBottom:'10px'}}>Youths Corner</h2>
+              <h2 style={{ marginBottom: "10px" }}>Youths Corner</h2>
               <p>
                 Stay tuned for inspiring videos and podcasts filled with fresh
                 ideas and uplifting content. Check back often for updates!
               </p>
-              <div className="wrapperContainer">
-                <div className="sermonsWrapper">
+              <div>
+                <div className="podcastWrapper">
                   <div
                     className="recentVideo1"
                     // key={video.id}

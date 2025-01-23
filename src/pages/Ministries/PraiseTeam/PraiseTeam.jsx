@@ -165,8 +165,8 @@ export default function PraiseTeam() {
                 Stay tuned for inspiring videos and podcasts filled with fresh
                 ideas and uplifting content. Check back often for updates!
               </p>
-              <div className="wrapperContainer">
-                <div className="sermonsWrapper">
+              <div>
+                <div>
                   <div
                     className="recentVideo1"
                     // key={video.id}
@@ -215,8 +215,8 @@ export default function PraiseTeam() {
                 Stay tuned for inspiring videos and podcasts filled with fresh
                 ideas and uplifting content. Check back often for updates!
               </p>
-              <div className="wrapperContainer">
-                <div className="sermonsWrapper">
+              <div>
+                <div>
                   <div
                     className="recentVideo1"
                     // key={video.id}
