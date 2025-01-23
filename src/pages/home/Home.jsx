@@ -4,13 +4,14 @@ import Services from "../../components/Services/Services";
 import Sermons from "../../components/Sermons/Sermons";
 import Events from "../../components/Events/Events";
 import video1 from "../../assets/WhatsApp Video 2025-01-21 at 00.27.13_4757e656.mp4";
+import video2 from "../../assets/VID-20250123-WA0043.mp4";
 function Home() {
   return (
     <main>
       <div className="background">
         <div className="overlay"></div>
         <video className="video" src={video1} autoPlay muted loop></video>
-        <video className="video" src={video1} autoPlay muted loop></video>
+        <video className="video" src={video2} autoPlay muted loop></video>
         <video className="video" src={video1} autoPlay muted loop></video>
         <div className="content">
           <p className="text">
