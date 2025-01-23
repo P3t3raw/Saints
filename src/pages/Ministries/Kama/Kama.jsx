@@ -1,7 +1,5 @@
 import "./Kama.css";
 import Reveal from "../../../utils/Reveal";
-// import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css"; // Import styles for the calendar
 import Blogs from "../../../components/Blogs/Blogs";
 import { FaChevronRight } from "react-icons/fa";
 import kama from "../../../assets/364161928_619471003607961_5698538392905565876_n.jpg";
@@ -12,10 +10,7 @@ import kama5 from "../../../assets/IMG_6840.JPG";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import { FaRegHeart } from "react-icons/fa";
 import video1 from "../../../assets/3987756-hd_1280_720_24fps.mp4";
-// import { useState } from "react";
-
-function Children() {
-  // const [date, setDate] = useState(new Date());
+function Men() {
   return (
     <div>
       <div className="background">
@@ -68,8 +63,10 @@ function Children() {
                 with Christ, and encourage one another in their spiritual
                 journey.
               </p>
-              <h2 style={{marginBlock:'10px'}}>What we do in KAMA&apos;s Ministry?</h2>
-              <ul style={{ padding: "0", marginBlock:'0', }}>
+              <h2 style={{ marginBlock: "10px" }}>
+                What we do in KAMA&apos;s Ministry?
+              </h2>
+              <ul style={{ padding: "0", marginBlock: "0" }}>
                 <li
                   style={{
                     display: "flex",
@@ -117,7 +114,7 @@ function Children() {
             </div>
           </div>
           <div>
-            <h2 style={{marginBottom:'10px'}}>Contact Us</h2>
+            <h2 style={{ marginBottom: "10px" }}>Contact Us</h2>
             <p>
               If you have any questions or want to learn more about the KAMA
               Ministry, feel free to reach out to us.
@@ -144,11 +141,11 @@ function Children() {
         <div className="row4Container">
           <div className="row4">
             <div>
-              <h2 style={{marginBottom:'10px'}}>Blogs</h2>
+              <h2 style={{ marginBottom: "10px" }}>Blogs</h2>
               <Blogs />
             </div>
             <div>
-              <h2 style={{marginBottom:'10px'}}>Member Testimony</h2>
+              <h2 style={{ marginBottom: "10px" }}>Member Testimony</h2>
               <p>
                 Explore inspiring stories from our KAMA members about their
                 journeys in faith, growth, and transformation. Each story
@@ -199,4 +196,4 @@ function Children() {
   );
 }
 
-export default Children;
+export default Men;
