@@ -4,12 +4,13 @@ import { FaChevronRight } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import Reveal from "../../../utils/Reveal";
 import image1 from "../../../assets/WhatsApp Image 2024-12-22 at 12.53.56_4ac63e6a.jpg";
-// import Blogs from "../../../components/Blogs/Blogs";
 import { useRef } from "react";
-// import image2 from "../../../assets/WhatsApp Image 2024-12-22 at 12.53.56_8549e219.jpg";
-// import image3 from "../../../assets/WhatsApp Image 2024-12-22 at 12.54.41_3e9bbbd2.jpg";
-// import image4 from "../../../assets/WhatsApp Image 2024-12-22 at 12.54.42_7c626b81.jpg";
-// import image5 from "../../../assets/WhatsApp Image 2024-12-22 at 12.54.42_573c252c.jpg"
+import image2 from "../../../assets/IMG-20250123-WA0062.jpg";
+import image3 from "../../../assets/IMG-20250123-WA0058.jpg";
+import image4 from "../../../assets/IMG-20250123-WA0025.jpg";
+import image5 from "../../../assets/IMG-20250123-WA0056.jpg";
+import video1 from "../../../assets/VID-20250123-WA0048.mp4";
+import video2 from "../../../assets/VID-20250123-WA0049.mp4";
 
 function Children() {
   const iframeRef = useRef(null);
@@ -18,20 +19,8 @@ function Children() {
     <div>
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
-        <video
-          className="video"
-          src="https://videos.pexels.com/video-files/3191109/3191109-hd_1366_720_25fps.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          className="video"
-          src="https://videos.pexels.com/video-files/7568735/7568735-hd_1366_720_25fps.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
+        <video className="video" src={video1} autoPlay muted loop></video>
+        <video className="video" src={video2} autoPlay muted loop></video>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
             <span>
@@ -231,16 +220,16 @@ function Children() {
           <img src={image1} alt="" />
         </div>
         <div>
-          <img src={image1} alt="" />
+          <img src={image2} alt="" />
         </div>
         <div>
-          <img src={image1} alt="" />
+          <img src={image3} alt="" />
         </div>
         <div>
-          <img src={image1} alt="" />
+          <img src={image4} alt="" />
         </div>
         <div>
-          <img src={image1} alt="" />
+          <img src={image5} alt="" />
         </div>
       </div>
     </div>
