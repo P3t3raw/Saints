@@ -28,14 +28,14 @@
 }
 
 .loading-text {
-  font-family: "Bodoni", serif;
+  /* font-family: "Bodoni", serif; */
   font-size: 24px;
   color: #333;
   margin-bottom: 10px;
 }
 
 .loading-subtext {
-  font-family: "Century Schoolbook", serif;
+  /* font-family: "Century Schoolbook", serif; */
   font-size: 18px;
   color: #555;
 }
