@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { FaYoutube } from "react-icons/fa";
 import "./Sermons.css";
 export default function Sermons() {
@@ -16,40 +15,6 @@ export default function Sermons() {
       src: "https://www.youtube.com/embed/t35AiXw5gsU?si=q9p6uYM9H0ciO-dp",
     },
   ];
-
-  const iframeRef = useRef(null);
-
-  const handleFullscreen = () => {
-    if (
-      document.fullscreenElement ||
-      document.webkitFullscreenElement ||
-      document.mozFullScreenElement ||
-      document.msFullscreenElement
-    ) {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-      }
-    }
-    if (iframeRef.current) {
-      const container = iframeRef.current.parentNode;
-      if (container.requestFullscreen) {
-        container.requestFullscreen();
-      } else if (container.mozRequestFullScreen) {
-        container.mozRequestFullScreen();
-      } else if (container.webkitRequestFullscreen) {
-        container.webkitRequestFullscreen();
-      } else if (container.msRequestFullscreen) {
-        container.msRequestFullscreen();
-      }
-    }
-  };
-
   return (
     <div className="sermons">
       <div className="servicesTop">
@@ -78,31 +43,13 @@ export default function Sermons() {
               }}
             >
               <iframe
-                ref={iframeRef}
                 style={{ width: "100%", height: "100%", border: "0" }}
                 src={video.src}
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
-                // allowFullscreen
-              ></iframe>
-              <button
-                style={{
-                  position: "absolute",
-                  bottom: "16px",
-                  right: "24px",
-                  width: "20px",
-                  height: "20px",
-                  cursor: "pointer",
-                  zIndex: "10",
-                  background: "transparent",
-                  border: "none",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-                onClick={handleFullscreen}
-              ></button>
+                allowFullScreen
+              />
             </div>
           ))}
         </div>
