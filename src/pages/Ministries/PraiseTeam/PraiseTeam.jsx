@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "../Children/Children.css";
 import { FaMicrophone } from "react-icons/fa";
-// import { FaChevronRight } from "react-icons/fa";
 import { BiMusic } from "react-icons/bi";
 import { FaChevronRight } from "react-icons/fa";
 import worshipImg from "../../../assets/worshipTeam.jpg";
@@ -12,9 +11,7 @@ import worshipImg5 from "../../../assets/swahiliService.jpg";
 import Reveal from "../../../utils/Reveal";
 import { GiGuitar } from "react-icons/gi";
 import image from "../../../assets/swahiliService.jpg";
-import { useRef } from "react";
 export default function PraiseTeam() {
-  const iframeRef = useRef(null);
   return (
     <div>
       <div className="background">
@@ -169,7 +166,6 @@ export default function PraiseTeam() {
                 <div>
                   <div
                     className="recentVideo1"
-                    // key={video.id}
                     style={{
                       position: "relative",
                       width: "100%",
@@ -180,31 +176,13 @@ export default function PraiseTeam() {
                     }}
                   >
                     <iframe
-                      ref={iframeRef}
                       style={{ width: "100%", height: "100%", border: "0" }}
-                      src="https://www.youtube.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb"
+                      src="https://www.youtube-nocookie.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb&rel=0"
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
-                      // allowFullscreen
-                    ></iframe>
-                    <button
-                      style={{
-                        position: "absolute",
-                        bottom: "16px",
-                        right: "24px",
-                        width: "20px",
-                        height: "20px",
-                        cursor: "pointer",
-                        zIndex: "10",
-                        background: "transparent",
-                        border: "none",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                      // onClick={handleFullscreen}
-                    ></button>
+                      allowFullScreen
+                    />
                   </div>
                 </div>
               </div>
@@ -219,7 +197,6 @@ export default function PraiseTeam() {
                 <div>
                   <div
                     className="recentVideo1"
-                    // key={video.id}
                     style={{
                       position: "relative",
                       width: "100%",
@@ -230,31 +207,13 @@ export default function PraiseTeam() {
                     }}
                   >
                     <iframe
-                      ref={iframeRef}
                       style={{ width: "100%", height: "100%", border: "0" }}
-                      src="https://www.youtube.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb"
+                      src="https://www.youtube-nocookie.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb&rel=0"
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
-                      // allowFullscreen
-                    ></iframe>
-                    <button
-                      style={{
-                        position: "absolute",
-                        bottom: "16px",
-                        right: "24px",
-                        width: "20px",
-                        height: "20px",
-                        cursor: "pointer",
-                        zIndex: "10",
-                        background: "transparent",
-                        border: "none",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                      // onClick={handleFullscreen}
-                    ></button>
+                      allowFullScreen
+                    />
                   </div>
                 </div>
               </div>

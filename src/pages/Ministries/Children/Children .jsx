@@ -4,7 +4,6 @@ import { FaChevronRight } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import Reveal from "../../../utils/Reveal";
 import image1 from "../../../assets/WhatsApp Image 2024-12-22 at 12.53.56_4ac63e6a.jpg";
-import { useRef } from "react";
 import image2 from "../../../assets/IMG-20250123-WA0062.jpg";
 import image3 from "../../../assets/IMG-20250123-WA0058.jpg";
 import image4 from "../../../assets/IMG-20250123-WA0025.jpg";
@@ -13,8 +12,6 @@ import video1 from "../../../assets/VID-20250123-WA0048.mp4";
 import video2 from "../../../assets/VID-20250123-WA0049.mp4";
 
 function Children() {
-  const iframeRef = useRef(null);
-
   return (
     <div>
       <div className="background">
@@ -184,29 +181,13 @@ function Children() {
                       }}
                     >
                       <iframe
-                        ref={iframeRef}
                         style={{ width: "100%", height: "100%", border: "0" }}
-                        src="https://www.youtube.com/embed/zeuoPQznpFo?si=d4JHh6-w8mUDbwap"
+                        src="https://www.youtube-nocookie.com/embed/zeuoPQznpFo?si=d4JHh6-w8mUDbwap&rel=0"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
-                      ></iframe>
-                      <button
-                        style={{
-                          position: "absolute",
-                          bottom: "16px",
-                          right: "24px",
-                          width: "20px",
-                          height: "20px",
-                          cursor: "pointer",
-                          zIndex: "10",
-                          background: "transparent",
-                          border: "none",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                        }}
-                      ></button>
+                        allowFullScreen
+                      />
                     </div>
                   </div>
                 </div>

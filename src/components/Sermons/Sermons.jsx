@@ -4,15 +4,15 @@ export default function Sermons() {
   const videos = [
     {
       id: 1,
-      src: "https://www.youtube.com/embed/p_oHTR5o4z4?si=4XsmGeW6ft1swl6k",
+      src: "https://www.youtube.com/embed/p_oHTR5o4z4?si=4XsmGeW6ft1swl6k?rel=0",
     },
     {
       id: 2,
-      src: "https://www.youtube.com/embed/Xj_AJ8oNovA?si=QGSvXt3s1k6m0-1T",
+      src: "https://www.youtube.com/embed/Xj_AJ8oNovA?si=QGSvXt3s1k6m0-1T?rel=0",
     },
     {
       id: 3,
-      src: "https://www.youtube.com/embed/t35AiXw5gsU?si=q9p6uYM9H0ciO-dp",
+      src: "https://www.youtube.com/embed/t35AiXw5gsU?si=q9p6uYM9H0ciO-dp?rel=0",
     },
   ];
   return (
@@ -39,7 +39,7 @@ export default function Sermons() {
                 width: "100%",
                 maxWidth: "50rem",
                 margin: "auto",
-                height: "30vh",
+                height: "40vh",
               }}
             >
               <iframe
