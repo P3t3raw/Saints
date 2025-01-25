@@ -177,7 +177,7 @@ export default function PraiseTeam() {
                   >
                     <iframe
                       style={{ width: "100%", height: "100%", border: "0" }}
-                      src="https://www.youtube-nocookie.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb&rel=0"
+                      src="https://www.youtube-nocookie.com/embed/JrP63AbapVo?si=94XkPr0qMGRcOwqF&rel=0"
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
