@@ -39,7 +39,7 @@ export default function Sermons() {
                 width: "100%",
                 maxWidth: "50rem",
                 margin: "auto",
-                height: "40vh",
+                height: "32vh",
               }}
             >
               <iframe
