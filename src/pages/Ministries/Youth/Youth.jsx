@@ -187,7 +187,6 @@ export default function Youth() {
                 <div className="podcastWrapper">
                   <div
                     className="recentVideo1"
-                    // key={video.id}
                     style={{
                       position: "relative",
                       width: "100%",
@@ -204,25 +203,8 @@ export default function Youth() {
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
-                      // allowFullscreen
-                    ></iframe>
-                    <button
-                      style={{
-                        position: "absolute",
-                        bottom: "16px",
-                        right: "24px",
-                        width: "20px",
-                        height: "20px",
-                        cursor: "pointer",
-                        zIndex: "10",
-                        background: "transparent",
-                        border: "none",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                      // onClick={handleFullscreen}
-                    ></button>
+                      allowFullScreen
+                    />
                   </div>
                 </div>
               </div>
