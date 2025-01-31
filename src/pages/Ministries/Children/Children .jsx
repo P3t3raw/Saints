@@ -3,21 +3,53 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import Reveal from "../../../utils/Reveal";
+import image from "../../../assets/00821e92f02ac1b3a7527601a6ff9dab.jpg";
 import image1 from "../../../assets/WhatsApp Image 2024-12-22 at 12.53.56_4ac63e6a.jpg";
-import image2 from "../../../assets/IMG-20250123-WA0062.jpg";
-import image3 from "../../../assets/IMG-20250123-WA0058.jpg";
+import image2 from "../../../assets/2025-01-19 10.03.38.jpg";
+import image3 from "../../../assets/2025-01-19 10.03.18.jpg";
 import image4 from "../../../assets/IMG-20250123-WA0025.jpg";
-import image5 from "../../../assets/IMG-20250123-WA0056.jpg";
-import video1 from "../../../assets/VID-20250123-WA0048.mp4";
-import video2 from "../../../assets/VID-20250123-WA0049.mp4";
+import image5 from "../../../assets/2025-01-19 10.03.07.jpg";
+import video1 from "../../../assets/VID-20250123-WA0043.mp4";
+import video2 from "../../../assets/2025-01-19 09.47.16.mp4";
+import video3 from "../../../assets/2025-01-19 09.56.27.mp4";
+import { useEffect, useRef } from "react";
 
 function Children() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.7;
+    }
+  }, []);
   return (
     <div>
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
-        <video className="video" src={video1} autoPlay muted loop></video>
-        <video className="video" src={video2} autoPlay muted loop></video>
+        <video
+          ref={videoRef}
+          className="video"
+          src={video1}
+          autoPlay
+          muted
+          loop
+        ></video>
+        <video
+          ref={videoRef}
+          className="video"
+          src={video2}
+          autoPlay
+          muted
+          loop
+        ></video>
+        <video
+          ref={videoRef}
+          className="video"
+          src={video3}
+          autoPlay
+          muted
+          loop
+        ></video>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
             <span>
@@ -43,10 +75,7 @@ function Children() {
               <span style={{ color: "#a7a7a7" }}>Matthew 19:14</span>
             </p>
           </div>
-          <img
-            src="https://i.pinimg.com/originals/00/82/1e/00821e92f02ac1b3a7527601a6ff9dab.jpg"
-            alt="sunday school"
-          />
+          <img src={image} alt="sunday school" />
         </div>
       </div>
 
@@ -125,7 +154,7 @@ function Children() {
             <p>
               <strong>Email:</strong> sundayschool@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong>
+              {/* <strong>Phone:</strong> */}
             </p>
             <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
             <ul className="events">

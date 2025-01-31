@@ -3,16 +3,46 @@ import Reveal from "../../utils/Reveal";
 import Services from "../../components/Services/Services";
 import Sermons from "../../components/Sermons/Sermons";
 import Events from "../../components/Events/Events";
-import video1 from "../../assets/WhatsApp Video 2025-01-21 at 00.27.13_4757e656.mp4";
-import video2 from "../../assets/VID-20250123-WA0043.mp4";
+import video1 from "../../assets/2025-01-19 10.21.40.mp4";
+import video2 from "../../assets/2025-01-26 10.09.09.mp4";
+import video3 from "../../assets/2025-01-19 10.30.45.mp4";
+import { useEffect, useRef } from "react";
 function Home() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.7;
+    }
+  }, []);
   return (
     <main>
       <div className="background">
         <div className="overlay"></div>
-        <video className="video" src={video1} autoPlay muted loop></video>
-        <video className="video" src={video2} autoPlay muted loop></video>
-        <video className="video" src={video1} autoPlay muted loop></video>
+        <video
+          ref={videoRef}
+          className="video"
+          src={video1}
+          autoPlay
+          muted
+          loop
+        ></video>
+        <video
+          ref={videoRef}
+          className="video"
+          src={video2}
+          autoPlay
+          muted
+          loop
+        ></video>
+        <video
+          ref={videoRef}
+          className="video"
+          src={video3}
+          autoPlay
+          muted
+          loop
+        ></video>
         <div className="content">
           <p className="text">
             <span className="whiteLine"></span>
