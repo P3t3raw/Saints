@@ -26,7 +26,8 @@ body {
   left: 0;
   object-fit: cover;
   object-position: center;
-  animation: fade 30s ease-in-out infinite alternate;
+  opacity: 0;
+  animation: fade 30s infinite;
 }
 @keyframes fade {
   0% {
@@ -35,7 +36,7 @@ body {
   33% {
     opacity: 0;
   }
-  67% {
+  66% {
     opacity: 0;
   }
   100% {
@@ -216,7 +217,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .background .content{
+  .background .content {
     left: 16px;
     right: 16px;
     transform: translate(0);
