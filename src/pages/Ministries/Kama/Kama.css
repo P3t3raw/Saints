@@ -88,8 +88,8 @@
 }
 .row1 img {
   flex: 1;
-  width: 45rem;
-  height: 35rem;
+  width: 50rem;
+  height: 28rem;
   object-fit: cover;
   object-position: top center;
   border-radius: 0.6rem;
