@@ -14,7 +14,7 @@ import image from "../../../assets/2025-01-26 14.03.10.jpg";
 import video from "../../../assets/2025-01-26 10.15.15.mp4";
 import video1 from "../../../assets/2025-01-26 10.32.50.mp4";
 import video2 from "../../../assets/2025-01-26 11.24.04.mp4";
-import performance from "../../../assets/2025-01-26 10.11.05.mp4";
+import performance from "../../../assets/2025-01-26 10.15.15.mp4";
 import { useEffect, useRef } from "react";
 export default function PraiseTeam() {
   const videoRef = useRef(null);
