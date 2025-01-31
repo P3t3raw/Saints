@@ -95,7 +95,7 @@ function App() {
               ),
             },
             {
-              path: "/ministries/children-ministry",
+              path: "/ministries/sunday-school",
               element: (
                 <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <Children />
@@ -103,7 +103,7 @@ function App() {
               ),
             },
             {
-              path: "/ministries/Kama",
+              path: "/ministries/Kama-ministry",
               element: (
                 <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <Kama />
@@ -119,7 +119,7 @@ function App() {
               ),
             },
             {
-              path: "/ministries/PraiseTeam",
+              path: "/ministries/Music-ministry",
               element: (
                 <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <PraiseTeam />
