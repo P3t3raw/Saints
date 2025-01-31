@@ -3,11 +3,12 @@ import "./MotherUnion.css";
 import Blogs from "../../../components/Blogs/Blogs";
 // import "../Children/Children.css";
 import { FaChevronRight } from "react-icons/fa";
-import mothersUnion from "../../../assets/MU.jpg";
-import mothersUnion2 from "../../../assets/357746491_619471053607956_411327406936014473_n.jpg";
-import mothersUnion3 from "../../../assets/IMG_6818.JPG";
-import mothersUnion4 from "../../../assets/MU.jpg";
-import mothersUnion5 from "../../../assets/IMG_6816.JPG";
+import mothersUnion1 from "../../../assets/mothers.jpeg";
+import mothersUnion from "../../../assets/WhatsApp Image 2025-01-30 at 19.53.16.jpeg";
+import mothersUnion4 from "../../../assets/357746491_619471053607956_411327406936014473_n.jpg";
+import mothersUnion3 from "../../../assets/WhatsApp Image 2025-01-30 at 19.56.20.jpeg";
+import mothersUnion5 from "../../../assets/MU.jpg";
+import mothersUnion2 from "../../../assets/WhatsApp Image 2025-01-30 at 19.58.55.jpeg";
 import { FaRegHeart } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import Reveal from "../../../utils/Reveal";
@@ -44,7 +45,7 @@ function Children() {
               <span style={{ color: "#a7a7a7" }}>Philippians 4:13</span>
             </p>
           </div>
-          <img src={mothersUnion} alt="mothers union" />
+          <img src={mothersUnion1} alt="mothers union" />
         </div>
       </div>
       <Reveal>
@@ -121,7 +122,7 @@ function Children() {
             <p>
               <strong>Email:</strong> mothersunion@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong>
+              {/* <strong>Phone:</strong> */}
             </p>
             <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
             <ul className="events">
@@ -154,7 +155,7 @@ function Children() {
               </p>
               <div>
                 <ul className="devotional-list">
-                  <li>
+                  {/* <li>
                     <h4>Upcoming Devotional Piece</h4>
                     <p>
                       Dive into an inspiring and thought-provoking discussion
@@ -175,7 +176,7 @@ function Children() {
                       join a meaningful conversation with others. Don’t miss out
                       on the chance to engage with content that truly matters.
                     </p>
-                  </li>
+                  </li> */}
                 </ul>
                 <button>Share Your Story</button>
               </div>

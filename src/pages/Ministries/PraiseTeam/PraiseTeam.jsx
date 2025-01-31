@@ -10,30 +10,45 @@ import worshipImg4 from "../../../assets/IMG_6807.JPG";
 import worshipImg5 from "../../../assets/swahiliService.jpg";
 import Reveal from "../../../utils/Reveal";
 import { GiGuitar } from "react-icons/gi";
-import image from "../../../assets/swahiliService.jpg";
+import image from "../../../assets/2025-01-26 14.03.10.jpg";
+import video from "../../../assets/2025-01-26 10.15.15.mp4";
+import video1 from "../../../assets/2025-01-26 10.32.50.mp4";
+import video2 from "../../../assets/2025-01-26 11.24.04.mp4";
+import performance from "../../../assets/2025-01-26 10.11.05.mp4";
+import { useEffect, useRef } from "react";
 export default function PraiseTeam() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.75;
+    }
+  }, []);
   return (
     <div>
       <div className="background">
         <div className="overlay"></div>
 
         <video
+          ref={videoRef}
           className="video"
-          src="https://videos.pexels.com/video-files/6860452/6860452-hd_1280_720_25fps.mp4"
+          src={video}
           autoPlay
           muted
           loop
         ></video>
         <video
+          ref={videoRef}
           className="video"
-          src="https://videos.pexels.com/video-files/7520507/7520507-hd_1366_720_25fps.mp4"
+          src={video1}
           autoPlay
           muted
           loop
         ></video>
         <video
+          ref={videoRef}
           className="video"
-          src="https://videos.pexels.com/video-files/8775627/8775627-sd_640_360_25fps.mp4"
+          src={video2}
           autoPlay
           muted
           loop
@@ -138,7 +153,7 @@ export default function PraiseTeam() {
             <p>
               <strong>Email:</strong> musicministry@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong>
+              {/* <strong>Phone:</strong> */}
             </p>
             <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
             <ul className="events">
@@ -206,14 +221,19 @@ export default function PraiseTeam() {
                       borderRadius: "1rem",
                     }}
                   >
-                    <iframe
+                    <video
+                      style={{ width: "100%", height: "100%", border: "0" }}
+                      src={performance}
+                      controls
+                    ></video>
+                    {/* <iframe
                       style={{ width: "100%", height: "100%", border: "0" }}
                       src="https://www.youtube-nocookie.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb&rel=0"
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
                       allowFullScreen
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
