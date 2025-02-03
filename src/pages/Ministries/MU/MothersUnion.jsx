@@ -13,14 +13,36 @@ import { FaRegHeart } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import Reveal from "../../../utils/Reveal";
 import video1 from "../../../assets/3987756-hd_1280_720_24fps.mp4";
+import { useEffect, useRef } from "react";
 
-function Children() {
+function Mothers() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.7;
+    }
+  }, []);
   return (
     <div>
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
-        <video className="video" src={video1} autoPlay muted loop></video>
-        <video className="video" src={video1} autoPlay muted loop></video>
+        <video
+          className="videoMothers"
+          ref={videoRef}
+          src={video1}
+          autoPlay
+          muted
+          loop
+        ></video>
+        <video
+          className="videoMothers"
+          ref={videoRef}
+          src={video1}
+          autoPlay
+          muted
+          loop
+        ></video>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
             <span>
@@ -122,7 +144,7 @@ function Children() {
             <p>
               <strong>Email:</strong> mothersunion@ackstpetersembakasi.org
               <br />
-              {/* <strong>Phone:</strong> */}
+              <strong>Phone:</strong>0110 008 603
             </p>
             <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
             <ul className="events">
@@ -205,4 +227,4 @@ function Children() {
   );
 }
 
-export default Children;
+export default Mothers;

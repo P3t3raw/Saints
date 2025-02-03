@@ -10,13 +10,35 @@ import kama5 from "../../../assets/IMG_6840.JPG";
 import { BiBible, BiHomeHeart } from "react-icons/bi";
 import { FaRegHeart } from "react-icons/fa";
 import video1 from "../../../assets/3987756-hd_1280_720_24fps.mp4";
+import { useEffect, useRef } from "react";
 function Men() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.7;
+    }
+  }, []);
   return (
     <div>
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
-        <video className="video" src={video1} autoPlay muted loop></video>
-        <video className="video" src={video1} autoPlay muted loop></video>
+        <video
+          className="videoKama"
+          ref={videoRef}
+          src={video1}
+          autoPlay
+          muted
+          loop
+        ></video>
+        <video
+          className="videoKama"
+          ref={videoRef}
+          src={video1}
+          autoPlay
+          muted
+          loop
+        ></video>
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
             <span>
@@ -122,7 +144,7 @@ function Men() {
             <p>
               <strong>Email:</strong> kama@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong> 0110008603
+              <strong>Phone:</strong> 0110 008 603
             </p>
             <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
             <ul className="events">
@@ -155,7 +177,7 @@ function Men() {
               </p>
               <div>
                 <ul className="devotional-list">
-                  <li>
+                  {/* <li>
                     <h4>Upcoming Devotional Piece</h4>
                     <p>
                       Dive into an inspiring and thought-provoking discussion
@@ -165,7 +187,7 @@ function Men() {
                       join a meaningful conversation with others. Don’t miss out
                       on the chance to engage with content that truly matters.
                     </p>
-                  </li>
+                  </li> */}
                 </ul>
                 <button>Share Your Story</button>
               </div>

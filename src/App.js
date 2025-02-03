@@ -103,7 +103,7 @@ function App() {
               ),
             },
             {
-              path: "/ministries/Kama-ministry",
+              path: "/ministries/kama-ministry",
               element: (
                 <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <Kama />
@@ -111,7 +111,7 @@ function App() {
               ),
             },
             {
-              path: "/ministries/MothersUnion",
+              path: "/ministries/mothers-union",
               element: (
                 <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <MothersUnion />
@@ -119,7 +119,7 @@ function App() {
               ),
             },
             {
-              path: "/ministries/Music-ministry",
+              path: "/ministries/music-ministry",
               element: (
                 <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <PraiseTeam />
@@ -128,7 +128,7 @@ function App() {
             },
 
             {
-              path: "/ministries/TEE",
+              path: "/ministries/tee",
               element: (
                 <Suspense fallback={<LoadingWithDelay delay={3000} />}>
                   <TEE />

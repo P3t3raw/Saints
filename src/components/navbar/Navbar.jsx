@@ -52,33 +52,31 @@ function Navbar() {
               <li
                 className={`ministries ${ministries ? "selected" : ""}`}
                 onClick={() => setMinistries((prev) => !prev)}
-                onMouseLeave={()=> setMinistries(false)}
+                onMouseLeave={() => setMinistries(false)}
               >
                 Ministries
                 <span className="arrow"></span>
                 <ul className="ministriesWrapper">
                   <li>
-                    <Link to="/ministries/Kama">K.A.M.A.</Link>
+                    <Link to="/ministries/kama-ministry">K.A.M.A.</Link>
                   </li>
                   <li>
-                    <Link to="/ministries/MothersUnion">Mother's Union</Link>
+                    <Link to="/ministries/mothers-union">Mother's Union</Link>
                   </li>
                   <li>
                     <Link to="/ministries/youth-ministry">Youth Ministry</Link>
                   </li>
                   <li>
-                    <Link to="/ministries/children-ministry">
-                      Sunday School
-                    </Link>
+                    <Link to="/ministries/sunday-school">Sunday School</Link>
                   </li>
                   <li>
-                    <Link to="/ministries/PraiseTeam">Music Ministry</Link>
+                    <Link to="/ministries/music-ministry">Music Ministry</Link>
                   </li>
                   <li>
-                    <Link to="/ministries/TEE">T.E.E</Link>
+                    <Link to="/ministries/tee">T.E.E</Link>
                   </li>
                 </ul>
-              </li>              
+              </li>
               <li>
                 <Link to="/events">Events</Link>
               </li>
@@ -88,7 +86,7 @@ function Navbar() {
               <li
                 className={`ministries ${programs ? "selected" : ""}`}
                 onClick={() => setPrograms((prev) => !prev)}
-                onMouseLeave={()=> setPrograms(false)}
+                onMouseLeave={() => setPrograms(false)}
               >
                 Programs
                 <span className="arrow"></span>
@@ -150,22 +148,22 @@ function Navbar() {
             {ministriesActive && (
               <ul style={{ paddingLeft: "1rem", marginTop: "0.5rem" }}>
                 <li onClick={() => setMenuActive(false)}>
-                  <Link to="/ministries/Kama">K.A.M.A.</Link>
+                  <Link to="/ministries/kama-ministry">K.A.M.A.</Link>
                 </li>
                 <li onClick={() => setMenuActive(false)}>
-                  <Link to="/ministries/MothersUnion">Mother's Union</Link>
+                  <Link to="/ministries/mothers-union">Mother's Union</Link>
                 </li>
                 <li onClick={() => setMenuActive(false)}>
                   <Link to="/ministries/youth-ministry">Youth Ministry</Link>
                 </li>
                 <li onClick={() => setMenuActive(false)}>
-                  <Link to="/ministries/children-ministry">Sunday School</Link>
+                  <Link to="/ministries/sunday-school">Sunday School</Link>
                 </li>
                 <li onClick={() => setMenuActive(false)}>
-                  <Link to="/ministries/PraiseTeam">Music Ministry</Link>
+                  <Link to="/ministries/music-ministry">Music Ministry</Link>
                 </li>{" "}
                 <li onClick={() => setMenuActive(false)}>
-                  <Link to="/ministries/TEE">T.E.E</Link>
+                  <Link to="/ministries/tee">T.E.E</Link>
                 </li>{" "}
               </ul>
             )}

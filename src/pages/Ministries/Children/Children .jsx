@@ -28,7 +28,7 @@ function Children() {
         <div className="childrenMinistryOverlay"></div>
         <video
           ref={videoRef}
-          className="video"
+          className="videoChildren"
           src={video1}
           autoPlay
           muted
@@ -36,7 +36,7 @@ function Children() {
         ></video>
         <video
           ref={videoRef}
-          className="video"
+          className="videoChildren"
           src={video2}
           autoPlay
           muted
@@ -44,7 +44,7 @@ function Children() {
         ></video>
         <video
           ref={videoRef}
-          className="video"
+          className="videoChildren"
           src={video3}
           autoPlay
           muted
@@ -59,14 +59,14 @@ function Children() {
               Ministries <FaChevronRight />
             </span>
             <span>
-              Children Ministry <FaChevronRight />
+              Sunday School <FaChevronRight />
             </span>
           </p>
-          <h1>Children Ministry</h1>
+          <h1>Sunday School</h1>
         </div>
       </div>
       <div className="row1Container">
-        <div className="row1">
+        <div className="row1SundaySchool">
           <div>
             <p className="textQuote">
               ❝ Jesus said, 'Let the little children come to me, and do not
@@ -154,7 +154,7 @@ function Children() {
             <p>
               <strong>Email:</strong> sundayschool@ackstpetersembakasi.org
               <br />
-              {/* <strong>Phone:</strong> */}
+              <strong>Phone:</strong>0110 008 603
             </p>
             <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
             <ul className="events">

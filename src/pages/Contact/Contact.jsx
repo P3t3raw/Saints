@@ -127,7 +127,7 @@ export default function Contact() {
 
             {formData.title === "booking" && (
               <label>
-                Call us on <b>+254110008603</b> to make an appointment with the
+                Call us on <b>0110 008 603</b> to make an appointment with the
                 Vicar at your convenient time.
               </label>
             )}

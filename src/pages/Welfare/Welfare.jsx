@@ -27,7 +27,7 @@ export default function Welfare() {
       "ACK St. Peter's Church Embakasi Welfare Association aims to offer quick financial assistance to individuals and families in need of support during times of crisis.",
 
     applicationProcess:
-      "Visit the church office or contact us at 0110008603 to apply.",
+      "Visit the church office or contact us at 0110 008 603 to apply.",
 
     testimonials: [
       {
@@ -47,10 +47,7 @@ export default function Welfare() {
       "https://bacc.cc/wp-content/uploads/2023/11/gallery-tgs-tall.jpg",
     ],
     contact: { email: "welfare@church.org", phone: "(555) 123-4567" },
-    updates: [
-      "All members are urged to settle their arrears.",
-      "The committee wishes you merry christmas and a happy new year 2025!",
-    ],
+    updates: ["All members are urged to settle their arrears."],
   };
 
   return (
@@ -82,27 +79,21 @@ export default function Welfare() {
           </div>
           <div>
             <h2>Program Objectives</h2>
-              {programDetails.objectives.map((objective, index) => (
-                <p
-                  key={index}
-                  style={{ display: "flex",  }}
-                >
-                  <LuDot style={{ fontSize: "2rem", flexShrink:'0' }} />
-                  {objective}
-                </p>
-              ))}
+            {programDetails.objectives.map((objective, index) => (
+              <p key={index} style={{ display: "flex" }}>
+                <LuDot style={{ fontSize: "2rem", flexShrink: "0" }} />
+                {objective}
+              </p>
+            ))}
           </div>
           <div>
             <h2>Membership Qualifications</h2>
-              {programDetails.qualifications.map((qualification, index) => (
-                <p
-                  key={index}
-                  style={{ display: "flex" }}
-                >
-                  <LuDot style={{ fontSize: "2rem", flexShrink:'0' }} />
-                  {qualification}
-                </p>
-              ))}
+            {programDetails.qualifications.map((qualification, index) => (
+              <p key={index} style={{ display: "flex" }}>
+                <LuDot style={{ fontSize: "2rem", flexShrink: "0" }} />
+                {qualification}
+              </p>
+            ))}
           </div>
           {/*<div>
             <h2>Gallery</h2>

@@ -1,5 +1,5 @@
+import "./PraiseTeam.css";
 import { Link } from "react-router-dom";
-import "../Children/Children.css";
 import { FaMicrophone } from "react-icons/fa";
 import { BiMusic } from "react-icons/bi";
 import { FaChevronRight } from "react-icons/fa";
@@ -26,11 +26,11 @@ export default function PraiseTeam() {
   return (
     <div>
       <div className="background">
-        <div className="overlay"></div>
+        <div className="childrenMinistryOverlay"></div>
 
         <video
           ref={videoRef}
-          className="video"
+          className="videoMusic"
           src={video}
           autoPlay
           muted
@@ -38,7 +38,7 @@ export default function PraiseTeam() {
         ></video>
         <video
           ref={videoRef}
-          className="video"
+          className="videoMusic"
           src={video1}
           autoPlay
           muted
@@ -52,6 +52,9 @@ export default function PraiseTeam() {
             </span>
             <span>
               Ministries <FaChevronRight />
+            </span>
+            <span>
+              Music Ministry <FaChevronRight />
             </span>
           </p>
           <h1>Choir & Praise team</h1>
@@ -145,7 +148,7 @@ export default function PraiseTeam() {
             <p>
               <strong>Email:</strong> musicministry@ackstpetersembakasi.org
               <br />
-              {/* <strong>Phone:</strong> */}
+              <strong>Phone:</strong>0110 008 603
             </p>
             <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
             <ul className="events">

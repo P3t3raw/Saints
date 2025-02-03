@@ -5,7 +5,7 @@
   width: 100%;
   height: 100dvh;
 }
-.background .video {
+.background .videoChildren {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -13,7 +13,7 @@
   left: 0;
   object-fit: cover;
   object-position: center;
-  opacity: 0;
+  /* opacity: 0; */
   animation: fade 30s infinite;
 }
 .video:nth-child(1) {
@@ -72,7 +72,7 @@
 }
 
 /* Row Styles */
-.row1 {
+.row1SundaySchool {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,11 +86,11 @@
 .row1Container {
   background-color: #1f2837;
 }
-.row1 div {
+.row1SundaySchool div {
   flex: 1;
   font-size: 1rem;
 }
-.row1 img {
+.row1SundaySchool img {
   flex: 1;
   width: 45rem;
   height: 35rem;
@@ -98,7 +98,7 @@
   object-position: top center;
   border-radius: 0.6rem;
 }
-.row1 .textQuote {
+.row1SundaySchool .textQuote {
   font-size: 1.875rem;
   margin-block-end: 0.625rem;
 }
@@ -222,14 +222,14 @@ button:hover {
   .eventsBreadCrumbsWrapper {
     padding-inline: 4rem;
   }
-  .row1 {
+  .row1SundaySchool {
     flex-direction: column;
     padding-inline: 1rem;
   }
-  .row1 .textQuote {
+  .row1SundaySchool .textQuote {
     font-size: 1.5rem;
   }
-  .row1 img {
+  .row1SundaySchool img {
     max-width: 26rem;
   }
 }
@@ -244,10 +244,10 @@ button:hover {
     font-size: 0.875rem;
     margin-bottom: 1rem;
   }
-  .row1 div > * {
+  .row1SundaySchool div > * {
     margin-bottom: 1.25rem;
   }
-  .row1 .textQuote {
+  .row1SundaySchool .textQuote {
     font-size: 1.3rem;
   }
   .row2Text {
@@ -280,7 +280,7 @@ button:hover {
   .row2 div {
     width: 100%;
   }
-  .row1 img {
+  .row1SundaySchool img {
     width: 18rem;
     height: 18rem;
   }
@@ -292,7 +292,7 @@ button:hover {
   .eventsBreadCrumbsWrapper h1 {
     font-size: 1.5rem;
   }
-  .row1 .textQuote {
+  .row1SundaySchool .textQuote {
     font-size: 1rem;
   }
   .row2 {

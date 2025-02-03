@@ -47,11 +47,11 @@ function Footer() {
           <ul className="list serviceHours">
             <li>
               <span>Main Church Paybill</span>
-              <span>: 70 17 84</span>
+              <span>: 701 784</span>
               <small>A/C: OFFERTORY/TITHE/THANKSGIVING</small>
             </li>
             <li>
-              <span>Development Paybill: 70 17 90</span>
+              <span>Development Paybill: 701 790</span>
               <small>ACC NO: SUNDAY SCHOOL BLOCK</small>
             </li>
             <li>

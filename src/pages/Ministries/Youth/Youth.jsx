@@ -11,15 +11,23 @@ import youth2 from "../../../assets/stpetersfc.jpg";
 import youth4 from "../../../assets/youthMin.jpg";
 import youth3 from "../../../assets/YouthMinistry1.jpg";
 import youth5 from "../../../assets/stpetersfc1.jpg";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 export default function Youth() {
   const iframeRef = useRef(null);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.7;
+    }
+  }, []);
   return (
     <div>
       <div className="background">
-        <div className="overlay"></div>
+        <div className="childrenMinistryOverlay"></div>
         <video
-          className="video"
+          ref={videoRef}
+          className="videoYouth"
           src="https://videos.pexels.com/video-files/5365060/5365060-hd_1366_720_25fps.mp4"
           autoPlay
           muted
@@ -27,9 +35,10 @@ export default function Youth() {
         ></video>
 
         <video
-          className="video"
+          className="videoYouth"
           src="https://videos.pexels.com/video-files/6860419/6860419-hd_1280_720_25fps.mp4"
           autoPlay
+          ref={videoRef}
           muted
           loop
         ></video>
@@ -41,6 +50,9 @@ export default function Youth() {
             </span>
             <span>
               Ministries <FaChevronRight />
+            </span>
+            <span>
+              Youth Ministry <FaChevronRight />
             </span>
           </p>
           <h1>Youth Ministry</h1>
@@ -144,7 +156,7 @@ export default function Youth() {
             <p>
               <strong>Email:</strong> youth@ackstpetersembakasi.org
               <br />
-              <strong>Phone:</strong>
+              <strong>Phone:</strong>0110 008 603
             </p>
             <h2 style={{ marginTop: "1.5rem" }}>Upcoming Events</h2>
             <ul className="events">

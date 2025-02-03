@@ -8,11 +8,11 @@ import video2 from "../../assets/2025-01-26 10.09.09.mp4";
 import video3 from "../../assets/2025-01-19 10.30.45.mp4";
 import { useEffect, useRef } from "react";
 function Home() {
-  const videoRef = useRef(null);
+  const homeVideoRef = useRef(null);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.7;
+    if (homeVideoRef.current) {
+      homeVideoRef.current.playbackRate = 0.7;
     }
   }, []);
   return (
@@ -20,24 +20,24 @@ function Home() {
       <div className="background">
         <div className="overlay"></div>
         <video
-          ref={videoRef}
-          className="video"
+          ref={homeVideoRef}
+          className="videoHome"
           src={video1}
           autoPlay
           muted
           loop
         ></video>
         <video
-          ref={videoRef}
-          className="video"
+          ref={homeVideoRef}
+          className="videoHome"
           src={video2}
           autoPlay
           muted
           loop
         ></video>
         <video
-          ref={videoRef}
-          className="video"
+          ref={homeVideoRef}
+          className="videoHome"
           src={video3}
           autoPlay
           muted

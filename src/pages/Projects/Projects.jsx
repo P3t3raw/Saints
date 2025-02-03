@@ -44,48 +44,48 @@ export default function Projects() {
         raised: "Ksh. 55,000",
       },
     },
-    {
-      title: "Music for the Soul: Teaching Kids to Play Instruments",
-      overview:
-        "An initiative to introduce young children to the joy of music through hands-on instrument lessons, helping them develop new skills and a deeper connection to their faith through music.",
-      objectives: [
-        "Teach foundational skills for instruments like guitar, piano, and drums",
-        "Encourage self-expression and creativity through music",
-        "Build a supportive community for young musicians to grow in faith and talent",
-      ],
-      targetAudience:
-        "Children aged 6-12 in the church community and surrounding neighborhood",
-      description:
-        "This program offers beginner-level music classes for children, focusing on popular instruments such as guitar, piano, and drums. Classes will be taught by experienced musicians from the congregation, aiming to inspire kids and foster a love for music that complements their spiritual growth.",
-      timeline: "March 1 - August 31, 2024",
-      location: "Church Music Room and Community Hall",
-      team: [
-        "Music Program Coordinator",
-        "Guitar Instructor",
-        "Piano Instructor",
-        "Drum Instructor",
-      ],
-      involvementOptions: [
-        "Volunteer as an instructor or assistant",
-        "Donate musical instruments or accessories",
-        "Sponsor a child’s participation in the program",
-      ],
-      partners: ["Local Music Shop", "Harmony Music Foundation"],
-      gallery: ["music_class1.jpg", "music_class2.jpg"],
-      cta: "Support the Music for the Soul Program",
-      contact: {
-        email: "projects@ackstpetersembakasi.org",
-        phone: "(555) 444-5555",
-      },
-      updates: [
-        "Open enrollment starts February 10, 2024",
-        "First class begins March 1, 2024",
-      ],
-      budget: {
-        goal: "Ksh. 70,000",
-        raised: "Ksh. 25,000 ",
-      },
-    },
+    // {
+    //   title: "Music for the Soul: Teaching Kids to Play Instruments",
+    //   overview:
+    //     "An initiative to introduce young children to the joy of music through hands-on instrument lessons, helping them develop new skills and a deeper connection to their faith through music.",
+    //   objectives: [
+    //     "Teach foundational skills for instruments like guitar, piano, and drums",
+    //     "Encourage self-expression and creativity through music",
+    //     "Build a supportive community for young musicians to grow in faith and talent",
+    //   ],
+    //   targetAudience:
+    //     "Children aged 6-12 in the church community and surrounding neighborhood",
+    //   description:
+    //     "This program offers beginner-level music classes for children, focusing on popular instruments such as guitar, piano, and drums. Classes will be taught by experienced musicians from the congregation, aiming to inspire kids and foster a love for music that complements their spiritual growth.",
+    //   timeline: "March 1 - August 31, 2024",
+    //   location: "Church Music Room and Community Hall",
+    //   team: [
+    //     "Music Program Coordinator",
+    //     "Guitar Instructor",
+    //     "Piano Instructor",
+    //     "Drum Instructor",
+    //   ],
+    //   involvementOptions: [
+    //     "Volunteer as an instructor or assistant",
+    //     "Donate musical instruments or accessories",
+    //     "Sponsor a child’s participation in the program",
+    //   ],
+    //   partners: ["Local Music Shop", "Harmony Music Foundation"],
+    //   gallery: ["music_class1.jpg", "music_class2.jpg"],
+    //   cta: "Support the Music for the Soul Program",
+    //   contact: {
+    //     email: "projects@ackstpetersembakasi.org",
+    //     phone: "(555) 444-5555",
+    //   },
+    //   updates: [
+    //     "Open enrollment starts February 10, 2024",
+    //     "First class begins March 1, 2024",
+    //   ],
+    //   budget: {
+    //     goal: "Ksh. 70,000",
+    //     raised: "Ksh. 25,000 ",
+    //   },
+    // },
   ];
 
   return (
