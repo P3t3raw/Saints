@@ -5,22 +5,37 @@
   width: 100%;
   height: 100dvh;
 }
-.background .videoYouth {
+.background .imageYouth {
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
   object-fit: cover;
   object-position: center;
-  /* opacity: 0; */
-  animation: fade 30s infinite;
+  padding: 0;
+  transition: opacity 2s ease-in-out;
 }
-.video:nth-of-type(1) {
-  animation-delay: 0s;
+.background .imageYouth.active {
+  opacity: 1;
+  z-index: 1;
+  animation: zoomEffect 10s linear infinite;
 }
-.video:nth-of-type(2) {
-  animation-delay: 15s;
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(1.05) translateX(-1%);
+  }
+  100% {
+    transform: scale(1.1) translateX(1%);
+  }
+}
+.background .imageYouth.fading {
+  opacity: 0;
+  z-index: 0;
 }
 .childrenMinistryOverlay {
   position: absolute;
@@ -199,20 +214,6 @@ button:hover {
 }
 
 /* Animations */
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 0;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
@@ -322,5 +323,8 @@ button:hover {
   .row3 div:nth-of-type(5) {
     grid-column: 3/4;
     grid-row: 1/2;
+  }
+  .background .imageYouth {
+    object-position: top;
   }
 }

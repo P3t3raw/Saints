@@ -11,38 +11,37 @@ import youth2 from "../../../assets/stpetersfc.jpg";
 import youth4 from "../../../assets/youthMin.jpg";
 import youth3 from "../../../assets/YouthMinistry1.jpg";
 import youth5 from "../../../assets/stpetersfc1.jpg";
-import { useEffect, useRef } from "react";
+import youth6 from "../../../assets/_IMG0932.jpg";
+import youth7 from "../../../assets/_IMG0935.jpg";
+import youth8 from "../../../assets/_IMG0847.jpg";
+import youth9 from "../../../assets/_IMG0922.jpg";
+// import youth10 from "../../../assets/_IMG0938.jpg";
+import { useEffect, useState } from "react";
+
+const imagesYouth = [youth6, youth7, youth8, youth9];
 export default function Youth() {
-  const iframeRef = useRef(null);
-  const videoRef = useRef(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.7;
-    }
-  }, []);
+    const interval = setInterval(() => {
+      setCurrentImageIndex((currentImageIndex + 1) % imagesYouth.length);
+    }, 7000);
+    return () => clearInterval(interval);
+  }, [currentImageIndex]);
   return (
     <div>
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
-        <video
-          ref={videoRef}
-          className="videoYouth"
-          src="https://videos.pexels.com/video-files/5365060/5365060-hd_1366_720_25fps.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
-
-        <video
-          className="videoYouth"
-          src="https://videos.pexels.com/video-files/6860419/6860419-hd_1280_720_25fps.mp4"
-          autoPlay
-          ref={videoRef}
-          muted
-          loop
-        ></video>
-
+        {imagesYouth.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Youth ${index}`}
+            className={`imageYouth ${
+              index === currentImageIndex ? "active" : ""
+            }`}
+          />
+        ))}
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
             <span>
@@ -209,7 +208,7 @@ export default function Youth() {
                     }}
                   >
                     <iframe
-                      ref={iframeRef}
+                      // ref={iframeRef}
                       style={{ width: "100%", height: "100%", border: "0" }}
                       src="https://www.youtube.com/embed/I-npl3MvBIk?si=4XN4XSa0O6jmqAu9"
                       title="YouTube video player"
