@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Loading from "./components/Loading/Loading";
+import ChurchApp from "./components/ChurchApp/ChurchApp";
 
 const Home = React.lazy(() => import("./pages/home/Home"));
 const Events = React.lazy(() => import("./pages/events/Events"));
@@ -45,6 +46,7 @@ function App() {
   const Layout = () => {
     return (
       <div>
+        <ChurchApp />
         <Navbar />
         <div>
           <Outlet />
