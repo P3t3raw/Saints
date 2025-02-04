@@ -12,7 +12,6 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  /* object-position: center; */
   opacity: 0;
   transition: opacity 2s ease-in-out;
   padding: 0;
@@ -200,22 +199,6 @@ button:hover {
 }
 .devotional-list button {
   margin-top: 10px;
-}
-
-/* Animations */
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 0;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* Media Queries */

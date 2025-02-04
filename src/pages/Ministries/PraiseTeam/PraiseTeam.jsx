@@ -11,12 +11,12 @@ import worshipImg5 from "../../../assets/swahiliService.jpg";
 import Reveal from "../../../utils/Reveal";
 import { GiGuitar } from "react-icons/gi";
 import image from "../../../assets/2025-01-26 14.03.10.jpg";
-import video from "../../../assets/2025-01-26 10.15.15.mp4";
-import video1 from "../../../assets/2025-01-26 10.32.50.mp4";
+import video1 from "../../../assets/2025-01-26 10.15.15.mp4";
+import video2 from "../../../assets/2025-01-26 10.32.50.mp4";
 import performance from "../../../assets/2025-01-26 10.15.15.mp4";
 import { useEffect, useRef, useState } from "react";
 
-const musicVideos = [video, video1];
+const musicVideos = [video2, video1];
 export default function PraiseTeam() {
   const [previousIndex, setPreviousIndex] = useState(null);
   const videoRef = useRef([]);
@@ -60,16 +60,15 @@ export default function PraiseTeam() {
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
 
-        {musicVideos.map((video, index) => (
+        {musicVideos.map((src, index) => (
           <video
             key={index}
             ref={(el) => (videoRef.current[index] = el)}
             className={`videoMusic ${index === currentIndex ? "active" : ""}`}
-            src={video}
-            autoPlay
-            loop
+            src={src}
             muted
-          />
+            playsInline
+          ></video>
         ))}
 
         <div className="eventsBreadCrumbsWrapper">
