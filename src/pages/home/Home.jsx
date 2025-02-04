@@ -6,43 +6,64 @@ import Events from "../../components/Events/Events";
 import video1 from "../../assets/2025-01-19 10.21.40.mp4";
 import video2 from "../../assets/2025-01-26 10.09.09.mp4";
 import video3 from "../../assets/2025-01-19 10.30.45.mp4";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const videos = [video1, video2, video3];
 function Home() {
-  const homeVideoRef = useRef(null);
+  const [previousIndex, setPreviousIndex] = useState(null);
+  const homeVideoRef = useRef([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (homeVideoRef.current) {
-      homeVideoRef.current.playbackRate = 0.7;
+    const currentVideo = homeVideoRef.current[currentIndex];
+    const prevVideo =
+      previousIndex !== null ? homeVideoRef.current[previousIndex] : null;
+
+    if (prevVideo) {
+      prevVideo.classList.add("fading"); // Smoothly fade out old video
+      setTimeout(() => {
+        prevVideo.pause();
+        prevVideo.currentTime = 0;
+      }, 1500); // Matches CSS transition time
     }
-  }, []);
+
+    if (currentVideo) {
+      currentVideo.classList.add("active");
+      currentVideo.classList.remove("fading");
+      currentVideo.play();
+      currentVideo.playbackRate = 0.7; // Adjust video speed if needed
+    }
+
+    const handleVideoEnd = () => {
+      setPreviousIndex(currentIndex);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % videos.length);
+    };
+
+    currentVideo.onended = handleVideoEnd;
+
+    return () => {
+      if (currentVideo) {
+        currentVideo.onended = null;
+      }
+    };
+  }, [currentIndex, previousIndex]);
   return (
     <main>
       <div className="background">
         <div className="overlay"></div>
-        <video
-          ref={homeVideoRef}
-          className="videoHome"
-          src={video1}
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          ref={homeVideoRef}
-          className="videoHome"
-          src={video2}
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          ref={homeVideoRef}
-          className="videoHome"
-          src={video3}
-          autoPlay
-          muted
-          loop
-        ></video>
+        {videos.map((src, index) => (
+          <video
+            key={index}
+            ref={(el) => {
+              if (el) homeVideoRef.current[index] = el;
+            }}
+            className={`videoHome ${index === currentIndex ? "active" : ""}`}
+            src={src}
+            muted
+            playsInline
+          ></video>
+        ))}
+
         <div className="content">
           <p className="text">
             <span className="whiteLine"></span>
