@@ -20,18 +20,18 @@ function Home() {
       previousIndex !== null ? homeVideoRef.current[previousIndex] : null;
 
     if (prevVideo) {
-      prevVideo.classList.add("fading"); // Smoothly fade out old video
+      prevVideo.classList.add("fading");
       setTimeout(() => {
         prevVideo.pause();
         prevVideo.currentTime = 0;
-      }, 1500); // Matches CSS transition time
+      }, 1500);
     }
 
     if (currentVideo) {
       currentVideo.classList.add("active");
       currentVideo.classList.remove("fading");
       currentVideo.play();
-      currentVideo.playbackRate = 0.7; // Adjust video speed if needed
+      currentVideo.playbackRate = 0.7;
     }
 
     const handleVideoEnd = () => {

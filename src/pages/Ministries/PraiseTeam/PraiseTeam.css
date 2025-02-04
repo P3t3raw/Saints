@@ -12,15 +12,18 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  object-position: center;
+  /* object-position: center; */
   opacity: 0;
-  animation: fade 30s infinite;
+  transition: opacity 2s ease-in-out;
+  padding: 0;
 }
-.videoMusic:nth-child(1) {
-  animation-delay: 0s;
+.background .videoMusic.active {
+  opacity: 1;
+  z-index: 1;
 }
-.videoMusic:nth-child(2) {
-  animation-delay: 15s;
+.background .videoMusic.fading {
+  opacity: 0;
+  z-index: 0;
 }
 
 .childrenMinistryOverlay {

@@ -14,36 +14,63 @@ import image from "../../../assets/2025-01-26 14.03.10.jpg";
 import video from "../../../assets/2025-01-26 10.15.15.mp4";
 import video1 from "../../../assets/2025-01-26 10.32.50.mp4";
 import performance from "../../../assets/2025-01-26 10.15.15.mp4";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const musicVideos = [video, video1];
 export default function PraiseTeam() {
-  const videoRef = useRef(null);
+  const [previousIndex, setPreviousIndex] = useState(null);
+  const videoRef = useRef([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.75;
+    const currentVideo = videoRef.current[currentIndex];
+    const prevVideo =
+      previousIndex !== null ? videoRef.current[previousIndex] : null;
+
+    if (prevVideo) {
+      prevVideo.classList.add("fading");
+      setTimeout(() => {
+        prevVideo.pause();
+        prevVideo.currentTime = 0;
+      }, 1500);
     }
-  }, []);
+
+    if (currentVideo) {
+      currentVideo.classList.add("active");
+      currentVideo.classList.remove("fading");
+      currentVideo.play();
+      currentVideo.playbackRate = 0.7;
+    }
+
+    const handleVideoEnd = () => {
+      setPreviousIndex(currentIndex);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % musicVideos.length);
+    };
+
+    currentVideo.onended = handleVideoEnd;
+
+    return () => {
+      if (currentVideo) {
+        currentVideo.onended = null;
+      }
+    };
+  }, [currentIndex, previousIndex]);
   return (
     <div>
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
 
-        <video
-          ref={videoRef}
-          className="videoMusic"
-          src={video}
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          ref={videoRef}
-          className="videoMusic"
-          src={video1}
-          autoPlay
-          muted
-          loop
-        ></video>
+        {musicVideos.map((video, index) => (
+          <video
+            key={index}
+            ref={(el) => (videoRef.current[index] = el)}
+            className={`videoMusic ${index === currentIndex ? "active" : ""}`}
+            src={video}
+            autoPlay
+            loop
+            muted
+          />
+        ))}
 
         <div className="eventsBreadCrumbsWrapper">
           <p className="eventsBreadCrumbs">
