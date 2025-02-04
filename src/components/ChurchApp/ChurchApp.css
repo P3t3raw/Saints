@@ -1,13 +1,13 @@
 /* AnnouncementBar.css */
 .announcement-bar {
+  margin-top: 2px;
   position: fixed;
-  top: -100px;
-  right: 5px;
-  margin-top: 5px;
-  /* transform: translateX(-50%); */
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: white;
   color: #721c24;
-  padding: 2px 12px;
+  padding: 4px 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   z-index: 1000;
@@ -16,11 +16,13 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
-  animation: slideIn 1s ease-out forwards;
+  transition: top 0.5s ease-in-out;
 }
-.announcement-bar.hide {
-  animation: slideOut 1s ease-in forwards;
+
+.announcement-bar.visible {
+  top: 0;
 }
+
 .announcement-content {
   display: flex;
   align-items: center;
@@ -42,40 +44,26 @@
 .download-link:hover {
   background-color: #1e7e34;
 }
-@keyframes slideIn {
-  from {
-    top: -100px;
-  }
-  to {
-    top: 0;
-  }
-}
-@keyframes slideOut {
-  from {
-    top: 0;
-  }
-  to {
-    top: -100px;
-  }
-}
+
+/* Responsive Design */
 @media (max-width: 600px) {
   .announcement-bar {
-    font-size: 14px; /* Slightly smaller text */
-    padding: 8px; /* Reduced padding */
+    font-size: 12px;
+    padding: 5px;
   }
 
   .announcement-content {
-    flex-direction: column; /* Stack content vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column;
+    align-items: flex-start;
     text-align: left;
   }
 
   .announcement-text {
     margin-right: 0;
-    margin-bottom: 8px; /* Add some space below the text */
+    /* margin-bottom: 2px; */
   }
 
   .download-link {
-    margin-top: 8px; /* Add margin at the top */
+    margin-top: 8px;
   }
 }

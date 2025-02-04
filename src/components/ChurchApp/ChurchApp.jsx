@@ -2,17 +2,20 @@ import { useState, useEffect } from "react";
 import "./ChurchApp.css";
 
 const ChurchApp = () => {
-  const [show, setShow] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    setTimeout(() => setVisible(true), 500); // Show after 0.5s delay
+
     const timer = setTimeout(() => {
-      setShow(false);
-    }, 10000);
+      setVisible(false);
+    }, 5000); // Hide after 10 seconds
+
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className={`announcement-bar ${!show ? "hide" : ""}`}>
+    <div className={`announcement-bar ${visible ? "visible" : ""}`}>
       <div className="announcement-content">
         <span className="announcement-text">
           📱 Download our Church App for exclusive updates!
