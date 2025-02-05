@@ -3,8 +3,8 @@
   margin-top: 2px;
   position: fixed;
   top: -200px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 10px;
+  /* transform: translateX(-50%); */
   background-color: white;
   color: #721c24;
   padding: 4px 16px;
