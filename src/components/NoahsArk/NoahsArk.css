@@ -1,0 +1,51 @@
+.ark-container {
+  font-family: "Arial", sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+
+.ark-header h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.ark-stories {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ark-story {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ark-story:hover {
+  transform: scale(1.05);
+}
+
+.ark-story img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.story-detail {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

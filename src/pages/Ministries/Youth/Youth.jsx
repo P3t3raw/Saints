@@ -186,7 +186,7 @@ export default function Youth() {
           <div className="row4">
             <div>
               <h2 style={{ marginBottom: "10px" }}>Blogs</h2>
-              <Blogs />
+              <Blogs ministry="Youth" />
             </div>
             <div>
               <h2 style={{ marginBottom: "10px" }}>Youths Corner</h2>

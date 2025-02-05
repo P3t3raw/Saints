@@ -12,46 +12,67 @@ import image5 from "../../../assets/2025-01-19 10.03.07.jpg";
 import video1 from "../../../assets/VID-20250123-WA0043.mp4";
 import video2 from "../../../assets/2025-01-19 09.47.16.mp4";
 import video3 from "../../../assets/2025-01-19 09.56.27.mp4";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import NoahsArk from "../../../components/NoahsArk/NoahsArk";
+
+const childrenVideos = [video1, video2, video3];
 
 function Children() {
-  const videoRef = useRef(null);
+  const [previousIndex, setPreviousIndex] = useState(null);
+  const videoRef = useRef([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.7;
+    const currentVideo = videoRef.current[currentIndex];
+    const prevVideo =
+      previousIndex !== null ? videoRef.current[previousIndex] : null;
+
+    if (prevVideo) {
+      prevVideo.classList.add("fading");
+      setTimeout(() => {
+        prevVideo.pause();
+        prevVideo.currentTime = 0;
+      }, 1500);
     }
-  }, []);
+
+    if (currentVideo) {
+      currentVideo.classList.add("active");
+      currentVideo.classList.remove("fading");
+      currentVideo.play();
+      currentVideo.playbackRate = 0.7;
+    }
+
+    const handleVideoEnd = () => {
+      setPreviousIndex(currentIndex);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % childrenVideos.length);
+    };
+
+    currentVideo.onended = handleVideoEnd;
+
+    return () => {
+      if (currentVideo) {
+        currentVideo.onended = null;
+      }
+    };
+  }, [currentIndex, previousIndex]);
   return (
     <div>
       <div className="background">
         <div className="childrenMinistryOverlay"></div>
-        <video
-          ref={videoRef}
-          className="videoChildren"
-          src={video1}
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          ref={videoRef}
-          className="videoChildren"
-          src={video2}
-          autoPlay
-          muted
-          loop
-        ></video>
-        <video
-          ref={videoRef}
-          className="videoChildren"
-          src={video3}
-          autoPlay
-          muted
-          loop
-        ></video>
-        <div className="eventsBreadCrumbsWrapper">
-          <p className="eventsBreadCrumbs">
+        {childrenVideos.map((src, index) => (
+          <video
+            key={index}
+            ref={(el) => (videoRef.current[index] = el)}
+            className={`childrenVideo ${
+              index === currentIndex ? "active" : ""
+            }`}
+            src={src}
+            muted
+            playsInline
+          ></video>
+        ))}
+        <div className="sundaySchoolBreadCrumbsWrapper">
+          <p className="sundaySchoolBreadCrumbs">
             <span>
               <a href="/">Home</a> <FaChevronRight />
             </span>
@@ -65,14 +86,14 @@ function Children() {
           <h1>Sunday School</h1>
         </div>
       </div>
-      <div className="row1Container">
+      <div className="row1SundaySchoolContainer">
         <div className="row1SundaySchool">
           <div>
             <p className="textQuote">
               ❝ Jesus said, 'Let the little children come to me, and do not
               hinder them, for the Kingdom of heaven belongs to such as these.'❞
               <br />
-              <span style={{ color: "#a7a7a7" }}>Matthew 19:14</span>
+              <span>Matthew 19:14</span>
             </p>
           </div>
           <img src={image} alt="sunday school" />
@@ -174,7 +195,7 @@ function Children() {
               <div>
                 <h2>Short Stories</h2>
                 <div>
-                  <ul className="devotional-list">
+                  {/* <ul className="devotional-list">
                     <li>
                       <h4>Upcoming Devotional Piece</h4>
                       <p>
@@ -187,7 +208,8 @@ function Children() {
                         matters.
                       </p>
                     </li>
-                  </ul>
+                  </ul> */}
+                  <NoahsArk />
                 </div>
               </div>
               <div>

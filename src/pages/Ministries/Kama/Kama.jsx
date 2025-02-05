@@ -164,7 +164,7 @@ function Men() {
           <div className="row4">
             <div>
               <h2 style={{ marginBottom: "10px" }}>Blogs</h2>
-              <Blogs />
+              <Blogs ministry="Kama" />
             </div>
             <div>
               <h2 style={{ marginBottom: "10px" }}>Member Testimony</h2>

@@ -164,7 +164,7 @@ function Mothers() {
           <div className="row4">
             <div>
               <h2>Blogs</h2>
-              <Blogs />
+              <Blogs ministry="Mothers Union" />
             </div>
             <div>
               <h2>Member Stories</h2>
