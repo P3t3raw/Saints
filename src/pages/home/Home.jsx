@@ -115,21 +115,6 @@ function Home() {
                 0746 339 588
               </small>
             </span>
-            <span>
-              Get us on Facebook at:{" "}
-              <a
-                href="https://web.facebook.com/stpetersembakasi/"
-                target="_blank"
-                rel="noreferrer"
-                style={{ textDecoration: "none" }}
-              >
-                <small
-                  style={{ color: "blue", fontSize: "16px", cursor: "pointer" }}
-                >
-                  web.facebook.com/stpetersembakasi
-                </small>
-              </a>
-            </span>
           </p>
         </div>
       </Reveal>

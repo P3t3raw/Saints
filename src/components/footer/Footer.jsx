@@ -1,6 +1,7 @@
 import "./Footer.css";
-import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { TbMailbox } from "react-icons/tb";
+import churchAppIcon from "../../assets/LogoP.png";
 import {
   MdOutlineLocationOn,
   MdOutlineEmail,
@@ -31,13 +32,53 @@ function Footer() {
           <div>
             <ul className="socialLinks">
               <li className="social">
-                <FaFacebookF />
+                <a
+                  href="https://web.facebook.com/stpetersembakasi/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <FaFacebookF />
+                </a>
               </li>
+              {/* <li className="social">
+                <a
+                  href="https://x.com/yourprofile"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                    style={{ width: "24px", height: "24px" }}
+                  >
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                </a>
+              </li> */}
               <li className="social">
-                <FaTwitter />
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.ackstpeters.userapp&hl=en&gl=US&pli=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={churchAppIcon}
+                    alt="Church App"
+                    style={{ width: "24px", height: "24px" }}
+                  />
+                </a>
               </li>
+
               <li className="social">
-                <FaYoutube />
+                <a
+                  href="https://www.youtube.com/channel/UC5CFyFU9qik5jUPFRiVgS7Q"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaYoutube />
+                </a>
               </li>
             </ul>
           </div>
