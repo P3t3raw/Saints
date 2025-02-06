@@ -142,7 +142,10 @@ function Mothers() {
               Union Ministry, feel free to reach out to us.
             </p>
             <p>
-              <strong>Email:</strong> mothersunion@ackstpetersembakasi.org
+              <strong>Email:</strong>{" "}
+              <a href="mailto:mothersunion@ackstpetersembakasi.org">
+                mothersunion@ackstpetersembakasi.org
+              </a>
               <br />
               <strong>Phone:</strong>0110 008 603
             </p>
@@ -200,7 +203,9 @@ function Mothers() {
                     </p>
                   </li> */}
                 </ul>
-                <button>Share Your Story</button>
+                <a href="mailto:mothersunion@ackstpetersembakasi.org?subject=Share%20My%20Story">
+                  <button>Share Your Story</button>
+                </a>
               </div>
             </div>
           </div>

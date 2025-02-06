@@ -26,8 +26,8 @@ export default function Fellowships() {
         contact: " Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
-          { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
-          { name: "Ms. Jane Smith", role: "Bible Study Leader" },
+          { name: "Mr. John ", role: "Community Outreach Coordinator" },
+          { name: "Ms. Jane ", role: "Bible Study Leader" },
         ],
       },
 
@@ -48,8 +48,8 @@ export default function Fellowships() {
         contact: " Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
-          { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
-          { name: "Ms. Jane Smith", role: "Bible Study Leader" },
+          { name: "Mr. John ", role: "Community Outreach Coordinator" },
+          { name: "Ms. Jane ", role: "Bible Study Leader" },
         ],
       },
       {
@@ -59,7 +59,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        desc: "The Mradi Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -69,8 +69,8 @@ export default function Fellowships() {
         contact: "Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
-          { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
-          { name: "Ms. Jane Smith", role: "Bible Study Leader" },
+          { name: "Mr. John ", role: "Community Outreach Coordinator" },
+          { name: "Ms. Jane ", role: "Bible Study Leader" },
         ],
       },
       {
@@ -80,7 +80,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Outer Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        desc: "The Outer Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -90,8 +90,8 @@ export default function Fellowships() {
         contact: " Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
-          { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
-          { name: "Ms. Jane Smith", role: "Bible Study Leader" },
+          { name: "Mr. John ", role: "Community Outreach Coordinator" },
+          { name: "Ms. Jane ", role: "Bible Study Leader" },
         ],
       },
       {
@@ -101,7 +101,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Nyayo 1 Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        desc: "The Nyayo 1 Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -111,8 +111,8 @@ export default function Fellowships() {
         contact: "Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
-          { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
-          { name: "Ms. Jane Smith", role: "Bible Study Leader" },
+          { name: "Mr. John ", role: "Community Outreach Coordinator" },
+          { name: "Ms. Jane ", role: "Bible Study Leader" },
         ],
       },
       {
@@ -122,7 +122,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Nyayo 2 Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        desc: "The Nyayo 2 Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -132,8 +132,8 @@ export default function Fellowships() {
         contact: "Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
-          { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
-          { name: "Ms. Jane Smith", role: "Bible Study Leader" },
+          { name: "Mr. John ", role: "Community Outreach Coordinator" },
+          { name: "Ms. Jane ", role: "Bible Study Leader" },
         ],
       },
       {
@@ -143,7 +143,7 @@ export default function Fellowships() {
         meetingDate: "Oct 25",
         meetingTime: "5:00PM",
         hostName: "Miss. Hellen",
-        desc: "The Police Line Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.",
+        desc: "The Police Line Fellowship is a community-centered fellowship aimed at fostering spiritual growth, leadership, and practical skills among its members. It provides a supportive environment for individuals to deepen their faith, engage in meaningful discussions, and build a sense of unity and purpose.Through regular meetings, Bible study sessions, and service projects, the fellowship encourages participants to live out their faith, develop their God-given talents, and positively impact their communities.",
         tagline: "Empowering Faith, Building Community",
         location: "St. John's Community Center, Nairobi, Kenya",
         membershipEligibility:
@@ -153,8 +153,8 @@ export default function Fellowships() {
         contact: "Phone: +254 700 000 000",
         leadershipTeam: [
           { name: "Miss. Hellen", role: "Host & Fellowship Leader" },
-          { name: "Mr. John Doe", role: "Community Outreach Coordinator" },
-          { name: "Ms. Jane Smith", role: "Bible Study Leader" },
+          { name: "Mr. John ", role: "Community Outreach Coordinator" },
+          { name: "Ms. Jane ", role: "Bible Study Leader" },
         ],
       },
     ],
@@ -173,6 +173,10 @@ export default function Fellowships() {
         <div className="noticesOverlay"></div>
         <div className="noticesContent">
           <h1>Estate Fellowships</h1>
+          {/* <p>
+            Regular gatherings intended to bring Christians together in their
+            residential places
+          </p> */}
         </div>
         <div className="noticesBreadCrumbsWrapper">
           <p className="noticesBreadCrumbs">
@@ -217,10 +221,38 @@ export default function Fellowships() {
 
               <div className="meetingInfo">
                 <p className="nextMeeting">
-                  <strong>Next Meeting:</strong> 
-                  <span style={{display:'flex', lineHeight:'0', gap:'4px', alignItems:'center'}}>
-                    <span style={{display:'flex', lineHeight:'0', gap:'4px', alignItems:'center'}}><MdOutlineDateRange />{selectedFellowship.meetingDate},{' '}{selectedFellowship.meetingTime}</span>
-                    <span style={{display:'flex', lineHeight:'0', gap:'4px', alignItems:'center'}}><MdOutlineLocationOn />{selectedFellowship.hostName}</span>
+                  <strong>Next Meeting:</strong>
+                  <span
+                    style={{
+                      display: "flex",
+                      lineHeight: "0",
+                      gap: "4px",
+                      alignItems: "center",
+                    }}
+                  >
+                    <span
+                      style={{
+                        display: "flex",
+                        lineHeight: "0",
+                        gap: "4px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <MdOutlineDateRange />
+                      {selectedFellowship.meetingDate},{" "}
+                      {selectedFellowship.meetingTime}
+                    </span>
+                    <span
+                      style={{
+                        display: "flex",
+                        lineHeight: "0",
+                        gap: "4px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <MdOutlineLocationOn />
+                      {selectedFellowship.hostName}
+                    </span>
                   </span>
                 </p>
               </div>

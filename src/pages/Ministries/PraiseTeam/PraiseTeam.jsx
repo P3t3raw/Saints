@@ -172,7 +172,10 @@ export default function PraiseTeam() {
               free to reach out. We look forward to serving with you!
             </p>
             <p>
-              <strong>Email:</strong> musicministry@ackstpetersembakasi.org
+              <strong>Email:</strong>{" "}
+              <a href="mailto:musicministry@ackstpetersembakasi.org">
+                musicministry@ackstpetersembakasi.org
+              </a>
               <br />
               <strong>Phone:</strong>0110 008 603
             </p>

@@ -173,7 +173,10 @@ function Children() {
               to reach out to us. We’d love to hear from you!
             </p>
             <p>
-              <strong>Email:</strong> sundayschool@ackstpetersembakasi.org
+              <strong>Email:</strong>{" "}
+              <a href="mailto:sundayschool@ackstpetersembakasi.org">
+                sundayschool@ackstpetersembakasi.org
+              </a>
               <br />
               <strong>Phone:</strong>0110 008 603
             </p>
@@ -195,20 +198,6 @@ function Children() {
               <div>
                 <h2>Short Stories</h2>
                 <div>
-                  {/* <ul className="devotional-list">
-                    <li>
-                      <h4>Upcoming Devotional Piece</h4>
-                      <p>
-                        Dive into an inspiring and thought-provoking discussion
-                        that challenges your perspectives and stimulates deep
-                        thinking. This week's piece encourages reflection and
-                        invites you to explore new ideas, share your insights,
-                        and join a meaningful conversation with others. Don’t
-                        miss out on the chance to engage with content that truly
-                        matters.
-                      </p>
-                    </li>
-                  </ul> */}
                   <NoahsArk />
                 </div>
               </div>

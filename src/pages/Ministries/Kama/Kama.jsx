@@ -142,7 +142,10 @@ function Men() {
               Ministry, feel free to reach out to us.
             </p>
             <p>
-              <strong>Email:</strong> kama@ackstpetersembakasi.org
+              <strong>Email:</strong>{" "}
+              <a href="mailto:kama@ackstpetersembakasi.org">
+                kama@ackstpetersembakasi.org
+              </a>
               <br />
               <strong>Phone:</strong> 0110 008 603
             </p>
@@ -189,7 +192,9 @@ function Men() {
                     </p>
                   </li> */}
                 </ul>
-                <button>Share Your Story</button>
+                <a href="mailto:kama@ackstpetersembakasi.org?subject=Sharing My Story">
+                  <button>Share Your Story</button>
+                </a>
               </div>
             </div>
           </div>

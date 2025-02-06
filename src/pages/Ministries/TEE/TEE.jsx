@@ -143,7 +143,10 @@ function TEE() {
               out to us. We’d love to hear from you!
             </p>
             <p>
-              <strong>Email:</strong> tee@ackstpetersembakasi.org
+              <strong>Email:</strong>{" "}
+              <a href="mailto:tee@ackstpetersembakasi.org">
+                tee@ackstpetersembakasi.org
+              </a>
               <br />
               <strong>Phone:</strong>0110 008 603
             </p>

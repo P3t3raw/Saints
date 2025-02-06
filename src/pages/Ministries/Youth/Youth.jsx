@@ -153,7 +153,10 @@ export default function Youth() {
               Ministry, feel free to reach out to us.
             </p>
             <p>
-              <strong>Email:</strong> youth@ackstpetersembakasi.org
+              <strong>Email:</strong>{" "}
+              <a href="mailto:youth@ackstpetersembakasi.org">
+                youth@ackstpetersembakasi.org
+              </a>
               <br />
               <strong>Phone:</strong>0110 008 603
             </p>
