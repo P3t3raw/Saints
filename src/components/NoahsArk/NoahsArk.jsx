@@ -38,36 +38,31 @@ const NoahsArk = () => {
         <h1>Welcome to Noah's Ark!</h1>
         <p>Explore Bible stories with Noah and his animal friends!</p>
       </div>
+
       <div className="ark-stories">
-        <div className="ark-story" onClick={() => handleStoryClick("Noah")}>
-          <img
-            src="https://media.istockphoto.com/id/182375184/photo/noahs-ark.jpg?s=2048x2048&w=is&k=20&c=3RquTVxWYmRnz2ybX3cIRddIXcFC1W7zRUHRBI-5Y1g="
-            alt="Noah's Ark"
-          />
-          <h3>Noah's Ark</h3>
-        </div>
-        <div className="ark-story" onClick={() => handleStoryClick("Animals")}>
-          <img
-            src="https://media.istockphoto.com/id/1477971048/vector/noahs-ark-with-animals.jpg?s=2048x2048&w=is&k=20&c=x6WSktzyRWhyM6tCMLCrTQKzUjokZnFAWi_vxa9u4ts="
-            alt="Animals"
-          />
-          <h3>The Animals</h3>
-        </div>
-        <div className="ark-story" onClick={() => handleStoryClick("Rainbow")}>
-          <img
-            src="https://media.istockphoto.com/id/2153725333/photo/close-up-of-colorful-paper-arc.jpg?s=2048x2048&w=is&k=20&c=AFp2n6cDtooMMtQ00EDL9CraRsifaEj2r5RdkBQpvys="
-            alt="Rainbow"
-          />
-          <h3>The Rainbow Promise</h3>
-        </div>
+        {Object.keys(storyContent).map((key) => (
+          <div
+            key={key}
+            className="ark-story"
+            onClick={() => handleStoryClick(key)}
+          >
+            <img src={storyContent[key].imgSrc} alt={storyContent[key].title} />
+            <h3>{storyContent[key].title}</h3>
+          </div>
+        ))}
       </div>
 
+      {/* Modal Pop-up */}
       {activeStory && (
-        <div className="story-detail">
-          <h2>{activeStory.title}</h2>
-          <p>{activeStory.description}</p>
-          <img src={activeStory.imgSrc} alt={activeStory.title} />
-          <button onClick={() => setActiveStory(null)}>Close Story</button>
+        <div className="modal-overlay" onClick={() => setActiveStory(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-btn" onClick={() => setActiveStory(null)}>
+              ✖
+            </button>
+            <h2>{activeStory.title}</h2>
+            <img src={activeStory.imgSrc} alt={activeStory.title} />
+            <p>{activeStory.description}</p>
+          </div>
         </div>
       )}
     </div>
