@@ -17,8 +17,8 @@ function AllEvents() {
       imgSrc: image2,
       title: "21 Days of Prayer & Fasting",
       desc: "Join us for 21 days of prayer and fasting as we seek God's guidance and renewal. This spiritual journey will include daily devotions, prayer meetings, and special services to strengthen our faith.",
-      date: "10th January, 2025",
-      time: "10:00 AM",
+      date: "10th January, 2025 - 31st January, 2025",
+      time: "6:00 AM - 6:00 PM",
       location: "ACK St. Peter's Embakasi",
     },
     {
