@@ -198,8 +198,8 @@ export default function PraiseTeam() {
             <div>
               <h2>Featured Song</h2>
               <p>
-                Stay tuned for inspiring videos and podcasts filled with fresh
-                ideas and uplifting content. Check back often for updates!
+                Stay tuned for inspiring videos filled with fresh ideas and
+                uplifting content. Check back often for updates!
               </p>
               <div>
                 <div>
@@ -215,7 +215,12 @@ export default function PraiseTeam() {
                     }}
                   >
                     <iframe
-                      style={{ width: "100%", height: "100%", border: "0" }}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        border: "0",
+                        borderRadius: "10px",
+                      }}
                       src="https://www.youtube-nocookie.com/embed/7MW64-5ugHc?si=XyZbWCwMRpIBWG7Y&rel=0"
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -246,18 +251,15 @@ export default function PraiseTeam() {
                     }}
                   >
                     <video
-                      style={{ width: "100%", height: "100%", border: "0" }}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        border: "0",
+                        borderRadius: "10px",
+                      }}
                       src={performance}
                       controls
                     ></video>
-                    {/* <iframe
-                      style={{ width: "100%", height: "100%", border: "0" }}
-                      src="https://www.youtube-nocookie.com/embed/8cOaGbBfhd8?si=TAz8Yo-O6CvD9GAb&rel=0"
-                      title="YouTube video player"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                    /> */}
                   </div>
                 </div>
               </div>

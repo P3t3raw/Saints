@@ -9,7 +9,7 @@ import fridayService from "../../../assets/YouthMinistry2.jpg";
 import youth1 from "../../../assets/YouthMinistry6.jpg";
 import youth2 from "../../../assets/stpetersfc.jpg";
 import youth4 from "../../../assets/youthMin.jpg";
-import youth3 from "../../../assets/YouthMinistry1.jpg";
+import youth3 from "../../../assets/_IMG0658.jpg";
 import youth5 from "../../../assets/stpetersfc1.jpg";
 import youth6 from "../../../assets/_IMG0932.jpg";
 import youth7 from "../../../assets/_IMG0935.jpg";
@@ -194,8 +194,8 @@ export default function Youth() {
             <div>
               <h2 style={{ marginBottom: "10px" }}>Youths Corner</h2>
               <p>
-                Stay tuned for inspiring videos and podcasts filled with fresh
-                ideas and uplifting content. Check back often for updates!
+                Stay tuned for inspiring videos filled with fresh ideas and
+                uplifting content. Check back often for updates!
               </p>
               <div>
                 <div className="podcastWrapper">
@@ -212,7 +212,12 @@ export default function Youth() {
                   >
                     <iframe
                       // ref={iframeRef}
-                      style={{ width: "100%", height: "100%", border: "0" }}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        border: "0",
+                        borderRadius: "10px",
+                      }}
                       src="https://www.youtube.com/embed/I-npl3MvBIk?si=4XN4XSa0O6jmqAu9"
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

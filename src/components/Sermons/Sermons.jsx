@@ -43,7 +43,12 @@ export default function Sermons() {
               }}
             >
               <iframe
-                style={{ width: "100%", height: "100%", border: "0" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderRadius: "10px",
+                }}
                 src={video.src}
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

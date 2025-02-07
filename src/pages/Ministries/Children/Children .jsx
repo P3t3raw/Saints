@@ -221,7 +221,12 @@ function Children() {
                       }}
                     >
                       <iframe
-                        style={{ width: "100%", height: "100%", border: "0" }}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          border: "0",
+                          borderRadius: "10px",
+                        }}
                         src="https://www.youtube-nocookie.com/embed/zeuoPQznpFo?si=d4JHh6-w8mUDbwap&rel=0"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
