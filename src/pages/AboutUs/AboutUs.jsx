@@ -97,12 +97,12 @@ function AboutUs() {
       title: "Finance",
       name: "Mr. Ted Kimang'a",
     },
-    {
-      id: 6,
-      imgSrc: profileImage,
-      title: "Church Secretary",
-      name: "Miss. Jackline",
-    },
+    // {
+    //   id: 6,
+    //   imgSrc: profileImage,
+    //   title: "Church Secretary",
+    //   name: "Miss. Jackline",
+    // },
   ];
 
   return (
