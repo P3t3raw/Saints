@@ -31,7 +31,7 @@ const Events = () => {
       imgSrc: image3,
       title: "Join Us For Celebration Sunday",
       desc: " Join our youth retreat for a weekend of spiritual growth, fellowship, and fun. We'll have inspiring sessions, worship, and outdoor activities.",
-      date: "26th January, 2025 ",
+      date: "23rd February, 2025 ",
       time: "8:00 am - 9:30 am",
       location: "ACK St.Peter's Embakasi",
     },

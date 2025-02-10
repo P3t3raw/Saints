@@ -35,8 +35,8 @@ function AllEvents() {
       imgSrc: image3,
       title: "Join Us for Celebration Sunday",
       desc: "A special service dedicated to thanksgiving, testimonies, and vibrant worship. Come and celebrate God's faithfulness with us as we enjoy an uplifting message and joyful praise.",
-      date: "26th January, 2025",
-      time: "8:00 AM - 9:30 AM",
+      date: "23rd February, 2025",
+      time: "8:00 AM",
       location: "ACK St. Peter's Embakasi",
     },
     {
