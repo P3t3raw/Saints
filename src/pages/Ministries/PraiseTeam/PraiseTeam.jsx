@@ -11,7 +11,7 @@ import worshipImg5 from "../../../assets/swahiliService.jpg";
 import Reveal from "../../../utils/Reveal";
 import { GiGuitar } from "react-icons/gi";
 import image from "../../../assets/2025-01-26 14.03.10.jpg";
-import video1 from "../../../assets/2025-01-26 10.15.15.mp4";
+import video1 from "../../../assets/2025-01-26 10.15.15.1.mp4";
 import video2 from "../../../assets/2025-01-26 10.32.50.mp4";
 import performance from "../../../assets/2025-01-26 10.15.15.mp4";
 import { useEffect, useRef, useState } from "react";

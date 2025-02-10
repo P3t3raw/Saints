@@ -7,7 +7,7 @@ import mothersUnion1 from "../../../assets/mothers.jpeg";
 import mothersUnion from "../../../assets/WhatsApp Image 2025-01-30 at 19.53.16.jpeg";
 import mothersUnion4 from "../../../assets/357746491_619471053607956_411327406936014473_n.jpg";
 import mothersUnion3 from "../../../assets/WhatsApp Image 2025-01-30 at 19.56.20.jpeg";
-import mothersUnion5 from "../../../assets/MU.jpg";
+import mothersUnion5 from "../../../assets/WhatsApp Image 2025-02-09 at 14.10.43.jpeg";
 import mothersUnion2 from "../../../assets/WhatsApp Image 2025-01-30 at 19.58.55.jpeg";
 import { FaRegHeart } from "react-icons/fa";
 import { BiBible, BiHomeHeart } from "react-icons/bi";

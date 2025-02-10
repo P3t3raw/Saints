@@ -3,7 +3,7 @@ import "./AboutUs.css";
 import Reveal from "../../utils/Reveal";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
-import vicarImage from "../../assets/Ven.jpg";
+import vicarImage from "../../assets/_MG_3434.JPEG";
 import layCanonImage from "../../assets/IMG_6818.JPG";
 import layreaderImage from "../../assets/IMG_6816.JPG";
 import layreaderImageT from "../../assets/IMG_6802.JPG";
@@ -26,12 +26,12 @@ function AboutUs() {
       id: 2,
       imgSrc: profileImage,
       title: "Curate",
-      name: "Rev. Benson",
+      name: "Rev. Capt. Benson Chege",
     },
     {
       id: 3,
       imgSrc: captainImage,
-      title: "Evangelist",
+      title: "Evangelism",
       name: "Rev. Capt. Peter Owuor",
     },
     {

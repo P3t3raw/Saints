@@ -4,7 +4,7 @@ import Services from "../../components/Services/Services";
 import Sermons from "../../components/Sermons/Sermons";
 import Events from "../../components/Events/Events";
 import video1 from "../../assets/2025-01-19 10.21.40.mp4";
-import video2 from "../../assets/2025-01-26 10.15.15.mp4";
+import video2 from "../../assets/2025-01-26 10.15.15.1.mp4";
 import video3 from "../../assets/2025-01-19 10.30.45.mp4";
 import { useEffect, useRef, useState } from "react";
 
@@ -71,7 +71,7 @@ function Home() {
             <span className="whiteLine"></span>
           </p>
           <p className="themeText">
-            <b>The year of open doors and divine speed</b>
+            <b>The Year of Divine Windows</b>
           </p>
         </div>
       </div>

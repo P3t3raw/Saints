@@ -2,7 +2,7 @@ import "./Kama.css";
 import Reveal from "../../../utils/Reveal";
 import Blogs from "../../../components/Blogs/Blogs";
 import { FaChevronRight } from "react-icons/fa";
-import kama from "../../../assets/364161928_619471003607961_5698538392905565876_n.jpg";
+import kama from "../../../assets/KAMA.jpg";
 import kama2 from "../../../assets/IMG_6799.JPG";
 import kama3 from "../../../assets/IMG_6742.JPG";
 import kama4 from "../../../assets/KAMA.jpg";

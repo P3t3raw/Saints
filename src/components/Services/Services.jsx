@@ -50,7 +50,7 @@ export default function Services() {
         <p className="text">
           <span className="greyLine"></span>
           <span className="textPrimary" style={{ color: "grey" }}>
-            Our Services
+            Services
           </span>
           <span className="greyLine"></span>
         </p>

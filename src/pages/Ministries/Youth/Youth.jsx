@@ -235,19 +235,19 @@ export default function Youth() {
         <div className="row3">
           {/* styles are from children ministry page */}
           <div>
-            <img src={fridayService} alt="worship" />
+            <img src={fridayService} alt="youth" />
           </div>
           <div>
-            <img src={youth1} alt="worship" />
+            <img src={youth1} alt="youth" />
           </div>
           <div>
-            <img src={youth2} alt="worship" />
+            <img src={youth2} alt="youth" />
           </div>
           <div>
-            <img src={youth3} alt="worship" />
+            <img src={youth3} alt="youth" />
           </div>
           <div>
-            <img src={youth5} alt="worship" />
+            <img src={youth5} alt="youth" />
           </div>
         </div>
       </Reveal>
